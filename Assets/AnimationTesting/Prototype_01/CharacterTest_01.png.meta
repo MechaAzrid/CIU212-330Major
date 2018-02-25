@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: cbf90ca13ffe2ee478ddd737e7dfac03
+timeCreated: 1519600256
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Character_01_Body
+    21300002: Character_01_R_Leg
+    21300004: Character_01_L_Leg
+    21300006: Character_01_R_Arm
+    21300008: Character_01_L_Arm
+    21300010: Character_01_Head
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character_01_Body
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 158
+        width: 159
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5031446, y: 0.4923664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_01_R_Leg
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 38
+        width: 59
+        height: 90
+      alignment: 9
+      pivot: {x: 0.55932206, y: 0.47222224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_01_L_Leg
+      rect:
+        serializedVersion: 2
+        x: 210.49998
+        y: 27.5
+        width: 69.000015
+        height: 102
+      alignment: 9
+      pivot: {x: 0.4710146, y: 0.4901961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_01_R_Arm
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 93.49999
+        width: 58
+        height: 89.00001
+      alignment: 9
+      pivot: {x: 0.5086207, y: 0.4887641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_01_L_Arm
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 108
+        width: 86
+        height: 68
+      alignment: 9
+      pivot: {x: 0.49418604, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_01_Head
+      rect:
+        serializedVersion: 2
+        x: 52.000004
+        y: 197.00002
+        width: 115
+        height: 114.999985
+      alignment: 9
+      pivot: {x: 0.48695648, y: 0.49565214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99588521425462
+  assetBundleName: 
+  assetBundleVariant: 
