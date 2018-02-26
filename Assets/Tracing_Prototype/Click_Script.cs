@@ -4,30 +4,66 @@ using UnityEngine;
 
 public class Click_Script : MonoBehaviour
 {
-    public Vector3 mouse_position;
-    public GameObject test;
+    public GameObject input_node;
+    public GameObject output_node;
 
     private Vector3 mouse_world_position = new Vector3();
-    public Camera c = Camera.main;
-    private Vector3 mouse_pos = new Vector3();
+    public Camera c;
+    public Vector3 mouse_pos = new Vector3();
+    private Event e;
 
-	// Use this for initialization
-	void Start ()
+    public GameObject current_input_node;
+    public Input_Node Input_Node_Script;
+    public GameObject current_output_node;
+
+    private bool clicked = false;
+
+    // Use this for initialization
+    void Start ()
     {
-		
-	}
+        c = Camera.main;
+    }
 
-    // Update is called once per frame
-    void Update ()
+    void OnGUI()
     {
-        mouse_pos.x = Input.mousePosition.x;
-        mouse_pos.y = c.pixelHeight - Input.mousePosition.y;
+        e = Event.current;
 
-        if(Input.GetButtonDown("Fire1"))
+        mouse_pos.x = e.mousePosition.x;
+        mouse_pos.y = c.pixelHeight - e.mousePosition.y;
+
+        mouse_world_position = c.ScreenToWorldPoint(new Vector3(mouse_pos.x, mouse_pos.y, 10.0f));
+    }
+
+    void Node()
+    {
+        current_input_node = Instantiate(input_node, mouse_world_position, transform.rotation) as GameObject;
+        Input_Node_Script = current_input_node.GetComponent<Input_Node>();
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Button Hit");
-            mouse_world_position = c.ScreenToWorldPoint(new Vector3(mouse_pos.x, mouse_pos.y, 10.0f));
-            Instantiate(test, mouse_world_position, transform.rotation);
+            clicked = true;
+            Node();
+        }
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            Debug.Log("Button Lifted");
+            clicked = false;
+            current_output_node = Instantiate(output_node, mouse_world_position, transform.rotation) as GameObject;
+            Input_Node_Script.lr.SetPosition(1, current_output_node.transform.position);
+        }
+
+        float distance = Vector3.Distance(mouse_world_position, current_input_node.transform.position);
+
+        if(distance > 0.5f && clicked)
+        {
+            current_output_node = Instantiate(output_node, mouse_world_position, transform.rotation) as GameObject;
+            Input_Node_Script.lr.SetPosition(1, current_output_node.transform.position);
+            Node();
         }
     }
 }
