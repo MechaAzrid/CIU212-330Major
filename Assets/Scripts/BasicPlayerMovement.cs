@@ -19,6 +19,9 @@ public class BasicPlayerMovement : MonoBehaviour
         if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
+
+            //Have vertical as two individual inputs
+            
         }
     }
 
