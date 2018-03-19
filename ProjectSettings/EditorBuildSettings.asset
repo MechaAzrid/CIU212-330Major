@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tracing_Prototype/Tracing_Prototype_Scene.unity
-    guid: 4be53635560584b4eb071294ab585a3b
+    path: Assets/Touch_Control_Prototype/Touch_Prototype.unity
+    guid: 6a0aa526689036b4889ea52da594c960

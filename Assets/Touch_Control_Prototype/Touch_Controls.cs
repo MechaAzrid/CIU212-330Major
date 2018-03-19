@@ -26,7 +26,7 @@ public class Touch_Controls : MonoBehaviour
     void Update ()
     {
         // When the mouse is clicked
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             touch_position.x = e.mousePosition.x;
             touch_position.y = c.pixelHeight - e.mousePosition.y;
@@ -36,7 +36,7 @@ public class Touch_Controls : MonoBehaviour
         }
 
         // When the mouse is held down
-        if(Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             touch_position.x = e.mousePosition.x;
             touch_position.y = c.pixelHeight - e.mousePosition.y;
@@ -46,7 +46,7 @@ public class Touch_Controls : MonoBehaviour
         }
 
         // When the mouse click is lifted
-        if(Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Fire1"))
         {
             Lifted();
         }
@@ -55,7 +55,7 @@ public class Touch_Controls : MonoBehaviour
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             touch_position.x = Input.GetTouch(0).position.x;
-            touch_position.y = c.pixelHeight - Input.GetTouch(0).position.y;
+            touch_position.y = Input.GetTouch(0).position.y;
             touch_world_position = c.ScreenToWorldPoint(new Vector3(touch_position.x, touch_position.y, 10.0f));
 
             Tapped();
@@ -65,7 +65,7 @@ public class Touch_Controls : MonoBehaviour
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Stationary)
         {
             touch_position.x = Input.GetTouch(0).position.x;
-            touch_position.y = c.pixelHeight - Input.GetTouch(0).position.y;
+            touch_position.y = Input.GetTouch(0).position.y;
             touch_world_position = c.ScreenToWorldPoint(new Vector3(touch_position.x, touch_position.y, 10.0f));
 
             Holding();
@@ -73,8 +73,8 @@ public class Touch_Controls : MonoBehaviour
 
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
-            touch_position.x = Input.GetTouch(0).deltaPosition.x;
-            touch_position.y = c.pixelHeight - Input.GetTouch(0).deltaPosition.y;
+            touch_position.x = Input.GetTouch(0).position.x;
+            touch_position.y = Input.GetTouch(0).position.y;
             touch_world_position = c.ScreenToWorldPoint(new Vector3(touch_position.x, touch_position.y, 10.0f));
 
             Holding();
