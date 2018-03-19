@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Reset_Scene : MonoBehaviour {
+public class Reset_Scene : MonoBehaviour
+{
+    public string levelname;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +19,6 @@ public class Reset_Scene : MonoBehaviour {
 
     public void Reset_Scene_F ()
     {
-        SceneManager.LoadScene("Tracing_Prototype_Scene");
+        SceneManager.LoadScene(levelname);
     }
 }
