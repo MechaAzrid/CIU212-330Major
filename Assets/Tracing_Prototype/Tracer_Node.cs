@@ -28,9 +28,12 @@ public class Tracer_Node : MonoBehaviour
                 if(hitcolliders[i].tag == "input_node")
                 {
                     counter.node_count++;
-                    i = hitcolliders.Length + 1;
+                    i = hitcolliders.Length + 1;         
                 }
-                i++;
+                else
+                {
+                    i++;
+                }
             }
         }
 	}

@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 114061134598819754}
   m_Layer: 0
   m_Name: A_Tracer
-  m_TagString: Untagged
+  m_TagString: input_node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -617,7 +617,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1315413021300300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.05, y: 1.8965518, z: -1}
+  m_LocalPosition: {x: 5.05, y: 1.79, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4541394890770796}
@@ -1987,6 +1987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min_count: 20
   node_count: 0
+  max_count: 30
 --- !u!114 &114068558307541800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2345,7 +2346,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -1.0579934, y: -1.5360501, z: 0}
   - {x: -0.5094042, y: -1.630094, z: 0}
@@ -2433,7 +2434,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 1.1050161, y: -0.43887138, z: 0}
   - {x: 1.1833861, y: -0.95611274, z: 0}
@@ -2521,7 +2522,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -0.5094042, y: -1.630094, z: 0}
   - {x: -0.07053306, y: -1.3636363, z: 0}
@@ -2609,7 +2610,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -1.5752352, y: -1.3322884, z: 0}
   - {x: -1.0579934, y: -1.5360501, z: 0}
@@ -2697,7 +2698,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.74451375, y: 0.109717846, z: 0}
   - {x: 0.7915358, y: 0.611285, z: 0}
@@ -2785,7 +2786,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.82288384, y: 1.1442006, z: 0}
   - {x: 0.9012539, y: 0.6269592, z: 0}
@@ -2873,7 +2874,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -0.07053306, y: -1.3636363, z: 0}
   - {x: 0.18025053, y: -0.9247649, z: 0}
@@ -2961,7 +2962,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -1.9357369, y: 1.0815048, z: 0}
   - {x: -2.1551726, y: 0.611285, z: 0}
@@ -3049,7 +3050,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -2.1551726, y: 0.09404361, z: 0}
   - {x: -2.0297804, y: -0.43887138, z: 0}
@@ -3137,7 +3138,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -1.0579934, y: 1.6927898, z: 0}
   - {x: -1.4968652, y: 1.3949841, z: 0}
@@ -3225,7 +3226,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.4780568, y: -0.4075235, z: 0}
   - {x: 0.74451375, y: 0.109717846, z: 0}
@@ -3313,7 +3314,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.71316576, y: 1.1285269, z: 0}
   - {x: 0.63479567, y: 1.6457683, z: 0}
@@ -3401,7 +3402,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -1.8730409, y: -0.9247649, z: 0}
   - {x: -1.5752352, y: -1.3322884, z: 0}
@@ -3489,7 +3490,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.96395, y: 0.06269574, z: 0}
   - {x: 1.1050161, y: -0.43887138, z: 0}
@@ -3577,7 +3578,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -2.0297804, y: -0.43887138, z: 0}
   - {x: -1.8730409, y: -0.9247649, z: 0}
@@ -3665,7 +3666,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 1.293103, y: -1.4733541, z: 0}
   - {x: 1.293103, y: -1.6771159, z: 0}
@@ -3753,7 +3754,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.5407528, y: 1.8965518, z: 0}
   - {x: -0.007837007, y: 1.9122255, z: 0}
@@ -3841,7 +3842,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.7915358, y: 0.611285, z: 0}
   - {x: 0.71316576, y: 1.1285269, z: 0}
@@ -3929,7 +3930,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 1.1833861, y: -0.95611274, z: 0}
   - {x: 1.293103, y: -1.4733541, z: 0}
@@ -4017,7 +4018,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.18025053, y: -0.9247649, z: 0}
   - {x: 0.4780568, y: -0.4075235, z: 0}
@@ -4105,7 +4106,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -1.4968652, y: 1.3949841, z: 0}
   - {x: -1.9357369, y: 1.0815048, z: 0}
@@ -4193,7 +4194,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -0.007837007, y: 1.9122255, z: 0}
   - {x: -0.5094042, y: 1.8181819, z: 0}
@@ -4281,7 +4282,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -2.1551726, y: 0.611285, z: 0}
   - {x: -2.1551726, y: 0.09404361, z: 0}
@@ -4369,7 +4370,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.63479567, y: 1.6457683, z: 0}
   - {x: 0.82288384, y: 1.1442006, z: 0}
@@ -4457,7 +4458,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: -0.5094042, y: 1.8181819, z: 0}
   - {x: -1.0579934, y: 1.6927898, z: 0}
@@ -4545,7 +4546,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Positions:
   - {x: 0.9012539, y: 0.6269592, z: 0}
   - {x: 0.96395, y: 0.06269574, z: 0}
