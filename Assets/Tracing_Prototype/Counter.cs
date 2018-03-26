@@ -19,33 +19,33 @@ public class Counter : MonoBehaviour
         cdts = cdtg.GetComponent<Combined_Draw_Touch>();
 	}
 	
-	// Update is called once per frame
-	void Update ()
-    {
-        if(Input.GetButtonUp("Fire1"))
-        {
-            StartCoroutine("Delay_Time");
-        }
-	}
+	//// Update is called once per frame
+	//void Update ()
+ //   {
+ //       if(Input.GetButtonUp("Fire1"))
+ //       {
+ //           StartCoroutine("Delay_Time");
+ //       }
+	//}
 
-    IEnumerator Delay_Time ()
-    {
-        yield return new WaitForSeconds(0.1f);
-        Count();
-    }
+ //   IEnumerator Delay_Time ()
+ //   {
+ //       yield return new WaitForSeconds(0.1f);
+ //       Count();
+ //   }
 
-    void Count ()
-    {
-        GameObject checker = GameObject.Find("Checker");
-        Image checker_image = checker.GetComponent<Image>();
+    //public void Count ()
+    //{
+    //    GameObject checker = GameObject.Find("Checker");
+    //    Image checker_image = checker.GetComponent<Image>();
 
-        if (node_count >= min_count && cdts.total_nodes <= max_count)
-        {
-            checker_image.color = Color.green;
-        }
-        else
-        {
-            checker_image.color = Color.red;
-        }
-    }
+    //    if (node_count >= min_count && cdts.total_nodes <= max_count)
+    //    {
+    //        checker_image.color = Color.green;
+    //    }
+    //    else
+    //    {
+    //        checker_image.color = Color.red;
+    //    }
+    //}
 }
