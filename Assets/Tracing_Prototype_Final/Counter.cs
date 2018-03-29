@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Counter_P : MonoBehaviour
+public class Counter : MonoBehaviour
 {
-    public Tracer_Node_P[] node_scripts;
+    public Tracer_Node[] node_scripts;
 
     public int min_count;
     public int node_count = 0;
     public int max_count;
 
     private GameObject cam;
-    private Total_Counter_P tcs;
+    private Tracing_Final tfs;
 
     public bool iscorrect = false;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         cam = GameObject.Find("Main Camera");
-        tcs = cam.GetComponent<Total_Counter_P>();
-	}
+        tfs = cam.GetComponent<Tracing_Final>();
+    }
 
 
     public void Count()
@@ -31,9 +31,9 @@ public class Counter_P : MonoBehaviour
             node_scripts[i].Find_Nodes();
         }
 
-        tcs.total_node_count += node_count;
+        tfs.total_node_count += node_count;
 
-        if(node_count > min_count)
+        if (node_count > min_count)
         {
             iscorrect = true;
         }

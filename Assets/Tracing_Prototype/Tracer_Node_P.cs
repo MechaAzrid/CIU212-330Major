@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tracer_Node : MonoBehaviour
+public class Tracer_Node_P : MonoBehaviour
 {
     public Counter_P counter;
     private LineRenderer lr;
