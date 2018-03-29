@@ -155,7 +155,6 @@ public class Tracing_Final : MonoBehaviour
 
         for (int i = 0; i < tracers.Length; i++)
         {
-            Debug.Log("Loop: " + i);
             Counter counter = tracers[i].GetComponent<Counter>();
             counter.Count();
             if (counter.iscorrect)
