@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Total_Counter : MonoBehaviour
+public class Total_Counter_P : MonoBehaviour
 {
     public Combined_Draw_Touch drawing_script;
     public GameObject[] tracers;
@@ -22,7 +22,7 @@ public class Total_Counter : MonoBehaviour
 
 		for(int i = 0; i < tracers.Length; i++)
         {
-            Counter counter = tracers[i].GetComponent<Counter>();
+            Counter_P counter = tracers[i].GetComponent<Counter_P>();
             total_min_count = total_min_count + counter.min_count;
             total_max_count = total_max_count + counter.max_count;
         }
@@ -34,7 +34,7 @@ public class Total_Counter : MonoBehaviour
         for (int i = 0; i < tracers.Length; i++)
         {
             Debug.Log("Loop: " + i);
-            Counter counter = tracers[i].GetComponent<Counter>();
+            Counter_P counter = tracers[i].GetComponent<Counter_P>();
             counter.Count();
             if(counter.iscorrect)
             {

@@ -14,7 +14,7 @@ public class Combined_Draw_Touch : MonoBehaviour
     private Event e;
 
     public GameObject current_input_node;
-    public Input_Node input_node_script;
+    public Input_Node_P input_node_script;
     public GameObject current_output_node;
 
     private bool clicked = false;
@@ -41,7 +41,7 @@ public class Combined_Draw_Touch : MonoBehaviour
     void Node_Start()
     {
         current_input_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
-        input_node_script = current_input_node.GetComponent<Input_Node>();
+        input_node_script = current_input_node.GetComponent<Input_Node_P>();
         total_nodes++;
     }
 
@@ -49,7 +49,7 @@ public class Combined_Draw_Touch : MonoBehaviour
     {
         current_input_node = current_output_node;
         current_output_node = null;
-        input_node_script = current_input_node.GetComponent<Input_Node>();
+        input_node_script = current_input_node.GetComponent<Input_Node_P>();
         total_nodes++;
     }
 
@@ -71,7 +71,7 @@ public class Combined_Draw_Touch : MonoBehaviour
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             current_input_node = current_output_node;
             current_output_node = null;
-            input_node_script = current_input_node.GetComponent<Input_Node>();
+            input_node_script = current_input_node.GetComponent<Input_Node_P>();
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             current_input_node = null;
             total_nodes++;
@@ -106,7 +106,7 @@ public class Combined_Draw_Touch : MonoBehaviour
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             current_input_node = current_output_node;
             current_output_node = null;
-            input_node_script = current_input_node.GetComponent<Input_Node>();
+            input_node_script = current_input_node.GetComponent<Input_Node_P>();
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             current_input_node = null;
             total_nodes++;

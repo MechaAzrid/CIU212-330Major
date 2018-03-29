@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tracer_Node : MonoBehaviour
 {
-    public Counter counter;
+    public Counter_P counter;
     private LineRenderer lr;
     public GameObject reciever;
 

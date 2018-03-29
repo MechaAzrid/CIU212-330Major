@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Counter : MonoBehaviour
+public class Counter_P : MonoBehaviour
 {
     public Tracer_Node[] node_scripts;
 
@@ -12,7 +12,7 @@ public class Counter : MonoBehaviour
     public int max_count;
 
     private GameObject cam;
-    private Total_Counter tcs;
+    private Total_Counter_P tcs;
 
     public bool iscorrect = false;
 
@@ -20,7 +20,7 @@ public class Counter : MonoBehaviour
 	void Start ()
     {
         cam = GameObject.Find("Main Camera");
-        tcs = cam.GetComponent<Total_Counter>();
+        tcs = cam.GetComponent<Total_Counter_P>();
 	}
 
 

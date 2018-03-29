@@ -14,7 +14,7 @@ public class Touch_Controls : MonoBehaviour
     private Event e;
 
     public GameObject current_input_node;
-    public Input_Node input_node_script;
+    public Input_Node_P input_node_script;
     private GameObject current_output_node;
 
     void OnGUI ()
@@ -90,7 +90,7 @@ public class Touch_Controls : MonoBehaviour
     void Tapped ()
     {
         current_input_node = Instantiate(input_object_test, touch_world_position, transform.rotation) as GameObject;
-        input_node_script = current_input_node.GetComponent<Input_Node>();
+        input_node_script = current_input_node.GetComponent<Input_Node_P>();
         current_output_node = Instantiate(output_object_test, touch_world_position, transform.rotation) as GameObject;
         input_node_script.lr.SetPosition(1, current_output_node.transform.position);
     }

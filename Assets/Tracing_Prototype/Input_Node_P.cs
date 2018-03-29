@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Input_Node : MonoBehaviour
+public class Input_Node_P : MonoBehaviour
 {
     public LineRenderer lr;
 

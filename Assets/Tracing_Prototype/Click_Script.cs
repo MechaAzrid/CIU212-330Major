@@ -13,7 +13,7 @@ public class Click_Script : MonoBehaviour
     private Event e;
 
     public GameObject current_input_node;
-    public Input_Node input_node_script;
+    public Input_Node_P input_node_script;
     public GameObject current_output_node;
 
     public GameObject tracer;
@@ -39,7 +39,7 @@ public class Click_Script : MonoBehaviour
     void Node()
     {
         current_input_node = Instantiate(input_node, mouse_world_position, transform.rotation) as GameObject;
-        input_node_script = current_input_node.GetComponent<Input_Node>();
+        input_node_script = current_input_node.GetComponent<Input_Node_P>();
     }
 
     void Spawn_Tracer ()
