@@ -7,14 +7,19 @@ public class Total_Counter : MonoBehaviour
 {
     public Combined_Draw_Touch drawing_script;
     public GameObject[] tracers;
+    public int correctnumber = 0;
 
     public int total_min_count;
     public int total_max_count;
     public int total_node_count = 0;
 
+    private Combined_Draw_Touch cam_script;
+
 	// Use this for initialization
 	void Start ()
     {
+        cam_script = GetComponent<Combined_Draw_Touch>();
+
 		for(int i = 0; i < tracers.Length; i++)
         {
             Counter counter = tracers[i].GetComponent<Counter>();
@@ -28,14 +33,19 @@ public class Total_Counter : MonoBehaviour
 
         for (int i = 0; i < tracers.Length; i++)
         {
+            Debug.Log("Loop: " + i);
             Counter counter = tracers[i].GetComponent<Counter>();
-            total_node_count = total_node_count + counter.node_count;
+            counter.Count();
+            if(counter.iscorrect)
+            {
+                correctnumber++;
+            }
         }
 
         GameObject checker = GameObject.Find("Checker");
         Image checker_image = checker.GetComponent<Image>();
 
-        if (total_node_count >= total_min_count && drawing_script.total_nodes <= total_max_count)
+        if (correctnumber == tracers.Length && cam_script.total_nodes < total_max_count)
         {
             checker_image.color = Color.green;
         }

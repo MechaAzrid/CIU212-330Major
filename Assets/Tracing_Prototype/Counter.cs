@@ -5,47 +5,41 @@ using UnityEngine.UI;
 
 public class Counter : MonoBehaviour
 {
+    public Tracer_Node[] node_scripts;
+
     public int min_count;
     public int node_count = 0;
     public int max_count;
 
-    private GameObject cdtg;
-    private Combined_Draw_Touch cdts;
+    private GameObject cam;
+    private Total_Counter tcs;
+
+    public bool iscorrect = false;
 
 	// Use this for initialization
 	void Start ()
     {
-        cdtg = GameObject.Find("Main Camera");
-        cdts = cdtg.GetComponent<Combined_Draw_Touch>();
+        cam = GameObject.Find("Main Camera");
+        tcs = cam.GetComponent<Total_Counter>();
 	}
-	
-	//// Update is called once per frame
-	//void Update ()
- //   {
- //       if(Input.GetButtonUp("Fire1"))
- //       {
- //           StartCoroutine("Delay_Time");
- //       }
-	//}
 
- //   IEnumerator Delay_Time ()
- //   {
- //       yield return new WaitForSeconds(0.1f);
- //       Count();
- //   }
 
-    //public void Count ()
-    //{
-    //    GameObject checker = GameObject.Find("Checker");
-    //    Image checker_image = checker.GetComponent<Image>();
+    public void Count()
+    {
+        for (int i = 0; i < node_scripts.Length; i++)
+        {
+            node_scripts[i].Find_Nodes();
+        }
 
-    //    if (node_count >= min_count && cdts.total_nodes <= max_count)
-    //    {
-    //        checker_image.color = Color.green;
-    //    }
-    //    else
-    //    {
-    //        checker_image.color = Color.red;
-    //    }
-    //}
+        tcs.total_node_count += node_count;
+
+        if(node_count > min_count)
+        {
+            iscorrect = true;
+        }
+        else
+        {
+            iscorrect = false;
+        }
+    }
 }

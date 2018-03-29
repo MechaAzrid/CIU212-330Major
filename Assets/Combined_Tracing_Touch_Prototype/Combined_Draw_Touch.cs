@@ -60,14 +60,12 @@ public class Combined_Draw_Touch : MonoBehaviour
         // When the left click is pressed
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Button Hit");
             clicked = true;
             Node_Start();
         }
         // When the Left Click is lifted
         if (Input.GetButtonUp("Fire1"))
         {
-            Debug.Log("Button Lifted");
             clicked = false;
             current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);

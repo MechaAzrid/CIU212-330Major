@@ -15,26 +15,22 @@ public class Tracer_Node : MonoBehaviour
         lr.SetPosition(0, transform.position);
         lr.SetPosition(1, reciever.transform.position);
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    public void Find_Nodes ()
     {
-		if(Input.GetButtonUp("Fire1"))
+        Collider[] hitcolliders = Physics.OverlapSphere(transform.position, 0.5f);
+        int i = 0;
+        while (i < hitcolliders.Length)
         {
-            Collider[] hitcolliders = Physics.OverlapSphere(transform.position, 0.5f);
-            int i = 0;
-            while (i < hitcolliders.Length)
+            if (hitcolliders[i].tag == "input_node")
             {
-                if(hitcolliders[i].tag == "input_node")
-                {
-                    counter.node_count++;
-                    i = hitcolliders.Length + 1;         
-                }
-                else
-                {
-                    i++;
-                }
+                counter.node_count++;
+                i = hitcolliders.Length + 1;
+            }
+            else
+            {
+                i++;
             }
         }
-	}
+    }
 }
