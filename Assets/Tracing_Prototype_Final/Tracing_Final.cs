@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class Tracing_Final : MonoBehaviour
 {
+    [Header("-Place on the main Camera-")]
+
+    [Header("Items below need to be set in inspector")]
+
     [Header("Object used in line construction")]
     public GameObject input_node;
 
@@ -43,6 +47,8 @@ public class Tracing_Final : MonoBehaviour
     {
         c = Camera.main;
 
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+
         for (int i = 0; i < tracers.Length; i++)
         {
             Counter counter = tracers[i].GetComponent<Counter>();
@@ -79,10 +85,10 @@ public class Tracing_Final : MonoBehaviour
             current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             current_input_node = current_output_node;
-            current_output_node = null;
             input_node_script = current_input_node.GetComponent<Input_Node>();
-            input_node_script.lr.SetPosition(1, current_output_node.transform.position);
+            input_node_script.lr.SetPosition(1, current_input_node.transform.position);
             current_input_node = null;
+            current_output_node = null;
             total_nodes++;
         }
 
@@ -114,10 +120,10 @@ public class Tracing_Final : MonoBehaviour
             current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             current_input_node = current_output_node;
-            current_output_node = null;
             input_node_script = current_input_node.GetComponent<Input_Node>();
-            input_node_script.lr.SetPosition(1, current_output_node.transform.position);
+            input_node_script.lr.SetPosition(1, current_input_node.transform.position);
             current_input_node = null;
+            current_output_node = null;
             total_nodes++;
         }
 
@@ -152,7 +158,6 @@ public class Tracing_Final : MonoBehaviour
 
     public void Count()
     {
-
         for (int i = 0; i < tracers.Length; i++)
         {
             Counter counter = tracers[i].GetComponent<Counter>();

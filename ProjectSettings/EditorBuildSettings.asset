@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Combined_Tracing_Touch_Prototype/Combined_Draw_Touch.unity
-    guid: b9615ddbeeee03240bb994e5fa8d7c58
+    path: Assets/Tracing_Prototype_Final/Tracing_Final.unity
+    guid: 1e52756ccff847c4a9ae33bc7f5f0376
