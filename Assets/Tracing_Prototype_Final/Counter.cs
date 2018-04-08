@@ -18,6 +18,9 @@ public class Counter : MonoBehaviour
 
     [Header("Items below do not need to be touched")]
 
+    [Header("Total amount of nodes in template")]
+    public int total_nodes;
+
     [Header("The number of drawn nodes detected")]
     public int node_count = 0;
 
@@ -28,16 +31,16 @@ public class Counter : MonoBehaviour
     private Tracing_Final tfs;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         cam = GameObject.Find("Main Camera");
         tfs = cam.GetComponent<Tracing_Final>();
 
-        for(int i = 0; i < tracer_nodes.Length; i++)
+        for (int i = 0; i < tracer_nodes.Length; i++)
         {
             LineRenderer lr = tracer_nodes[i].GetComponent<LineRenderer>();
 
-            if(i == tracer_nodes.Length - 1)
+            if (i == tracer_nodes.Length - 1)
             {
                 lr.SetPosition(0, tracer_nodes[i].transform.position);
                 lr.SetPosition(1, tracer_nodes[i].transform.position);
