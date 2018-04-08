@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Tracing_Final : MonoBehaviour
 {
+    public Text x_text;
+    public Text y_test;
+
     [Header("-Place on the main Camera-")]
 
     [Header("Items below need to be set in inspector")]
@@ -13,9 +16,12 @@ public class Tracing_Final : MonoBehaviour
     public GameObject input_node;
 
     [Header("Array for the tracing templates")]
-    public GameObject[] tracers;
+    public List<GameObject> tracers = new List<GameObject>();
 
     [Header("Items below do not need to be touched")]
+
+    [Header("Whether the drawing is active")]
+    public bool isactive = false;
 
     [Header("Total number of nodes in scene")]
     public int total_nodes = 0;
@@ -49,7 +55,15 @@ public class Tracing_Final : MonoBehaviour
 
         Screen.orientation = ScreenOrientation.LandscapeLeft;
 
-        for (int i = 0; i < tracers.Length; i++)
+        if(tracers.Count > 0)
+        {
+            Begin();
+        }
+    }
+
+    public void Begin ()
+    {
+        for (int i = 0; i < tracers.Count; i++)
         {
             Counter counter = tracers[i].GetComponent<Counter>();
             total_min_count = total_min_count + counter.min_count;
@@ -70,57 +84,70 @@ public class Tracing_Final : MonoBehaviour
 
     void Update()
     {
-        // Mouse Input
+        x_text.text = "X: " + pointer_position.x;
+        y_test.text = "Y: " + pointer_position.y;
 
-        // When the left click is pressed
-        if (Input.GetButtonDown("Fire1"))
+        if (isactive)
         {
-            clicked = true;
-            Node_Start();
-        }
-        // When the Left Click is lifted
-        if (Input.GetButtonUp("Fire1"))
-        {
-            Lifted();
-        }
+            // Mouse Input
 
-        // Touch Input
+            // When the left click is pressed
+            if (Input.GetButtonDown("Fire1"))
+            {
+                clicked = true;
+                Node_Start();
+            }
+            // When the Left Click is lifted
+            if (Input.GetButtonUp("Fire1"))
+            {
+                Lifted();
+            }
 
-        // When the screen is tapped
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            pointer_position.x = Input.GetTouch(0).position.x;
-            pointer_position.y = Input.GetTouch(0).position.y;
-            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
-            clicked = true;
-            Node_Start();
-        }
-        // When the screen is detected a finger movement
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
-        {
-            pointer_position.x = Input.GetTouch(0).position.x;
-            pointer_position.y = Input.GetTouch(0).position.y;
-            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
-        }
-        // When the screen tap is lifted
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            pointer_position.x = Input.GetTouch(0).position.x;
-            pointer_position.y = Input.GetTouch(0).position.y;
-            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
-            Lifted();
-        }    
+            // Touch Input
 
-        if (current_input_node != null)
-        {
-            distance = Vector3.Distance(pointer_world_position, current_input_node.transform.position);
-        }
+            bool hold = false;
 
-        if (distance > 0.5f && clicked)
-        {
-            current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
-            input_node_script.lr.SetPosition(1, current_output_node.transform.position);
-            Node();
+            // When the screen is tapped
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                hold = true;
+                pointer_position.x = Input.GetTouch(0).position.x;
+                pointer_position.y = Input.GetTouch(0).position.y;
+                pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                clicked = true;
+                Node_Start();
+            }
+            // When the screen is detected a finger movement
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+            {
+                if (hold)
+                {
+                    pointer_position.x = Input.GetTouch(0).deltaPosition.x;
+                    pointer_position.y = Input.GetTouch(0).deltaPosition.y;
+                    pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                }
+            }
+            // When the screen tap is lifted
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                hold = false;
+                pointer_position.x = Input.GetTouch(0).position.x;
+                pointer_position.y = Input.GetTouch(0).position.y;
+                pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                Lifted();
+            }
+
+            if (current_input_node != null)
+            {
+                distance = Vector3.Distance(pointer_world_position, current_input_node.transform.position);
+            }
+
+            if (distance > 0.5f && clicked)
+            {
+                current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
+                input_node_script.lr.SetPosition(1, current_output_node.transform.position);
+                Node();
+            }
         }
     }
 
@@ -132,8 +159,8 @@ public class Tracing_Final : MonoBehaviour
         current_input_node = current_output_node;
         input_node_script = current_input_node.GetComponent<Input_Node>();
         input_node_script.lr.SetPosition(1, current_input_node.transform.position);
-        current_input_node = null;
-        current_output_node = null;
+        //current_input_node = null;
+        //current_output_node = null;
         total_nodes++;
     }
 
@@ -154,7 +181,7 @@ public class Tracing_Final : MonoBehaviour
 
     public void Count()
     {
-        for (int i = 0; i < tracers.Length; i++)
+        for (int i = 0; i < tracers.Count; i++)
         {
             Counter counter = tracers[i].GetComponent<Counter>();
             counter.Count();
@@ -167,7 +194,7 @@ public class Tracing_Final : MonoBehaviour
         GameObject checker = GameObject.Find("Checker");
         Image checker_image = checker.GetComponent<Image>();
 
-        if (correctnumber == tracers.Length && total_nodes < total_max_count)
+        if (correctnumber == tracers.Count && total_nodes < total_max_count)
         {
             checker_image.color = Color.green;
         }

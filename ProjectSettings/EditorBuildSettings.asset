@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tracing_Prototype_Final/Tracing_Final.unity
-    guid: 1e52756ccff847c4a9ae33bc7f5f0376
+    path: Assets/Playtesting_Scenes/Main_Scene.unity
+    guid: 4274037e2003b034e867d6588389b430
