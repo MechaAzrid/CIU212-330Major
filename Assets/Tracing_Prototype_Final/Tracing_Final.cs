@@ -81,15 +81,7 @@ public class Tracing_Final : MonoBehaviour
         // When the Left Click is lifted
         if (Input.GetButtonUp("Fire1"))
         {
-            clicked = false;
-            current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
-            input_node_script.lr.SetPosition(1, current_output_node.transform.position);
-            current_input_node = current_output_node;
-            input_node_script = current_input_node.GetComponent<Input_Node>();
-            input_node_script.lr.SetPosition(1, current_input_node.transform.position);
-            current_input_node = null;
-            current_output_node = null;
-            total_nodes++;
+            Lifted();
         }
 
         // Touch Input
@@ -116,17 +108,8 @@ public class Tracing_Final : MonoBehaviour
             pointer_position.x = Input.GetTouch(0).position.x;
             pointer_position.y = Input.GetTouch(0).position.y;
             pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
-            clicked = false;
-            current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
-            input_node_script.lr.SetPosition(1, current_output_node.transform.position);
-            current_input_node = current_output_node;
-            input_node_script = current_input_node.GetComponent<Input_Node>();
-            input_node_script.lr.SetPosition(1, current_input_node.transform.position);
-            current_input_node = null;
-            current_output_node = null;
-            total_nodes++;
-        }
-
+            Lifted();
+        }    
 
         if (current_input_node != null)
         {
@@ -139,6 +122,19 @@ public class Tracing_Final : MonoBehaviour
             input_node_script.lr.SetPosition(1, current_output_node.transform.position);
             Node();
         }
+    }
+
+    void Lifted()
+    {
+        clicked = false;
+        current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
+        input_node_script.lr.SetPosition(1, current_output_node.transform.position);
+        current_input_node = current_output_node;
+        input_node_script = current_input_node.GetComponent<Input_Node>();
+        input_node_script.lr.SetPosition(1, current_input_node.transform.position);
+        current_input_node = null;
+        current_output_node = null;
+        total_nodes++;
     }
 
     void Node_Start()
