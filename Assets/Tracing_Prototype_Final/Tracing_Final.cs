@@ -7,6 +7,7 @@ public class Tracing_Final : MonoBehaviour
 {
     public Text x_text;
     public Text y_test;
+    public Text state;
 
     [Header("-Place on the main Camera-")]
 
@@ -42,7 +43,8 @@ public class Tracing_Final : MonoBehaviour
     [Header("Number of correct templates")]
     public int correctnumber = 0;
 
-    private Vector3 pointer_world_position = new Vector3();
+    private Vector3 pointer_world_position_temp_location = new Vector3();
+    private Vector3 pointer_world_location;
     private Camera c;
     private Event e;
     private bool clicked = false;
@@ -75,17 +77,20 @@ public class Tracing_Final : MonoBehaviour
     void OnGUI()
     {
         e = Event.current;
-
-        pointer_position.x = e.mousePosition.x;
-        pointer_position.y = c.pixelHeight - e.mousePosition.y;
-
-        pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+        if(SystemInfo.deviceType == DeviceType.Desktop)
+        {
+            state.color = Color.red;
+            pointer_position.x = e.mousePosition.x;
+            pointer_position.y = c.pixelHeight - e.mousePosition.y;
+            pointer_world_position_temp_location = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+            pointer_world_location = pointer_world_position_temp_location;
+        }
     }
 
     void Update()
     {
-        x_text.text = "X: " + pointer_position.x;
-        y_test.text = "Y: " + pointer_position.y;
+        x_text.text = "X: " + pointer_world_location.x;
+        y_test.text = "Y: " + pointer_world_location.y;
 
         if (isactive)
         {
@@ -105,46 +110,41 @@ public class Tracing_Final : MonoBehaviour
 
             // Touch Input
 
-            bool hold = false;
-
             // When the screen is tapped
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                hold = true;
+                state.text = "State: Begin";
                 pointer_position.x = Input.GetTouch(0).position.x;
                 pointer_position.y = Input.GetTouch(0).position.y;
-                pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                pointer_world_position_temp_location = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                pointer_world_location = pointer_world_position_temp_location;
                 clicked = true;
                 Node_Start();
             }
-            // When the screen is detected a finger movement
+            //// When the screen is detected a finger movement
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
             {
-                if (hold)
-                {
-                    pointer_position.x = Input.GetTouch(0).deltaPosition.x;
-                    pointer_position.y = Input.GetTouch(0).deltaPosition.y;
-                    pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
-                }
+                state.text = "State: Moved";
+                pointer_position.x = Input.GetTouch(0).position.x;
+                pointer_position.y = Input.GetTouch(0).position.y;
+                pointer_world_position_temp_location = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                pointer_world_location = pointer_world_position_temp_location;
             }
             // When the screen tap is lifted
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
             {
-                hold = false;
-                pointer_position.x = Input.GetTouch(0).position.x;
-                pointer_position.y = Input.GetTouch(0).position.y;
-                pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+                state.text = "State: Ended";
                 Lifted();
             }
 
             if (current_input_node != null)
             {
-                distance = Vector3.Distance(pointer_world_position, current_input_node.transform.position);
+                distance = Vector3.Distance(pointer_world_location, current_input_node.transform.position);
             }
 
             if (distance > 0.5f && clicked)
             {
-                current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
+                current_output_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
                 input_node_script.lr.SetPosition(1, current_output_node.transform.position);
                 Node();
             }
@@ -154,7 +154,7 @@ public class Tracing_Final : MonoBehaviour
     void Lifted()
     {
         clicked = false;
-        current_output_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
+        current_output_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
         input_node_script.lr.SetPosition(1, current_output_node.transform.position);
         current_input_node = current_output_node;
         input_node_script = current_input_node.GetComponent<Input_Node>();
@@ -166,7 +166,7 @@ public class Tracing_Final : MonoBehaviour
 
     void Node_Start()
     {
-        current_input_node = Instantiate(input_node, pointer_world_position, transform.rotation) as GameObject;
+        current_input_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
         input_node_script = current_input_node.GetComponent<Input_Node>();
         total_nodes++;
     }
