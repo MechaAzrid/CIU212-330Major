@@ -1187,7 +1187,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'X:'
 --- !u!222 &674096431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2002,7 +2002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Y:'
 --- !u!222 &1338508898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2138,6 +2138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea8e10f34dd48844bf2afa3e14354a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x_text: {fileID: 674096430}
+  y_test: {fileID: 1338508897}
   input_node: {fileID: 1418522731699502, guid: 8f9d6872dda42614bb1e2de8b81ef50c, type: 2}
   tracers: []
   isactive: 0
