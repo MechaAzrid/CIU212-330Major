@@ -19,13 +19,18 @@ public class Tracing_Final : MonoBehaviour
     [Header("Array for the tracing templates")]
     public List<GameObject> tracers = new List<GameObject>();
 
-    [Header("Items below do not need to be touched")]
+    [Header("Variable(s) that can be set but otherwise will be done automatically")]
 
     [Header("Whether the drawing is active")]
     public bool isactive = false;
 
+    [Header("Items below do not need to be touched")]
+
     [Header("Total number of nodes in scene")]
     public int total_nodes = 0;
+
+    [Header("Node list")]
+    public List<GameObject> node_list = new List<GameObject>();
 
     [Header("Current pointer position")]
     public Vector3 pointer_position = new Vector3();
@@ -49,6 +54,8 @@ public class Tracing_Final : MonoBehaviour
     private Event e;
     private bool clicked = false;
     private float distance;
+    private GameObject checker;
+    private Image checker_image;
 
     // Use this for initialization
     void Start()
@@ -70,6 +77,9 @@ public class Tracing_Final : MonoBehaviour
             Counter counter = tracers[i].GetComponent<Counter>();
             total_min_count = total_min_count + counter.min_count;
             total_max_count = total_max_count + counter.max_count;
+
+            checker = GameObject.Find("Checker");
+            checker_image = checker.GetComponent<Image>();
         }
     }
 
@@ -145,6 +155,7 @@ public class Tracing_Final : MonoBehaviour
             if (distance > 0.5f && clicked)
             {
                 current_output_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
+                node_list.Add(current_output_node);
                 input_node_script.lr.SetPosition(1, current_output_node.transform.position);
                 Node();
             }
@@ -155,18 +166,20 @@ public class Tracing_Final : MonoBehaviour
     {
         clicked = false;
         current_output_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
+        node_list.Add(current_output_node);
         input_node_script.lr.SetPosition(1, current_output_node.transform.position);
         current_input_node = current_output_node;
         input_node_script = current_input_node.GetComponent<Input_Node>();
         input_node_script.lr.SetPosition(1, current_input_node.transform.position);
-        //current_input_node = null;
-        //current_output_node = null;
+        current_input_node = null;
+        current_output_node = null;
         total_nodes++;
     }
 
     void Node_Start()
     {
         current_input_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
+        node_list.Add(current_input_node);
         input_node_script = current_input_node.GetComponent<Input_Node>();
         total_nodes++;
     }
@@ -191,9 +204,6 @@ public class Tracing_Final : MonoBehaviour
             }
         }
 
-        GameObject checker = GameObject.Find("Checker");
-        Image checker_image = checker.GetComponent<Image>();
-
         if (correctnumber == tracers.Count && total_nodes < total_max_count)
         {
             checker_image.color = Color.green;
@@ -202,5 +212,16 @@ public class Tracing_Final : MonoBehaviour
         {
             checker_image.color = Color.red;
         }
+    }
+
+    public void Reset_Letters ()
+    {
+        total_nodes = 0;
+        for(int i = 0;i < node_list.Count; i++)
+        {
+            Destroy(node_list[i]);
+        }
+        checker_image.color = Color.white;
+        node_list.Clear();
     }
 }
