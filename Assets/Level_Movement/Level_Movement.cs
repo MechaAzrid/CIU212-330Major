@@ -50,7 +50,7 @@ public class Level_Movement : MonoBehaviour
         // Touch Input
 
         // When the screen is tapped
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             pointer_position.x = Input.GetTouch(0).position.x;
             pointer_position.y = Input.GetTouch(0).position.y;
@@ -60,11 +60,56 @@ public class Level_Movement : MonoBehaviour
         }
 
         // When the screen is detected a finger movement
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
             pointer_position.x = Input.GetTouch(0).position.x;
             pointer_position.y = Input.GetTouch(0).position.y;
             pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+        }
+
+        Vector3 finger0_o = new Vector3();
+        Vector3 finger1_o = new Vector3();
+
+        Vector3 finger0 = new Vector3();
+        Vector3 finger1 = new Vector3();
+
+        if (Input.touchCount == 2 && Input.GetTouch(0).phase == TouchPhase.Began && Input.GetTouch(1).phase == TouchPhase.Began)
+        {
+
+            finger0_o.x = Input.GetTouch(0).position.x;
+            finger0_o.y = Input.GetTouch(0).position.y;
+            finger1_o.x = Input.GetTouch(1).position.x;
+            finger1_o.y = Input.GetTouch(1).position.y;
+        }
+
+        // When the screen is detected a finger movement
+        if (Input.touchCount == 2 && Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(1).phase == TouchPhase.Moved)
+        {
+
+            finger0.x = Input.GetTouch(0).position.x;
+            finger0.y = Input.GetTouch(0).position.y;
+            finger1.x = Input.GetTouch(1).position.x;
+            finger1.y = Input.GetTouch(1).position.y;
+
+            if(finger0.y > 0 && finger1.y < 0 && finger0.x < finger0_o.x && finger1.x > finger1_o.x)
+            {
+                transform.RotateAround(Vector3.zero, Vector3.forward, 1.0f);
+            }
+
+            if (finger0.y < 0 && finger1.y > 0 && finger0.x > finger0_o.x && finger1.x < finger1_o.x)
+            {
+                transform.RotateAround(Vector3.zero, Vector3.forward, 1.0f);
+            }
+
+            if (finger0.y < 0 && finger1.y > 0 && finger0.x < finger0_o.x && finger1.x > finger1_o.x)
+            {
+                transform.RotateAround(Vector3.zero, Vector3.back, 1.0f);
+            }
+
+            if (finger0.y > 0 && finger1.y < 0 && finger0.x > finger0_o.x && finger1.x < finger1_o.x)
+            {
+                transform.RotateAround(Vector3.zero, Vector3.back, 1.0f);
+            }
         }
 
         // When the screen tap is lifted
