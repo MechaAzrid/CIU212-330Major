@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - input_node
+  - Draggable
   layers:
   - Default
   - TransparentFX
