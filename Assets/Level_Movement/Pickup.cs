@@ -15,8 +15,10 @@ public class Pickup : MonoBehaviour
 
     public bool locked = false;
 
-	// Use this for initialization
-	void Start ()
+    public string temp_data;
+
+    // Use this for initialization
+    void Start ()
     {
         object_renderer = GetComponent<Renderer>();
         pickup_color = object_renderer.material.color;

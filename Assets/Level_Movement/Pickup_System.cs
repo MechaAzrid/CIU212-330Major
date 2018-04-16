@@ -14,6 +14,13 @@ public class Pickup_System : MonoBehaviour
     public GameObject pickup_object;
     public Pickup pickup;
 
+    public List<string> temp_data_array = new List<string>();
+
+    public Text data_text;
+    private Text temp_text;
+    private Vector3 start_position;
+    private Vector3 temp_position;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -29,6 +36,10 @@ public class Pickup_System : MonoBehaviour
     public void Picked_Up ()
     {
         pickup_slots[array_number].color = pickup.pickup_color;
+        temp_data_array.Add(pickup.temp_data);
+        //temp_position = new Vector3(start_position.x, start_position.y, start_position.z - 20);
+        //temp_text = Instantiate(data_text, temp_position) as Text;
+
         array_number++;
         Destroy(pickup_object);
         pickup_object = null;
