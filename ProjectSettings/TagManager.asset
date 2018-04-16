@@ -7,7 +7,10 @@ TagManager:
   - input_node
   - Draggable
   - PLayer
-  - Pickup
+  - obstacle_start
+  - obstacle_end
+  - obstacle_moveable
+  - obstacle_immoveable
   layers:
   - Default
   - TransparentFX
