@@ -6,6 +6,8 @@ TagManager:
   tags:
   - input_node
   - Draggable
+  - PLayer
+  - Pickup
   layers:
   - Default
   - TransparentFX
