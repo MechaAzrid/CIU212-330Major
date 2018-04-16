@@ -14,6 +14,8 @@ public class Pickup_System : MonoBehaviour
     public GameObject pickup_object;
     public Pickup pickup;
 
+    public GameObject data_start;
+
     public List<string> temp_data_array = new List<string>();
 
     public Text data_text;
@@ -24,7 +26,7 @@ public class Pickup_System : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-
+        start_position = data_start.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -37,8 +39,13 @@ public class Pickup_System : MonoBehaviour
     {
         pickup_slots[array_number].color = pickup.pickup_color;
         temp_data_array.Add(pickup.temp_data);
-        //temp_position = new Vector3(start_position.x, start_position.y, start_position.z - 20);
-        //temp_text = Instantiate(data_text, temp_position) as Text;
+
+        temp_text = Instantiate(data_text, data_start.transform) as Text;
+        temp_position = new Vector3(start_position.x, start_position.y - 40, start_position.z);
+        temp_text.transform.position = temp_position;
+        start_position = temp_position;
+        temp_text.text = pickup.temp_data.ToString();
+        temp_text = null;
 
         array_number++;
         Destroy(pickup_object);

@@ -32,7 +32,7 @@ public class Pickup : MonoBehaviour
     {
         distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if(distance < 1.0f && !locked)
+        if(distance < 1.5f && !locked)
         {
             locked = true;
             pickup_system.pickup_object = gameObject;
