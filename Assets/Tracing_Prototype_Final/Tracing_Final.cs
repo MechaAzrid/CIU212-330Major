@@ -54,6 +54,7 @@ public class Tracing_Final : MonoBehaviour
     private Event e;
     private bool clicked = false;
     private float distance;
+    private bool locked = false;
     private GameObject checker;
     private Image checker_image;
 
@@ -194,30 +195,45 @@ public class Tracing_Final : MonoBehaviour
 
     public void Count()
     {
-        for (int i = 0; i < tracers.Count; i++)
+        if(!locked)
         {
-            Counter counter = tracers[i].GetComponent<Counter>();
-            counter.Count();
-            if (counter.iscorrect)
+            locked = true;
+            for (int i = 0; i < tracers.Count; i++)
             {
-                correctnumber++;
+                Counter counter = tracers[i].GetComponent<Counter>();
+                counter.Count();
+                if (counter.iscorrect)
+                {
+                    correctnumber++;
+                }
             }
-        }
 
-        if (correctnumber == tracers.Count && total_nodes < total_max_count)
-        {
-            checker_image.color = Color.green;
-        }
-        else
-        {
-            checker_image.color = Color.red;
+            if (correctnumber == tracers.Count && total_nodes < total_max_count)
+            {
+                checker_image.color = Color.green;
+            }
+            else
+            {
+                checker_image.color = Color.red;
+            }
         }
     }
 
     public void Reset_Letters ()
     {
         total_nodes = 0;
-        for(int i = 0;i < node_list.Count; i++)
+        total_node_count = 0;
+        correctnumber = 0;
+        locked = false;
+
+        for (int i = 0; i < tracers.Count; i++)
+        {
+            Counter counter = tracers[i].GetComponent<Counter>();
+            counter.node_count = 0;
+            counter.iscorrect = false;
+        }
+
+        for (int i = 0;i < node_list.Count; i++)
         {
             Destroy(node_list[i]);
         }
