@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum obstacle_states { none, start, moveable, immoveable, end }
-
 public class Obstacle_Dot : MonoBehaviour
 {
-    public obstacle_states obstacle_state;
-
     private LineRenderer lr;
 
     private Obstacle_Prototype op;
@@ -35,7 +31,7 @@ public class Obstacle_Dot : MonoBehaviour
         if(distance < 0.2f && op.dragging && !locked)
         {
             locked = true;
-            op.Change_Dot (lr);
+            op.Change_Dot (gameObject, lr, locked);
         }
 	}
 }
