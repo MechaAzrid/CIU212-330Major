@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Obstacle_Dot : MonoBehaviour
 {
+    public GameObject ray_position;
+
     private LineRenderer lr;
 
     private Obstacle_Prototype op;
@@ -26,9 +28,9 @@ public class Obstacle_Dot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        distance = Vector3.Distance(transform.position, op.pointer_world_location);
+        distance = Vector3.Distance(transform.position, op.pointer_world_position);
 
-        if(distance < 0.2f && op.dragging && !locked)
+        if(distance < 0.2f && op.dragging && !locked && gameObject.tag != "obstacle_immoveable")
         {
             locked = true;
             op.Change_Dot (gameObject, lr, locked);

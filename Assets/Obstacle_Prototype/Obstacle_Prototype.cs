@@ -18,7 +18,7 @@ public class Obstacle_Prototype : MonoBehaviour
 
     public Image checker;
 
-    public Vector3 pointer_world_location = new Vector3();
+    public Vector3 pointer_world_position = new Vector3();
 
     public bool dragging;
 
@@ -30,6 +30,11 @@ public class Obstacle_Prototype : MonoBehaviour
 
     private Ray ray;
     private RaycastHit hit;
+
+    private RaycastHit line_hit;
+
+    private Obstacle_Dot od;
+    private GameObject raycast_point;
 
     // Use this for initialization
     void Start ()
@@ -47,7 +52,7 @@ public class Obstacle_Prototype : MonoBehaviour
         {
             pointer_position.x = e.mousePosition.x;
             pointer_position.y = c.pixelHeight - e.mousePosition.y;
-            pointer_world_location = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
             
         }
     }
@@ -55,6 +60,12 @@ public class Obstacle_Prototype : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Time.timeScale = 0;
+            Debug.Log("time");
+        }
+
         // Mouse Input
 
         // When the mouse is clicked
@@ -73,6 +84,49 @@ public class Obstacle_Prototype : MonoBehaviour
         // when the mouse is lifted
         if (Input.GetButtonUp("Fire1") && dragging)
         {
+            Lifted();
+        }
+
+        // Touch Controls
+
+        // When the screen is tapped
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            pointer_position.x = Input.GetTouch(0).position.x;
+            pointer_position.y = Input.GetTouch(0).position.y;
+            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+
+            ray = Camera.main.ScreenPointToRay(pointer_world_position);
+            Clicked();
+        }
+
+        // When the screen is held & moving
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        {
+            pointer_position.x = Input.GetTouch(0).position.x;
+            pointer_position.y = Input.GetTouch(0).position.y;
+            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+
+            Drag();
+        }
+
+        // When the screen is held & isn't moving
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Stationary)
+        {
+            pointer_position.x = Input.GetTouch(0).position.x;
+            pointer_position.y = Input.GetTouch(0).position.y;
+            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+
+            Drag();
+        }
+
+        // When the screen is lifted
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        {
+            pointer_position.x = Input.GetTouch(0).position.x;
+            pointer_position.y = Input.GetTouch(0).position.y;
+            pointer_world_position = c.ScreenToWorldPoint(new Vector3(pointer_position.x, pointer_position.y, 10.0f));
+
             Lifted();
         }
     }
@@ -97,7 +151,28 @@ public class Obstacle_Prototype : MonoBehaviour
 
     void Drag()
     {
-        obstacle_linerenderer.SetPosition(1, pointer_world_location);
+        //Vector3 beggining_direction = raycast_point.transform.position;
+        //Vector3 endding_direction = new Vector3(pointer_world_position.x, pointer_world_position.y, 0.0f);
+        //Vector3 direction = endding_direction - beggining_direction;
+
+
+        //if (Physics.Raycast(raycast_point.transform.position, direction, out line_hit))
+        //{
+        //    Debug.Log("ray out");
+
+        //    if (hit.transform.gameObject != null)
+        //    {
+        //        Debug.Log("Object: " + hit.transform.gameObject);
+        //    }
+
+        //    if (hit.transform.gameObject.tag == "obstacle_immoveable")
+        //    {
+        //        Debug.Log("ray hit");
+        //        obstacle_linerenderer.SetPosition(1, hit.point);
+        //    }
+        //}
+
+        obstacle_linerenderer.SetPosition(1, pointer_world_position);
     }
 
     void Lifted()
@@ -136,6 +211,8 @@ public class Obstacle_Prototype : MonoBehaviour
         }
 
         current_node_a = current_node;
+        od = current_node_a.GetComponent<Obstacle_Dot>();
+        raycast_point = od.ray_position;
         obstacle_linerenderer = lr;
         current_node_count++;
     }
