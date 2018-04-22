@@ -39,5 +39,5 @@ public class Pickup : MonoBehaviour
             pickup_system.pickup = gameObject.GetComponent<Pickup>();
             pickup_system.Picked_Up();
         }
-	}
+    }
 }

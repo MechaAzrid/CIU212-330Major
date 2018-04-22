@@ -23,8 +23,16 @@ public class Pickup_System : MonoBehaviour
     private Vector3 start_position;
     private Vector3 temp_position;
 
-	// Use this for initialization
-	void Start ()
+    public Canvas drawingCanvas;
+    public GameObject player;
+    public GameObject worldLayout;
+
+    public Level_Movement LM;
+    public Tracing_Final TF;
+    public Main_Transition MF;
+
+    // Use this for initialization
+    void Start ()
     {
         start_position = data_start.transform.position;
 	}
@@ -51,5 +59,17 @@ public class Pickup_System : MonoBehaviour
         Destroy(pickup_object);
         pickup_object = null;
         pickup = null;
+
+        drawingCanvas.gameObject.SetActive(true);
+
+        if (drawingCanvas == true)
+        {
+            temp_position = new Vector3(start_position.x, start_position.y - 40, start_position.z);
+            player.gameObject.SetActive(false);
+            worldLayout.gameObject.SetActive(false);
+            LM.enabled = false;
+            TF.enabled = true;
+            MF.enabled = true;
+        }        
     }
 }
