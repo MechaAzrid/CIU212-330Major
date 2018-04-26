@@ -24,17 +24,22 @@ public class Pickup_System : MonoBehaviour
     private Vector3 temp_position;
 
     public Canvas drawingCanvas;
+    public GameObject drawingObject;
     public GameObject player;
     public GameObject worldLayout;
 
-    public Level_Movement LM;
-    public Tracing_Final TF;
-    public Main_Transition MF;
+    public Level_Movement levelMovement;
+    public Tracing_Final tracingFinal;
+    public Main_Transition mainTransition;
+
+    public GameObject mainCamera;
 
     // Use this for initialization
     void Start ()
     {
         start_position = data_start.transform.position;
+
+        mainCamera = GameObject.Find("Main Camera");
 	}
 	
 	// Update is called once per frame
@@ -60,16 +65,23 @@ public class Pickup_System : MonoBehaviour
         pickup_object = null;
         pickup = null;
 
+        //If the player collects the pick-up then enable the Drawing UI Canvas
         drawingCanvas.gameObject.SetActive(true);
 
         if (drawingCanvas == true)
         {
-            temp_position = new Vector3(start_position.x, start_position.y - 40, start_position.z);
+            //Reset the camera to it's default position before the player moved
+            mainCamera.transform.position = new Vector3(2.225132f, 0.2261306f, -10.08702f);
+
+            //Disable initial scripts and gameobjects first
+            drawingObject.gameObject.SetActive(false);
             player.gameObject.SetActive(false);
             worldLayout.gameObject.SetActive(false);
-            LM.enabled = false;
-            TF.enabled = true;
-            MF.enabled = true;
+            levelMovement.enabled = false;
+
+            //Enable scripts and gameobjects next
+            tracingFinal.enabled = true;
+            mainTransition.enabled = true;
         }        
     }
 }
