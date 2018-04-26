@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Tracing_Final : MonoBehaviour
 {
@@ -58,6 +60,14 @@ public class Tracing_Final : MonoBehaviour
     private GameObject checker;
     private Image checker_image;
 
+    public Canvas drawingCanvas;
+    public GameObject player;
+    public GameObject worldLayout;
+
+    public Level_Movement levelMovement;
+    public Tracing_Final tracingFinal;
+    public Main_Transition mainTransition;
+
     // Use this for initialization
     void Start()
     {
@@ -69,6 +79,8 @@ public class Tracing_Final : MonoBehaviour
         {
             Begin();
         }
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Begin ()
@@ -211,6 +223,9 @@ public class Tracing_Final : MonoBehaviour
             if (correctnumber == tracers.Count && total_nodes < total_max_count)
             {
                 checker_image.color = Color.green;
+
+                SceneManager.LoadScene("Greybox");
+
             }
             else
             {
