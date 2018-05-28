@@ -6,17 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Level_Movement/Prototype_Selector.unity
-    guid: e2a5ba25e297bb042a1e52bf906d0301
+    path: Assets/Greybox_Testing/Multiple_Scene_Greybox/MSG_Base.unity
+    guid: c9e08603354f72543ac06fcf85dbcf26
   - enabled: 1
-    path: Assets/Level_Movement/Level_Movement_Prototype.unity
-    guid: 93f69d012357e154b82cd6ec0362483f
-  - enabled: 1
-    path: Assets/Drag_Mechanic/Drag_Mechanic_Prototype.unity
-    guid: d1e4aaab25bd08c43a0af111aeaf78b5
-  - enabled: 1
-    path: Assets/Playtesting_Scenes/Main_Scene.unity
-    guid: 4274037e2003b034e867d6588389b430
-  - enabled: 1
-    path: Assets/Obstacle_Prototype/Obstacle.unity
-    guid: 700c7b1f524bf8e41aa6f09968214089
+    path: Assets/Greybox_Testing/Multiple_Scene_Greybox/MSG_Level.unity
+    guid: efe1b5ac9dc3c9642b8bf0d774cd6f3a
+  m_configObjects: {}
