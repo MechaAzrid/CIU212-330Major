@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Greybox_Testing/Multiple_Scene_Greybox/MSG_Base.unity
+    path: Assets/Greybox_Testing/Multiple_Scene_Greybox/MSG_Start.unity
     guid: c9e08603354f72543ac06fcf85dbcf26
   - enabled: 1
     path: Assets/Greybox_Testing/Multiple_Scene_Greybox/MSG_Level.unity
-    guid: efe1b5ac9dc3c9642b8bf0d774cd6f3a
+    guid: 3cce2c73fce870140840199ef17d409c
   m_configObjects: {}

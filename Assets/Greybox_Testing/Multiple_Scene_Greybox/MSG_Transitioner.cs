@@ -3,27 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum camera_states { None, Pause, Movement, Tracing, Dragging, Obstacle }
+
 public class MSG_Transitioner : MonoBehaviour
 {
+    [Header("The State that the camera is in")]
+    public camera_states cam_states;
+
+    [Header("Level Names")]
     public string level_name;
 
-    // Use this for initialization
-    void Start()
-    {
+    [Header("Sticker Arrays")]
+    public bool[] tutorial_stickers;
 
+    // Use this for initialization
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            SceneManager.LoadSceneAsync(level_name, LoadSceneMode.Additive);
-        }
+        
+    }
 
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            SceneManager.UnloadSceneAsync(level_name);
-        }
+    public void Movement_Active ()
+    {
+        cam_states = camera_states.Movement;
+    }
+
+    public void Obstacle_Active ()
+    {
+        cam_states = camera_states.Obstacle;
     }
 }

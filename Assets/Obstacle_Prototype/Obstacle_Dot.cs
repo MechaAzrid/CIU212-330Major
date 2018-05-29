@@ -30,7 +30,7 @@ public class Obstacle_Dot : MonoBehaviour
     {
         distance = Vector3.Distance(transform.position, op.pointer_world_position);
 
-        if(distance < 0.2f && op.dragging && !locked && gameObject.tag != "obstacle_immoveable")
+        if(distance < 0.2f && op.dragging && !locked)
         {
             locked = true;
             op.Change_Dot (gameObject, lr, locked);

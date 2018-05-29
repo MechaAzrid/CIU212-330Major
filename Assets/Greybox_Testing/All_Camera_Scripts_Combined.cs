@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum camera_states { None, Movement, Tracing, Dragging, Obstacle }
-
 public class All_Camera_Scripts_Combined : MonoBehaviour
 {
     [Header("- Place on the main camera -")]

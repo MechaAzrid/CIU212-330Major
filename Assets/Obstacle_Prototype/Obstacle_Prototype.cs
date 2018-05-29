@@ -165,11 +165,11 @@ public class Obstacle_Prototype : MonoBehaviour
         //        Debug.Log("Object: " + hit.transform.gameObject);
         //    }
 
-        //    if (hit.transform.gameObject.tag == "obstacle_immoveable")
-        //    {
-        //        Debug.Log("ray hit");
-        //        obstacle_linerenderer.SetPosition(1, hit.point);
-        //    }
+        //if (hit.transform.gameObject.tag == "obstacle_immoveable")
+        //{
+        //    Debug.Log("ray hit");
+        //    obstacle_linerenderer.SetPosition(1, hit.point);
+        //}
         //}
 
         obstacle_linerenderer.SetPosition(1, pointer_world_position);

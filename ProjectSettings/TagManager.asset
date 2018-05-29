@@ -8,6 +8,11 @@ TagManager:
   - Draggable
   - PLayer
   - Pickup
+  - obstacle_moveable
+  - obstacle_immoveable
+  - obstacle_end
+  - obstacle_start
+  - Data
   layers:
   - Default
   - TransparentFX
