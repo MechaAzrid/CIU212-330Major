@@ -58,7 +58,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
             cam.transform.position = new Vector3(10000, 0, -10);
 
             GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
-            cam_ob.obstacles_active();
+            cam_ob.obstacles_active(this);
         }
     }
 }

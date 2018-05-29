@@ -6,21 +6,27 @@ public class Obstacle_Dot : MonoBehaviour
 {
     public GameObject ray_position;
 
-    private LineRenderer lr;
+    public LineRenderer lr;
 
-    private Obstacle_Prototype op;
-    private float distance;
+    public Vector3 og_pos;
+    public Obstacle_Prototype op;
+    public MSG_Obstacle_Prototype mop;
 
-    private bool locked;
+    public float distance;
+
+    public bool locked;
 
 	// Use this for initialization
 	void Start ()
     {
+        og_pos = transform.position;
+
         lr = GetComponent<LineRenderer>();
-        lr.SetPosition(0, transform.position);
-        lr.SetPosition(1, transform.position);
+        lr.SetPosition(0, og_pos);
+        lr.SetPosition(1, og_pos);
 
         op = GameObject.Find("Main Camera").GetComponent<Obstacle_Prototype>();
+        mop = GameObject.Find("Main Camera").GetComponent<MSG_Obstacle_Prototype>();
     }
 
 
@@ -28,12 +34,13 @@ public class Obstacle_Dot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        distance = Vector3.Distance(transform.position, op.pointer_world_position);
+        distance = Vector3.Distance(transform.position, mop.pointer_world_position);
 
-        if(distance < 0.2f && op.dragging && !locked)
+        if (distance < 0.2f && !locked && mop.dragging)
         {
             locked = true;
-            op.Change_Dot (gameObject, lr, locked);
+
+            mop.Change_Dot(gameObject, lr, locked);
         }
 	}
 }

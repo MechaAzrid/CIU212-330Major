@@ -22,6 +22,7 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
 
     public Vector3 original_cam_position;
     public int obstacle_int = -1;
+    private MSG_Obstacle_Trigger trigger;
 
     private Vector3 pointer_position = new Vector3();
     private Camera c;
@@ -191,13 +192,40 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
         obstacle_linerenderer = lr;
     }
 
-    public void obstacles_active ()
+    public void obstacles_active ( MSG_Obstacle_Trigger trigg)
     {
+        trigger = trigg;
         obstacles[obstacle_int].SetActive(true);
     }
 
     public void Continue_Button ()
     {
+        continue_button.SetActive(false);
+        checker.color = Color.white;
+        obstacles[obstacle_int].SetActive(false);
+        obstacle_int = -1;
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
+        trigger.passed = true;
+        trigger = null;
+        transform.position = original_cam_position;
+        original_cam_position = new Vector3(0, 0, 0);
+    }
 
+    public void Reset_Button ()
+    {
+        Obstacle_Dot[] obd = FindObjectsOfType<Obstacle_Dot>();
+
+        for (int i = 0; i < obd.Length; i++)
+        {
+            obd[i].lr.SetPosition(0, obd[i].og_pos);
+            obd[i].lr.SetPosition(1, obd[i].og_pos);
+
+            obd[i].locked = false;
+        }
+
+        continue_button.SetActive(false);
+        checker.color = Color.white;
+        incorrect = false;
+        end_hit = false;
     }
 }
