@@ -54,9 +54,15 @@ public class MSG_Level_Movement : MonoBehaviour
                 {
                     Vector3 line_check = new Vector3(hit.point.x, hit.point.y, hit.point.z - 0.1f);
                     RaycastHit blockage;
+
                     if (Physics.Linecast(player.transform.position, line_check, out blockage))
                     {
+                        float distance = Vector3.Distance(player.transform.position, blockage.transform.position);
 
+                        if(distance > 1.2f)
+                        {
+                            player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
+                        }
                     }
                     else
                     {
@@ -78,7 +84,17 @@ public class MSG_Level_Movement : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, 100))
                 {
-                    player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
+                    Vector3 line_check = new Vector3(hit.point.x, hit.point.y, hit.point.z - 0.1f);
+                    RaycastHit blockage;
+
+                    if (Physics.Linecast(player.transform.position, line_check, out blockage))
+                    {
+
+                    }
+                    else
+                    {
+                        player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
+                    }
                 }
             }
 
@@ -93,7 +109,17 @@ public class MSG_Level_Movement : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, 100))
                 {
-                    player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
+                    Vector3 line_check = new Vector3(hit.point.x, hit.point.y, hit.point.z - 0.1f);
+                    RaycastHit blockage;
+
+                    if (Physics.Linecast(player.transform.position, line_check, out blockage))
+                    {
+
+                    }
+                    else
+                    {
+                        player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
+                    }
                 }
             }
 

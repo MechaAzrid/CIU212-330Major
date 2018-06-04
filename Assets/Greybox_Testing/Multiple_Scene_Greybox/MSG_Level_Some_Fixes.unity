@@ -6032,6 +6032,7 @@ GameObject:
   - component: {fileID: 173447167}
   - component: {fileID: 173447166}
   - component: {fileID: 173447165}
+  - component: {fileID: 173447169}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -6105,6 +6106,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &173447169
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173447164}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &173680214
 GameObject:
   m_ObjectHideFlags: 0
@@ -58962,9 +58978,8 @@ GameObject:
   - component: {fileID: 1720087148}
   - component: {fileID: 1720087147}
   - component: {fileID: 1720087150}
-  - component: {fileID: 1720087151}
-  m_Layer: 1
-  m_Name: Trigger
+  m_Layer: 0
+  m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58977,8 +58992,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720087145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1}
-  m_LocalScale: {x: 4, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6}
+  m_LocalScale: {x: 4, y: 2, z: 10}
   m_Children: []
   m_Father: {fileID: 1175004326}
   m_RootOrder: 9
@@ -59024,7 +59039,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720087145}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -59044,10 +59059,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1720087145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6b919cbe75f8f42bfa0eb1fdb791b6, type: 3}
+  m_Script: {fileID: 11500000, guid: d61bbd9ca662d174a8f3cf92cf1e24a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle_int: 1
   passed: 0
   black_blocks:
   - {fileID: 1694289889}
@@ -59059,25 +59073,10 @@ MonoBehaviour:
   - {fileID: 708479443}
   - {fileID: 982926834}
   - {fileID: 1582554744}
-  red_black: {r: 0.49803922, g: 0, b: 0, a: 0}
-  red_grey: {r: 1, g: 0, b: 0, a: 0}
+  gold_black: {r: 0.49803922, g: 0.49803922, b: 0, a: 0}
+  gold_grey: {r: 1, g: 1, b: 0, a: 0}
   green_black: {r: 0, g: 0.49803922, b: 0, a: 0}
   green_grey: {r: 0, g: 1, b: 0, a: 0}
---- !u!54 &1720087151
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1720087145}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1721070714
 GameObject:
   m_ObjectHideFlags: 0
