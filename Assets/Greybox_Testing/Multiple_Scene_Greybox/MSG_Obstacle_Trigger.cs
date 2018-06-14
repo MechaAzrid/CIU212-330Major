@@ -20,7 +20,10 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-		
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+        {
+            passed = true;
+        }
 	}
 	
 	// Update is called once per frame
@@ -41,6 +44,8 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
             {
                 black_blocks[i].material.color = green_black;
                 grey_blocks[i].material.color = green_grey;
+
+                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
             }
         }
     }

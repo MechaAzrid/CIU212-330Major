@@ -13,6 +13,11 @@ public class Start_Buttons : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void Reset_Button ()
+    {
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().End();
+    }
+
     public void Quit_Button()
     {
         Application.Quit();

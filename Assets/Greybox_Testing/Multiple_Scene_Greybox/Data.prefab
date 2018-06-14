@@ -52,5 +52,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam_states: 0
-  level_name: 
+  tutorial_obstacle_passed: 00000000
   tutorial_stickers: 00000000
+  tutorial_sticker_colours:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  sticker_int: 0
