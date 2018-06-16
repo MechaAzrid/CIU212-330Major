@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MSG_Pickup : MonoBehaviour
 {
+    public bool gold;
     public int sticker_number;
     public Color pickup_color;
 
@@ -45,6 +46,14 @@ public class MSG_Pickup : MonoBehaviour
             pickup_system.pickup_object = gameObject;
             pickup_system.pickup = gameObject.GetComponent<MSG_Pickup>();
             pickup_system.Picked_Up(sticker_number);
+
+            if(gold)
+            {
+                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Tracing_Active();
+
+                GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+                cam.transform.position = new Vector3(-10000, 0, -10);
+            }
         }
     }
 }

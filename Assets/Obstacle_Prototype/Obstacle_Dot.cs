@@ -34,9 +34,16 @@ public class Obstacle_Dot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        distance = Vector3.Distance(transform.position, mop.pointer_world_position);
+        if(mop.current_node_a != null)
+        {
+            distance = Vector3.Distance(transform.position, mop.location);
+        }
+        else
+        {
+            distance = Vector3.Distance(transform.position, mop.pointer_world_position);
+        }
 
-        if (distance < 0.2f && !locked && mop.dragging)
+        if (distance < 0.2f && !locked && mop.dragging && gameObject.tag != "obstacle_immoveable")
         {
             locked = true;
 

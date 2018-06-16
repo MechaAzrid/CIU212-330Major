@@ -35,9 +35,9 @@ public class MSG_Level_Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Movement)
+        if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Movement)
         {
             float step = speed * Time.deltaTime;
 
@@ -59,7 +59,7 @@ public class MSG_Level_Movement : MonoBehaviour
                     {
                         float distance = Vector3.Distance(player.transform.position, blockage.transform.position);
 
-                        if (distance > 1.2f)
+                        if(distance > 1.2f)
                         {
                             player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
                         }
