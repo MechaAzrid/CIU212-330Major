@@ -17,6 +17,8 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     public Color green_black;
     public Color green_grey;
 
+    public GameObject button;
+
     // Use this for initialization
     void Start ()
     {
@@ -36,6 +38,19 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 black_blocks[i].material.color = red_black;
                 grey_blocks[i].material.color = red_grey;
             }
+
+            gameObject.GetComponent<Collider>().enabled = true;
+
+            float distance = Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
+
+            if (distance < 1.3f)
+            {
+                button.SetActive(true);
+            }
+            else
+            {
+                button.SetActive(false);
+            }
         }
 
         if (passed)
@@ -46,24 +61,24 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 grey_blocks[i].material.color = green_grey;
 
                 GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
+
+                gameObject.GetComponent<Collider>().enabled = false;
+                button.SetActive(false);
             }
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    public void Button_Clicked()
     {
-        if(!passed)
-        {
-            GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-            MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
+        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
 
-            cam_ob.original_cam_position = cam.transform.position;
-            cam_ob.obstacle_int = obstacle_int;
+        cam_ob.original_cam_position = cam.transform.position;
+        cam_ob.obstacle_int = obstacle_int;
 
-            cam.transform.position = new Vector3(10000, 0, -10);
+        cam.transform.position = new Vector3(10000, 0, -10);
 
-            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
-            cam_ob.obstacles_active(this);
-        }
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
+        cam_ob.obstacles_active(this);
     }
 }
