@@ -27172,16 +27172,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_stickers.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_sticker_colours.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4020477655766554, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}
       propertyPath: m_LocalPosition.x
       value: 15.510218
@@ -27214,58 +27204,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: cam_states
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1020032957576772, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}
       propertyPath: m_Name
       value: Temp_Data
-      objectReference: {fileID: 0}
-    - target: {fileID: 1020032957576772, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_stickers.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_stickers.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_stickers.Array.data[2]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_stickers.Array.data[3]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_sticker_colours.Array.data[4].r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_sticker_colours.Array.data[4].g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_sticker_colours.Array.data[4].b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
-        type: 2}
-      propertyPath: tutorial_sticker_colours.Array.data[4].a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}

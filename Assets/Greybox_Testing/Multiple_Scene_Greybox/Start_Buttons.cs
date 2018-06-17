@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Start_Buttons : MonoBehaviour
 {
     public string scene;
+
+    public GameObject[] menus;
+
+    public Image[] tutorial_stickers;
 
     public void Start_Button ()
     {
@@ -13,9 +18,88 @@ public class Start_Buttons : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void stickers_Button ()
+    {
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (i == 1)
+            {
+                menus[i].SetActive(true);
+            }
+            else
+            {
+                menus[i].SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < tutorial_stickers.Length; i++)
+        {
+            tutorial_stickers[i].color = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_colours[i];
+        }
+    }
+
+    public void Sticker_Return_Button ()
+    {
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (i == 0)
+            {
+                menus[i].SetActive(true);
+            }
+            else
+            {
+                menus[i].SetActive(false);
+            }
+        }
+    }
+
     public void Reset_Button ()
     {
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().End();
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if( i == 2)
+            {
+                menus[i].SetActive(true);
+            }
+            else
+            {
+                menus[i].SetActive(false);
+            }
+        }
+    }
+
+    public void Reset_Choice (bool choice)
+    {
+        if(choice)
+        {
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().End();
+
+            for (int i = 0; i < menus.Length; i++)
+            {
+                if (i == 0)
+                {
+                    menus[i].SetActive(true);
+                }
+                else
+                {
+                    menus[i].SetActive(false);
+                }
+            }
+        }
+        else if (!choice)
+        {
+            for (int i = 0; i < menus.Length; i++)
+            {
+                if (i == 0)
+                {
+                    menus[i].SetActive(true);
+                }
+                else
+                {
+                    menus[i].SetActive(false);
+                }
+            }
+        }
     }
 
     public void Quit_Button()

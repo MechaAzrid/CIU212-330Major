@@ -240,6 +240,6 @@ public class MSG_Tracing_Final : MonoBehaviour
     {
         // Temp
         SceneManager.LoadScene("MSG_Start");
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().End();
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Default_Active();
     }
 }
