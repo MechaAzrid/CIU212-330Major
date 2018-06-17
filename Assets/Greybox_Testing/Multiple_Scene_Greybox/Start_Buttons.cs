@@ -104,6 +104,7 @@ public class Start_Buttons : MonoBehaviour
 
     public void Quit_Button()
     {
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
         Application.Quit();
     }
 }

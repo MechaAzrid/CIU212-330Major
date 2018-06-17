@@ -35,6 +35,7 @@ public class MSG_Pickup_System : MonoBehaviour
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] = true;
 
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().sticker_int++;
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
         Destroy(pickup_object);
         pickup_object = null;
         pickup = null;

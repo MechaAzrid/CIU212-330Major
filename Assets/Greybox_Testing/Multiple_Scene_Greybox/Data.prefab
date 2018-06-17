@@ -54,10 +54,61 @@ MonoBehaviour:
   cam_states: 2
   tutorial_obstacle_passed: 00000000
   tutorial_stickers: 0000000000
+  sticker_int: 0
   tutorial_sticker_colours:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-  sticker_int: 0
+  tutorial_obstacle_passed_key:
+  - tutorial_obstacle_0
+  - tutorial_obstacle_1
+  - tutorial_obstacle_2
+  - tutorial_obstacle_3
+  tutorial_obstacle_passed_value: 00000000000000000000000000000000
+  tutorial_stickers_key:
+  - tutorial_sticker_0
+  - tutorial_sticker_1
+  - tutorial_sticker_2
+  - tutorial_sticker_3
+  - tutorial_sticker_4
+  tutorial_stickers_value: 0000000000000000000000000000000000000000
+  sticker_int_key: sticker_int
+  sticker_int_value: 0
+  tutorial_sticker_colours_red_key:
+  - tscr_0
+  - tscr_1
+  - tscr_2
+  - tscr_3
+  - tscr_4
+  tutorial_sticker_colours_green_key:
+  - tscg_0
+  - tscg_1
+  - tscg_2
+  - tscg_3
+  - tscg_4
+  tutorial_sticker_colours_blue_key:
+  - tscb_0
+  - tscb_1
+  - tscb_2
+  - tscb_3
+  - tscb_4
+  tutorial_sticker_colours_red_value:
+  - 255
+  - 255
+  - 255
+  - 255
+  - 255
+  tutorial_sticker_colours_green_value:
+  - 255
+  - 255
+  - 255
+  - 255
+  - 255
+  tutorial_sticker_colours_blue_value:
+  - 255
+  - 255
+  - 255
+  - 255
+  - 255

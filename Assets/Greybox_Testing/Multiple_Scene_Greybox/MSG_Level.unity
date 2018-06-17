@@ -27208,6 +27208,10 @@ Prefab:
       propertyPath: m_Name
       value: Temp_Data
       objectReference: {fileID: 0}
+    - target: {fileID: 1020032957576772, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}
   m_IsPrefabParent: 0

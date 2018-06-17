@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
     public void Menu_Button ()
     {
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Default_Active();
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
         SceneManager.LoadScene(menu_name);
     }
-
 }

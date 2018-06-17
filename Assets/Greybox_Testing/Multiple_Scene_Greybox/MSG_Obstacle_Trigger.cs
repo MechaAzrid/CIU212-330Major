@@ -19,6 +19,8 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
     public GameObject button;
 
+    private bool locked;
+
     // Use this for initialization
     void Start ()
     {
@@ -64,6 +66,8 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
                 gameObject.GetComponent<Collider>().enabled = false;
                 button.SetActive(false);
+
+                Save();
             }
         }
     }
@@ -80,5 +84,14 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
         cam_ob.obstacles_active(this);
+    }
+
+    void Save ()
+    {
+        if(!locked)
+        {
+            locked = true;
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
+        }
     }
 }
