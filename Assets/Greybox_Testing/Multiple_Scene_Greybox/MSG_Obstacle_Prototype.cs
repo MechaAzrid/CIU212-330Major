@@ -15,6 +15,7 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
     public GameObject continue_button;
 
     public Vector3 pointer_world_position = new Vector3();
+    public Vector3 location;
 
     public bool dragging;
 
@@ -147,7 +148,27 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
 
     void Drag()
     {
-        obstacle_linerenderer.SetPosition(1, pointer_world_position);
+        if(current_node_a != null)
+        {
+            RaycastHit blockage;
+            if (Physics.Linecast(current_node_a.transform.position, pointer_world_position, out blockage))
+            {
+                if (blockage.transform.gameObject.tag == ("obstacle_immoveable"))
+                {
+                    location = new Vector3(blockage.point.x, blockage.point.y, blockage.point.z);
+                }
+                else
+                {
+                    location = new Vector3(pointer_world_position.x, pointer_world_position.y, pointer_world_position.z);
+                }
+            }
+            else
+            {
+                location = new Vector3(pointer_world_position.x, pointer_world_position.y, pointer_world_position.z);
+            }
+
+            obstacle_linerenderer.SetPosition(1, location);
+        }
     }
 
     void Lifted()
@@ -198,19 +219,6 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
         obstacles[obstacle_int].SetActive(true);
     }
 
-    public void Continue_Button ()
-    {
-        continue_button.SetActive(false);
-        checker.color = Color.white;
-        obstacles[obstacle_int].SetActive(false);
-        obstacle_int = -1;
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
-        trigger.passed = true;
-        trigger = null;
-        transform.position = original_cam_position;
-        original_cam_position = new Vector3(0, 0, 0);
-    }
-
     public void Reset_Button ()
     {
         Obstacle_Dot[] obd = FindObjectsOfType<Obstacle_Dot>();
@@ -224,8 +232,46 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
         }
 
         continue_button.SetActive(false);
+        current_node_a = null;
         checker.color = Color.white;
         incorrect = false;
         end_hit = false;
+    }
+
+    public void Return_Button ()
+    {
+        Obstacle_Dot[] obd = FindObjectsOfType<Obstacle_Dot>();
+
+        for (int i = 0; i < obd.Length; i++)
+        {
+            obd[i].lr.SetPosition(0, obd[i].og_pos);
+            obd[i].lr.SetPosition(1, obd[i].og_pos);
+
+            obd[i].locked = false;
+        }
+
+        continue_button.SetActive(false);
+        current_node_a = null;
+        checker.color = Color.white;
+        obstacles[obstacle_int].SetActive(false);
+        obstacle_int = -1;
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
+        trigger = null;
+        transform.position = original_cam_position;
+        original_cam_position = new Vector3(0, 0, 0);
+    }
+
+    public void Continue_Button ()
+    {
+        continue_button.SetActive(false);
+        current_node_a = null;
+        checker.color = Color.white;
+        obstacles[obstacle_int].SetActive(false);
+        obstacle_int = -1;
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
+        trigger.passed = true;
+        trigger = null;
+        transform.position = original_cam_position;
+        original_cam_position = new Vector3(0, 0, 0);
     }
 }
