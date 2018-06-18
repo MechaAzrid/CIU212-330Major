@@ -56,8 +56,6 @@ public class MSG_Transitioner : MonoBehaviour
         }
 
         // stickers
-        Debug.Log("Yeet");
-
         for (int i = 0; i < tutorial_stickers_key.Length; i++)
         {
             tutorial_stickers_value[i] = PlayerPrefs.GetInt(tutorial_stickers_key[i], 0);

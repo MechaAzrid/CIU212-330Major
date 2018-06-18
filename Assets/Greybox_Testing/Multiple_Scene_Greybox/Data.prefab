@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f04131d350740048b2deb78b08b4c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam_states: 2
+  cam_states: 0
   tutorial_obstacle_passed: 00000000
   tutorial_stickers: 0000000000
   sticker_int: 0
