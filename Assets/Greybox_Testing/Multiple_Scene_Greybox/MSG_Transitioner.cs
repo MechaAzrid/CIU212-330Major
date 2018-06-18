@@ -88,6 +88,14 @@ public class MSG_Transitioner : MonoBehaviour
         Save_Data();
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            End();
+        }
+    }
+
     public void Save_Data ()
     {
         // obstacles
