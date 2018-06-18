@@ -29,12 +29,10 @@ public class MSG_Pickup_System : MonoBehaviour
 
     public void Picked_Up(int sticker_number)
     {
-        pickup_slots[GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().sticker_int].color = pickup.pickup_color;
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_colours[GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().sticker_int] =
-            pickup.pickup_color;
+        pickup_slots[sticker_number].color = pickup.pickup_color;
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_colours[sticker_number] = pickup.pickup_color;
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] = true;
 
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().sticker_int++;
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
         Destroy(pickup_object);
         pickup_object = null;
