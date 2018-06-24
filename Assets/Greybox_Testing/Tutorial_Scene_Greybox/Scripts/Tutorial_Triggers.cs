@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Tutorial_Triggers : MonoBehaviour
 {
     [Header("Universal Scripts")]
+    public Tutorial_Triggers tutorialTriggers;
     public MSG_Level_Movement msgLevelMovement;
     public MSG_Sticker_Selector msgStickerSelector;
     public MSG_Obstacle_Prototype msgObstaclePrototype;
@@ -22,6 +24,9 @@ public class Tutorial_Triggers : MonoBehaviour
     [Header("Obstacles and Tracing")]
     public GameObject tutorialObstacle;
 
+    public int obstacle_int;
+
+
     [Header("Audio")]
     public AudioSource audioMain;
     public AudioClip welcomeVoice;
@@ -33,6 +38,12 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public AudioClip obstacleVoice;
     public AudioClip obstacleInstructionsVoice;
+    public AudioClip obstacleInstructionsVoice2;
+    public AudioClip obstacleInstructionsVoice3;
+    public AudioClip obstacleInstructionsVoice4;
+    public AudioClip obstacleInstructionsVoice5;
+    public AudioClip obstacleInstructionsVoice6;
+
 
     void Start()
     {
@@ -109,9 +120,26 @@ public class Tutorial_Triggers : MonoBehaviour
         audioMain.clip = obstacleVoice;
         audioMain.Play();
         yield return new WaitForSeconds(audioMain.clip.length);
-        tutorialObstacle.GetComponent<Button>().onClick.Invoke();
+        //tutorialObstacle.GetComponent<Button>().onClick.Invoke();
+        ObstacleTrigger();
+        msgObstaclePrototype.enabled = false;
         yield return new WaitForSeconds(1f);
         audioMain.clip = obstacleInstructionsVoice;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = obstacleInstructionsVoice2;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = obstacleInstructionsVoice3;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = obstacleInstructionsVoice4;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = obstacleInstructionsVoice5;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = obstacleInstructionsVoice6;
         audioMain.Play();
 
         Invoke("ObstacleDialogueEnd", audioMain.clip.length);
@@ -119,12 +147,23 @@ public class Tutorial_Triggers : MonoBehaviour
 
     void ObstacleDialogueEnd()
     {
+        msgObstaclePrototype.enabled = true;
         obstacleTrigger.SetActive(false);
         msgLevelMovement.enabled = true;
+        
     }
 
-    void Update()
+    void ObstacleTrigger()
     {
+        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
 
+        cam_ob.original_cam_position = cam.transform.position;
+        cam_ob.obstacle_int = obstacle_int;
+
+        cam.transform.position = new Vector3(10000, 0, -10);
+
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
+        cam_ob.obstacles_active(msgObstacleTrigger);
     }
 }

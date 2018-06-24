@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -126,6 +127,11 @@ public class MSG_Obstacle_Prototype : MonoBehaviour
                 Lifted();
             }
         }
+    }
+
+    internal void obstacles_active(Tutorial_Triggers tutorial_Triggers)
+    {
+        throw new NotImplementedException();
     }
 
     void Clicked()
