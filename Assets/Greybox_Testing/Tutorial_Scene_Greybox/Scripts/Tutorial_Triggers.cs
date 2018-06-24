@@ -14,6 +14,7 @@ public class Tutorial_Triggers : MonoBehaviour
     public AudioSource audioMain;
     public AudioClip welcomeVoice;
     public AudioClip beginVoice;
+    public AudioClip movementVoice;
 
     void Start()
     {
@@ -44,6 +45,9 @@ public class Tutorial_Triggers : MonoBehaviour
         audioMain.Play();
         yield return new WaitForSeconds(audioMain.clip.length);
         audioMain.clip = beginVoice;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = movementVoice;
         audioMain.Play();
 
         Invoke("WelcomeDialogueEnd", audioMain.clip.length);
