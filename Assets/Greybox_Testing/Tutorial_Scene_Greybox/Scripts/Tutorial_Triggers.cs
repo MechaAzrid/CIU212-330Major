@@ -9,6 +9,11 @@ public class Tutorial_Triggers : MonoBehaviour
 
     [Header("Gameobject Triggers")]
     public GameObject welcomeTrigger;
+    public GameObject selectStickerTrigger;
+    public GameObject obstacleTrigger;
+    public GameObject stickerBookTrigger;
+    public GameObject tracingTrigger;
+    public GameObject dragAndDropTrigger;
 
     [Header("Audio")]
     public AudioSource audioMain;
