@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Tutorial_Triggers : MonoBehaviour
 {
     [Header("Universal Scripts")]
+	public Fade fading;
     public Tutorial_Triggers tutorialTriggers;
     public MSG_Level_Movement msgLevelMovement;
     public MSG_Sticker_Selector msgStickerSelector;
@@ -49,7 +50,6 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public AudioClip firstStickerVoice;
 
-
     void Start()
     {
         audioMain = gameObject.GetComponent<AudioSource>();
@@ -60,7 +60,7 @@ public class Tutorial_Triggers : MonoBehaviour
     {
 
     }
-
+		
     public void WelcomeDialogue()
     {
         StartCoroutine(playWelcomeDialogue());
@@ -108,7 +108,8 @@ public class Tutorial_Triggers : MonoBehaviour
         yield return new WaitForSeconds(audioMain.clip.length);
         audioMain.clip = stickerPathVoice;
         audioMain.Play();
-        yield return new WaitForSeconds(audioMain.clip.length);
+		yield return new WaitForSeconds (5f);
+        //yield return new WaitForSeconds(audioMain.clip.length);
         audioMain.clip = stickerPathVoice2;
         audioMain.Play();
 
@@ -133,8 +134,10 @@ public class Tutorial_Triggers : MonoBehaviour
         audioMain.clip = obstacleVoice;
         audioMain.Play();
         yield return new WaitForSeconds(audioMain.clip.length);
-        //tutorialObstacle.GetComponent<Button>().onClick.Invoke();
+		fading.enabled = true;
         ObstacleTrigger();
+		yield return new WaitForSeconds (2f);
+		fading.enabled = false;
         msgObstaclePrototype.enabled = false;
         yield return new WaitForSeconds(1f);
         audioMain.clip = obstacleInstructionsVoice;
