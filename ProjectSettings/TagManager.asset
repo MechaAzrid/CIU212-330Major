@@ -13,6 +13,9 @@ TagManager:
   - obstacle_end
   - obstacle_start
   - Data
+  - SelectSticker
+  - Welcome
+  - Obstacle
   layers:
   - Default
   - TransparentFX
