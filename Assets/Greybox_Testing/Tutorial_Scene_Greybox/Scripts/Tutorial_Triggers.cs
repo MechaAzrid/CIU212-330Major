@@ -19,10 +19,12 @@ public class Tutorial_Triggers : MonoBehaviour
     public GameObject obstacleTrigger;
     public GameObject stickerBookTrigger;
     public GameObject tracingTrigger;
+    public GameObject firstSticker;
     public GameObject dragAndDropTrigger;
 
     [Header("Obstacles and Tracing")]
     public GameObject tutorialObstacle;
+    public GameObject activeSticker;
 
     public int obstacle_int;
 
@@ -35,6 +37,7 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public AudioClip stickerSelectVoice;
     public AudioClip stickerPathVoice;
+    public AudioClip stickerPathVoice2;
 
     public AudioClip obstacleVoice;
     public AudioClip obstacleInstructionsVoice;
@@ -44,11 +47,18 @@ public class Tutorial_Triggers : MonoBehaviour
     public AudioClip obstacleInstructionsVoice5;
     public AudioClip obstacleInstructionsVoice6;
 
+    public AudioClip firstStickerVoice;
+
 
     void Start()
     {
         audioMain = gameObject.GetComponent<AudioSource>();
         //Find The GameObject's AudioSource
+    }
+
+    public void Update()
+    {
+
     }
 
     public void WelcomeDialogue()
@@ -97,6 +107,9 @@ public class Tutorial_Triggers : MonoBehaviour
         audioMain.Play();
         yield return new WaitForSeconds(audioMain.clip.length);
         audioMain.clip = stickerPathVoice;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        audioMain.clip = stickerPathVoice2;
         audioMain.Play();
 
         Invoke("SelectStickerDialogueEnd", audioMain.clip.length);
@@ -151,6 +164,20 @@ public class Tutorial_Triggers : MonoBehaviour
         obstacleTrigger.SetActive(false);
         msgLevelMovement.enabled = true;
         
+    }
+
+    public void CongratulationsFirst()
+    {
+        msgLevelMovement.enabled = false;
+        audioMain.clip = firstStickerVoice;
+        audioMain.Play();
+
+        Invoke("CongratulationsFirstEnd", audioMain.clip.length);
+    }
+
+    void CongratulationsFirstEnd()
+    {
+        msgLevelMovement.enabled = true;
     }
 
     void ObstacleTrigger()

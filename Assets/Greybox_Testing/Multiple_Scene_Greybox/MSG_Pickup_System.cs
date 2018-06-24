@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class MSG_Pickup_System : MonoBehaviour
 {
+    public Tutorial_Triggers tutorialTriggers;
+
     public Image[] pickup_slots;
     private int array_number = 0;
 
@@ -37,5 +39,8 @@ public class MSG_Pickup_System : MonoBehaviour
         Destroy(pickup_object);
         pickup_object = null;
         pickup = null;
+
+        tutorialTriggers.CongratulationsFirst();
+
     }
 }
