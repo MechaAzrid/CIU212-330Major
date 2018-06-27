@@ -28,13 +28,13 @@ public class Counter : MonoBehaviour
     public bool iscorrect = false;
 
     private GameObject cam;
-    private Tracing_Final tfs;
+    private MSG_Tracing_Final tfs;
 
     // Use this for initialization
     void Start()
     {
         cam = GameObject.Find("Main Camera");
-        tfs = cam.GetComponent<Tracing_Final>();
+        tfs = cam.GetComponent<MSG_Tracing_Final>();
 
         for (int i = 0; i < tracer_nodes.Length; i++)
         {

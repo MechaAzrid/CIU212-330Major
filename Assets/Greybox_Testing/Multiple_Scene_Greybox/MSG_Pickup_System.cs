@@ -40,7 +40,7 @@ public class MSG_Pickup_System : MonoBehaviour
         pickup_object = null;
         pickup = null;
 
-        tutorialTriggers.CongratulationsFirst();
+        if(tutorialTriggers != null) tutorialTriggers.CongratulationsFirst();
 
     }
 }
