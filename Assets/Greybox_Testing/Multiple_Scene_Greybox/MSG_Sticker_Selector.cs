@@ -16,6 +16,8 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
     public LineRenderer lr;
 
+    private bool finder_active;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -50,8 +52,9 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.tutorial)
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[selected_sticker])
+            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[selected_sticker])
             {
+                finder_active = false;
                 selected_sticker = -1;
             }
         }
@@ -63,7 +66,16 @@ public class MSG_Sticker_Selector : MonoBehaviour
         {
             if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[number])
             {
-                selected_sticker = number;
+                if (number != selected_sticker)
+                {
+                    finder_active = true;
+                    selected_sticker = number;
+                }
+                else
+                {
+                    finder_active = false;
+                    selected_sticker = -1;
+                }
             }
         }
     }
