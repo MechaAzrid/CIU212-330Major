@@ -34,7 +34,14 @@ public class Start_Buttons : MonoBehaviour
 
         for (int i = 0; i < tutorial_stickers.Length; i++)
         {
-            tutorial_stickers[i].color = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_colours[i];
+            if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+            {
+                tutorial_stickers[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[i];
+            }
+            else
+            {
+                tutorial_stickers[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_blank_sprites[i];
+            }
         }
     }
 

@@ -51,16 +51,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f04131d350740048b2deb78b08b4c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam_states: 0
+  cam_states: 2
   tutorial_obstacle_passed: 00000000
   tutorial_stickers: 0000000000
   sticker_int: 0
-  tutorial_sticker_colours:
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 1, g: 1, b: 1, a: 1}
+  tutorial_sticker_blank_sprites:
+  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  tutorial_sticker_sprites:
+  - {fileID: 21300000, guid: 7131673b95ff9f848969f55a33a28bfd, type: 3}
+  - {fileID: 21300000, guid: 86293294c22484f4188d4d7b61afc74b, type: 3}
+  - {fileID: 21300000, guid: 47b1442641d8d904398816275aace8aa, type: 3}
+  - {fileID: 21300000, guid: 71118638084e1054295379a35f650842, type: 3}
+  - {fileID: 21300000, guid: cac5e2505dc911b49ac35d8eb84a743d, type: 3}
   tutorial_obstacle_passed_key:
   - tutorial_obstacle_0
   - tutorial_obstacle_1
@@ -76,39 +82,3 @@ MonoBehaviour:
   tutorial_stickers_value: 0000000000000000000000000000000000000000
   sticker_int_key: sticker_int
   sticker_int_value: 0
-  tutorial_sticker_colours_red_key:
-  - tscr_0
-  - tscr_1
-  - tscr_2
-  - tscr_3
-  - tscr_4
-  tutorial_sticker_colours_green_key:
-  - tscg_0
-  - tscg_1
-  - tscg_2
-  - tscg_3
-  - tscg_4
-  tutorial_sticker_colours_blue_key:
-  - tscb_0
-  - tscb_1
-  - tscb_2
-  - tscb_3
-  - tscb_4
-  tutorial_sticker_colours_red_value:
-  - 255
-  - 255
-  - 255
-  - 255
-  - 255
-  tutorial_sticker_colours_green_value:
-  - 255
-  - 255
-  - 255
-  - 255
-  - 255
-  tutorial_sticker_colours_blue_value:
-  - 255
-  - 255
-  - 255
-  - 255
-  - 255

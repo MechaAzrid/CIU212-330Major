@@ -19,7 +19,14 @@ public class MSG_Pickup_System : MonoBehaviour
     {
         for(int i = 0; i < pickup_slots.Length; i++)
         {
-            pickup_slots[i].color = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_colours[i];
+            if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+            {
+                pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[i];
+            }
+            else
+            {
+                pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_blank_sprites[i];
+            }
         }
     }
 	
@@ -31,8 +38,7 @@ public class MSG_Pickup_System : MonoBehaviour
 
     public void Picked_Up(int sticker_number)
     {
-        pickup_slots[sticker_number].color = pickup.pickup_color;
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_colours[sticker_number] = pickup.pickup_color;
+        pickup_slots[sticker_number].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[sticker_number];
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] = true;
 
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();

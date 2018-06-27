@@ -6,7 +6,6 @@ public class MSG_Pickup : MonoBehaviour
 {
     public bool gold;
     public int sticker_number;
-    public Color pickup_color;
 
     public Renderer object_renderer;
 
@@ -23,7 +22,6 @@ public class MSG_Pickup : MonoBehaviour
     void Start ()
     {
         object_renderer = GetComponent<Renderer>();
-        pickup_color = object_renderer.material.color;
 
         player = GameObject.FindGameObjectWithTag("Player");
         pickup_system = GameObject.Find("Main Camera").GetComponent<MSG_Pickup_System>();
