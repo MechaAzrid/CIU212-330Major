@@ -7,7 +7,8 @@ public class MSG_Pickup : MonoBehaviour
     public bool gold;
     public int sticker_number;
 
-    public Renderer object_renderer;
+    private Renderer object_renderer;
+    private SpriteRenderer object_sprite;
 
     public float distance;
 
@@ -22,6 +23,7 @@ public class MSG_Pickup : MonoBehaviour
     void Start ()
     {
         object_renderer = GetComponent<Renderer>();
+        object_sprite = GetComponent<SpriteRenderer>();
 
         player = GameObject.FindGameObjectWithTag("Player");
         pickup_system = GameObject.Find("Main Camera").GetComponent<MSG_Pickup_System>();
@@ -29,7 +31,9 @@ public class MSG_Pickup : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] == false)
         {
             gameObject.GetComponent<Collider>().enabled = true;
-            gameObject.GetComponent<Renderer>().enabled = true;
+
+            if (object_renderer != null) gameObject.GetComponent<Renderer>().enabled = true;
+            if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 	
