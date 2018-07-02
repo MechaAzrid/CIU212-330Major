@@ -75,15 +75,21 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     public void Button_Clicked()
     {
         GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-        MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
+        //MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
 
-        cam_ob.original_cam_position = cam.transform.position;
-        cam_ob.obstacle_int = obstacle_int;
+        //cam_ob.original_cam_position = cam.transform.position;
+        //cam_ob.obstacle_int = obstacle_int;
+
+        MSG_Tracing_Final cam_tr = cam.GetComponent<MSG_Tracing_Final>();
+
+        cam_tr.original_cam_position = cam.transform.position;
 
         cam.transform.position = new Vector3(10000, 0, -10);
 
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
-        cam_ob.obstacles_active(this);
+        //cam_ob.obstacles_active(this);
+
+        cam_tr.Obstacle_Start(obstacle_int);
     }
 
     void Save ()

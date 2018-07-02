@@ -11,7 +11,8 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     [Header("Items below need to be set in inspector")]
 
-    public GameObject continue_button;
+    public GameObject obstacle_continue_button;
+    public GameObject tracing_continue_button;
 
     [Header("Object used in line construction")]
     public GameObject input_node;
@@ -54,6 +55,10 @@ public class MSG_Tracing_Final : MonoBehaviour
     [Header("Number of correct templates")]
     public int correctnumber = 0;
 
+    [Header("camera related")]
+    public Vector3 original_cam_position;
+    private MSG_Obstacle_Trigger trigger;
+
     private Vector3 pointer_world_position_temp_location = new Vector3();
     private Vector3 pointer_world_location;
     private Camera c;
@@ -71,22 +76,7 @@ public class MSG_Tracing_Final : MonoBehaviour
         c = Camera.main;
 
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-
-        //if(tracers.Count > 0)
-        //{
-        //    Begin();
-        //}
     }
-
-    //public void Begin ()
-    //{
-    //    for (int i = 0; i < tracers.Count; i++)
-    //    {
-    //        Counter counter = tracers[i].GetComponent<Counter>();
-    //        total_min_count = total_min_count + counter.min_count;
-    //        total_max_count = total_max_count + counter.max_count;
-    //    }
-    //}
 
     public void Tracing_Start (int sticker_number)
     {
@@ -241,7 +231,7 @@ public class MSG_Tracing_Final : MonoBehaviour
                 if (counter.iscorrect && total_nodes < total_max_count)
                 {
                     tracing_checker.color = Color.green;
-                    continue_button.SetActive(true);
+                    tracing_continue_button.SetActive(true);
                 }
                 else
                 {
@@ -264,7 +254,7 @@ public class MSG_Tracing_Final : MonoBehaviour
                 if (correctnumber == temp_tracers.Count && total_nodes < total_max_count)
                 {
                     tracing_checker.color = Color.green;
-                    continue_button.SetActive(true);
+                    tracing_continue_button.SetActive(true);
                 }
                 else
                 {

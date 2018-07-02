@@ -17,6 +17,9 @@ public class MSG_Transitioner : MonoBehaviour
     public Sprite[] tutorial_sticker_blank_sprites;
     public Sprite[] tutorial_sticker_sprites;
 
+    [Header("Whether Saving is active or not")]
+    public bool saving_active = true;
+
     [Header("Tutorial Save data")]
     // Obstacles
     public string[] tutorial_obstacle_passed_key;
@@ -81,34 +84,37 @@ public class MSG_Transitioner : MonoBehaviour
 
     public void Save_Data ()
     {
-        // obstacles
-        for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
+        if(saving_active)
         {
-            if(tutorial_obstacle_passed[i])
+            // obstacles
+            for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
             {
-                PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 1);
+                if (tutorial_obstacle_passed[i])
+                {
+                    PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 0);
+                }
             }
-            else
-            {
-                PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 0);
-            }
-        }
 
-        // stickers
-        for (int i = 0; i < tutorial_stickers_key.Length; i++)
-        {
-            if (tutorial_stickers[i])
+            // stickers
+            for (int i = 0; i < tutorial_stickers_key.Length; i++)
             {
-                PlayerPrefs.SetInt(tutorial_stickers_key[i], 1);
+                if (tutorial_stickers[i])
+                {
+                    PlayerPrefs.SetInt(tutorial_stickers_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(tutorial_stickers_key[i], 0);
+                }
             }
-            else
-            {
-                PlayerPrefs.SetInt(tutorial_stickers_key[i], 0);
-            }
-        }
 
-        // sticker int
-        PlayerPrefs.SetInt(sticker_int_key, sticker_int);
+            // sticker int
+            PlayerPrefs.SetInt(sticker_int_key, sticker_int);
+        }
     }
 
     public void Default_Active()

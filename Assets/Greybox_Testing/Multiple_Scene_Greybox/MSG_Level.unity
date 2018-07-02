@@ -16521,8 +16521,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405744764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 766, y: 376.5, z: 0}
-  m_LocalScale: {x: 1.915, y: 1.915, z: 1.915}
+  m_LocalPosition: {x: 658, y: 319, z: 0}
+  m_LocalScale: {x: 1.645, y: 1.645, z: 1.645}
   m_Children:
   - {fileID: 2009120763}
   - {fileID: 1822144272}
@@ -31408,6 +31408,11 @@ Prefab:
         type: 2}
       propertyPath: cam_states
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614596676031220, guid: 4d7f9a4d4ea9179458a602ed6fe47325,
+        type: 2}
+      propertyPath: saving_active
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d7f9a4d4ea9179458a602ed6fe47325, type: 2}
@@ -46733,6 +46738,7 @@ MonoBehaviour:
   - {fileID: 353516340}
   temp_tracers: []
   obstacle_tracers: []
+  temp_obstacle_tracers: []
   isactive: 0
   total_nodes: 0
   node_list: []
@@ -46744,7 +46750,8 @@ MonoBehaviour:
   total_max_count: 0
   total_node_count: 0
   correctnumber: 0
-  checker: {fileID: 1040453418}
+  obstacle_checker: {fileID: 0}
+  tracing_checker: {fileID: 0}
 --- !u!114 &1153780141
 MonoBehaviour:
   m_ObjectHideFlags: 0
