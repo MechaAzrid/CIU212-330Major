@@ -16,8 +16,14 @@ public class MSG_Tracing_Final : MonoBehaviour
     [Header("Object used in line construction")]
     public GameObject input_node;
 
-    [Header("Array for the tracing templates")]
+    [Header("Arrays for the tracing templates")]
+    public List<int> word_length = new List<int>();
     public List<GameObject> tracers = new List<GameObject>();
+    public List<GameObject> temp_tracers = new List<GameObject>();
+
+    [Header("Obstacle Tracers")]
+    public List<GameObject> obstacle_tracers = new List<GameObject>();
+    public List<GameObject> temp_obstacle_tracers = new List<GameObject>();
 
     [Header("Variable(s) that can be set but otherwise will be done automatically")]
 
@@ -55,8 +61,9 @@ public class MSG_Tracing_Final : MonoBehaviour
     private bool clicked = false;
     private float distance;
     private bool locked = false;
-    public GameObject checker;
-    private Image checker_image;
+
+    public Image obstacle_checker;
+    public Image tracing_checker;
 
     // Use this for initialization
     void Start()
@@ -65,20 +72,56 @@ public class MSG_Tracing_Final : MonoBehaviour
 
         Screen.orientation = ScreenOrientation.LandscapeLeft;
 
-        if(tracers.Count > 0)
-        {
-            Begin();
-        }
+        //if(tracers.Count > 0)
+        //{
+        //    Begin();
+        //}
     }
 
-    public void Begin ()
+    //public void Begin ()
+    //{
+    //    for (int i = 0; i < tracers.Count; i++)
+    //    {
+    //        Counter counter = tracers[i].GetComponent<Counter>();
+    //        total_min_count = total_min_count + counter.min_count;
+    //        total_max_count = total_max_count + counter.max_count;
+    //    }
+    //}
+
+    public void Tracing_Start (int sticker_number)
     {
-        for (int i = 0; i < tracers.Count; i++)
+        int past_templates = 0;
+
+        for (int i = 0; i < word_length.Count; i++)
         {
-            Counter counter = tracers[i].GetComponent<Counter>();
+            if(sticker_number == i)
+            {
+                for (int j = 0; j < word_length[i]; j++)
+                {
+                    temp_tracers.Add(tracers[j + past_templates]);
+                }
+            }
+            else
+            {
+                past_templates += word_length[i];
+            }
+        }
+
+        for (int i = 0; i < temp_tracers.Count; i++)
+        {
+            Counter counter = temp_tracers[i].GetComponent<Counter>();
             total_min_count = total_min_count + counter.min_count;
             total_max_count = total_max_count + counter.max_count;
         }
+    }
+
+    public void Obstacle_Start (int obstacle_number)
+    {
+        temp_obstacle_tracers.Add(obstacle_tracers[obstacle_number]);
+
+        Counter counter = temp_obstacle_tracers[0].GetComponent<Counter>();
+        total_min_count = total_min_count + counter.min_count;
+        total_max_count = total_max_count + counter.max_count;
     }
 
     // For detecting where the mouse is
@@ -96,7 +139,8 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     void Update()
     {
-        if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Tracing)
+        if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Tracing ||
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Obstacle)
         {
             // Mouse Input
 
@@ -185,31 +229,47 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Count()
     {
-        if(!locked)
+        if (!locked)
         {
-            checker = GameObject.Find("TChecker");
-            checker_image = checker.GetComponent<Image>();
-
             locked = true;
 
-            for (int i = 0; i < tracers.Count; i++)
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Obstacle)
             {
-                Counter counter = tracers[i].GetComponent<Counter>();
+                Counter counter = temp_obstacle_tracers[0].GetComponent<Counter>();
                 counter.Count();
-                if (counter.iscorrect)
+
+                if (counter.iscorrect && total_nodes < total_max_count)
                 {
-                    correctnumber++;
+                    tracing_checker.color = Color.green;
+                    continue_button.SetActive(true);
+                }
+                else
+                {
+                    tracing_checker.color = Color.red;
                 }
             }
 
-            if (correctnumber == tracers.Count && total_nodes < total_max_count)
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Tracing)
             {
-                checker_image.color = Color.green;
-                continue_button.SetActive(true);
-            }
-            else
-            {
-                checker_image.color = Color.red;
+                for (int i = 0; i < temp_tracers.Count; i++)
+                {
+                    Counter counter = temp_tracers[i].GetComponent<Counter>();
+                    counter.Count();
+                    if (counter.iscorrect)
+                    {
+                        correctnumber++;
+                    }
+                }
+
+                if (correctnumber == temp_tracers.Count && total_nodes < total_max_count)
+                {
+                    tracing_checker.color = Color.green;
+                    continue_button.SetActive(true);
+                }
+                else
+                {
+                    tracing_checker.color = Color.red;
+                }
             }
         }
     }
@@ -221,23 +281,63 @@ public class MSG_Tracing_Final : MonoBehaviour
         correctnumber = 0;
         locked = false;
 
-        for (int i = 0; i < tracers.Count; i++)
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Obstacle)
         {
-            Counter counter = tracers[i].GetComponent<Counter>();
+            Counter counter = temp_obstacle_tracers[0].GetComponent<Counter>();
             counter.node_count = 0;
             counter.iscorrect = false;
+
+            obstacle_checker.color = Color.white;
         }
 
-        for (int i = 0;i < node_list.Count; i++)
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Tracing)
+        {
+            for (int i = 0; i < temp_tracers.Count; i++)
+            {
+                Counter counter = temp_tracers[i].GetComponent<Counter>();
+                counter.node_count = 0;
+                counter.iscorrect = false;
+            }
+
+            tracing_checker.color = Color.white;
+        }
+
+        for (int i = 0; i < node_list.Count; i++)
         {
             Destroy(node_list[i]);
         }
-        checker_image.color = Color.white;
         node_list.Clear();
+    }
+
+    public void Return_Button ()
+    {
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Obstacle)
+        {
+
+        }
+
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Tracing)
+        {
+
+        }
+
+
     }
 
     public void Continue_Button ()
     {
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Obstacle)
+        {
+
+        }
+
+        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().cam_states == camera_states.Tracing)
+        {
+
+        }
+
+
+
         // Temp
         SceneManager.LoadScene("MSG_Start");
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Default_Active();

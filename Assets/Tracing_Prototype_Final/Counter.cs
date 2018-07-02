@@ -9,6 +9,10 @@ public class Counter : MonoBehaviour
 
     [Header("Items below need to be set in inspector")]
 
+    [Header("Options")]
+    public bool dots_visible = true;
+    public bool lines_visible = true;
+
     [Header("Assign each node into the array in order")]
     public GameObject[] tracer_nodes;
 
@@ -36,19 +40,37 @@ public class Counter : MonoBehaviour
         cam = GameObject.Find("Main Camera");
         tfs = cam.GetComponent<MSG_Tracing_Final>();
 
-        for (int i = 0; i < tracer_nodes.Length; i++)
+        if (lines_visible)
         {
-            LineRenderer lr = tracer_nodes[i].GetComponent<LineRenderer>();
+            for (int i = 0; i < tracer_nodes.Length; i++)
+            {
+                LineRenderer lr = tracer_nodes[i].GetComponent<LineRenderer>();
 
-            if (i == tracer_nodes.Length - 1)
-            {
-                lr.SetPosition(0, tracer_nodes[i].transform.position);
-                lr.SetPosition(1, tracer_nodes[i].transform.position);
+                if (i == tracer_nodes.Length - 1)
+                {
+                    lr.SetPosition(0, tracer_nodes[i].transform.position);
+                    lr.SetPosition(1, tracer_nodes[i].transform.position);
+                }
+                else
+                {
+                    lr.SetPosition(0, tracer_nodes[i].transform.position);
+                    lr.SetPosition(1, tracer_nodes[i + 1].transform.position);
+                }
             }
-            else
+        }
+
+        if (dots_visible)
+        {
+            for (int i = 0; i < tracer_nodes.Length; i++)
             {
-                lr.SetPosition(0, tracer_nodes[i].transform.position);
-                lr.SetPosition(1, tracer_nodes[i + 1].transform.position);
+                tracer_nodes[i].GetComponent<Renderer>().enabled = true;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < tracer_nodes.Length; i++)
+            {
+                tracer_nodes[i].GetComponent<Renderer>().enabled = false;
             }
         }
     }
