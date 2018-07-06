@@ -12,6 +12,7 @@ public class Tutorial_Triggers : MonoBehaviour
     public MSG_Level_Movement msgLevelMovement;
     public MSG_Sticker_Selector msgStickerSelector;
     public MSG_Obstacle_Prototype msgObstaclePrototype;
+    public MSG_Tracing_Final msgTracingFinal;
     public MSG_Obstacle_Trigger msgObstacleTrigger;
 
     [Header("Gameobject Triggers")]
@@ -138,32 +139,15 @@ public class Tutorial_Triggers : MonoBehaviour
         ObstacleTrigger();
 		yield return new WaitForSeconds (2f);
 		fading.enabled = false;
-        msgObstaclePrototype.enabled = false;
+        msgTracingFinal.enabled = false;
         yield return new WaitForSeconds(1f);
-        audioMain.clip = obstacleInstructionsVoice;
-        audioMain.Play();
-        yield return new WaitForSeconds(audioMain.clip.length);
-        audioMain.clip = obstacleInstructionsVoice2;
-        audioMain.Play();
-        yield return new WaitForSeconds(audioMain.clip.length);
-        audioMain.clip = obstacleInstructionsVoice3;
-        audioMain.Play();
-        yield return new WaitForSeconds(audioMain.clip.length);
-        audioMain.clip = obstacleInstructionsVoice4;
-        audioMain.Play();
-        yield return new WaitForSeconds(audioMain.clip.length);
-        audioMain.clip = obstacleInstructionsVoice5;
-        audioMain.Play();
-        yield return new WaitForSeconds(audioMain.clip.length);
-        audioMain.clip = obstacleInstructionsVoice6;
-        audioMain.Play();
 
         Invoke("ObstacleDialogueEnd", audioMain.clip.length);
     }
 
     void ObstacleDialogueEnd()
     {
-        msgObstaclePrototype.enabled = true;
+        msgTracingFinal.enabled = true;
         obstacleTrigger.SetActive(false);
         msgLevelMovement.enabled = true;
         
@@ -186,14 +170,20 @@ public class Tutorial_Triggers : MonoBehaviour
     void ObstacleTrigger()
     {
         GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-        MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
+        //MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
 
-        cam_ob.original_cam_position = cam.transform.position;
-        cam_ob.obstacle_int = obstacle_int;
+        //cam_ob.original_cam_position = cam.transform.position;
+        //cam_ob.obstacle_int = obstacle_int;
+
+        MSG_Tracing_Final cam_tr = cam.GetComponent<MSG_Tracing_Final>();
+
+        cam_tr.original_cam_position = cam.transform.position;
 
         cam.transform.position = new Vector3(10000, 0, -10);
 
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
-        cam_ob.obstacles_active(msgObstacleTrigger);
+        //cam_ob.obstacles_active(this);
+
+        cam_tr.Obstacle_Start(obstacle_int);
     }
 }
