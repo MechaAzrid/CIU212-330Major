@@ -184,6 +184,6 @@ public class Tutorial_Triggers : MonoBehaviour
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
         //cam_ob.obstacles_active(this);
 
-        cam_tr.Obstacle_Start(obstacle_int);
+        //cam_tr.Obstacle_Start(obstacle_int);
     }
 }

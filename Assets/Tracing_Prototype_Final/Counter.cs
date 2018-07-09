@@ -33,12 +33,15 @@ public class Counter : MonoBehaviour
 
     private GameObject cam;
     private MSG_Tracing_Final tfs;
+    private SpriteRenderer letter;
 
     // Use this for initialization
     void Start()
     {
         cam = GameObject.Find("Main Camera");
         tfs = cam.GetComponent<MSG_Tracing_Final>();
+        letter = GetComponent<SpriteRenderer>();
+        letter.enabled = false;
 
         if (lines_visible)
         {
@@ -75,6 +78,65 @@ public class Counter : MonoBehaviour
         }
     }
 
+    public void set_active ()
+    {
+        letter.enabled = true;
+
+        if (lines_visible)
+        {
+            for (int i = 0; i < tracer_nodes.Length; i++)
+            {
+                LineRenderer lr = tracer_nodes[i].GetComponent<LineRenderer>();
+
+                if (i == tracer_nodes.Length - 1)
+                {
+                    lr.SetPosition(0, tracer_nodes[i].transform.position);
+                    lr.SetPosition(1, tracer_nodes[i].transform.position);
+                }
+                else
+                {
+                    lr.SetPosition(0, tracer_nodes[i].transform.position);
+                    lr.SetPosition(1, tracer_nodes[i + 1].transform.position);
+                }
+            }
+        }
+
+        if (dots_visible)
+        {
+            for (int i = 0; i < tracer_nodes.Length; i++)
+            {
+                tracer_nodes[i].GetComponent<Renderer>().enabled = true;
+                tracer_nodes[i].GetComponent<Collider>().enabled = true;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < tracer_nodes.Length; i++)
+            {
+                tracer_nodes[i].GetComponent<Renderer>().enabled = false;
+                tracer_nodes[i].GetComponent<Collider>().enabled = true;
+            }
+        }
+    }
+
+    public void set_inactive ()
+    {
+        letter.enabled = false;
+
+        for (int i = 0; i < tracer_nodes.Length; i++)
+        {
+            LineRenderer lr = tracer_nodes[i].GetComponent<LineRenderer>();
+
+            if (i == tracer_nodes.Length - 1)
+            {
+                lr.SetPosition(0, Vector3.zero);
+                lr.SetPosition(1, Vector3.zero);
+
+                tracer_nodes[i].GetComponent<Renderer>().enabled = false;
+                tracer_nodes[i].GetComponent<Collider>().enabled = false;
+            }
+        }
+    }
 
     public void Count ()
     {

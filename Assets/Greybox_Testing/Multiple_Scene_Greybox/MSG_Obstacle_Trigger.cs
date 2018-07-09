@@ -84,12 +84,12 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         cam_tr.original_cam_position = cam.transform.position;
 
-        cam.transform.position = new Vector3(10000, 0, -10);
+        cam.transform.position = new Vector3(-10000, 0, -10);
 
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
+        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Tracing_Active();
         //cam_ob.obstacles_active(this);
 
-        cam_tr.Obstacle_Start(obstacle_int);
+        cam_tr.Obstacle_Start(obstacle_int, this);
     }
 
     void Save ()
