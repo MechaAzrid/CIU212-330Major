@@ -12,6 +12,7 @@ public class MSG_Tracing_Final : MonoBehaviour
     [Header("Items below need to be set in inspector")]
 
     public GameObject tracing_continue_button;
+    public GameObject tracing_reset_button;
 
     [Header("Object used in line construction")]
     public GameObject input_node;
@@ -227,6 +228,7 @@ public class MSG_Tracing_Final : MonoBehaviour
             {
                 tracing_checker.color = Color.green;
                 tracing_continue_button.SetActive(true);
+                tracing_reset_button.SetActive(false);
             }
             else
             {
@@ -273,12 +275,19 @@ public class MSG_Tracing_Final : MonoBehaviour
             counter.set_inactive();
         }
 
+        for (int i = 0; i < node_list.Count; i++)
+        {
+            Destroy(node_list[i]);
+        }
+        node_list.Clear();
+
         temp_tracers.Clear();
     }
 
     public void Continue_Button ()
     {
         tracing_continue_button.SetActive(false);
+        tracing_reset_button.SetActive(true);
         tracing_checker.color = Color.white;
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
         trigger.passed = true;
@@ -291,6 +300,12 @@ public class MSG_Tracing_Final : MonoBehaviour
             Counter counter = temp_tracers[i].GetComponent<Counter>();
             counter.set_inactive();
         }
+
+        for (int i = 0; i < node_list.Count; i++)
+        {
+            Destroy(node_list[i]);
+        }
+        node_list.Clear();
 
         temp_tracers.Clear();
     }

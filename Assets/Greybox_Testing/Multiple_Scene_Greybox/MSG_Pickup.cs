@@ -51,10 +51,7 @@ public class MSG_Pickup : MonoBehaviour
 
             if(gold)
             {
-                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Tracing_Active();
-
-                GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-                cam.transform.position = new Vector3(-10000, 0, -10);
+                GameObject.Find("Menu_Button").GetComponent<Menu>().Menu_Button();
             }
         }
     }
