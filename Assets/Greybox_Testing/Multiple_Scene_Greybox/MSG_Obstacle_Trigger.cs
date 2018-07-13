@@ -11,6 +11,8 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     public Renderer[] black_blocks;
     public Renderer[] grey_blocks;
 
+    public GameObject[] bridge;
+
     public Color red_black;
     public Color red_grey;
 
@@ -35,13 +37,16 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     {
 		if(!passed)
         {
+            foreach (GameObject bridge_piece in bridge)
+            {
+                bridge_piece.SetActive(false);
+            }
+
             for (int i = 0; i < black_blocks.Length; i++)
             {
                 black_blocks[i].material.color = red_black;
                 grey_blocks[i].material.color = red_grey;
             }
-
-            gameObject.GetComponent<Collider>().enabled = true;
 
             float distance = Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
 
@@ -57,14 +62,17 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (passed)
         {
+            foreach (GameObject bridge_piece in bridge)
+            {
+                bridge_piece.SetActive(true);
+            }
+
             for (int i = 0; i < black_blocks.Length; i++)
             {
                 black_blocks[i].material.color = green_black;
                 grey_blocks[i].material.color = green_grey;
 
                 GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
-
-                gameObject.GetComponent<Collider>().enabled = false;
                 button.SetActive(false);
 
                 Save();

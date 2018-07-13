@@ -10,6 +10,9 @@ public class MSG_Level_Movement : MonoBehaviour
 
     public Vector3 pointer_position = new Vector3();
 
+    public GameObject view_anchor;
+    public GameObject view_point;
+
     private Vector3 pointer_world_position = new Vector3();
     private Camera c;
     private Event e;
@@ -52,20 +55,15 @@ public class MSG_Level_Movement : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, 100))
                 {
-                    Vector3 line_check = new Vector3(hit.point.x, hit.point.y, hit.point.z - 0.1f);
+                    Vector3 differecne = hit.transform.position - view_anchor.transform.position;
+                    float rotationZ = Mathf.Atan2(differecne.y, differecne.x) * Mathf.Rad2Deg;
+                    view_anchor.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+
                     RaycastHit blockage;
 
-                    if (Physics.Linecast(player.transform.position, line_check, out blockage))
+                    if (Physics.Linecast(view_anchor.transform.position, view_point.transform.position, out blockage))
                     {
-                        float distance = Vector3.Distance(player.transform.position, blockage.transform.position);
-
-                        if(distance > 1.2f)
-                        {
-                            player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
-                        }
-                    }
-                    else
-                    {
+                        Debug.Log(blockage.transform.gameObject);
                         player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
                     }
                 }

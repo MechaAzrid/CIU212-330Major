@@ -9016,9 +9016,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173447164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1171492617}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13744,6 +13745,34 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &306193367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 306193368}
+  m_Layer: 0
+  m_Name: View_Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &306193368
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306193367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171492617}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306991259
 GameObject:
   m_ObjectHideFlags: 0
@@ -33758,7 +33787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768007674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6}
+  m_LocalPosition: {x: 0, y: 2, z: -5.6}
   m_LocalScale: {x: 4, y: 2, z: 10}
   m_Children:
   - {fileID: 1632086128}
@@ -33779,15 +33808,22 @@ MonoBehaviour:
   obstacle_int: 3
   passed: 0
   black_blocks:
-  - {fileID: 1481415884}
-  - {fileID: 1762100086}
-  - {fileID: 1385682516}
-  - {fileID: 882828325}
+  - {fileID: 1969768411}
+  - {fileID: 1608922999}
+  - {fileID: 1587854660}
+  - {fileID: 1181203877}
   grey_blocks:
-  - {fileID: 1606277367}
-  - {fileID: 1141896321}
-  - {fileID: 1400288048}
-  - {fileID: 2058501963}
+  - {fileID: 467375690}
+  - {fileID: 1770348676}
+  - {fileID: 626366192}
+  - {fileID: 865487523}
+  bridge:
+  - {fileID: 162154408}
+  - {fileID: 217593670}
+  - {fileID: 991548341}
+  - {fileID: 227033415}
+  - {fileID: 910167287}
+  - {fileID: 573615608}
   red_black: {r: 0.49803922, g: 0, b: 0, a: 0}
   red_grey: {r: 1, g: 0, b: 0, a: 0}
   green_black: {r: 0, g: 0.49803922, b: 0, a: 0}
@@ -35636,7 +35672,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 810223380}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6}
+  m_LocalPosition: {x: 0, y: -2, z: -5.6}
   m_LocalScale: {x: 4, y: 2, z: 10}
   m_Children:
   - {fileID: 1584224855}
@@ -35670,15 +35706,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   black_blocks:
-  - {fileID: 1359051878}
-  - {fileID: 979150517}
-  - {fileID: 1741021207}
-  - {fileID: 703351580}
+  - {fileID: 693221441}
+  - {fileID: 1935997927}
+  - {fileID: 1063634620}
+  - {fileID: 452870607}
   grey_blocks:
-  - {fileID: 615113714}
-  - {fileID: 1286745813}
-  - {fileID: 241697274}
-  - {fileID: 1286089740}
+  - {fileID: 2101272496}
+  - {fileID: 1393574741}
+  - {fileID: 1476199843}
+  - {fileID: 1383319510}
+  bridge:
+  - {fileID: 574990820}
+  - {fileID: 915061327}
+  - {fileID: 611348196}
+  - {fileID: 1195211130}
+  - {fileID: 1669965172}
+  - {fileID: 1757533293}
   gold_black: {r: 0.49803922, g: 0.49803922, b: 0, a: 0}
   gold_grey: {r: 1, g: 1, b: 0, a: 0}
   green_black: {r: 0, g: 0.49803922, b: 0, a: 0}
@@ -52383,6 +52426,8 @@ MonoBehaviour:
   player: {fileID: 173447164}
   speed: 5
   pointer_position: {x: 0, y: 0, z: 0}
+  view_anchor: {fileID: 1171492616}
+  view_point: {fileID: 306193367}
 --- !u!1 &1154122304
 GameObject:
   m_ObjectHideFlags: 0
@@ -53018,6 +53063,35 @@ Transform:
   - {fileID: 1968307665}
   m_Father: {fileID: 2088509817}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1171492616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1171492617}
+  m_Layer: 0
+  m_Name: View_Anchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1171492617
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171492616}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 306193368}
+  m_Father: {fileID: 173447168}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175004325
 GameObject:
@@ -77336,7 +77410,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720087145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6}
+  m_LocalPosition: {x: 0, y: -2, z: -5.6}
   m_LocalScale: {x: 4, y: 2, z: 10}
   m_Children:
   - {fileID: 1110262412}
@@ -77410,15 +77484,22 @@ MonoBehaviour:
   obstacle_int: 1
   passed: 0
   black_blocks:
-  - {fileID: 1694289889}
-  - {fileID: 1633722552}
-  - {fileID: 553675408}
-  - {fileID: 350350731}
+  - {fileID: 1149038430}
+  - {fileID: 908233011}
+  - {fileID: 457208438}
+  - {fileID: 743033011}
   grey_blocks:
-  - {fileID: 8235640}
-  - {fileID: 708479443}
-  - {fileID: 982926834}
-  - {fileID: 1582554744}
+  - {fileID: 1714788780}
+  - {fileID: 1993706266}
+  - {fileID: 2041455026}
+  - {fileID: 913532828}
+  bridge:
+  - {fileID: 343352455}
+  - {fileID: 332938882}
+  - {fileID: 138825657}
+  - {fileID: 443987600}
+  - {fileID: 571207843}
+  - {fileID: 2104941807}
   red_black: {r: 0.49803922, g: 0, b: 0, a: 0}
   red_grey: {r: 1, g: 0, b: 0, a: 0}
   green_black: {r: 0, g: 0.49803922, b: 0, a: 0}
@@ -79945,7 +80026,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1788193470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6}
+  m_LocalPosition: {x: -2, y: 0, z: -5.6}
   m_LocalScale: {x: 2, y: 4, z: 10}
   m_Children:
   - {fileID: 305842303}
@@ -79966,15 +80047,22 @@ MonoBehaviour:
   obstacle_int: 2
   passed: 0
   black_blocks:
-  - {fileID: 1065480358}
-  - {fileID: 1922534388}
-  - {fileID: 1146570274}
-  - {fileID: 91281637}
+  - {fileID: 1793470562}
+  - {fileID: 1986498667}
+  - {fileID: 1833406428}
+  - {fileID: 771295689}
   grey_blocks:
-  - {fileID: 976158379}
-  - {fileID: 2108259324}
-  - {fileID: 1457713284}
-  - {fileID: 589531228}
+  - {fileID: 1502311578}
+  - {fileID: 1722256608}
+  - {fileID: 106774677}
+  - {fileID: 63380305}
+  bridge:
+  - {fileID: 1372419809}
+  - {fileID: 1271918288}
+  - {fileID: 948243129}
+  - {fileID: 250788146}
+  - {fileID: 1017088509}
+  - {fileID: 204166149}
   red_black: {r: 0.49803922, g: 0, b: 0, a: 0}
   red_grey: {r: 1, g: 0, b: 0, a: 0}
   green_black: {r: 0, g: 0.49803922, b: 0, a: 0}
@@ -82770,7 +82858,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1824273780}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.6}
+  m_LocalPosition: {x: 2, y: 0, z: -5.6}
   m_LocalScale: {x: 2, y: 4, z: 10}
   m_Children:
   - {fileID: 1144385631}
@@ -82844,15 +82932,22 @@ MonoBehaviour:
   obstacle_int: 0
   passed: 0
   black_blocks:
-  - {fileID: 1999240328}
-  - {fileID: 1388071160}
-  - {fileID: 668751194}
-  - {fileID: 518791585}
+  - {fileID: 1931070472}
+  - {fileID: 1831386152}
+  - {fileID: 1451330767}
+  - {fileID: 254702572}
   grey_blocks:
-  - {fileID: 739907527}
-  - {fileID: 120454743}
-  - {fileID: 264048903}
-  - {fileID: 1646375053}
+  - {fileID: 173680216}
+  - {fileID: 1798558923}
+  - {fileID: 1806349553}
+  - {fileID: 1854641387}
+  bridge:
+  - {fileID: 574153041}
+  - {fileID: 1257072537}
+  - {fileID: 656879625}
+  - {fileID: 1627386508}
+  - {fileID: 1096349858}
+  - {fileID: 1354714362}
   red_black: {r: 0.49803922, g: 0, b: 0, a: 0}
   red_grey: {r: 1, g: 0, b: 0, a: 0}
   green_black: {r: 0, g: 0.49803922, b: 0, a: 0}

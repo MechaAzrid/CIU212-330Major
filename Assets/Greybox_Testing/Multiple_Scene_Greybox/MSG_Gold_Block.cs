@@ -8,6 +8,8 @@ public class MSG_Gold_Block : MonoBehaviour
     public Renderer[] black_blocks;
     public Renderer[] grey_blocks;
 
+    public GameObject[] bridge;
+
     public Color gold_black;
     public Color gold_grey;
 
@@ -34,6 +36,11 @@ public class MSG_Gold_Block : MonoBehaviour
     {
         if (!stickers_collected())
         {
+            foreach (GameObject bridge_piece in bridge)
+            {
+                bridge_piece.SetActive(false);
+            }
+
             for (int i = 0; i < black_blocks.Length; i++)
             {
                 black_blocks[i].material.color = gold_black;
@@ -70,6 +77,11 @@ public class MSG_Gold_Block : MonoBehaviour
 
         if (stickers_collected())
         {
+            foreach (GameObject bridge_piece in bridge)
+            {
+                bridge_piece.SetActive(true);
+            }
+
             for (int i = 0; i < black_blocks.Length; i++)
             {
                 black_blocks[i].material.color = green_black;
