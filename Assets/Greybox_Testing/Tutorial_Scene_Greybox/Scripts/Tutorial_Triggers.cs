@@ -43,11 +43,6 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public AudioClip obstacleVoice;
     public AudioClip obstacleInstructionsVoice;
-    public AudioClip obstacleInstructionsVoice2;
-    public AudioClip obstacleInstructionsVoice3;
-    public AudioClip obstacleInstructionsVoice4;
-    public AudioClip obstacleInstructionsVoice5;
-    public AudioClip obstacleInstructionsVoice6;
 
     public AudioClip firstStickerVoice;
 
@@ -137,10 +132,11 @@ public class Tutorial_Triggers : MonoBehaviour
         yield return new WaitForSeconds(audioMain.clip.length);
 		fading.enabled = true;
         ObstacleTrigger();
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (1f);
 		fading.enabled = false;
         msgTracingFinal.enabled = false;
-        yield return new WaitForSeconds(1f);
+        audioMain.clip = obstacleInstructionsVoice;
+        audioMain.Play();
 
         Invoke("ObstacleDialogueEnd", audioMain.clip.length);
     }
@@ -169,21 +165,23 @@ public class Tutorial_Triggers : MonoBehaviour
 
     void ObstacleTrigger()
     {
-        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-        //MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
+        //GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        ////MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
 
-        //cam_ob.original_cam_position = cam.transform.position;
-        //cam_ob.obstacle_int = obstacle_int;
+        ////cam_ob.original_cam_position = cam.transform.position;
+        ////cam_ob.obstacle_int = obstacle_int;
 
-        MSG_Tracing_Final cam_tr = cam.GetComponent<MSG_Tracing_Final>();
+        //MSG_Tracing_Final cam_tr = cam.GetComponent<MSG_Tracing_Final>();
 
-        cam_tr.original_cam_position = cam.transform.position;
+        //cam_tr.original_cam_position = cam.transform.position;
 
-        cam.transform.position = new Vector3(10000, 0, -10);
+        //cam.transform.position = new Vector3(-10000, 0, -10);
 
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Obstacle_Active();
-        //cam_ob.obstacles_active(this);
+        //GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Tracing_Active();
+        ////cam_ob.obstacles_active(this);
 
-        //cam_tr.Obstacle_Start(obstacle_int);
+        //cam_tr.Obstacle_Start(obstacle_int, msgObstacleTrigger);
+
+        msgObstacleTrigger.Button_Clicked();
     }
 }
