@@ -42,10 +42,14 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 bridge_piece.SetActive(false);
             }
 
-            for (int i = 0; i < black_blocks.Length; i++)
+            foreach (Renderer black_renderer in black_blocks)
             {
-                black_blocks[i].material.color = red_black;
-                grey_blocks[i].material.color = red_grey;
+                black_renderer.material.color = red_black;
+            }
+
+            foreach (Renderer grey_renderer in grey_blocks)
+            {
+                grey_renderer.material.color = red_grey;
             }
 
             float distance = Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
@@ -67,16 +71,20 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 bridge_piece.SetActive(true);
             }
 
-            for (int i = 0; i < black_blocks.Length; i++)
+            foreach (Renderer black_renderer in black_blocks)
             {
-                black_blocks[i].material.color = green_black;
-                grey_blocks[i].material.color = green_grey;
-
-                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
-                button.SetActive(false);
-
-                Save();
+                black_renderer.material.color = green_black;
             }
+
+            foreach (Renderer grey_renderer in grey_blocks)
+            {
+                grey_renderer.material.color = green_grey;
+            }
+
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
+            button.SetActive(false);
+
+            Save();
         }
     }
 
