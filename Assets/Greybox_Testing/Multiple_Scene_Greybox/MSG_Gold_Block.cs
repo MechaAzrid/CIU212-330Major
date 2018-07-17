@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MSG_Gold_Block : MonoBehaviour
 {
@@ -21,11 +22,47 @@ public class MSG_Gold_Block : MonoBehaviour
 
     private bool stickers_collected()
     {
-        for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1; i++)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i] == false)
+            for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1; i++)
             {
-                return false;
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i] == false)
+                {
+                    return false;
+                }
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+        {
+            for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers.Length - 1; i++)
+            {
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[i] == false)
+                {
+                    return false;
+                }
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+        {
+            for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers.Length - 1; i++)
+            {
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[i] == false)
+                {
+                    return false;
+                }
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+        {
+            for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers.Length - 1; i++)
+            {
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[i] == false)
+                {
+                    return false;
+                }
             }
         }
 
@@ -41,11 +78,14 @@ public class MSG_Gold_Block : MonoBehaviour
                 bridge_piece.SetActive(false);
             }
 
-            for (int i = 0; i < black_blocks.Length; i++)
+            foreach (Renderer black_renderer in black_blocks)
             {
-                black_blocks[i].material.color = gold_black;
-                grey_blocks[i].material.color = gold_grey;
-                gameObject.GetComponent<Collider>().enabled = true;
+                black_renderer.material.color = gold_black;
+            }
+
+            foreach (Renderer grey_renderer in grey_blocks)
+            {
+                grey_renderer.material.color = gold_black;
             }
 
             float distance = Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
@@ -55,15 +95,53 @@ public class MSG_Gold_Block : MonoBehaviour
                 Text count_text = bottom_text.GetComponent<Text>();
                 int number = 0;
 
-                for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1; i++)
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
                 {
-                    if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+                    for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1; i++)
                     {
-                        number++;
+                        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+                        {
+                            number++;
+                        }
                     }
+                    count_text.text = (number.ToString() + " / " + (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1).ToString());
                 }
 
-                count_text.text = (number.ToString() + " / " + (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1).ToString());
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+                {
+                    for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers.Length - 1; i++)
+                    {
+                        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[i])
+                        {
+                            number++;
+                        }
+                    }
+                    count_text.text = (number.ToString() + " / " + (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers.Length - 1).ToString());
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+                {
+                    for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers.Length - 1; i++)
+                    {
+                        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[i])
+                        {
+                            number++;
+                        }
+                    }
+                    count_text.text = (number.ToString() + " / " + (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers.Length - 1).ToString());
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+                {
+                    for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers.Length - 1; i++)
+                    {
+                        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[i])
+                        {
+                            number++;
+                        }
+                    }
+                    count_text.text = (number.ToString() + " / " + (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers.Length - 1).ToString());
+                }
 
                 top_text.SetActive(true);
                 bottom_text.SetActive(true);
@@ -82,15 +160,18 @@ public class MSG_Gold_Block : MonoBehaviour
                 bridge_piece.SetActive(true);
             }
 
-            for (int i = 0; i < black_blocks.Length; i++)
+            foreach (Renderer black_renderer in black_blocks)
             {
-                black_blocks[i].material.color = green_black;
-                grey_blocks[i].material.color = green_grey;
-                gameObject.GetComponent<Collider>().enabled = false;
-
-                top_text.SetActive(false);
-                bottom_text.SetActive(false);
+                black_renderer.material.color = green_black;
             }
+
+            foreach (Renderer grey_renderer in grey_blocks)
+            {
+                grey_renderer.material.color = green_black;
+            }
+
+            top_text.SetActive(false);
+            bottom_text.SetActive(false);
         }
     }
 }

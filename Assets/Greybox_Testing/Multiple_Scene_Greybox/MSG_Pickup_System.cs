@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class MSG_Pickup_System : MonoBehaviour
@@ -19,13 +20,52 @@ public class MSG_Pickup_System : MonoBehaviour
     {
         for(int i = 0; i < pickup_slots.Length; i++)
         {
-            if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
             {
-                pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[i];
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[i];
+                }
+                else
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_blank_sprites[i];
+                }
             }
-            else
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
             {
-                pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_blank_sprites[i];
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[i])
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_sticker_sprites[i];
+                }
+                else
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_sticker_blank_sprites[i];
+                }
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+            {
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[i])
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_sticker_sprites[i];
+                }
+                else
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_sticker_blank_sprites[i];
+                }
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+            {
+                if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[i])
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_sticker_sprites[i];
+                }
+                else
+                {
+                    pickup_slots[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_sticker_blank_sprites[i];
+                }
             }
         }
     }
@@ -38,8 +78,29 @@ public class MSG_Pickup_System : MonoBehaviour
 
     public void Picked_Up(int sticker_number)
     {
-        pickup_slots[sticker_number].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[sticker_number];
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] = true;
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+        {
+            pickup_slots[sticker_number].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[sticker_number];
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] = true;
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+        {
+            pickup_slots[sticker_number].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_sticker_sprites[sticker_number];
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[sticker_number] = true;
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+        {
+            pickup_slots[sticker_number].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_sticker_sprites[sticker_number];
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[sticker_number] = true;
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+        {
+            pickup_slots[sticker_number].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_sticker_sprites[sticker_number];
+            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[sticker_number] = true;
+        }
 
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
         Destroy(pickup_object);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Levels { none, tutorial }
+public enum Levels { none, tutorial, level_a, level_b, level_c }
 
 public class MSG_Sticker_Selector : MonoBehaviour
 {
@@ -58,6 +58,33 @@ public class MSG_Sticker_Selector : MonoBehaviour
                 selected_sticker = -1;
             }
         }
+
+        if (level == Levels.level_a)
+        {
+            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[selected_sticker])
+            {
+                finder_active = false;
+                selected_sticker = -1;
+            }
+        }
+
+        if (level == Levels.level_b)
+        {
+            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[selected_sticker])
+            {
+                finder_active = false;
+                selected_sticker = -1;
+            }
+        }
+
+        if (level == Levels.level_c)
+        {
+            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[selected_sticker])
+            {
+                finder_active = false;
+                selected_sticker = -1;
+            }
+        }
     }
 
     public void Button_Click (int number)
@@ -65,6 +92,57 @@ public class MSG_Sticker_Selector : MonoBehaviour
         if (level == Levels.tutorial)
         {
             if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[number])
+            {
+                if (number != selected_sticker)
+                {
+                    finder_active = true;
+                    selected_sticker = number;
+                }
+                else
+                {
+                    finder_active = false;
+                    selected_sticker = -1;
+                }
+            }
+        }
+
+        if (level == Levels.level_a)
+        {
+            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[number])
+            {
+                if (number != selected_sticker)
+                {
+                    finder_active = true;
+                    selected_sticker = number;
+                }
+                else
+                {
+                    finder_active = false;
+                    selected_sticker = -1;
+                }
+            }
+        }
+
+        if (level == Levels.level_b)
+        {
+            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[number])
+            {
+                if (number != selected_sticker)
+                {
+                    finder_active = true;
+                    selected_sticker = number;
+                }
+                else
+                {
+                    finder_active = false;
+                    selected_sticker = -1;
+                }
+            }
+        }
+
+        if (level == Levels.level_c)
+        {
+            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[number])
             {
                 if (number != selected_sticker)
                 {

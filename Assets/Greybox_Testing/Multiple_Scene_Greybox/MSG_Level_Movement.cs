@@ -63,7 +63,6 @@ public class MSG_Level_Movement : MonoBehaviour
 
                     if (Physics.Linecast(view_anchor.transform.position, view_point.transform.position, out blockage))
                     {
-                        Debug.Log(blockage.transform.gameObject);
                         player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
                     }
                 }

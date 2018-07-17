@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MSG_Pickup : MonoBehaviour
 {
     public bool gold;
     public int sticker_number;
 
-    private Renderer object_renderer;
     private SpriteRenderer object_sprite;
 
     public float distance;
@@ -22,18 +22,45 @@ public class MSG_Pickup : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        object_renderer = GetComponent<Renderer>();
         object_sprite = GetComponent<SpriteRenderer>();
 
         player = GameObject.FindGameObjectWithTag("Player");
         pickup_system = GameObject.Find("Main Camera").GetComponent<MSG_Pickup_System>();
 
-        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] == false)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
         {
-            gameObject.GetComponent<Collider>().enabled = true;
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] == false)
+            {
+                gameObject.GetComponent<Collider>().enabled = true;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+        }
 
-            if (object_renderer != null) gameObject.GetComponent<Renderer>().enabled = true;
-            if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+        {
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[sticker_number] == false)
+            {
+                gameObject.GetComponent<Collider>().enabled = true;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+        {
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[sticker_number] == false)
+            {
+                gameObject.GetComponent<Collider>().enabled = true;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+        {
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[sticker_number] == false)
+            {
+                gameObject.GetComponent<Collider>().enabled = true;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
         }
     }
 	

@@ -269,6 +269,13 @@ public class MSG_Tracing_Final : MonoBehaviour
         transform.position = original_cam_position;
         original_cam_position = new Vector3(0, 0, 0);
 
+        total_nodes = 0;
+        total_node_count = 0;
+        correctnumber = 0;
+
+        total_min_count = 0;
+        total_max_count = 0;
+
         for (int i = 0; i < temp_tracers.Count; i++)
         {
             Counter counter = temp_tracers[i].GetComponent<Counter>();
@@ -294,6 +301,14 @@ public class MSG_Tracing_Final : MonoBehaviour
         trigger = null;
         transform.position = original_cam_position;
         original_cam_position = new Vector3(0, 0, 0);
+        locked = false;
+
+        total_nodes = 0;
+        total_node_count = 0;
+        correctnumber = 0;
+
+        total_min_count = 0;
+        total_max_count = 0;
 
         for (int i = 0; i < temp_tracers.Count; i++)
         {

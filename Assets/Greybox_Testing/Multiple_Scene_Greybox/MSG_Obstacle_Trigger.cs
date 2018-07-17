@@ -37,7 +37,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -45,7 +45,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -53,7 +53,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -109,7 +109,26 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 grey_renderer.material.color = green_grey;
             }
 
-            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+            {
+                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+            {
+                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_obstacle_passed[obstacle_int] = true;
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+            {
+                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_obstacle_passed[obstacle_int] = true;
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+            {
+                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_obstacle_passed[obstacle_int] = true;
+            }
+
             button.SetActive(false);
 
             Save();
