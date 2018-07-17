@@ -69,19 +69,19 @@ MonoBehaviour:
   level_a_obstacle_passed: 0000000000
   level_a_stickers: 000000000000
   level_a_sticker_blank_sprites:
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  - {fileID: 21300000, guid: 32682c2eaf187c249a6500bf06dfa142, type: 3}
+  - {fileID: 21300000, guid: 98e8015375df00641a865a39784cfea1, type: 3}
+  - {fileID: 21300000, guid: 5e066e2b054fde74fa736145a4deca5c, type: 3}
+  - {fileID: 21300000, guid: d82c24cc87bd2574a9f6aa40341b2773, type: 3}
+  - {fileID: 21300000, guid: 70ac8238f47388b4eb92354206c979b3, type: 3}
+  - {fileID: 21300000, guid: 0e4427f0830ea2a46a5d4dec2c686e5b, type: 3}
   level_a_sticker_sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 56080682d635dd940b1d88c2fdb099fd, type: 3}
+  - {fileID: 21300000, guid: d41cfd7210bb42a4ca85a01cb70b0dbd, type: 3}
+  - {fileID: 21300000, guid: 0c3f12f3da2635a45a09e10c2469d3bc, type: 3}
+  - {fileID: 21300000, guid: c9931ce00eaf43446a1ade2d52c4021d, type: 3}
+  - {fileID: 21300000, guid: 86c32094219b93d498a5727d3223a532, type: 3}
+  - {fileID: 21300000, guid: 57b4dbe6effd15743a3fc92553d8423c, type: 3}
   level_b_obstacle_passed: 
   level_b_stickers: 
   level_b_sticker_blank_sprites: []
