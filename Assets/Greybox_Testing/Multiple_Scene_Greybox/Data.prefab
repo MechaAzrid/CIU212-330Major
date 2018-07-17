@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1020032957576772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.510218, y: -4.0617733, z: -0.6899324}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,10 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f04131d350740048b2deb78b08b4c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam_states: 2
+  cam_states: 0
   tutorial_obstacle_passed: 00000000
   tutorial_stickers: 0000000000
-  sticker_int: 0
   tutorial_sticker_blank_sprites:
   - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
   - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
@@ -67,6 +66,31 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 47b1442641d8d904398816275aace8aa, type: 3}
   - {fileID: 21300000, guid: 71118638084e1054295379a35f650842, type: 3}
   - {fileID: 21300000, guid: cac5e2505dc911b49ac35d8eb84a743d, type: 3}
+  level_a_obstacle_passed: 0000000000
+  level_a_stickers: 000000000000
+  level_a_sticker_blank_sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  level_a_sticker_sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  level_b_obstacle_passed: 
+  level_b_stickers: 
+  level_b_sticker_blank_sprites: []
+  level_b_sticker_sprites: []
+  level_c_obstacle_passed: 
+  level_c_stickers: 
+  level_c_sticker_blank_sprites: []
+  level_c_sticker_sprites: []
+  saving_active: 1
   tutorial_obstacle_passed_key:
   - tutorial_obstacle_0
   - tutorial_obstacle_1
@@ -80,5 +104,26 @@ MonoBehaviour:
   - tutorial_sticker_3
   - tutorial_sticker_4
   tutorial_stickers_value: 0000000000000000000000000000000000000000
-  sticker_int_key: sticker_int
-  sticker_int_value: 0
+  level_a_obstacle_passed_key:
+  - lvl_a_obstacle_0
+  - lvl_a_obstacle_1
+  - lvl_a_obstacle_2
+  - lvl_a_obstacle_3
+  - lvl_a_obstacle_4
+  level_a_obstacle_passed_value: 0000000000000000000000000000000000000000
+  level_a_stickers_key:
+  - lvl_a_sticker_0
+  - lvl_a_sticker_1
+  - lvl_a_sticker_2
+  - lvl_a_sticker_3
+  - lvl_a_sticker_4
+  - lvl_a_sticker_5
+  level_a_stickers_value: 000000000000000000000000000000000000000000000000
+  level_b_obstacle_passed_key: []
+  level_b_obstacle_passed_value: 
+  level_b_stickers_key: []
+  level_b_stickers_value: 
+  level_c_obstacle_passed_key: []
+  level_c_obstacle_passed_value: 
+  level_c_stickers_key: []
+  level_c_stickers_value: 
