@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MSG_Obstacle_Trigger : MonoBehaviour
 {
@@ -26,11 +27,38 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
         {
-            passed = true;
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            {
+                passed = true;
+            }
         }
-	}
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+        {
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            {
+                passed = true;
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+        {
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            {
+                passed = true;
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+        {
+            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            {
+                passed = true;
+            }
+        }
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate ()

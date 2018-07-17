@@ -13,9 +13,26 @@ public class MSG_Transitioner : MonoBehaviour
     [Header("Tutorial Arrays")]
     public bool[] tutorial_obstacle_passed;
     public bool[] tutorial_stickers;
-    public int sticker_int = 0;
     public Sprite[] tutorial_sticker_blank_sprites;
     public Sprite[] tutorial_sticker_sprites;
+
+    [Header("Level_A Arrays")]
+    public bool[] level_a_obstacle_passed;
+    public bool[] level_a_stickers;
+    public Sprite[] level_a_sticker_blank_sprites;
+    public Sprite[] level_a_sticker_sprites;
+
+    [Header("Level_B Arrays")]
+    public bool[] level_b_obstacle_passed;
+    public bool[] level_b_stickers;
+    public Sprite[] level_b_sticker_blank_sprites;
+    public Sprite[] level_b_sticker_sprites;
+
+    [Header("Level_C Arrays")]
+    public bool[] level_c_obstacle_passed;
+    public bool[] level_c_stickers;
+    public Sprite[] level_c_sticker_blank_sprites;
+    public Sprite[] level_c_sticker_sprites;
 
     [Header("Whether Saving is active or not")]
     public bool saving_active = true;
@@ -24,19 +41,40 @@ public class MSG_Transitioner : MonoBehaviour
     // Obstacles
     public string[] tutorial_obstacle_passed_key;
     public int[] tutorial_obstacle_passed_value;
-
     // Stickers
     public string[] tutorial_stickers_key;
     public int[] tutorial_stickers_value;
 
-    public string sticker_int_key;
-    public int sticker_int_value;
+    [Header("Level_A Save data")]
+    // Obstacles
+    public string[] level_a_obstacle_passed_key;
+    public int[] level_a_obstacle_passed_value;
+    // Stickers
+    public string[] level_a_stickers_key;
+    public int[] level_a_stickers_value;
+
+    [Header("Level_B Save data")]
+    // Obstacles
+    public string[] level_b_obstacle_passed_key;
+    public int[] level_b_obstacle_passed_value;
+    // Stickers
+    public string[] level_b_stickers_key;
+    public int[] level_b_stickers_value;
+
+    [Header("Level_C Save data")]
+    // Obstacles
+    public string[] level_c_obstacle_passed_key;
+    public int[] level_c_obstacle_passed_value;
+    // Stickers
+    public string[] level_c_stickers_key;
+    public int[] level_c_stickers_value;
 
     // Use this for initialization
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
 
+        // Tutorial
         // obstacles
         for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
         {
@@ -51,7 +89,6 @@ public class MSG_Transitioner : MonoBehaviour
                 tutorial_obstacle_passed[i] = true;
             }
         }
-
         // stickers
         for (int i = 0; i < tutorial_stickers_key.Length; i++)
         {
@@ -67,9 +104,95 @@ public class MSG_Transitioner : MonoBehaviour
             }
         }
 
-        // sticker int
-        sticker_int_value = PlayerPrefs.GetInt(sticker_int_key, 0);
-        sticker_int = sticker_int_value;
+        // Level_A
+        // obstacles
+        for (int i = 0; i < level_a_obstacle_passed_key.Length; i++)
+        {
+            level_a_obstacle_passed_value[i] = PlayerPrefs.GetInt(level_a_obstacle_passed_key[i], 0);
+
+            if (level_a_obstacle_passed_value[i] == 0)
+            {
+                level_a_obstacle_passed[i] = false;
+            }
+            else
+            {
+                level_a_obstacle_passed[i] = true;
+            }
+        }
+        // stickers
+        for (int i = 0; i < level_a_stickers_key.Length; i++)
+        {
+            level_a_stickers_value[i] = PlayerPrefs.GetInt(level_a_stickers_key[i], 0);
+
+            if (level_a_stickers_value[i] == 0)
+            {
+                level_a_stickers[i] = false;
+            }
+            else
+            {
+                level_a_stickers[i] = true;
+            }
+        }
+
+        // Level_B
+        // obstacles
+        for (int i = 0; i < level_b_obstacle_passed_key.Length; i++)
+        {
+            level_b_obstacle_passed_value[i] = PlayerPrefs.GetInt(level_b_obstacle_passed_key[i], 0);
+
+            if (level_b_obstacle_passed_value[i] == 0)
+            {
+                level_b_obstacle_passed[i] = false;
+            }
+            else
+            {
+                level_b_obstacle_passed[i] = true;
+            }
+        }
+        // stickers
+        for (int i = 0; i < level_b_stickers_key.Length; i++)
+        {
+            level_b_stickers_value[i] = PlayerPrefs.GetInt(level_b_stickers_key[i], 0);
+
+            if (level_b_stickers_value[i] == 0)
+            {
+                level_b_stickers[i] = false;
+            }
+            else
+            {
+                level_b_stickers[i] = true;
+            }
+        }
+
+        // Level_C
+        // obstacles
+        for (int i = 0; i < level_c_obstacle_passed_key.Length; i++)
+        {
+            level_c_obstacle_passed_value[i] = PlayerPrefs.GetInt(level_c_obstacle_passed_key[i], 0);
+
+            if (level_c_obstacle_passed_value[i] == 0)
+            {
+                level_c_obstacle_passed[i] = false;
+            }
+            else
+            {
+                level_c_obstacle_passed[i] = true;
+            }
+        }
+        // stickers
+        for (int i = 0; i < level_c_stickers_key.Length; i++)
+        {
+            level_c_stickers_value[i] = PlayerPrefs.GetInt(level_c_stickers_key[i], 0);
+
+            if (level_c_stickers_value[i] == 0)
+            {
+                level_c_stickers[i] = false;
+            }
+            else
+            {
+                level_c_stickers[i] = true;
+            }
+        }
 
         Save_Data();
     }
@@ -86,6 +209,7 @@ public class MSG_Transitioner : MonoBehaviour
     {
         if(saving_active)
         {
+            // Tutorial
             // obstacles
             for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
             {
@@ -98,7 +222,6 @@ public class MSG_Transitioner : MonoBehaviour
                     PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 0);
                 }
             }
-
             // stickers
             for (int i = 0; i < tutorial_stickers_key.Length; i++)
             {
@@ -112,8 +235,83 @@ public class MSG_Transitioner : MonoBehaviour
                 }
             }
 
-            // sticker int
-            PlayerPrefs.SetInt(sticker_int_key, sticker_int);
+            // Level_A
+            // obstacles
+            for (int i = 0; i < level_a_obstacle_passed_key.Length; i++)
+            {
+                if (level_a_obstacle_passed[i])
+                {
+                    PlayerPrefs.SetInt(level_a_obstacle_passed_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(level_a_obstacle_passed_key[i], 0);
+                }
+            }
+            // stickers
+            for (int i = 0; i < level_a_stickers_key.Length; i++)
+            {
+                if (level_a_stickers[i])
+                {
+                    PlayerPrefs.SetInt(level_a_stickers_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(level_a_stickers_key[i], 0);
+                }
+            }
+
+            // Level_B
+            // obstacles
+            for (int i = 0; i < level_b_obstacle_passed_key.Length; i++)
+            {
+                if (level_b_obstacle_passed[i])
+                {
+                    PlayerPrefs.SetInt(level_b_obstacle_passed_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(level_b_obstacle_passed_key[i], 0);
+                }
+            }
+            // stickers
+            for (int i = 0; i < level_b_stickers_key.Length; i++)
+            {
+                if (level_b_stickers[i])
+                {
+                    PlayerPrefs.SetInt(level_b_stickers_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(level_b_stickers_key[i], 0);
+                }
+            }
+
+            // Level_C
+            // obstacles
+            for (int i = 0; i < level_c_obstacle_passed_key.Length; i++)
+            {
+                if (level_c_obstacle_passed[i])
+                {
+                    PlayerPrefs.SetInt(level_c_obstacle_passed_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(level_c_obstacle_passed_key[i], 0);
+                }
+            }
+            // stickers
+            for (int i = 0; i < level_c_stickers_key.Length; i++)
+            {
+                if (level_c_stickers[i])
+                {
+                    PlayerPrefs.SetInt(level_c_stickers_key[i], 1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(level_c_stickers_key[i], 0);
+                }
+            }
         }
     }
 
@@ -150,26 +348,57 @@ public class MSG_Transitioner : MonoBehaviour
         {
             tutorial_stickers[i] = false;
         }
-
-        sticker_int = 0;
         Reset_Data();
     }
 
     void Reset_Data ()
     {
+        // Tutorial
         // obstacles
         for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
         {
             PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 0);
         }
-
         // stickers
         for (int i = 0; i < tutorial_stickers_key.Length; i++)
         {
             PlayerPrefs.SetInt(tutorial_stickers_key[i], 0);
         }
 
-        // sticker int
-        PlayerPrefs.SetInt(sticker_int_key, 0);
+        // Level_A
+        // obstacles
+        for (int i = 0; i < level_a_obstacle_passed_key.Length; i++)
+        {
+            PlayerPrefs.SetInt(level_a_obstacle_passed_key[i], 0);
+        }
+        // stickers
+        for (int i = 0; i < level_a_stickers_key.Length; i++)
+        {
+            PlayerPrefs.SetInt(level_a_stickers_key[i], 0);
+        }
+
+        // Level_B
+        // obstacles
+        for (int i = 0; i < level_b_obstacle_passed_key.Length; i++)
+        {
+            PlayerPrefs.SetInt(level_b_obstacle_passed_key[i], 0);
+        }
+        // stickers
+        for (int i = 0; i < level_b_stickers_key.Length; i++)
+        {
+            PlayerPrefs.SetInt(level_b_stickers_key[i], 0);
+        }
+
+        // Level_C
+        // obstacles
+        for (int i = 0; i < level_c_obstacle_passed_key.Length; i++)
+        {
+            PlayerPrefs.SetInt(level_c_obstacle_passed_key[i], 0);
+        }
+        // stickers
+        for (int i = 0; i < level_c_stickers_key.Length; i++)
+        {
+            PlayerPrefs.SetInt(level_c_stickers_key[i], 0);
+        }
     }
 }
