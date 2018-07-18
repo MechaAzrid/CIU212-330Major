@@ -34,6 +34,11 @@ public class MSG_Pickup : MonoBehaviour
                 gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
+            else
+            {
+                gameObject.GetComponent<Collider>().enabled = false;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
@@ -42,6 +47,11 @@ public class MSG_Pickup : MonoBehaviour
             {
                 gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            else
+            {
+                gameObject.GetComponent<Collider>().enabled = false;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
 
@@ -52,6 +62,11 @@ public class MSG_Pickup : MonoBehaviour
                 gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
+            else
+            {
+                gameObject.GetComponent<Collider>().enabled = false;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
@@ -60,6 +75,11 @@ public class MSG_Pickup : MonoBehaviour
             {
                 gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            else
+            {
+                gameObject.GetComponent<Collider>().enabled = false;
+                if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
     }

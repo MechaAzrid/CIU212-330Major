@@ -16,6 +16,7 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     [Header("Object used in line construction")]
     public GameObject input_node;
+    public bool input_dot_active = true;
 
     [Header("Arrays for the tracing templates")]
     public List<int> word_length = new List<int>();
@@ -171,6 +172,12 @@ public class MSG_Tracing_Final : MonoBehaviour
             if (distance > 0.5f && clicked)
             {
                 current_output_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
+
+                if(!input_dot_active)
+                {
+                    current_output_node.GetComponent<Renderer>().enabled = false;
+                }
+
                 node_list.Add(current_output_node);
                 input_node_script.lr.SetPosition(1, current_output_node.transform.position);
                 Node();
@@ -182,6 +189,12 @@ public class MSG_Tracing_Final : MonoBehaviour
     {
         clicked = false;
         current_output_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
+
+        if (!input_dot_active)
+        {
+            current_output_node.GetComponent<Renderer>().enabled = false;
+        }
+
         node_list.Add(current_output_node);
         input_node_script.lr.SetPosition(1, current_output_node.transform.position);
         current_input_node = current_output_node;
@@ -195,6 +208,12 @@ public class MSG_Tracing_Final : MonoBehaviour
     void Node_Start()
     {
         current_input_node = Instantiate(input_node, pointer_world_location, transform.rotation) as GameObject;
+
+        if (!input_dot_active)
+        {
+            current_input_node.GetComponent<Renderer>().enabled = false;
+        }
+
         node_list.Add(current_input_node);
         input_node_script = current_input_node.GetComponent<Input_Node>();
         total_nodes++;

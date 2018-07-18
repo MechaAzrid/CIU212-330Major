@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum Levels { none, tutorial, level_a, level_b, level_c }
 
@@ -8,7 +9,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 {
     public Levels level;
 
-    public GameObject[] active_images;
+    public Outline[] image_outlines;
 
     public Vector3[] sticker_positions;
 
@@ -38,15 +39,15 @@ public class MSG_Sticker_Selector : MonoBehaviour
             lr.SetPosition(1, sticker_positions[selected_sticker]);
         }
 
-	    for (int i = 0; i < active_images.Length; i++)
+	    for (int i = 0; i < image_outlines.Length; i++)
         {
             if(i == selected_sticker)
             {
-                active_images[i].SetActive(true);
+                image_outlines[i].enabled = true;
             }
             else
             {
-                active_images[i].SetActive(false);
+                image_outlines[i].enabled = false;
             }
         }
 
