@@ -13,6 +13,8 @@ public class MSG_Level_Movement : MonoBehaviour
     public GameObject view_anchor;
     public GameObject view_point;
 
+    public bool moving;
+
     private Vector3 pointer_world_position = new Vector3();
     private Camera c;
     private Event e;
@@ -63,9 +65,15 @@ public class MSG_Level_Movement : MonoBehaviour
 
                     if (Physics.Linecast(view_anchor.transform.position, view_point.transform.position, out blockage))
                     {
+                        moving = true;
                         player.transform.position = Vector3.MoveTowards(player.transform.position, hit.point, step);
                     }
                 }
+            }
+
+            if (Input.GetButtonUp("Fire1"))
+            {
+                moving = false;
             }
 
             // Touch Input
