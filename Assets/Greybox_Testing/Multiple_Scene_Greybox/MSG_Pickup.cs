@@ -17,8 +17,6 @@ public class MSG_Pickup : MonoBehaviour
 
     public bool locked = false;
 
-    public string temp_data;
-
     // Use this for initialization
     void Start ()
     {
