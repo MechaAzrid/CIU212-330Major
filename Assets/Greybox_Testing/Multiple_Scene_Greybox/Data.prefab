@@ -98,10 +98,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6908d96605d761f4fbd8b774cbf13180, type: 3}
   - {fileID: 21300000, guid: ecaac2697cbde7c4a8ab1d07ee5a3d7a, type: 3}
   - {fileID: 21300000, guid: a4fbf3af57ddf0c4784b95743e56de11, type: 3}
-  level_c_obstacle_passed: 
-  level_c_stickers: 
-  level_c_sticker_blank_sprites: []
-  level_c_sticker_sprites: []
+  level_c_obstacle_passed: 0000000000
+  level_c_stickers: 000000000000
+  level_c_sticker_blank_sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  level_c_sticker_sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   saving_active: 0
   tutorial_obstacle_passed_key:
   - tutorial_obstacle_0
@@ -146,7 +158,19 @@ MonoBehaviour:
   - lvl_b_sticker_4
   - lvl_b_sticker_5
   level_b_stickers_value: 000000000000000000000000000000000000000000000000
-  level_c_obstacle_passed_key: []
-  level_c_obstacle_passed_value: 
-  level_c_stickers_key: []
-  level_c_stickers_value: 
+  level_c_obstacle_passed_key:
+  - lvl_c_obstacle_0
+  - lvl_c_obstacle_1
+  - lvl_c_obstacle_2
+  - lvl_c_obstacle_3
+  - lvl_c_obstacle_4
+  - lvl_c_obstacle_5
+  level_c_obstacle_passed_value: 000000000000000000000000000000000000000000000000
+  level_c_stickers_key:
+  - lvl_c_sticker_0
+  - lvl_c_sticker_1
+  - lvl_c_sticker_2
+  - lvl_c_sticker_3
+  - lvl_c_sticker_4
+  - lvl_c_sticker_5
+  level_c_stickers_value: 000000000000000000000000000000000000000000000000
