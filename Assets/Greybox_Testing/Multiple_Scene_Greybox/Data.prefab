@@ -101,19 +101,19 @@ MonoBehaviour:
   level_c_obstacle_passed: 0000000000
   level_c_stickers: 000000000000
   level_c_sticker_blank_sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: a0851176042084449b45b102456926f8, type: 3}
+  - {fileID: 21300000, guid: ae508685720510a4788c83a4bde99ed9, type: 3}
+  - {fileID: 21300000, guid: 774eb9979e908c94f893a4780a1a9c6a, type: 3}
+  - {fileID: 21300000, guid: 2dca2e21d07797043abee5abe57ec73e, type: 3}
+  - {fileID: 21300000, guid: a4296cc7930085741b120ed1f0ac3977, type: 3}
+  - {fileID: 21300000, guid: bf11e7a1f77431245933b5db451b1549, type: 3}
   level_c_sticker_sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 67c0c04ee457ed04a92d77b73495cf9b, type: 3}
+  - {fileID: 21300000, guid: 12a7e5935e2c26048abbff087072704d, type: 3}
+  - {fileID: 21300000, guid: 92e2cc4f3e9c6a049809363eef06735c, type: 3}
+  - {fileID: 21300000, guid: c62a8e1b2148a474aa00be5ef2663069, type: 3}
+  - {fileID: 21300000, guid: 8af8fa3f731f4964891f476165990fad, type: 3}
+  - {fileID: 21300000, guid: f391ad645d6aec549a55b42320c36e59, type: 3}
   saving_active: 0
   tutorial_obstacle_passed_key:
   - tutorial_obstacle_0

@@ -1806,12 +1806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  active_images:
-  - {fileID: 1363594788752786}
-  - {fileID: 1774107916076726}
-  - {fileID: 1552916724880516}
-  - {fileID: 1150881602070300}
-  - {fileID: 1779651960213296}
+  image_outlines: []
   sticker_positions:
   - {x: -18, y: 0, z: 0}
   - {x: -6, y: 18, z: 0}
@@ -1997,6 +1992,7 @@ MonoBehaviour:
   tracing_continue_button: {fileID: 1759732296075602}
   tracing_reset_button: {fileID: 1359821464617410}
   input_node: {fileID: 1418522731699502, guid: 8f9d6872dda42614bb1e2de8b81ef50c, type: 2}
+  input_dot_active: 1
   word_length: 03000000030000000300000003000000
   tracers:
   - {fileID: 0}
@@ -2068,6 +2064,7 @@ MonoBehaviour:
   pointer_position: {x: 0, y: 0, z: 0}
   view_anchor: {fileID: 0}
   view_point: {fileID: 0}
+  moving: 0
 --- !u!114 &114599067523932376
 MonoBehaviour:
   m_ObjectHideFlags: 1
