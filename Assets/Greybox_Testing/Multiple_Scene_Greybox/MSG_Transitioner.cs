@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public enum camera_states { None, Pause, Movement, Tracing, Dragging, Obstacle }
 
 public class MSG_Transitioner : MonoBehaviour
 {
+    public static MSG_Transitioner data;
+
     [Header("The State that the camera is in")]
     public camera_states cam_states;
 
@@ -37,163 +42,20 @@ public class MSG_Transitioner : MonoBehaviour
     [Header("Whether Saving is active or not")]
     public bool saving_active = true;
 
-    [Header("Tutorial Save data")]
-    // Obstacles
-    public string[] tutorial_obstacle_passed_key;
-    public int[] tutorial_obstacle_passed_value;
-    // Stickers
-    public string[] tutorial_stickers_key;
-    public int[] tutorial_stickers_value;
-
-    [Header("Level_A Save data")]
-    // Obstacles
-    public string[] level_a_obstacle_passed_key;
-    public int[] level_a_obstacle_passed_value;
-    // Stickers
-    public string[] level_a_stickers_key;
-    public int[] level_a_stickers_value;
-
-    [Header("Level_B Save data")]
-    // Obstacles
-    public string[] level_b_obstacle_passed_key;
-    public int[] level_b_obstacle_passed_value;
-    // Stickers
-    public string[] level_b_stickers_key;
-    public int[] level_b_stickers_value;
-
-    [Header("Level_C Save data")]
-    // Obstacles
-    public string[] level_c_obstacle_passed_key;
-    public int[] level_c_obstacle_passed_value;
-    // Stickers
-    public string[] level_c_stickers_key;
-    public int[] level_c_stickers_value;
-
     // Use this for initialization
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-
-        // Tutorial
-        // obstacles
-        for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
+        if (data == null)
         {
-            tutorial_obstacle_passed_value[i] = PlayerPrefs.GetInt(tutorial_obstacle_passed_key[i], 0);
-
-            if(tutorial_obstacle_passed_value[i] == 0)
-            {
-                tutorial_obstacle_passed[i] = false;
-            }
-            else
-            {
-                tutorial_obstacle_passed[i] = true;
-            }
+            DontDestroyOnLoad(gameObject);
+            data = this;
         }
-        // stickers
-        for (int i = 0; i < tutorial_stickers_key.Length; i++)
+        else if (data != this)
         {
-            tutorial_stickers_value[i] = PlayerPrefs.GetInt(tutorial_stickers_key[i], 0);
-
-            if (tutorial_stickers_value[i] == 0)
-            {
-                tutorial_stickers[i] = false;
-            }
-            else
-            {
-                tutorial_stickers[i] = true;
-            }
+            Destroy(gameObject);
         }
 
-        // Level_A
-        // obstacles
-        for (int i = 0; i < level_a_obstacle_passed_key.Length; i++)
-        {
-            level_a_obstacle_passed_value[i] = PlayerPrefs.GetInt(level_a_obstacle_passed_key[i], 0);
-
-            if (level_a_obstacle_passed_value[i] == 0)
-            {
-                level_a_obstacle_passed[i] = false;
-            }
-            else
-            {
-                level_a_obstacle_passed[i] = true;
-            }
-        }
-        // stickers
-        for (int i = 0; i < level_a_stickers_key.Length; i++)
-        {
-            level_a_stickers_value[i] = PlayerPrefs.GetInt(level_a_stickers_key[i], 0);
-
-            if (level_a_stickers_value[i] == 0)
-            {
-                level_a_stickers[i] = false;
-            }
-            else
-            {
-                level_a_stickers[i] = true;
-            }
-        }
-
-        // Level_B
-        // obstacles
-        for (int i = 0; i < level_b_obstacle_passed_key.Length; i++)
-        {
-            level_b_obstacle_passed_value[i] = PlayerPrefs.GetInt(level_b_obstacle_passed_key[i], 0);
-
-            if (level_b_obstacle_passed_value[i] == 0)
-            {
-                level_b_obstacle_passed[i] = false;
-            }
-            else
-            {
-                level_b_obstacle_passed[i] = true;
-            }
-        }
-        // stickers
-        for (int i = 0; i < level_b_stickers_key.Length; i++)
-        {
-            level_b_stickers_value[i] = PlayerPrefs.GetInt(level_b_stickers_key[i], 0);
-
-            if (level_b_stickers_value[i] == 0)
-            {
-                level_b_stickers[i] = false;
-            }
-            else
-            {
-                level_b_stickers[i] = true;
-            }
-        }
-
-        // Level_C
-        // obstacles
-        for (int i = 0; i < level_c_obstacle_passed_key.Length; i++)
-        {
-            level_c_obstacle_passed_value[i] = PlayerPrefs.GetInt(level_c_obstacle_passed_key[i], 0);
-
-            if (level_c_obstacle_passed_value[i] == 0)
-            {
-                level_c_obstacle_passed[i] = false;
-            }
-            else
-            {
-                level_c_obstacle_passed[i] = true;
-            }
-        }
-        // stickers
-        for (int i = 0; i < level_c_stickers_key.Length; i++)
-        {
-            level_c_stickers_value[i] = PlayerPrefs.GetInt(level_c_stickers_key[i], 0);
-
-            if (level_c_stickers_value[i] == 0)
-            {
-                level_c_stickers[i] = false;
-            }
-            else
-            {
-                level_c_stickers[i] = true;
-            }
-        }
-
+        Load_Data();
         Save_Data();
     }
 
@@ -201,117 +63,55 @@ public class MSG_Transitioner : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.M))
         {
-            End();
+            Reset_Data();
+        }
+    }
+
+    public void Load_Data ()
+    {
+        if (File.Exists(Application.persistentDataPath + "/AlphabetExplorerGameData.dat") && saving_active)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/AlphabetExplorerGameData.dat", FileMode.Open);
+            Game_Data game_data = ((Game_Data)bf.Deserialize(file));
+            file.Close();
+
+            tutorial_obstacle_passed = game_data.tutorial_obstacle_passed;
+            tutorial_stickers = game_data.tutorial_stickers;
+
+            level_a_obstacle_passed = game_data.level_a_obstacle_passed;
+            level_a_stickers = game_data.level_a_stickers;
+
+            level_b_obstacle_passed = game_data.level_b_obstacle_passed;
+            level_b_stickers = game_data.level_b_stickers;
+
+            level_c_obstacle_passed = game_data.level_c_obstacle_passed;
+            level_c_stickers = game_data.level_c_stickers;
         }
     }
 
     public void Save_Data ()
     {
-        if(saving_active)
+        if (saving_active)
         {
-            // Tutorial
-            // obstacles
-            for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
-            {
-                if (tutorial_obstacle_passed[i])
-                {
-                    PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 0);
-                }
-            }
-            // stickers
-            for (int i = 0; i < tutorial_stickers_key.Length; i++)
-            {
-                if (tutorial_stickers[i])
-                {
-                    PlayerPrefs.SetInt(tutorial_stickers_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(tutorial_stickers_key[i], 0);
-                }
-            }
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(Application.persistentDataPath + "/AlphabetExplorerGameData.dat");
+            Game_Data game_data = new Game_Data();
 
-            // Level_A
-            // obstacles
-            for (int i = 0; i < level_a_obstacle_passed_key.Length; i++)
-            {
-                if (level_a_obstacle_passed[i])
-                {
-                    PlayerPrefs.SetInt(level_a_obstacle_passed_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(level_a_obstacle_passed_key[i], 0);
-                }
-            }
-            // stickers
-            for (int i = 0; i < level_a_stickers_key.Length; i++)
-            {
-                if (level_a_stickers[i])
-                {
-                    PlayerPrefs.SetInt(level_a_stickers_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(level_a_stickers_key[i], 0);
-                }
-            }
+            game_data.tutorial_obstacle_passed = tutorial_obstacle_passed;
+            game_data.tutorial_stickers = tutorial_stickers;
 
-            // Level_B
-            // obstacles
-            for (int i = 0; i < level_b_obstacle_passed_key.Length; i++)
-            {
-                if (level_b_obstacle_passed[i])
-                {
-                    PlayerPrefs.SetInt(level_b_obstacle_passed_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(level_b_obstacle_passed_key[i], 0);
-                }
-            }
-            // stickers
-            for (int i = 0; i < level_b_stickers_key.Length; i++)
-            {
-                if (level_b_stickers[i])
-                {
-                    PlayerPrefs.SetInt(level_b_stickers_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(level_b_stickers_key[i], 0);
-                }
-            }
+            game_data.level_a_obstacle_passed = level_a_obstacle_passed;
+            game_data.level_a_stickers = level_a_stickers;
 
-            // Level_C
-            // obstacles
-            for (int i = 0; i < level_c_obstacle_passed_key.Length; i++)
-            {
-                if (level_c_obstacle_passed[i])
-                {
-                    PlayerPrefs.SetInt(level_c_obstacle_passed_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(level_c_obstacle_passed_key[i], 0);
-                }
-            }
-            // stickers
-            for (int i = 0; i < level_c_stickers_key.Length; i++)
-            {
-                if (level_c_stickers[i])
-                {
-                    PlayerPrefs.SetInt(level_c_stickers_key[i], 1);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt(level_c_stickers_key[i], 0);
-                }
-            }
+            game_data.level_b_obstacle_passed = level_b_obstacle_passed;
+            game_data.level_b_stickers = level_b_stickers;
+
+            game_data.level_c_obstacle_passed = level_c_obstacle_passed;
+            game_data.level_c_stickers = level_c_stickers;
+
+            bf.Serialize(file, game_data);
+            file.Close();
         }
     }
 
@@ -335,70 +135,48 @@ public class MSG_Transitioner : MonoBehaviour
         cam_states = camera_states.Tracing;
     }
 
-    public void End ()
+    //public void End ()
+    //{
+    //    cam_states = camera_states.None;
+
+    //    for (int i = 0; i < tutorial_obstacle_passed.Length; i++)
+    //    {
+    //        tutorial_obstacle_passed[i] = false;
+    //    }
+
+    //    for (int i = 0; i < tutorial_stickers.Length; i++)
+    //    {
+    //        tutorial_stickers[i] = false;
+    //    }
+
+    //    Reset_Data();
+    //}
+
+    void Reset_Data()
     {
-        cam_states = camera_states.None;
-
-        for (int i = 0; i < tutorial_obstacle_passed.Length; i++)
+        if(File.Exists(Application.persistentDataPath + "/AlphabetExplorerGameData.dat"))
         {
-            tutorial_obstacle_passed[i] = false;
-        }
-
-        for (int i = 0; i < tutorial_stickers.Length; i++)
-        {
-            tutorial_stickers[i] = false;
-        }
-        Reset_Data();
-    }
-
-    void Reset_Data ()
-    {
-        // Tutorial
-        // obstacles
-        for (int i = 0; i < tutorial_obstacle_passed_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(tutorial_obstacle_passed_key[i], 0);
-        }
-        // stickers
-        for (int i = 0; i < tutorial_stickers_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(tutorial_stickers_key[i], 0);
-        }
-
-        // Level_A
-        // obstacles
-        for (int i = 0; i < level_a_obstacle_passed_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(level_a_obstacle_passed_key[i], 0);
-        }
-        // stickers
-        for (int i = 0; i < level_a_stickers_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(level_a_stickers_key[i], 0);
-        }
-
-        // Level_B
-        // obstacles
-        for (int i = 0; i < level_b_obstacle_passed_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(level_b_obstacle_passed_key[i], 0);
-        }
-        // stickers
-        for (int i = 0; i < level_b_stickers_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(level_b_stickers_key[i], 0);
-        }
-
-        // Level_C
-        // obstacles
-        for (int i = 0; i < level_c_obstacle_passed_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(level_c_obstacle_passed_key[i], 0);
-        }
-        // stickers
-        for (int i = 0; i < level_c_stickers_key.Length; i++)
-        {
-            PlayerPrefs.SetInt(level_c_stickers_key[i], 0);
+            File.Delete(Application.persistentDataPath + "/AlphabetExplorerGameData.dat");
         }
     }
+}
+
+[Serializable]
+class Game_Data
+{
+    // Tutorial
+    public bool[] tutorial_obstacle_passed;
+    public bool[] tutorial_stickers;
+
+    // Level A
+    public bool[] level_a_obstacle_passed;
+    public bool[] level_a_stickers;
+
+    // Level B
+    public bool[] level_b_obstacle_passed;
+    public bool[] level_b_stickers;
+
+    // Levels C
+    public bool[] level_c_obstacle_passed;
+    public bool[] level_c_stickers;
 }

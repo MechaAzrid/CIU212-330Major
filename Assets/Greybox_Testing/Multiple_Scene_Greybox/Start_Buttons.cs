@@ -14,7 +14,7 @@ public class Start_Buttons : MonoBehaviour
 
     public void Start_Button ()
     {
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
+        MSG_Transitioner.data.Movement_Active();
         SceneManager.LoadScene(scene);
     }
 
@@ -34,13 +34,13 @@ public class Start_Buttons : MonoBehaviour
 
         for (int i = 0; i < tutorial_stickers.Length; i++)
         {
-            if(GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[i])
+            if(MSG_Transitioner.data.tutorial_stickers[i])
             {
-                tutorial_stickers[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[i];
+                tutorial_stickers[i].sprite = MSG_Transitioner.data.tutorial_sticker_sprites[i];
             }
             else
             {
-                tutorial_stickers[i].sprite = GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_sticker_blank_sprites[i];
+                tutorial_stickers[i].sprite = MSG_Transitioner.data.tutorial_sticker_blank_sprites[i];
             }
         }
     }
@@ -79,7 +79,7 @@ public class Start_Buttons : MonoBehaviour
     {
         if(choice)
         {
-            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().End();
+            //MSG_Transitioner.data.End();
 
             for (int i = 0; i < menus.Length; i++)
             {
@@ -111,7 +111,7 @@ public class Start_Buttons : MonoBehaviour
 
     public void Quit_Button()
     {
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
+        MSG_Transitioner.data.Save_Data();
         Application.Quit();
     }
 }

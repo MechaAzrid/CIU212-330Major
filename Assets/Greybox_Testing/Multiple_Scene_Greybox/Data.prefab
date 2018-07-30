@@ -76,12 +76,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 70ac8238f47388b4eb92354206c979b3, type: 3}
   - {fileID: 21300000, guid: 8c87fb671080c6147808475558907b0e, type: 3}
   level_a_sticker_sprites:
-  - {fileID: 21300000, guid: 7131673b95ff9f848969f55a33a28bfd, type: 3}
-  - {fileID: 21300000, guid: 86293294c22484f4188d4d7b61afc74b, type: 3}
-  - {fileID: 21300000, guid: 86293294c22484f4188d4d7b61afc74b, type: 3}
-  - {fileID: 21300000, guid: 47b1442641d8d904398816275aace8aa, type: 3}
-  - {fileID: 21300000, guid: 71118638084e1054295379a35f650842, type: 3}
-  - {fileID: 21300000, guid: cac5e2505dc911b49ac35d8eb84a743d, type: 3}
+  - {fileID: 21300000, guid: 56080682d635dd940b1d88c2fdb099fd, type: 3}
+  - {fileID: 21300000, guid: d41cfd7210bb42a4ca85a01cb70b0dbd, type: 3}
+  - {fileID: 21300000, guid: 0c3f12f3da2635a45a09e10c2469d3bc, type: 3}
+  - {fileID: 21300000, guid: c9931ce00eaf43446a1ade2d52c4021d, type: 3}
+  - {fileID: 21300000, guid: 86c32094219b93d498a5727d3223a532, type: 3}
+  - {fileID: 21300000, guid: 57b4dbe6effd15743a3fc92553d8423c, type: 3}
   level_b_obstacle_passed: 0000000000
   level_b_stickers: 000000000000
   level_b_sticker_blank_sprites:
@@ -115,62 +115,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8af8fa3f731f4964891f476165990fad, type: 3}
   - {fileID: 21300000, guid: f391ad645d6aec549a55b42320c36e59, type: 3}
   saving_active: 0
-  tutorial_obstacle_passed_key:
-  - tutorial_obstacle_0
-  - tutorial_obstacle_1
-  - tutorial_obstacle_2
-  - tutorial_obstacle_3
-  tutorial_obstacle_passed_value: 00000000000000000000000000000000
-  tutorial_stickers_key:
-  - tutorial_sticker_0
-  - tutorial_sticker_1
-  - tutorial_sticker_2
-  - tutorial_sticker_3
-  - tutorial_sticker_4
-  tutorial_stickers_value: 0000000000000000000000000000000000000000
-  level_a_obstacle_passed_key:
-  - lvl_a_obstacle_0
-  - lvl_a_obstacle_1
-  - lvl_a_obstacle_2
-  - lvl_a_obstacle_3
-  - lvl_a_obstacle_4
-  level_a_obstacle_passed_value: 0000000000000000000000000000000000000000
-  level_a_stickers_key:
-  - lvl_a_sticker_0
-  - lvl_a_sticker_1
-  - lvl_a_sticker_2
-  - lvl_a_sticker_3
-  - lvl_a_sticker_4
-  - lvl_a_sticker_5
-  level_a_stickers_value: 000000000000000000000000000000000000000000000000
-  level_b_obstacle_passed_key:
-  - lvl_b_obstacle_0
-  - lvl_b_obstacle_1
-  - lvl_b_obstacle_2
-  - lvl_b_obstacle_3
-  - lvl_b_obstacle_4
-  level_b_obstacle_passed_value: 0000000000000000000000000000000000000000
-  level_b_stickers_key:
-  - lvl_b_sticker_0
-  - lvl_b_sticker_1
-  - lvl_b_sticker_2
-  - lvl_b_sticker_3
-  - lvl_b_sticker_4
-  - lvl_b_sticker_5
-  level_b_stickers_value: 000000000000000000000000000000000000000000000000
-  level_c_obstacle_passed_key:
-  - lvl_c_obstacle_0
-  - lvl_c_obstacle_1
-  - lvl_c_obstacle_2
-  - lvl_c_obstacle_3
-  - lvl_c_obstacle_4
-  - lvl_c_obstacle_5
-  level_c_obstacle_passed_value: 000000000000000000000000000000000000000000000000
-  level_c_stickers_key:
-  - lvl_c_sticker_0
-  - lvl_c_sticker_1
-  - lvl_c_sticker_2
-  - lvl_c_sticker_3
-  - lvl_c_sticker_4
-  - lvl_c_sticker_5
-  level_c_stickers_value: 000000000000000000000000000000000000000000000000

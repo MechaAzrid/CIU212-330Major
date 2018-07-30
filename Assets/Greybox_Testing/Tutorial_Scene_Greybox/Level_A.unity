@@ -12461,7 +12461,6 @@ MonoBehaviour:
   player: {fileID: 197778194}
   pickup_system: {fileID: 1658221992}
   locked: 0
-  temp_data: 
 --- !u!65 &509645566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17705,7 +17704,6 @@ MonoBehaviour:
   player: {fileID: 197778194}
   pickup_system: {fileID: 1658221992}
   locked: 0
-  temp_data: 
 --- !u!65 &748186668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26573,7 +26571,6 @@ MonoBehaviour:
   player: {fileID: 197778194}
   pickup_system: {fileID: 1658221992}
   locked: 0
-  temp_data: 
 --- !u!65 &1133531935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29090,7 +29087,6 @@ MonoBehaviour:
   player: {fileID: 197778194}
   pickup_system: {fileID: 1658221992}
   locked: 0
-  temp_data: 
 --- !u!65 &1241248052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38969,7 +38965,6 @@ MonoBehaviour:
   player: {fileID: 197778194}
   pickup_system: {fileID: 1658221992}
   locked: 0
-  temp_data: 
 --- !u!65 &1596523178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45846,7 +45841,6 @@ MonoBehaviour:
   player: {fileID: 197778194}
   pickup_system: {fileID: 1658221992}
   locked: 0
-  temp_data: 
 --- !u!65 &1911970244
 BoxCollider:
   m_ObjectHideFlags: 0
