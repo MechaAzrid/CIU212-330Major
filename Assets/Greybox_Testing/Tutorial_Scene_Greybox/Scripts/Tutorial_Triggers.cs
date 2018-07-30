@@ -27,6 +27,8 @@ public class Tutorial_Triggers : MonoBehaviour
     [Header("Obstacles and Tracing")]
     public GameObject tutorialObstacle;
     public GameObject activeSticker;
+    public GameObject retractedBridge;
+    public GameObject bridge;
 
     public int obstacle_int;
 
@@ -143,9 +145,11 @@ public class Tutorial_Triggers : MonoBehaviour
 
     void ObstacleDialogueEnd()
     {
+        retractedBridge.SetActive(false);
         msgTracingFinal.enabled = true;
         obstacleTrigger.SetActive(false);
         msgLevelMovement.enabled = true;
+        bridge.SetActive(true);
         
     }
 
