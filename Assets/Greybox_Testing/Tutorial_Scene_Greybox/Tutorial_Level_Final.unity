@@ -123377,7 +123377,7 @@ MonoBehaviour:
   image_outlines:
   - {fileID: 196195632}
   sticker_positions:
-  - {x: 12.38, y: 18.15, z: 0.08}
+  - {x: 11.901, y: 18.21, z: -0.6}
   selected_sticker: -1
   lr: {fileID: 173447169}
 --- !u!1 &1823256821

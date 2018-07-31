@@ -4290,7 +4290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91cc0fe430a54c94eb8ee59efe901239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 0
+  gold: 1
   sticker_number: 5
   distance: 0
   player: {fileID: 197778194}
@@ -9607,12 +9607,12 @@ MonoBehaviour:
   - {fileID: 2068665602}
   - {fileID: 1740539276}
   sticker_positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: -12.41, y: 13.31, z: -2.1875}
+  - {x: -16.9, y: -4.64, z: -2.1875}
+  - {x: 4.55, y: 5.84, z: -2.1875}
+  - {x: 6.24, y: -7.02, z: -2.1875}
+  - {x: -4.72, y: 13.61, z: -2.1875}
+  - {x: 3.15, y: 9.96, z: -2.1875}
   selected_sticker: -1
   lr: {fileID: 1265441085}
 --- !u!224 &346654225
