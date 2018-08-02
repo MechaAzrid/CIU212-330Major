@@ -48,6 +48,9 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public AudioClip firstStickerVoice;
 
+    [Header("Player Animations")]
+    public Player_Animation playerAnim;
+
     void Start()
     {
         audioMain = gameObject.GetComponent<AudioSource>();
