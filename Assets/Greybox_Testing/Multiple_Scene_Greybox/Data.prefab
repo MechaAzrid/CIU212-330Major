@@ -52,12 +52,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam_states: 2
-  tutorial_obstacle_passed: 00000000
-  tutorial_stickers: 0000000000
+  tutorial_obstacle_passed: 00
+  tutorial_stickers: 00
   tutorial_sticker_blank_sprites:
   - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
   tutorial_sticker_sprites:
-  - {fileID: 21300000, guid: 7131673b95ff9f848969f55a33a28bfd, type: 3}
+  - {fileID: 21300000, guid: cac5e2505dc911b49ac35d8eb84a743d, type: 3}
   level_a_obstacle_passed: 0000000000
   level_a_stickers: 000000000000
   level_a_sticker_blank_sprites:
@@ -65,14 +65,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 98e8015375df00641a865a39784cfea1, type: 3}
   - {fileID: 21300000, guid: 5e066e2b054fde74fa736145a4deca5c, type: 3}
   - {fileID: 21300000, guid: d82c24cc87bd2574a9f6aa40341b2773, type: 3}
-  - {fileID: 21300000, guid: 70ac8238f47388b4eb92354206c979b3, type: 3}
+  - {fileID: 21300000, guid: dfb1deeb8a607084ea33ecb3e5264b5d, type: 3}
   - {fileID: 21300000, guid: 8c87fb671080c6147808475558907b0e, type: 3}
   level_a_sticker_sprites:
   - {fileID: 21300000, guid: 56080682d635dd940b1d88c2fdb099fd, type: 3}
   - {fileID: 21300000, guid: d41cfd7210bb42a4ca85a01cb70b0dbd, type: 3}
   - {fileID: 21300000, guid: 0c3f12f3da2635a45a09e10c2469d3bc, type: 3}
   - {fileID: 21300000, guid: c9931ce00eaf43446a1ade2d52c4021d, type: 3}
-  - {fileID: 21300000, guid: 86c32094219b93d498a5727d3223a532, type: 3}
+  - {fileID: 21300000, guid: 16df0574826dcc54e97ca368295c14c6, type: 3}
   - {fileID: 21300000, guid: 57b4dbe6effd15743a3fc92553d8423c, type: 3}
   level_b_obstacle_passed: 0000000000
   level_b_stickers: 000000000000
