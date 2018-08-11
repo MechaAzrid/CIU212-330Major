@@ -85,8 +85,6 @@ public class MSG_Level_Movement : MonoBehaviour
 
                 if (Physics.Linecast(view_anchor.transform.position, view_point.transform.position, out blockage))
                 {
-                    Debug.Log("Hit: " + blockage.transform.gameObject);
-
                     if (blockage.transform.tag != "Environment")
                     {
                         moving = true;
@@ -136,8 +134,11 @@ public class MSG_Level_Movement : MonoBehaviour
 
                 if (Physics.Linecast(view_anchor.transform.position, view_point.transform.position, out blockage))
                 {
-                    moving = true;
-                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(view_point.transform.position.x, view_point.transform.position.y, 0), step);
+                    if (blockage.transform.tag != "Environment")
+                    {
+                        moving = true;
+                        player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(view_point.transform.position.x, view_point.transform.position.y, 0), step);
+                    }
                 }
             }
 
@@ -176,7 +177,11 @@ public class MSG_Level_Movement : MonoBehaviour
                 if (Physics.Linecast(view_anchor.transform.position, view_point.transform.position, out blockage))
                 {
                     moving = true;
-                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(view_point.transform.position.x, view_point.transform.position.y, 0), step);
+                    if (blockage.transform.tag != "Environment")
+                    {
+                        moving = true;
+                        player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(view_point.transform.position.x, view_point.transform.position.y, 0), step);
+                    }
                 }
             }
 
