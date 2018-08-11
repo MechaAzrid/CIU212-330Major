@@ -16,6 +16,7 @@ TagManager:
   - SelectSticker
   - Welcome
   - Obstacle
+  - Environment
   layers:
   - Default
   - TransparentFX
