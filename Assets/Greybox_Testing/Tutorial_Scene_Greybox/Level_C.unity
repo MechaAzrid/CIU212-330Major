@@ -4273,7 +4273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4561,6 +4561,7 @@ GameObject:
   - component: {fileID: 184211347}
   - component: {fileID: 184211346}
   - component: {fileID: 184211345}
+  - component: {fileID: 184211348}
   m_Layer: 2
   m_Name: Sticker_Gold
   m_TagString: Pickup
@@ -4654,6 +4655,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &184211348
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184211343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a952e43d4446114e8cc649490680bd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &189547668
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,7 +5871,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15319,6 +15337,7 @@ GameObject:
   - component: {fileID: 554830359}
   - component: {fileID: 554830358}
   - component: {fileID: 554830357}
+  - component: {fileID: 554830360}
   m_Layer: 2
   m_Name: Sticker_2
   m_TagString: Pickup
@@ -15412,6 +15431,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &554830360
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 554830355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14ef4a3ba1715e7428219a66f4e104e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &557445573
 GameObject:
   m_ObjectHideFlags: 0
@@ -17190,6 +17226,7 @@ GameObject:
   - component: {fileID: 620354426}
   - component: {fileID: 620354425}
   - component: {fileID: 620354424}
+  - component: {fileID: 620354427}
   m_Layer: 2
   m_Name: Sticker_3
   m_TagString: Pickup
@@ -17283,6 +17320,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &620354427
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620354422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e519d1a67277fb4a8cea9e4428b4c90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &622143508
 GameObject:
   m_ObjectHideFlags: 0
@@ -23020,7 +23074,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -32747,7 +32801,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -38167,6 +38221,7 @@ GameObject:
   - component: {fileID: 1333157822}
   - component: {fileID: 1333157821}
   - component: {fileID: 1333157820}
+  - component: {fileID: 1333157823}
   m_Layer: 2
   m_Name: Sticker_4
   m_TagString: Pickup
@@ -38260,6 +38315,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1333157823
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333157818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dad0f960d6d9a994a90f74cd335993b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1335952116
 GameObject:
   m_ObjectHideFlags: 0
@@ -46090,6 +46162,7 @@ GameObject:
   - component: {fileID: 1550064136}
   - component: {fileID: 1550064135}
   - component: {fileID: 1550064134}
+  - component: {fileID: 1550064137}
   m_Layer: 2
   m_Name: Sticker_1
   m_TagString: Pickup
@@ -46183,6 +46256,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1550064137
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550064132}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16d25a8ed8050ed48bce314c3cca11b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1550430790
 GameObject:
   m_ObjectHideFlags: 0
@@ -56021,7 +56111,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -63734,6 +63824,7 @@ GameObject:
   - component: {fileID: 2125376725}
   - component: {fileID: 2125376724}
   - component: {fileID: 2125376723}
+  - component: {fileID: 2125376726}
   m_Layer: 2
   m_Name: Sticker_0
   m_TagString: Pickup
@@ -63748,7 +63839,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2125376721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.41, y: 13.31, z: -2.1875}
+  m_LocalPosition: {x: -12.41, y: 11.42, z: -2.1875}
   m_LocalScale: {x: 0.27862737, y: 0.27862737, z: 0.27862737}
   m_Children: []
   m_Father: {fileID: 1655190635}
@@ -63827,6 +63918,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2125376726
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125376721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3dce44c9a3132a41874f0338579e272, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2125690177
 GameObject:
   m_ObjectHideFlags: 0
