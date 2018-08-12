@@ -17,6 +17,7 @@ TagManager:
   - Welcome
   - Obstacle
   - Environment
+  - Portal
   layers:
   - Default
   - TransparentFX

@@ -98,6 +98,7 @@ public class MSG_Pickup : MonoBehaviour
             if(gold)
             {
                 GameObject.Find("Menu_Button").GetComponent<Menu>().Menu_Button();
+				portal.SetActive (true);
             }
         }
     }
