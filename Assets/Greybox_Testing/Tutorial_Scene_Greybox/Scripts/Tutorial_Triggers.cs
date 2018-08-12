@@ -29,6 +29,7 @@ public class Tutorial_Triggers : MonoBehaviour
     public GameObject activeSticker;
     public GameObject retractedBridge;
     public GameObject bridge;
+	public GameObject portal;
 
     public int obstacle_int;
 
@@ -168,6 +169,7 @@ public class Tutorial_Triggers : MonoBehaviour
     void CongratulationsFirstEnd()
     {
         msgLevelMovement.enabled = true;
+		portal.SetActive (true);
     }
 
     void ObstacleTrigger()

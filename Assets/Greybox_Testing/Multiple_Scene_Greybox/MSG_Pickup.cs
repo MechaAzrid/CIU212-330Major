@@ -13,6 +13,7 @@ public class MSG_Pickup : MonoBehaviour
     public float distance;
 
     public GameObject player;
+	public GameObject portal;
     public MSG_Pickup_System pickup_system;
 
     public bool locked = false;
@@ -25,7 +26,7 @@ public class MSG_Pickup : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         pickup_system = GameObject.Find("Main Camera").GetComponent<MSG_Pickup_System>();
 
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
             if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] == false)
             {

@@ -20,7 +20,7 @@ public class MSG_Pickup_System : MonoBehaviour
     {
         for(int i = 0; i < pickup_slots.Length; i++)
         {
-            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
             {
                 if (MSG_Transitioner.data.tutorial_stickers[i])
                 {
@@ -78,7 +78,7 @@ public class MSG_Pickup_System : MonoBehaviour
 
     public void Picked_Up(int sticker_number)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
             pickup_slots[sticker_number].sprite = MSG_Transitioner.data.GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[sticker_number];
             MSG_Transitioner.data.tutorial_stickers[sticker_number] = true;
