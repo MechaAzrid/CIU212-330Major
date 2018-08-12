@@ -1181,6 +1181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3091290}
   - component: {fileID: 3091291}
+  - component: {fileID: 3091292}
   m_Layer: 0
   m_Name: House_02
   m_TagString: Untagged
@@ -1245,6 +1246,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &3091292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3091289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Center: {x: 0, y: 0.0000019073486, z: 0}
 --- !u!1 &25622534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +1729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 55905032}
   - component: {fileID: 55905033}
+  - component: {fileID: 55905034}
   m_Layer: 0
   m_Name: Forest_Trees
   m_TagString: Untagged
@@ -1780,6 +1794,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &55905034
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55905031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.00000011920929, z: 0}
 --- !u!1 &68063144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,6 +4173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171335381}
   - component: {fileID: 171335382}
+  - component: {fileID: 171335383}
   m_Layer: 0
   m_Name: Bush (11)
   m_TagString: Untagged
@@ -4211,6 +4238,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &171335383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 171335380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &175942432
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,6 +4259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175942433}
   - component: {fileID: 175942434}
+  - component: {fileID: 175942435}
   m_Layer: 0
   m_Name: Bush (16)
   m_TagString: Untagged
@@ -4284,6 +4324,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &175942435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 175942432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &178764044
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,6 +5870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216804443}
   - component: {fileID: 216804444}
+  - component: {fileID: 216804445}
   m_Layer: 0
   m_Name: Bush (17)
   m_TagString: Untagged
@@ -5882,6 +5935,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &216804445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216804442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &220081280
 GameObject:
   m_ObjectHideFlags: 0
@@ -9920,7 +9985,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35, y: -27.079025, z: 0}
+  m_LocalPosition: {x: -35, y: 79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -9952,6 +10017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 353300630}
   - component: {fileID: 353300631}
+  - component: {fileID: 353300632}
   m_Layer: 0
   m_Name: Bush (7)
   m_TagString: Untagged
@@ -10016,6 +10082,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &353300632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353300629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &356547499
 GameObject:
   m_ObjectHideFlags: 0
@@ -10502,6 +10580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364008665}
   - component: {fileID: 364008666}
+  - component: {fileID: 364008667}
   m_Layer: 0
   m_Name: House_03
   m_TagString: Untagged
@@ -10566,6 +10645,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &364008667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364008664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Center: {x: -0.0000038146973, y: 0.00000047683716, z: 0}
 --- !u!1 &365410630
 GameObject:
   m_ObjectHideFlags: 0
@@ -10575,6 +10666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365410631}
   - component: {fileID: 365410632}
+  - component: {fileID: 365410633}
   m_Layer: 0
   m_Name: Tree (7)
   m_TagString: Untagged
@@ -10639,6 +10731,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &365410633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365410630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9902892, y: 8.145142, z: 0.2}
+  m_Center: {x: 0.06530452, y: -2.6774292, z: 0}
 --- !u!1 &373498032
 GameObject:
   m_ObjectHideFlags: 0
@@ -10648,6 +10752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 373498033}
   - component: {fileID: 373498034}
+  - component: {fileID: 373498035}
   m_Layer: 0
   m_Name: Bush (10)
   m_TagString: Untagged
@@ -10712,6 +10817,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &373498035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373498032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: -0.0000019073486, y: 0, z: 0.00000047683716}
 --- !u!1 &373928547
 GameObject:
   m_ObjectHideFlags: 0
@@ -12692,6 +12809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449250341}
   - component: {fileID: 449250342}
+  - component: {fileID: 449250343}
   m_Layer: 0
   m_Name: Bush (6)
   m_TagString: Untagged
@@ -12756,6 +12874,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &449250343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449250340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0.0000038146973, y: 0.00000017881393, z: 0.00000047683716}
 --- !u!1 &453906107
 GameObject:
   m_ObjectHideFlags: 0
@@ -12765,6 +12895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453906108}
   - component: {fileID: 453906109}
+  - component: {fileID: 453906110}
   m_Layer: 0
   m_Name: Bush (23)
   m_TagString: Untagged
@@ -12829,6 +12960,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &453906110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453906107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &457071101
 GameObject:
   m_ObjectHideFlags: 0
@@ -13642,8 +13785,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 658, y: 319, z: 0}
-  m_LocalScale: {x: 1.645, y: 1.645, z: 1.645}
+  m_LocalPosition: {x: 512, y: 384, z: 0}
+  m_LocalScale: {x: 1.28, y: 1.28, z: 1.28}
   m_Children:
   - {fileID: 1942320141}
   - {fileID: 346654225}
@@ -16189,6 +16332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570489754}
   - component: {fileID: 570489755}
+  - component: {fileID: 570489756}
   m_Layer: 0
   m_Name: Bush (4)
   m_TagString: Untagged
@@ -16242,7 +16386,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16253,6 +16397,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &570489756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570489753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &589966087
 GameObject:
   m_ObjectHideFlags: 0
@@ -17420,6 +17576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625446033}
   - component: {fileID: 625446034}
+  - component: {fileID: 625446035}
   m_Layer: 0
   m_Name: Bush (25)
   m_TagString: Untagged
@@ -17473,7 +17630,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17484,6 +17641,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &625446035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625446032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0.00000023841858, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &637215344
 GameObject:
   m_ObjectHideFlags: 0
@@ -18363,6 +18532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 662862666}
   - component: {fileID: 662862667}
+  - component: {fileID: 662862668}
   m_Layer: 0
   m_Name: Bush (22)
   m_TagString: Untagged
@@ -18427,6 +18597,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &662862668
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662862665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0.0000038146973, y: 0, z: 0.00000047683716}
 --- !u!1 &665061445
 GameObject:
   m_ObjectHideFlags: 0
@@ -18794,6 +18976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677374538}
   - component: {fileID: 677374539}
+  - component: {fileID: 677374540}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -18858,6 +19041,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &677374540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677374537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.525641, y: 5.402461, z: 0.19999886}
+  m_Center: {x: 0.21738671, y: -2.056866, z: 0}
 --- !u!1 &697408816
 GameObject:
   m_ObjectHideFlags: 0
@@ -21668,6 +21863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 771152642}
   - component: {fileID: 771152643}
+  - component: {fileID: 771152644}
   m_Layer: 0
   m_Name: Bush (8)
   m_TagString: Untagged
@@ -21732,6 +21928,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &771152644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771152641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &774747884
 GameObject:
   m_ObjectHideFlags: 0
@@ -22265,6 +22473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782424005}
   - component: {fileID: 782424006}
+  - component: {fileID: 782424007}
   m_Layer: 0
   m_Name: Tree (12)
   m_TagString: Untagged
@@ -22329,6 +22538,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &782424007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782424004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2079644, y: 8.188675, z: 0.2}
+  m_Center: {x: 0.08707166, y: -2.6556625, z: 0}
 --- !u!1 &794110071
 GameObject:
   m_ObjectHideFlags: 0
@@ -22338,6 +22559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794110072}
   - component: {fileID: 794110073}
+  - component: {fileID: 794110074}
   m_Layer: 0
   m_Name: Bush (20)
   m_TagString: Untagged
@@ -22402,6 +22624,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &794110074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794110071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &799821232
 GameObject:
   m_ObjectHideFlags: 0
@@ -22590,6 +22824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 801271382}
   - component: {fileID: 801271383}
+  - component: {fileID: 801271384}
   m_Layer: 0
   m_Name: Bush (26)
   m_TagString: Untagged
@@ -22643,7 +22878,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22654,6 +22889,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &801271384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801271381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0.000000029802322, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &811838335
 GameObject:
   m_ObjectHideFlags: 0
@@ -23021,6 +23268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817581866}
   - component: {fileID: 817581867}
+  - component: {fileID: 817581868}
   m_Layer: 0
   m_Name: Bush (13)
   m_TagString: Untagged
@@ -23085,6 +23333,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &817581868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817581865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: -0.0000019073486, y: -0.0000038146973, z: 0.00000047683716}
 --- !u!1 &818887605
 GameObject:
   m_ObjectHideFlags: 0
@@ -23835,6 +24095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 835936408}
   - component: {fileID: 835936409}
+  - component: {fileID: 835936410}
   m_Layer: 0
   m_Name: Forest_Trees (2)
   m_TagString: Untagged
@@ -23899,6 +24160,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &835936410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835936407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6700006, y: 1.3754201, z: 0.20000003}
+  m_Center: {x: 0, y: -3.1222868, z: 0}
 --- !u!1 &844488283
 GameObject:
   m_ObjectHideFlags: 0
@@ -24213,6 +24486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860578762}
   - component: {fileID: 860578763}
+  - component: {fileID: 860578764}
   m_Layer: 0
   m_Name: Tree (10)
   m_TagString: Untagged
@@ -24277,6 +24551,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &860578764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860578761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2079659, y: 8.188675, z: 0.2}
+  m_Center: {x: 0.08707237, y: -2.6556625, z: 0}
 --- !u!1 &867754396
 GameObject:
   m_ObjectHideFlags: 0
@@ -24465,6 +24751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873097471}
   - component: {fileID: 873097472}
+  - component: {fileID: 873097473}
   m_Layer: 0
   m_Name: Tree (14)
   m_TagString: Untagged
@@ -24529,6 +24816,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &873097473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873097470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0773544, y: 8.014534, z: 0.2}
+  m_Center: {x: 0.0653038, y: -2.742733, z: 0}
 --- !u!1 &876319441
 GameObject:
   m_ObjectHideFlags: 0
@@ -24843,6 +25142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887375652}
   - component: {fileID: 887375653}
+  - component: {fileID: 887375654}
   m_Layer: 0
   m_Name: Forest_Trees (1)
   m_TagString: Untagged
@@ -24907,6 +25207,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &887375654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887375651}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.00000014901161, z: 0}
 --- !u!1 &887399174
 GameObject:
   m_ObjectHideFlags: 0
@@ -24916,6 +25228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887399175}
   - component: {fileID: 887399176}
+  - component: {fileID: 887399177}
   m_Layer: 0
   m_Name: Bush (24)
   m_TagString: Untagged
@@ -24969,7 +25282,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24980,6 +25293,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &887399177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887399174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &896549713
 GameObject:
   m_ObjectHideFlags: 0
@@ -25958,6 +26283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 930285280}
   - component: {fileID: 930285281}
+  - component: {fileID: 930285282}
   m_Layer: 0
   m_Name: Bush (27)
   m_TagString: Untagged
@@ -26022,6 +26348,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &930285282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930285279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &934855494
 GameObject:
   m_ObjectHideFlags: 0
@@ -26306,7 +26644,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 937232854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0259856, y: 1.1008661, z: -2.6640625}
+  m_LocalPosition: {x: -1.0259856, y: 1.1008661, z: -1.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2052492316}
@@ -26722,6 +27060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945941749}
   - component: {fileID: 945941750}
+  - component: {fileID: 945941751}
   m_Layer: 0
   m_Name: Forest_Trees (4)
   m_TagString: Untagged
@@ -26786,6 +27125,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &945941751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945941748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6700006, y: 1.5152278, z: 0.20000003}
+  m_Center: {x: 0, y: -3.0523834, z: 0}
 --- !u!1 &947240601
 GameObject:
   m_ObjectHideFlags: 0
@@ -27057,6 +27408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955719720}
   - component: {fileID: 955719721}
+  - component: {fileID: 955719722}
   m_Layer: 0
   m_Name: Forest_Trees (3)
   m_TagString: Untagged
@@ -27121,6 +27473,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &955719722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955719719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &957810138
 GameObject:
   m_ObjectHideFlags: 0
@@ -27475,6 +27839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959779182}
   - component: {fileID: 959779183}
+  - component: {fileID: 959779184}
   m_Layer: 0
   m_Name: Bush (5)
   m_TagString: Untagged
@@ -27539,6 +27904,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &959779184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 959779181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &983875253
 GameObject:
   m_ObjectHideFlags: 0
@@ -29715,6 +30092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043877926}
   - component: {fileID: 1043877927}
+  - component: {fileID: 1043877928}
   m_Layer: 0
   m_Name: Bush (21)
   m_TagString: Untagged
@@ -29779,6 +30157,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1043877928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1043877925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &1045128769
 GameObject:
   m_ObjectHideFlags: 0
@@ -29871,6 +30261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045749668}
   - component: {fileID: 1045749669}
+  - component: {fileID: 1045749670}
   m_Layer: 0
   m_Name: Barn
   m_TagString: Untagged
@@ -29935,6 +30326,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1045749670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1045749667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.261618, y: 3.8775086, z: 0.2}
+  m_Center: {x: -0.069107525, y: -0.96750164, z: 0.00000024044243}
 --- !u!1 &1046908781
 GameObject:
   m_ObjectHideFlags: 0
@@ -30123,6 +30526,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1049918783}
   - component: {fileID: 1049918784}
+  - component: {fileID: 1049918785}
   m_Layer: 0
   m_Name: House_04
   m_TagString: Untagged
@@ -30187,6 +30591,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1049918785
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049918782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1 &1055935439
 GameObject:
   m_ObjectHideFlags: 0
@@ -30680,6 +31096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1074348246}
   - component: {fileID: 1074348247}
+  - component: {fileID: 1074348248}
   m_Layer: 0
   m_Name: Bush (29)
   m_TagString: Untagged
@@ -30744,6 +31161,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1074348248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074348245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0.00000047683716}
 --- !u!1 &1077662332
 GameObject:
   m_ObjectHideFlags: 0
@@ -30836,6 +31265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080573205}
   - component: {fileID: 1080573206}
+  - component: {fileID: 1080573207}
   m_Layer: 0
   m_Name: Bush (3)
   m_TagString: Untagged
@@ -30889,7 +31319,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -30900,6 +31330,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1080573207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080573204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &1083003441
 GameObject:
   m_ObjectHideFlags: 0
@@ -32748,6 +33190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145405681}
   - component: {fileID: 1145405682}
+  - component: {fileID: 1145405683}
   m_Layer: 0
   m_Name: Bush (19)
   m_TagString: Untagged
@@ -32812,6 +33255,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1145405683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145405680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1 &1149442179
 GameObject:
   m_ObjectHideFlags: 0
@@ -36528,6 +36983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242922731}
   - component: {fileID: 1242922732}
+  - component: {fileID: 1242922733}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -36592,6 +37048,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1242922733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242922730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Center: {x: 0.0000038146973, y: 0.0000019073486, z: 0}
 --- !u!1 &1242934886
 GameObject:
   m_ObjectHideFlags: 0
@@ -36863,6 +37331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1254725006}
   - component: {fileID: 1254725007}
+  - component: {fileID: 1254725008}
   m_Layer: 0
   m_Name: Tree (3)
   m_TagString: Untagged
@@ -36916,7 +37385,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e7bf7359eb9322b40824b4b0b147f5ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -36927,6 +37396,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1254725008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1254725005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0773582, y: 8.275745, z: 0.2}
+  m_Center: {x: 0.06530571, y: -2.6121273, z: 0}
 --- !u!1 &1256720182
 GameObject:
   m_ObjectHideFlags: 0
@@ -37723,6 +38204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277068355}
   - component: {fileID: 1277068356}
+  - component: {fileID: 1277068357}
   m_Layer: 0
   m_Name: Tree (8)
   m_TagString: Untagged
@@ -37787,6 +38269,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1277068357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1277068354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0773582, y: 8.275749, z: 0.2}
+  m_Center: {x: 0.02176857, y: -2.6121254, z: 0}
 --- !u!1 &1284565517
 GameObject:
   m_ObjectHideFlags: 0
@@ -38354,6 +38848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1335952117}
   - component: {fileID: 1335952118}
+  - component: {fileID: 1335952119}
   m_Layer: 0
   m_Name: Tree (13)
   m_TagString: Untagged
@@ -38418,6 +38913,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1335952119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335952116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0338211, y: 8.319281, z: 0.2}
+  m_Center: {x: 0.087070465, y: -2.5903597, z: 0}
 --- !u!1 &1340091696
 GameObject:
   m_ObjectHideFlags: 0
@@ -41467,6 +41974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391127310}
   - component: {fileID: 1391127311}
+  - component: {fileID: 1391127312}
   m_Layer: 0
   m_Name: Forest_Trees (5)
   m_TagString: Untagged
@@ -41531,6 +42039,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1391127312
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1391127309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Center: {x: -0.0000038146973, y: 0.00000011920929, z: 0}
 --- !u!1 &1393174835
 GameObject:
   m_ObjectHideFlags: 0
@@ -42372,6 +42892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1415691300}
   - component: {fileID: 1415691301}
+  - component: {fileID: 1415691302}
   m_Layer: 0
   m_Name: Tree (11)
   m_TagString: Untagged
@@ -42436,6 +42957,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1415691302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1415691299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1208954, y: 8.275742, z: 0.2}
+  m_Center: {x: 0.04353714, y: -2.6121292, z: 0}
 --- !u!1 &1440757746
 GameObject:
   m_ObjectHideFlags: 0
@@ -42969,6 +43502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450892691}
   - component: {fileID: 1450892692}
+  - component: {fileID: 1450892693}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -43033,6 +43567,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1450892693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1450892690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &1460940439
 GameObject:
   m_ObjectHideFlags: 0
@@ -43607,6 +44153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467319480}
   - component: {fileID: 1467319481}
+  - component: {fileID: 1467319482}
   m_Layer: 0
   m_Name: House_01
   m_TagString: Untagged
@@ -43671,6 +44218,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1467319482
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467319479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Center: {x: 0.0000038146973, y: 0.00000047683716, z: 0}
 --- !u!1 &1468943141
 GameObject:
   m_ObjectHideFlags: 0
@@ -45576,6 +46135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516813973}
   - component: {fileID: 1516813974}
+  - component: {fileID: 1516813975}
   m_Layer: 0
   m_Name: Tree (5)
   m_TagString: Untagged
@@ -45640,6 +46200,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1516813975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516813972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.207964, y: 8.145138, z: 0.2}
+  m_Center: {x: 0.043536186, y: -2.677431, z: 0}
 --- !u!1 &1519937195
 GameObject:
   m_ObjectHideFlags: 0
@@ -46640,6 +47212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566058021}
   - component: {fileID: 1566058022}
+  - component: {fileID: 1566058023}
   m_Layer: 0
   m_Name: Bush (14)
   m_TagString: Untagged
@@ -46704,6 +47277,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1566058023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1566058020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: -0.00000047683716, y: -0.0000038146973, z: 0.00000047683716}
 --- !u!1001 &1570753233
 Prefab:
   m_ObjectHideFlags: 0
@@ -47919,6 +48504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609684918}
   - component: {fileID: 1609684919}
+  - component: {fileID: 1609684920}
   m_Layer: 0
   m_Name: Bush (12)
   m_TagString: Untagged
@@ -47983,6 +48569,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1609684920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609684917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &1610222621
 GameObject:
   m_ObjectHideFlags: 0
@@ -48599,6 +49197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1638988798}
   - component: {fileID: 1638988799}
+  - component: {fileID: 1638988800}
   m_Layer: 0
   m_Name: Tree (2)
   m_TagString: Untagged
@@ -48663,6 +49262,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1638988800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638988797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.207964, y: 8.275745, z: 0.2}
+  m_Center: {x: 0.043536186, y: -2.6121273, z: 0}
 --- !u!1 &1639818015
 GameObject:
   m_ObjectHideFlags: 0
@@ -49017,6 +49628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649866912}
   - component: {fileID: 1649866913}
+  - component: {fileID: 1649866914}
   m_Layer: 0
   m_Name: Bush (15)
   m_TagString: Untagged
@@ -49081,6 +49693,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1649866914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649866911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1649946741
 GameObject:
   m_ObjectHideFlags: 0
@@ -49402,6 +50026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1651248400}
   - component: {fileID: 1651248401}
+  - component: {fileID: 1651248402}
   m_Layer: 0
   m_Name: Tree (4)
   m_TagString: Untagged
@@ -49416,7 +50041,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651248399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.83, y: -11.32, z: 2.6640625}
+  m_LocalPosition: {x: -4.81, y: -11.93, z: 2.6640625}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 2052492316}
@@ -49466,6 +50091,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1651248402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651248399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.90322113, y: 8.058067, z: 0.2}
+  m_Center: {x: 0.02176857, y: -2.7209663, z: 0}
 --- !u!1 &1655190634
 GameObject:
   m_ObjectHideFlags: 0
@@ -49515,6 +50152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655502618}
   - component: {fileID: 1655502619}
+  - component: {fileID: 1655502620}
   m_Layer: 0
   m_Name: Bush (2)
   m_TagString: Untagged
@@ -49579,6 +50217,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1655502620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655502617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: -0.0000009536743, y: 0, z: 0.00000047683716}
 --- !u!114 &1658221992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51638,6 +52288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1748971960}
   - component: {fileID: 1748971961}
+  - component: {fileID: 1748971962}
   m_Layer: 0
   m_Name: Bush (28)
   m_TagString: Untagged
@@ -51702,6 +52353,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1748971962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748971959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1001 &1759703408
 Prefab:
   m_ObjectHideFlags: 0
@@ -56071,6 +56734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1881793283}
   - component: {fileID: 1881793284}
+  - component: {fileID: 1881793285}
   m_Layer: 0
   m_Name: Bush (18)
   m_TagString: Untagged
@@ -56135,6 +56799,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1881793285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881793282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1886484859
 GameObject:
   m_ObjectHideFlags: 0
@@ -57480,6 +58156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929591897}
   - component: {fileID: 1929591898}
+  - component: {fileID: 1929591899}
   m_Layer: 0
   m_Name: Bush (1)
   m_TagString: Untagged
@@ -57544,6 +58221,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1929591899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929591896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: -0.0000019073486, y: 0.0000009536743, z: 0.00000047683716}
 --- !u!1 &1937368327
 GameObject:
   m_ObjectHideFlags: 0
@@ -58020,6 +58709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1949987319}
   - component: {fileID: 1949987320}
+  - component: {fileID: 1949987321}
   m_Layer: 0
   m_Name: Tree (9)
   m_TagString: Untagged
@@ -58073,7 +58763,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e7bf7359eb9322b40824b4b0b147f5ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -58084,6 +58774,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1949987321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949987318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0773592, y: 8.536957, z: 0.2}
+  m_Center: {x: 0.0653038, y: -2.4815216, z: 0}
 --- !u!1 &1952407363
 GameObject:
   m_ObjectHideFlags: 0
@@ -62043,6 +62745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083855342}
   - component: {fileID: 2083855343}
+  - component: {fileID: 2083855344}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -62096,7 +62799,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e7bf7359eb9322b40824b4b0b147f5ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -62107,6 +62810,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2083855344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083855341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1644316, y: 8.101604, z: 0.2}
+  m_Center: {x: 0.02176714, y: -2.6991978, z: 0}
 --- !u!1 &2085957217
 GameObject:
   m_ObjectHideFlags: 0
@@ -63037,6 +63752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2095839063}
   - component: {fileID: 2095839064}
+  - component: {fileID: 2095839065}
   m_Layer: 0
   m_Name: Bush (9)
   m_TagString: Untagged
@@ -63101,6 +63817,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2095839065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095839062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &2099009557
 GameObject:
   m_ObjectHideFlags: 0
@@ -63551,6 +64279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113590557}
   - component: {fileID: 2113590558}
+  - component: {fileID: 2113590559}
   m_Layer: 0
   m_Name: Tree (6)
   m_TagString: Untagged
@@ -63615,6 +64344,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2113590559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113590556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9032173, y: 8.232212, z: 0.2}
+  m_Center: {x: 0.065301895, y: -2.633894, z: 0}
 --- !u!1 &2115102782
 GameObject:
   m_ObjectHideFlags: 0
@@ -63957,6 +64698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125690178}
   - component: {fileID: 2125690179}
+  - component: {fileID: 2125690180}
   m_Layer: 0
   m_Name: Tree (1)
   m_TagString: Untagged
@@ -64021,6 +64763,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2125690180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125690177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99028873, y: 8.2757435, z: 0.2}
+  m_Center: {x: 0.021768093, y: -2.6121283, z: 0}
 --- !u!1 &2126850030
 GameObject:
   m_ObjectHideFlags: 0
