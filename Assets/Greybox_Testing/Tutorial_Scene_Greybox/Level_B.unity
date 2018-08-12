@@ -1128,6 +1128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 28204248}
   - component: {fileID: 28204249}
+  - component: {fileID: 28204250}
   m_Layer: 0
   m_Name: Bush (23)
   m_TagString: Untagged
@@ -1142,7 +1143,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28204247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.82, y: -16.13, z: 0.01953125}
+  m_LocalPosition: {x: 12.82, y: -16.13, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -1192,6 +1193,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &28204250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28204247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!1 &42182310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 77242813}
   - component: {fileID: 77242814}
+  - component: {fileID: 77242815}
   m_Layer: 0
   m_Name: Button_Tree (2)
   m_TagString: Untagged
@@ -1603,7 +1617,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 77242812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.3574724, y: 1.0605803, z: 0}
+  m_LocalPosition: {x: -7.3574724, y: 1.0605803, z: 0.9}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 565136676}
@@ -1653,6 +1667,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &77242815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77242812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1414533, y: 4.6908016, z: 0.2}
+  m_Center: {x: -0.019665956, y: -2.379602, z: 0}
 --- !u!1 &77836222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +2223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95171741}
   - component: {fileID: 95171742}
+  - component: {fileID: 95171743}
   m_Layer: 0
   m_Name: Bush (18)
   m_TagString: Untagged
@@ -2211,7 +2238,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 95171740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.182528, y: -9.02942, z: 0.01953125}
+  m_LocalPosition: {x: 21.182528, y: -9.02942, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -2261,6 +2288,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &95171743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95171740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &110403695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,6 +2488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 115956429}
   - component: {fileID: 115956430}
+  - component: {fileID: 115956431}
   m_Layer: 0
   m_Name: Bush (15)
   m_TagString: Untagged
@@ -2463,7 +2503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115956428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.662529, y: -8.509419, z: 0.01953125}
+  m_LocalPosition: {x: 18.662529, y: -8.509419, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -2513,6 +2553,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &115956431
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 115956428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &127484816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,6 +2836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 136180584}
   - component: {fileID: 136180585}
+  - component: {fileID: 136180586}
   m_Layer: 0
   m_Name: Bush (6)
   m_TagString: Untagged
@@ -2798,7 +2851,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 136180583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.45, y: -0.1, z: 0.01953125}
+  m_LocalPosition: {x: -6.45, y: -0.1, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -2848,6 +2901,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &136180586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136180583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &155803642
 GameObject:
   m_ObjectHideFlags: 0
@@ -5039,6 +5104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221608042}
   - component: {fileID: 221608043}
+  - component: {fileID: 221608044}
   m_Layer: 0
   m_Name: Bush (8)
   m_TagString: Untagged
@@ -5053,7 +5119,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 221608041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.632528, y: 1.4205799, z: 0.01953125}
+  m_LocalPosition: {x: 6.632528, y: 1.4205799, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -5103,6 +5169,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &221608044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 221608041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: -0.00000023841858, y: -0.0000019073486, z: 0}
 --- !u!1 &223034160
 GameObject:
   m_ObjectHideFlags: 0
@@ -6402,6 +6480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 275422159}
   - component: {fileID: 275422160}
+  - component: {fileID: 275422161}
   m_Layer: 0
   m_Name: Button_Tree (1)
   m_TagString: Untagged
@@ -6416,7 +6495,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275422158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.2774725, y: 4.4105806, z: 0}
+  m_LocalPosition: {x: -9.2774725, y: 4.4105806, z: 0.9}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 565136676}
@@ -6466,6 +6545,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &275422161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275422158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9841208, y: 4.730136, z: 0.2}
+  m_Center: {x: -0.17699122, y: -2.3599324, z: 0}
 --- !u!1 &282138811
 GameObject:
   m_ObjectHideFlags: 0
@@ -6916,6 +7007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289891348}
   - component: {fileID: 289891349}
+  - component: {fileID: 289891350}
   m_Layer: 0
   m_Name: Bush (13)
   m_TagString: Untagged
@@ -6930,7 +7022,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289891347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3625278, y: -3.5894198, z: 0.01953125}
+  m_LocalPosition: {x: 1.3625278, y: -3.5894198, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -6980,6 +7072,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &289891350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 289891347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &291985303
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,7 +8483,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: -22.079025, z: 0}
+  m_LocalPosition: {x: -20, y: 84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -8673,6 +8777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 382552835}
   - component: {fileID: 382552836}
+  - component: {fileID: 382552837}
   m_Layer: 0
   m_Name: Bush (20)
   m_TagString: Untagged
@@ -8687,7 +8792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 382552834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.852528, y: -14.789419, z: 0.01953125}
+  m_LocalPosition: {x: 20.852528, y: -14.789419, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -8737,6 +8842,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &382552837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 382552834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000038146973, y: 0, z: 0}
 --- !u!1 &387644906
 GameObject:
   m_ObjectHideFlags: 0
@@ -9436,6 +9553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 426810187}
   - component: {fileID: 426810188}
+  - component: {fileID: 426810189}
   m_Layer: 0
   m_Name: Bush (32)
   m_TagString: Untagged
@@ -9450,7 +9568,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426810186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.62, y: -8.45, z: 0.01953125}
+  m_LocalPosition: {x: -2.62, y: -8.45, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -9500,6 +9618,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &426810189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 426810186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000019073486, y: -0.00000047683716, z: 0}
 --- !u!1 &427143828
 GameObject:
   m_ObjectHideFlags: 0
@@ -10736,8 +10866,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457208492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.75, z: 0}
-  m_LocalScale: {x: 1, y: 2.5, z: 1}
+  m_LocalPosition: {x: -0, y: 1.632, z: 0}
+  m_LocalScale: {x: 1, y: 2.2637205, z: 1}
   m_Children: []
   m_Father: {fileID: 540946867}
   m_RootOrder: 1
@@ -10804,6 +10934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 473289063}
   - component: {fileID: 473289064}
+  - component: {fileID: 473289065}
   m_Layer: 0
   m_Name: Bush (33)
   m_TagString: Untagged
@@ -10818,7 +10949,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 473289062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -12.91, z: 0.01953125}
+  m_LocalPosition: {x: 1.02, y: -12.91, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -10868,6 +10999,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &473289065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473289062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!1 &475296615
 GameObject:
   m_ObjectHideFlags: 0
@@ -11253,8 +11396,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 658, y: 319, z: 0}
-  m_LocalScale: {x: 1.645, y: 1.645, z: 1.645}
+  m_LocalPosition: {x: 512, y: 384, z: 0}
+  m_LocalScale: {x: 1.28, y: 1.28, z: 1.28}
   m_Children:
   - {fileID: 1097655330}
   - {fileID: 346654225}
@@ -11337,6 +11480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477609749}
   - component: {fileID: 477609750}
+  - component: {fileID: 477609751}
   m_Layer: 0
   m_Name: Bush (11)
   m_TagString: Untagged
@@ -11351,7 +11495,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 477609748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.682528, y: -0.9594197, z: 0.01953125}
+  m_LocalPosition: {x: 13.682528, y: -0.9594197, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -11401,6 +11545,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &477609751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 477609748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &478946188
 GameObject:
   m_ObjectHideFlags: 0
@@ -11410,6 +11566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478946189}
   - component: {fileID: 478946190}
+  - component: {fileID: 478946191}
   m_Layer: 0
   m_Name: Bush (26)
   m_TagString: Untagged
@@ -11424,7 +11581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478946188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.35, y: -18.82, z: 0.01953125}
+  m_LocalPosition: {x: 14.35, y: -18.82, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -11474,6 +11631,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &478946191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478946188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!1 &481181372
 GameObject:
   m_ObjectHideFlags: 0
@@ -12825,7 +12994,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 540946866}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 3.76, y: -5.99, z: -0.00999999}
+  m_LocalPosition: {x: 2.81, y: -5.57, z: -0.00999999}
   m_LocalScale: {x: 3, y: 1, z: 1}
   m_Children:
   - {fileID: 947122435}
@@ -13644,8 +13813,8 @@ Transform:
   - {fileID: 1678349979}
   - {fileID: 275422159}
   - {fileID: 77242813}
-  - {fileID: 1539556381}
   - {fileID: 2014417090}
+  - {fileID: 1539556381}
   m_Father: {fileID: 2088703955}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16283,6 +16452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680224582}
   - component: {fileID: 680224583}
+  - component: {fileID: 680224584}
   m_Layer: 0
   m_Name: Bush (17)
   m_TagString: Untagged
@@ -16297,7 +16467,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 680224581}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.852528, y: -9.9294195, z: 0.01953125}
+  m_LocalPosition: {x: 20.852528, y: -9.9294195, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -16347,6 +16517,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &680224584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680224581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000038146973, y: 0, z: 0}
 --- !u!1 &694891613
 GameObject:
   m_ObjectHideFlags: 0
@@ -17933,6 +18115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 740030917}
   - component: {fileID: 740030918}
+  - component: {fileID: 740030919}
   m_Layer: 0
   m_Name: Bush (7)
   m_TagString: Untagged
@@ -17947,7 +18130,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740030916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.452528, y: 2.17058, z: 0.01953125}
+  m_LocalPosition: {x: 5.452528, y: 2.17058, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -17997,6 +18180,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &740030919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740030916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!1 &741700646
 GameObject:
   m_ObjectHideFlags: 0
@@ -20118,6 +20313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814288668}
   - component: {fileID: 814288669}
+  - component: {fileID: 814288670}
   m_Layer: 0
   m_Name: QuiltedHive
   m_TagString: Untagged
@@ -20132,7 +20328,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814288667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1074724, y: -16.49942, z: 2.7480469}
+  m_LocalPosition: {x: -3.1074724, y: -16.49942, z: 1}
   m_LocalScale: {x: 0.68126935, y: 0.68126935, z: 0.68126935}
   m_Children: []
   m_Father: {fileID: 2088703955}
@@ -20171,7 +20367,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f45d48359371a7246ac5005a8f25b9b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20182,6 +20378,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &814288670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814288667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.5, y: 6.24, z: 0.2}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &818887605
 GameObject:
   m_ObjectHideFlags: 0
@@ -21748,6 +21956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870449782}
   - component: {fileID: 870449783}
+  - component: {fileID: 870449784}
   m_Layer: 0
   m_Name: Tree_Basic (1)
   m_TagString: Untagged
@@ -21762,7 +21971,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 870449781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.7, y: -1.3000002, z: 0}
+  m_LocalPosition: {x: 7.7, y: -1.3000002, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -21812,6 +22021,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &870449784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 870449781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9533892, y: 4.774835, z: 0.2}
+  m_Center: {x: -0.17906623, y: -2.3875868, z: 0}
 --- !u!1 &879301280
 GameObject:
   m_ObjectHideFlags: 0
@@ -21949,6 +22170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 882495172}
   - component: {fileID: 882495173}
+  - component: {fileID: 882495174}
   m_Layer: 0
   m_Name: Bush (27)
   m_TagString: Untagged
@@ -21963,7 +22185,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 882495171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.93, y: -18.83, z: 0.01953125}
+  m_LocalPosition: {x: 15.93, y: -18.83, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -22013,6 +22235,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &882495174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882495171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &884750101
 GameObject:
   m_ObjectHideFlags: 0
@@ -22358,6 +22592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906191142}
   - component: {fileID: 906191143}
+  - component: {fileID: 906191144}
   m_Layer: 0
   m_Name: Bush (21)
   m_TagString: Untagged
@@ -22372,7 +22607,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 906191141}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.692528, y: -15.48942, z: 0.01953125}
+  m_LocalPosition: {x: 19.692528, y: -15.48942, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -22422,6 +22657,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &906191144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906191141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!1 &916518802
 GameObject:
   m_ObjectHideFlags: 0
@@ -26805,6 +27052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072370198}
   - component: {fileID: 1072370199}
+  - component: {fileID: 1072370200}
   m_Layer: 0
   m_Name: Bush (3)
   m_TagString: Untagged
@@ -26819,7 +27067,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072370197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1874723, y: 4.01058, z: 0.01953125}
+  m_LocalPosition: {x: -3.1874723, y: 4.01058, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -26869,6 +27117,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1072370200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072370197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1073829196
 GameObject:
   m_ObjectHideFlags: 0
@@ -30085,6 +30345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1200730988}
   - component: {fileID: 1200730989}
+  - component: {fileID: 1200730990}
   m_Layer: 0
   m_Name: Bush (25)
   m_TagString: Untagged
@@ -30099,7 +30360,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1200730987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.97, y: -17.87, z: 0.01953125}
+  m_LocalPosition: {x: 12.97, y: -17.87, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -30149,6 +30410,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1200730990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1200730987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000019073486, y: 0, z: 0}
 --- !u!1 &1203794301
 GameObject:
   m_ObjectHideFlags: 0
@@ -30949,6 +31222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215068816}
   - component: {fileID: 1215068817}
+  - component: {fileID: 1215068818}
   m_Layer: 0
   m_Name: Bush (30)
   m_TagString: Untagged
@@ -30963,7 +31237,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215068815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.46, y: -2.97, z: 0.01953125}
+  m_LocalPosition: {x: -1.46, y: -2.97, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -31013,6 +31287,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1215068818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1215068815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1225146455
 GameObject:
   m_ObjectHideFlags: 0
@@ -31275,6 +31561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1229558052}
   - component: {fileID: 1229558053}
+  - component: {fileID: 1229558054}
   m_Layer: 0
   m_Name: QuiltedHive (1)
   m_TagString: Untagged
@@ -31289,7 +31576,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1229558051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.137472, y: -10.51942, z: 2.7480469}
+  m_LocalPosition: {x: -7.137472, y: -10.51942, z: 1}
   m_LocalScale: {x: 0.49879137, y: 0.49879137, z: 0.49879137}
   m_Children: []
   m_Father: {fileID: 2088703955}
@@ -31339,6 +31626,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1229558054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229558051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.5, y: 6.24, z: 0.2}
+  m_Center: {x: 0, y: 0.0000009536743, z: 0}
 --- !u!1 &1236216915
 GameObject:
   m_ObjectHideFlags: 0
@@ -33043,6 +33342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288509330}
   - component: {fileID: 1288509331}
+  - component: {fileID: 1288509332}
   m_Layer: 0
   m_Name: Bush (4)
   m_TagString: Untagged
@@ -33057,7 +33357,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1288509329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.047472, y: 3.4305801, z: 0.01953125}
+  m_LocalPosition: {x: -2.047472, y: 3.4305801, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -33107,6 +33407,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1288509332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288509329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1289586348
 GameObject:
   m_ObjectHideFlags: 0
@@ -33746,6 +34058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342484707}
   - component: {fileID: 1342484708}
+  - component: {fileID: 1342484709}
   m_Layer: 0
   m_Name: Bush (12)
   m_TagString: Untagged
@@ -33760,7 +34073,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1342484706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.462528, y: -2.6294198, z: 0.01953125}
+  m_LocalPosition: {x: 14.462528, y: -2.6294198, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -33810,6 +34123,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1342484709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342484706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000019073486, y: -0.0000009536743, z: 0}
 --- !u!1 &1345607040
 GameObject:
   m_ObjectHideFlags: 0
@@ -34523,6 +34848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360991341}
   - component: {fileID: 1360991342}
+  - component: {fileID: 1360991343}
   m_Layer: 0
   m_Name: Bush (34)
   m_TagString: Untagged
@@ -34537,7 +34863,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1360991340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.72, y: -10.31, z: 0.01953125}
+  m_LocalPosition: {x: 6.72, y: -10.31, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -34587,6 +34913,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1360991343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360991340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.00000029802322, y: -0.0000009536743, z: 0}
 --- !u!1 &1363206453
 GameObject:
   m_ObjectHideFlags: 0
@@ -35898,6 +36236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1385088398}
   - component: {fileID: 1385088399}
+  - component: {fileID: 1385088400}
   m_Layer: 0
   m_Name: Bush (10)
   m_TagString: Untagged
@@ -35912,7 +36251,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385088397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.652528, y: 0.030580044, z: 0.01953125}
+  m_LocalPosition: {x: 14.652528, y: 0.030580044, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -35962,6 +36301,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1385088400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1385088397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: -0.0000019073486, y: 0, z: 0}
 --- !u!1 &1385875248
 GameObject:
   m_ObjectHideFlags: 0
@@ -37332,6 +37683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1424145422}
   - component: {fileID: 1424145423}
+  - component: {fileID: 1424145424}
   m_Layer: 0
   m_Name: Bush (16)
   m_TagString: Untagged
@@ -37346,7 +37698,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1424145421}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.922527, y: -9.30942, z: 0.01953125}
+  m_LocalPosition: {x: 19.922527, y: -9.30942, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -37396,6 +37748,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1424145424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424145421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: -0.0000038146973, y: -0.0000014305115, z: 0}
 --- !u!1 &1427252383
 GameObject:
   m_ObjectHideFlags: 0
@@ -38652,6 +39016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1477068869}
   - component: {fileID: 1477068870}
+  - component: {fileID: 1477068871}
   m_Layer: 0
   m_Name: Bush (2)
   m_TagString: Untagged
@@ -38666,7 +39031,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1477068868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.627472, y: 4.96058, z: 0.01953125}
+  m_LocalPosition: {x: -4.627472, y: 4.96058, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -38716,6 +39081,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1477068871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1477068868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1477990787
 GameObject:
   m_ObjectHideFlags: 0
@@ -40314,6 +40691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521628947}
   - component: {fileID: 1521628948}
+  - component: {fileID: 1521628949}
   m_Layer: 0
   m_Name: Tree_Basic (5)
   m_TagString: Untagged
@@ -40328,7 +40706,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521628946}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.91, y: -14.8, z: 0}
+  m_LocalPosition: {x: 13.91, y: -14.8, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -40378,6 +40756,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1521628949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521628946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.67483, y: 4.655452, z: 0.2}
+  m_Center: {x: -0.00000014901163, y: -2.447276, z: 0}
 --- !u!1 &1524797025
 GameObject:
   m_ObjectHideFlags: 0
@@ -40470,6 +40860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539556381}
   - component: {fileID: 1539556382}
+  - component: {fileID: 1539556383}
   m_Layer: 0
   m_Name: Button_Tree (3)
   m_TagString: Untagged
@@ -40484,11 +40875,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539556380}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8674726, y: 4.13058, z: 0}
+  m_LocalPosition: {x: -3.75, y: 4.93, z: 0.9}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 565136676}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1539556382
 SpriteRenderer:
@@ -40534,6 +40925,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1539556383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539556380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8372169, y: 4.6385736, z: 0.2}
+  m_Center: {x: -0.13272882, y: -2.405716, z: 0}
 --- !u!1 &1544669974
 GameObject:
   m_ObjectHideFlags: 0
@@ -41023,6 +41426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551314507}
   - component: {fileID: 1551314508}
+  - component: {fileID: 1551314509}
   m_Layer: 0
   m_Name: Bush (1)
   m_TagString: Untagged
@@ -41037,7 +41441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1551314506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8274727, y: 5.80058, z: 0.01953125}
+  m_LocalPosition: {x: -3.8274727, y: 5.80058, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -41087,6 +41491,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1551314509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551314506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1557161374
 GameObject:
   m_ObjectHideFlags: 0
@@ -42150,6 +42566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607024586}
   - component: {fileID: 1607024587}
+  - component: {fileID: 1607024588}
   m_Layer: 0
   m_Name: Tree_Basic (6)
   m_TagString: Untagged
@@ -42164,7 +42581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607024585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.1, y: -16.7, z: 0}
+  m_LocalPosition: {x: 17.1, y: -16.7, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -42214,6 +42631,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1607024588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607024585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1921422, y: 4.655454, z: 0.2}
+  m_Center: {x: -0.21886186, y: -2.447275, z: 0}
 --- !u!1 &1612153681
 GameObject:
   m_ObjectHideFlags: 0
@@ -42581,6 +43010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643753129}
   - component: {fileID: 1643753130}
+  - component: {fileID: 1643753131}
   m_Layer: 0
   m_Name: Bush (31)
   m_TagString: Untagged
@@ -42595,7 +43025,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643753128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.78, y: -8.87, z: 0.01953125}
+  m_LocalPosition: {x: -3.78, y: -8.87, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -42645,6 +43075,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1643753131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1643753128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000014305115, z: 0}
 --- !u!1 &1644529241
 GameObject:
   m_ObjectHideFlags: 0
@@ -42654,6 +43096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644529242}
   - component: {fileID: 1644529243}
+  - component: {fileID: 1644529244}
   m_Layer: 0
   m_Name: Bush (14)
   m_TagString: Untagged
@@ -42668,7 +43111,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644529241}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7425277, y: -4.06942, z: 0.01953125}
+  m_LocalPosition: {x: 2.7425277, y: -4.06942, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -42718,6 +43161,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1644529244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644529241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1648440066
 GameObject:
   m_ObjectHideFlags: 0
@@ -43502,6 +43957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1678349979}
   - component: {fileID: 1678349980}
+  - component: {fileID: 1678349981}
   m_Layer: 0
   m_Name: Button_Tree
   m_TagString: Untagged
@@ -43516,7 +43972,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1678349978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.867472, y: -4.52942, z: 0}
+  m_LocalPosition: {x: -10.867472, y: -4.52942, z: 0.9}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 565136676}
@@ -43566,6 +44022,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1678349981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678349978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9841232, y: 4.730134, z: 0.2}
+  m_Center: {x: -0.17699242, y: -2.3599339, z: 0}
 --- !u!1 &1690789936
 GameObject:
   m_ObjectHideFlags: 0
@@ -43575,6 +44043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1690789937}
   - component: {fileID: 1690789938}
+  - component: {fileID: 1690789939}
   m_Layer: 0
   m_Name: Tree_Basic
   m_TagString: Untagged
@@ -43589,7 +44058,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1690789936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3200002, y: -2.6400003, z: 0}
+  m_LocalPosition: {x: 1.3200002, y: -2.6400003, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -43639,6 +44108,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1690789939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690789936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.993176, y: 4.6554575, z: 0.2}
+  m_Center: {x: -0.15917288, y: -2.4472766, z: 0}
 --- !u!1 &1693603799
 GameObject:
   m_ObjectHideFlags: 0
@@ -44076,6 +44557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1710683625}
   - component: {fileID: 1710683626}
+  - component: {fileID: 1710683627}
   m_Layer: 0
   m_Name: Bush (19)
   m_TagString: Untagged
@@ -44090,7 +44572,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1710683624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.372528, y: -9.129419, z: 0.01953125}
+  m_LocalPosition: {x: 24.372528, y: -9.129419, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -44140,6 +44622,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1710683627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1710683624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000014305115, z: 0}
 --- !u!1 &1713431269
 GameObject:
   m_ObjectHideFlags: 0
@@ -46738,6 +47232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780341900}
   - component: {fileID: 1780341901}
+  - component: {fileID: 1780341902}
   m_Layer: 0
   m_Name: Bush (5)
   m_TagString: Untagged
@@ -46752,7 +47247,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1780341899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.957472, y: 0.83058023, z: 0.01953125}
+  m_LocalPosition: {x: -4.957472, y: 0.83058023, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -46802,6 +47297,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1780341902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780341899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1783475757
 GameObject:
   m_ObjectHideFlags: 0
@@ -47252,6 +47759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791469224}
   - component: {fileID: 1791469225}
+  - component: {fileID: 1791469226}
   m_Layer: 0
   m_Name: Tree_Basic (4)
   m_TagString: Untagged
@@ -47266,7 +47774,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1791469223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.61, y: -11.93, z: 0}
+  m_LocalPosition: {x: 2.61, y: -11.93, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -47316,6 +47824,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1791469226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791469223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9931784, y: 4.814627, z: 0.2}
+  m_Center: {x: -0.11938171, y: -2.367692, z: 0}
 --- !u!1 &1797752818
 GameObject:
   m_ObjectHideFlags: 0
@@ -48678,6 +49198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1845689771}
   - component: {fileID: 1845689772}
+  - component: {fileID: 1845689773}
   m_Layer: 0
   m_Name: Tree_Basic (3)
   m_TagString: Untagged
@@ -48692,7 +49213,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1845689770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.96, y: -7.9, z: 0}
+  m_LocalPosition: {x: 10.96, y: -7.9, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -48742,6 +49263,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1845689773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845689770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.072772, y: 4.735039, z: 0.2}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1851462780
 GameObject:
   m_ObjectHideFlags: 0
@@ -49136,6 +49669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885843474}
   - component: {fileID: 1885843475}
+  - component: {fileID: 1885843476}
   m_Layer: 0
   m_Name: QuiltedHive (2)
   m_TagString: Untagged
@@ -49150,7 +49684,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1885843473}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.757472, y: -13.83942, z: 2.7480469}
+  m_LocalPosition: {x: -8.757472, y: -13.83942, z: 1}
   m_LocalScale: {x: 0.600569, y: 0.600569, z: 0.600569}
   m_Children: []
   m_Father: {fileID: 2088703955}
@@ -49200,6 +49734,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1885843476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885843473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.4999995, y: 6.2399993, z: 0.19999999}
+  m_Center: {x: 0, y: 0.0000009536743, z: 0}
 --- !u!1 &1885966315
 GameObject:
   m_ObjectHideFlags: 0
@@ -49209,6 +49755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885966316}
   - component: {fileID: 1885966317}
+  - component: {fileID: 1885966318}
   m_Layer: 0
   m_Name: Bush (28)
   m_TagString: Untagged
@@ -49223,7 +49770,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1885966315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.75, y: -21.18, z: 0.01953125}
+  m_LocalPosition: {x: 12.75, y: -21.18, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -49273,6 +49820,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &1885966318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885966315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
 --- !u!1 &1886484859
 GameObject:
   m_ObjectHideFlags: 0
@@ -51993,6 +52552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2014417090}
   - component: {fileID: 2014417091}
+  - component: {fileID: 2014417092}
   m_Layer: 0
   m_Name: Button_Tree (4)
   m_TagString: Untagged
@@ -52007,11 +52567,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014417089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.267471, y: 0.63057995, z: 0}
+  m_LocalPosition: {x: -11.267471, y: 0.63057995, z: 0.9}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 565136676}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2014417091
 SpriteRenderer:
@@ -52057,6 +52617,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2014417092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014417089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.936759, y: 4.7049446, z: 0.2}
+  m_Center: {x: -0.082957745, y: -2.3725305, z: 0}
 --- !u!1 &2015546314
 GameObject:
   m_ObjectHideFlags: 0
@@ -52066,6 +52638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015546315}
   - component: {fileID: 2015546316}
+  - component: {fileID: 2015546317}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -52080,7 +52653,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2015546314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.217472, y: 6.9805803, z: 0.01953125}
+  m_LocalPosition: {x: -4.217472, y: 6.9805803, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -52130,6 +52703,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2015546317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015546314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2023989460
 GameObject:
   m_ObjectHideFlags: 0
@@ -52139,6 +52724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023989461}
   - component: {fileID: 2023989462}
+  - component: {fileID: 2023989463}
   m_Layer: 0
   m_Name: Tree_Basic (2)
   m_TagString: Untagged
@@ -52153,7 +52739,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023989460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.51, y: 0.03000021, z: 0}
+  m_LocalPosition: {x: 15.51, y: 0.03000021, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.5}
   m_Children: []
   m_Father: {fileID: 500250288}
@@ -52203,6 +52789,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2023989463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023989460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9931748, y: 4.774835, z: 0.2}
+  m_Center: {x: -0.15917347, y: -2.3875856, z: 0}
 --- !u!1 &2026062899
 GameObject:
   m_ObjectHideFlags: 0
@@ -52212,6 +52810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2026062900}
   - component: {fileID: 2026062901}
+  - component: {fileID: 2026062902}
   m_Layer: 0
   m_Name: Bush (9)
   m_TagString: Untagged
@@ -52226,7 +52825,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2026062899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.362528, y: 0.81058025, z: 0.01953125}
+  m_LocalPosition: {x: 5.362528, y: 0.81058025, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -52276,6 +52875,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2026062902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026062899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0}
 --- !u!1 &2034955740
 GameObject:
   m_ObjectHideFlags: 0
@@ -52822,6 +53433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053127174}
   - component: {fileID: 2053127175}
+  - component: {fileID: 2053127176}
   m_Layer: 0
   m_Name: Bush (29)
   m_TagString: Untagged
@@ -52836,7 +53448,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053127173}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.34, y: -2.38, z: 0.01953125}
+  m_LocalPosition: {x: -2.34, y: -2.38, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -52886,6 +53498,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2053127176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053127173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &2057716205
 GameObject:
   m_ObjectHideFlags: 0
@@ -53253,6 +53877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067491494}
   - component: {fileID: 2067491495}
+  - component: {fileID: 2067491496}
   m_Layer: 0
   m_Name: Bush (24)
   m_TagString: Untagged
@@ -53267,7 +53892,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067491493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.59, y: -17.05, z: 0.01953125}
+  m_LocalPosition: {x: 13.59, y: -17.05, z: 1}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -53317,6 +53942,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2067491496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067491493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000019073486, y: 0, z: 0}
 --- !u!1 &2068665598
 GameObject:
   m_ObjectHideFlags: 0
@@ -54283,6 +54920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084802350}
   - component: {fileID: 2084802351}
+  - component: {fileID: 2084802352}
   m_Layer: 0
   m_Name: Bush (22)
   m_TagString: Untagged
@@ -54297,7 +54935,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2084802349}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.222528, y: -11.039419, z: 0.01953125}
+  m_LocalPosition: {x: 12.222528, y: -11.039419, z: 1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 532546914}
@@ -54347,6 +54985,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!65 &2084802352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084802349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0}
 --- !u!1 &2086918312
 GameObject:
   m_ObjectHideFlags: 0
@@ -54548,7 +55198,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2088703954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.442528, y: 6.85942, z: -2.7480469}
+  m_LocalPosition: {x: -6.442528, y: 6.85942, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 532546914}
@@ -55205,8 +55855,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110953619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 2.5, z: 0}
-  m_LocalScale: {x: 1, y: 4, z: 1}
+  m_LocalPosition: {x: -0, y: 2.005, z: 0}
+  m_LocalScale: {x: 1, y: 3.0103872, z: 1}
   m_Children: []
   m_Father: {fileID: 733814333}
   m_RootOrder: 1
