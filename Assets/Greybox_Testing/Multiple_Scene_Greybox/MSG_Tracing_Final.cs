@@ -281,6 +281,8 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Return_Button ()
     {
+        StartCoroutine(MSG_Transitioner.data.Obstacle_Exit_Timer());
+
         tracing_continue_button.SetActive(false);
         tracing_checker.color = Color.white;
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();

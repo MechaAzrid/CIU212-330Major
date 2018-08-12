@@ -15,6 +15,8 @@ public class MSG_Transitioner : MonoBehaviour
     [Header("The State that the camera is in")]
     public camera_states cam_states;
 
+    public bool obstacle_lock_out;
+
     [Header("Tutorial Arrays")]
     public bool[] tutorial_obstacle_passed;
     public bool[] tutorial_stickers;
@@ -65,6 +67,13 @@ public class MSG_Transitioner : MonoBehaviour
         {
             Reset_Data();
         }
+    }
+
+    public IEnumerator Obstacle_Exit_Timer ()
+    {
+        obstacle_lock_out = true;
+        yield return new WaitForSeconds(5.0f);
+        obstacle_lock_out = false;
     }
 
     public void Load_Data ()

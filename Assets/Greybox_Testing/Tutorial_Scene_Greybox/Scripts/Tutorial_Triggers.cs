@@ -191,6 +191,6 @@ public class Tutorial_Triggers : MonoBehaviour
 
         //cam_tr.Obstacle_Start(obstacle_int, msgObstacleTrigger);
 
-        msgObstacleTrigger.Button_Clicked();
+        msgObstacleTrigger.Obstacle_Active();
     }
 }

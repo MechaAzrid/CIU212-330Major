@@ -9,18 +9,10 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
     public bool passed;
 
-    public Renderer[] black_blocks;
-    public Renderer[] grey_blocks;
-
     public GameObject[] bridge;
 
-    public Color red_black;
-    public Color red_grey;
-
-    public Color green_black;
-    public Color green_grey;
-
-    public GameObject button;
+    public Sprite[] flag_sprites;
+    public SpriteRenderer sprite_renderer;
 
     private bool locked;
 
@@ -29,7 +21,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] == true)
+            if (MSG_Transitioner.data.tutorial_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -37,7 +29,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_obstacle_passed[obstacle_int] == true)
+            if (MSG_Transitioner.data.level_a_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -45,7 +37,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_obstacle_passed[obstacle_int] == true)
+            if (MSG_Transitioner.data.level_b_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -53,7 +45,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_obstacle_passed[obstacle_int] == true)
+            if (MSG_Transitioner.data.level_c_obstacle_passed[obstacle_int] == true)
             {
                 passed = true;
             }
@@ -70,25 +62,16 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 bridge_piece.SetActive(false);
             }
 
-            foreach (Renderer black_renderer in black_blocks)
-            {
-                black_renderer.material.color = red_black;
-            }
-
-            foreach (Renderer grey_renderer in grey_blocks)
-            {
-                grey_renderer.material.color = red_grey;
-            }
+            sprite_renderer.sprite = flag_sprites[0];
 
             float distance = Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position);
 
             if (distance < 1.3f)
             {
-                button.SetActive(true);
-            }
-            else
-            {
-                button.SetActive(false);
+                if (!MSG_Transitioner.data.obstacle_lock_out)
+                {
+                    Obstacle_Active();
+                }
             }
         }
 
@@ -99,43 +82,33 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
                 bridge_piece.SetActive(true);
             }
 
-            foreach (Renderer black_renderer in black_blocks)
-            {
-                black_renderer.material.color = green_black;
-            }
-
-            foreach (Renderer grey_renderer in grey_blocks)
-            {
-                grey_renderer.material.color = green_grey;
-            }
+            sprite_renderer.sprite = flag_sprites[1];
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
             {
-                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_obstacle_passed[obstacle_int] = true;
+                MSG_Transitioner.data.tutorial_obstacle_passed[obstacle_int] = true;
             }
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
             {
-                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_obstacle_passed[obstacle_int] = true;
+                MSG_Transitioner.data.level_a_obstacle_passed[obstacle_int] = true;
             }
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
             {
-                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_obstacle_passed[obstacle_int] = true;
+                MSG_Transitioner.data.level_b_obstacle_passed[obstacle_int] = true;
             }
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
             {
-                GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_obstacle_passed[obstacle_int] = true;
+                MSG_Transitioner.data .level_c_obstacle_passed[obstacle_int] = true;
             }
-
-            button.SetActive(false);
 
             Save();
         }
     }
 
-    public void Button_Clicked()
+    public void Obstacle_Active()
     {
         GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
         //MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
@@ -149,7 +122,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
         cam.transform.position = new Vector3(-10000, 0, -10);
 
-        GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Tracing_Active();
+        MSG_Transitioner.data.Tracing_Active();
         //cam_ob.obstacles_active(this);
 
         cam_tr.Obstacle_Start(obstacle_int, this);
@@ -160,7 +133,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
         if(!locked)
         {
             locked = true;
-            GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Save_Data();
+            MSG_Transitioner.data.Save_Data();
         }
     }
 }
