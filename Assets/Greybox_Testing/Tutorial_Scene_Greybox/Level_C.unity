@@ -9518,7 +9518,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35, y: 4.4668884, z: 0}
+  m_LocalPosition: {x: -35, y: -0.9607086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -13318,8 +13318,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 883.5, y: 498, z: 0}
-  m_LocalScale: {x: 2.20875, y: 2.20875, z: 2.20875}
+  m_LocalPosition: {x: 509, y: 280, z: 0}
+  m_LocalScale: {x: 1.2725, y: 1.2725, z: 1.2725}
   m_Children:
   - {fileID: 1942320141}
   - {fileID: 346654225}
@@ -32998,7 +32998,7 @@ MonoBehaviour:
   tracing_reset_button: {fileID: 0}
   input_node: {fileID: 1418522731699502, guid: 8f9d6872dda42614bb1e2de8b81ef50c, type: 2}
   input_dot_active: 0
-  word_length: 0300000003000000030000000300000003000000
+  word_length: 0700000006000000050000000500000004000000
   tracers:
   - {fileID: 1368674692}
   - {fileID: 189547668}
