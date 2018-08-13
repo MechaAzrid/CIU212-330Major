@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-public enum camera_states { None, Pause, Movement, Tracing, Dragging, Obstacle }
+public enum camera_states { None, Pause, Movement, Tracing, Dragging, Obstacle , Sticker_Book}
 
 public class MSG_Transitioner : MonoBehaviour
 {
@@ -142,6 +142,11 @@ public class MSG_Transitioner : MonoBehaviour
     public void Tracing_Active()
     {
         cam_states = camera_states.Tracing;
+    }
+
+    public void Sticker_Book_Active ()
+    {
+        cam_states = camera_states.Sticker_Book;
     }
 
     //public void End ()
