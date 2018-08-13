@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MSG_Pickup : MonoBehaviour
 {
@@ -95,11 +96,27 @@ public class MSG_Pickup : MonoBehaviour
             pickup_system.pickup = gameObject.GetComponent<MSG_Pickup>();
             pickup_system.Picked_Up(sticker_number);
 
-            if(gold)
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A") & gold)
             {
-                GameObject.Find("Menu_Button").GetComponent<Menu>().Menu_Button();
-				portal.SetActive (true);
+                portal.SetActive(true);
             }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B") & gold)
+            {
+                portal.SetActive(true);
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C") & gold)
+            {
+                portal.SetActive(true);
+            }
+
+            //if (gold)
+            //{
+            //    portal.SetActive(true);
+            //    Debug.Log("Portal Activated");
+            //}
         }
+
     }
 }
