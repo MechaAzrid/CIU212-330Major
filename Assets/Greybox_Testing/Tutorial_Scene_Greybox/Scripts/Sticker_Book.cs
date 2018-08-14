@@ -11,32 +11,60 @@ public class Sticker_Book : MonoBehaviour
     public GameObject left_arrow;
     public GameObject right_arrow;
 
+    public GameObject[] UI;
+
     public GameObject[] pages;
+
+    public Text level_text;
+
+    [SerializeField]
+    private string[] level_string;
+
+    [Header("Tutorial")]
+    public Image[] tutorial_sticker_images;
 
     [Header("Level A")]
     public Image[] level_a_sticker_images;
-    public Sprite[] level_a_blank_sprites;
-    public Sprite[] level_a_filled_sprites;
 
     [Header("Level B")]
     public Image[] level_b_sticker_images;
-    public Sprite[] level_b_blank_sprites;
-    public Sprite[] level_b_filled_sprites;
 
     [Header("Level C")]
     public Image[] level_c_sticker_images;
-    public Sprite[] level_c_blank_sprites;
-    public Sprite[] level_c_filled_sprites;
 
+    private camera_states old_state;
 
-    // Use this for initialization
-    void Start ()
-    {
-        Book_Opened();
-    }
+    private bool book_open;
 
     public void Book_Opened ()
     {
+        book_open = true;
+
+        old_state = MSG_Transitioner.data.cam_states;
+        MSG_Transitioner.data.Sticker_Book_Active();
+
+        foreach (GameObject ui in UI)
+        {
+            ui.SetActive(true);
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
+        {
+            page_number = 0;
+
+            for (int i = 0; i < tutorial_sticker_images.Length; i++)
+            {
+                if (MSG_Transitioner.data.tutorial_stickers[i])
+                {
+                    tutorial_sticker_images[i].sprite = MSG_Transitioner.data.tutorial_sticker_sprites[i];
+                }
+                else
+                {
+                    tutorial_sticker_images[i].sprite = MSG_Transitioner.data.tutorial_sticker_blank_sprites[i];
+                }
+            }
+        }
+
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
         {
             page_number = 1;
@@ -89,37 +117,64 @@ public class Sticker_Book : MonoBehaviour
         }
     }
 
+    public void Book_Closed ()
+    {
+        book_open = false;
+
+        foreach (GameObject ui in UI)
+        {
+            ui.SetActive(false);
+        }
+
+        if (old_state == camera_states.Movement)
+        {
+            MSG_Transitioner.data.Movement_Active();
+        }
+
+        if (old_state == camera_states.Tracing)
+        {
+            MSG_Transitioner.data.Tracing_Active();
+        }
+
+        old_state = camera_states.None;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        // Enabling And Disabling arrows at beginning and ending 
-        if (page_number <= 0)
+        if (book_open)
         {
-            left_arrow.SetActive(false);
-        }
-        else
-        {
-            left_arrow.SetActive(true);
-        }
-
-        if (page_number >= 3)
-        {
-            right_arrow.SetActive(false);
-        }
-        else
-        {
-            right_arrow.SetActive(true);
-        }
-
-        for (int i = 0; i < pages.Length; i++)
-        {
-            if (i == page_number)
+            // Enabling And Disabling arrows at beginning and ending 
+            if (page_number <= 0)
             {
-                pages[i].SetActive(true);
+                left_arrow.SetActive(false);
             }
             else
             {
-                pages[i].SetActive(false);
+                left_arrow.SetActive(true);
+            }
+
+            if (page_number >= 3)
+            {
+                right_arrow.SetActive(false);
+            }
+            else
+            {
+                right_arrow.SetActive(true);
+            }
+
+            level_text.text = level_string[page_number];
+
+            for (int i = 0; i < pages.Length; i++)
+            {
+                if (i == page_number)
+                {
+                    pages[i].SetActive(true);
+                }
+                else
+                {
+                    pages[i].SetActive(false);
+                }
             }
         }
     }
