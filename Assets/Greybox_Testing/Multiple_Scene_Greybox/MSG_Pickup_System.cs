@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class MSG_Pickup_System : MonoBehaviour
 {
     public Tutorial_Triggers tutorialTriggers;
-    public MSG_Pickup mSG_Pickup;
 
     public Image[] pickup_slots;
     private int array_number = 0;
@@ -17,14 +16,8 @@ public class MSG_Pickup_System : MonoBehaviour
     public GameObject pickup_object;
     public MSG_Pickup pickup;
 
-    public AudioSource audioMain;
-    public AudioClip goldenSticker;
-    public AudioClip normalSticker;
-
     void Start ()
     {
-        audioMain = gameObject.GetComponent<AudioSource>();
-
         for(int i = 0; i < pickup_slots.Length; i++)
         {
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
@@ -87,36 +80,24 @@ public class MSG_Pickup_System : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
-            audioMain.clip = normalSticker;
-            audioMain.Play();
-
             pickup_slots[sticker_number].sprite = MSG_Transitioner.data.GetComponent<MSG_Transitioner>().tutorial_sticker_sprites[sticker_number];
             MSG_Transitioner.data.tutorial_stickers[sticker_number] = true;
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
         {
-            audioMain.clip = normalSticker;
-            audioMain.Play();
-
             pickup_slots[sticker_number].sprite = MSG_Transitioner.data.level_a_sticker_sprites[sticker_number];
             MSG_Transitioner.data.level_a_stickers[sticker_number] = true;
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
-            audioMain.clip = normalSticker;
-            audioMain.Play();
-
             pickup_slots[sticker_number].sprite = MSG_Transitioner.data.level_b_sticker_sprites[sticker_number];
             MSG_Transitioner.data.level_b_stickers[sticker_number] = true;
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
         {
-            audioMain.clip = normalSticker;
-            audioMain.Play();
-
             pickup_slots[sticker_number].sprite = MSG_Transitioner.data.level_c_sticker_sprites[sticker_number];
             MSG_Transitioner.data.level_c_stickers[sticker_number] = true;
         }
