@@ -14859,7 +14859,7 @@ GameObject:
   - component: {fileID: 173447167}
   m_Layer: 2
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31956,8 +31956,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405744764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 334, y: 175.5, z: 0}
-  m_LocalScale: {x: 0.835, y: 0.835, z: 0.835}
+  m_LocalPosition: {x: 567, y: 319, z: 0}
+  m_LocalScale: {x: 1.4175, y: 1.4175, z: 1.4175}
   m_Children:
   - {fileID: 2009120763}
   - {fileID: 880449783}
@@ -36038,6 +36038,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!120 &447861993 stripped
+LineRenderer:
+  m_PrefabParentObject: {fileID: 120298037150291690, guid: 6162f24ab911b0a4aaec922fe8228c3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1195860217}
 --- !u!1 &448814555
 GameObject:
   m_ObjectHideFlags: 0
@@ -81332,6 +81337,25 @@ MonoBehaviour:
   correctnumber: 0
   original_cam_position: {x: 0, y: 0, z: 0}
   tracing_checker: {fileID: 1265659836}
+  audioMain: {fileID: 0}
+  arrow: {fileID: 0}
+  axe: {fileID: 0}
+  acorn: {fileID: 0}
+  apple: {fileID: 0}
+  anchor: {fileID: 0}
+  angelFish: {fileID: 0}
+  button: {fileID: 0}
+  bubble: {fileID: 0}
+  blanket: {fileID: 0}
+  butterFly: {fileID: 0}
+  bee: {fileID: 0}
+  bunny: {fileID: 0}
+  cowBell: {fileID: 0}
+  cobWeb: {fileID: 0}
+  crown: {fileID: 0}
+  clock: {fileID: 0}
+  cake: {fileID: 0}
+  cat: {fileID: 0}
 --- !u!114 &1153780141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85616,7 +85640,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167991120}
-  m_LocalRotation: {x: -0.01619667, y: -0.7069213, z: 0.70692134, w: 0.01619661}
+  m_LocalRotation: {x: -0.016196668, y: -0.7069212, z: 0.7069213, w: 0.016196609}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -87988,6 +88012,11 @@ Prefab:
       propertyPath: grassFootSteps
       value: 
       objectReference: {fileID: 8300000, guid: fdff5334ba7c1f9448ca9d91c6c67d72, type: 3}
+    - target: {fileID: 120298037150291690, guid: 6162f24ab911b0a4aaec922fe8228c3f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26f3c90247b34784480558c1d2b20986, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
   m_IsPrefabParent: 0
@@ -122857,7 +122886,7 @@ GameObject:
   - component: {fileID: 1717117408}
   m_Layer: 2
   m_Name: Player (Copy)
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130242,7 +130271,7 @@ MonoBehaviour:
   sticker_positions:
   - {x: 11.901, y: 18.21, z: -0.6}
   selected_sticker: -1
-  lr: {fileID: 173447169}
+  lr: {fileID: 447861993}
 --- !u!1 &1823256821
 GameObject:
   m_ObjectHideFlags: 0
