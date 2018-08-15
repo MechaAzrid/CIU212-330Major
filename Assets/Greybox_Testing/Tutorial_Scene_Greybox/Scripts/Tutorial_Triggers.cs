@@ -52,9 +52,6 @@ public class Tutorial_Triggers : MonoBehaviour
     public AudioClip firstStickerVoice;
     public AudioClip viewStickerBook;
 
-    [Header("Player Animations")]
-    public Player_Animation playerAnim;
-
     [Header("UI")]
     public Button stickerBookButton;
     public Button pauseBackButton;
@@ -62,6 +59,7 @@ public class Tutorial_Triggers : MonoBehaviour
     void Start()
     {
         audioMain = gameObject.GetComponent<AudioSource>();
+
         //Find The GameObject's AudioSource
     }
 
