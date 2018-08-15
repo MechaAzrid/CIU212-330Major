@@ -1840,7 +1840,7 @@ Prefab:
     - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 371
+      value: 455.5
       objectReference: {fileID: 0}
     - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
         type: 2}
@@ -1855,17 +1855,17 @@ Prefab:
     - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -177
+      value: -221.3
       objectReference: {fileID: 0}
     - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 321
+      value: 405.5
       objectReference: {fileID: 0}
     - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -127
+      value: -171.29999
       objectReference: {fileID: 0}
     - target: {fileID: 114290430214969914, guid: 4131658b37405884295b171672450e3f,
         type: 2}
@@ -1896,6 +1896,20 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555760387334554, guid: 4131658b37405884295b171672450e3f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1005.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224968713387475876, guid: 4131658b37405884295b171672450e3f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 540.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4131658b37405884295b171672450e3f, type: 2}
