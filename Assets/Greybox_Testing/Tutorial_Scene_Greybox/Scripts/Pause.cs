@@ -10,10 +10,24 @@ public class Pause : MonoBehaviour
     public Transform pauseCanvas;
     public GameObject pauseButton;
 
+    [Header("Audio SFX")]
+    public AudioSource audioMain;
+    public AudioClip UIOpen;
+    public AudioClip UIClose;
+    public AudioClip UISelect;
+
     public string scene;
+
+    void Start()
+    {
+        audioMain = gameObject.GetComponent<AudioSource>();
+    }
 
     public void PauseGame()
     {
+        audioMain.clip = UIOpen;
+        audioMain.Play();
+
         Time.timeScale = 0;
 
         pauseCanvas.gameObject.SetActive(true);
@@ -22,11 +36,16 @@ public class Pause : MonoBehaviour
 
 	public void ReturnToMenu()
     {
+        audioMain.clip = UISelect;
+        audioMain.Play();
+
         SceneManager.LoadScene(scene);
     }
 
     public void Continue()
     {
+        audioMain.clip = UIClose;
+        audioMain.Play();
         Time.timeScale = 1;
 
         pauseCanvas.gameObject.SetActive(false);
