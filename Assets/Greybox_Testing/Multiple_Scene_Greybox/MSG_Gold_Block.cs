@@ -22,7 +22,7 @@ public class MSG_Gold_Block : MonoBehaviour
 
     private bool stickers_collected()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
             for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1; i++)
             {
@@ -95,7 +95,7 @@ public class MSG_Gold_Block : MonoBehaviour
                 Text count_text = bottom_text.GetComponent<Text>();
                 int number = 0;
 
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
                 {
                     for (int i = 0; i < GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers.Length - 1; i++)
                     {

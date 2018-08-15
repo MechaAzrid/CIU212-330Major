@@ -19,7 +19,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
             if (MSG_Transitioner.data.tutorial_obstacle_passed[obstacle_int] == true)
             {
@@ -85,7 +85,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
             sprite_renderer.sprite = flag_sprites[1];
 
-            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MSG_Level"))
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
             {
                 MSG_Transitioner.data.tutorial_obstacle_passed[obstacle_int] = true;
             }
