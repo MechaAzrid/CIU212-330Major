@@ -191,12 +191,16 @@ public class Player_Animation : MonoBehaviour
 
         if(direction_int == 0)
         {
-
-
-                if (MSG_Transitioner.data.cam_states == camera_states.Movement)
+            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
+            {
+                audioMain.clip = grassFootSteps;
+                audioMain.Play();
+            }
+                else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
                 {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
+                audioMain.loop = false;
+
+
                 }
 
             up_left_animation[0].SetActive(true);
@@ -207,8 +211,14 @@ public class Player_Animation : MonoBehaviour
             {
                 audioMain.clip = grassFootSteps;
                 audioMain.Play();
-            }
 
+            }
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                audioMain.loop = false;
+
+
+            }
             up_right_animation[0].SetActive(true);
         }
         if (direction_int == 2)
@@ -218,7 +228,11 @@ public class Player_Animation : MonoBehaviour
                 audioMain.clip = grassFootSteps;
                 audioMain.Play();
             }
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                audioMain.loop = false;
 
+            }
             down_right_animation[0].SetActive(true);
         }
         if (direction_int == 3)
@@ -228,7 +242,12 @@ public class Player_Animation : MonoBehaviour
                 audioMain.clip = grassFootSteps;
                 audioMain.Play();
             }
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                audioMain.loop = false;
 
+
+            }
             down_left_animation[0].SetActive(true);
         }
     }
