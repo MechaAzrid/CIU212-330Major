@@ -3747,7 +3747,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2046834693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 289.28864, y: 174.34198, z: 0}
+  m_LocalPosition: {x: 243.66504, y: 198.51233, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765778711}
@@ -6370,6 +6370,25 @@ MonoBehaviour:
   correctnumber: 0
   original_cam_position: {x: 0, y: 0, z: 0}
   tracing_checker: {fileID: 999838593}
+  audioMain: {fileID: 0}
+  arrow: {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
+  axe: {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
+  acorn: {fileID: 8300000, guid: 8baf46e308d2e484b8fe7ac5713b3c0b, type: 3}
+  apple: {fileID: 8300000, guid: cef941b527c344742bb235877f8b8fa2, type: 3}
+  anchor: {fileID: 8300000, guid: 13642954556357a469d8bb5460fae18e, type: 3}
+  angelFish: {fileID: 8300000, guid: fda6372d31af7e042b433590be93b0f6, type: 3}
+  button: {fileID: 0}
+  bubble: {fileID: 0}
+  blanket: {fileID: 0}
+  butterFly: {fileID: 0}
+  bee: {fileID: 0}
+  bunny: {fileID: 0}
+  cowBell: {fileID: 0}
+  cobWeb: {fileID: 0}
+  crown: {fileID: 0}
+  clock: {fileID: 0}
+  cake: {fileID: 0}
+  cat: {fileID: 0}
 --- !u!114 &532422377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21491,8 +21510,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1871225140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 657.5, y: 316.5, z: 0}
-  m_LocalScale: {x: 1.3168736, y: 1.3168736, z: 1.3168736}
+  m_LocalPosition: {x: 301, y: 175.5, z: 0}
+  m_LocalScale: {x: 0.6634851, y: 0.6634851, z: 0.6634851}
   m_Children:
   - {fileID: 1333959645}
   - {fileID: 815927554}
@@ -23992,6 +24011,16 @@ Prefab:
     - target: {fileID: 1285464944045042, guid: c538fc790c24adc4986061a20200b8ff, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202402239178622, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AnnnounceLetters
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202402239178622, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c538fc790c24adc4986061a20200b8ff, type: 2}

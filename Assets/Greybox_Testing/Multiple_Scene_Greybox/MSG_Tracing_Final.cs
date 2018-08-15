@@ -66,6 +66,29 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public Image tracing_checker;
 
+    [Header("Announcing Letters")]
+    public AudioSource audioMain;
+    [Header("Announce A Letters")]
+    public AudioClip arrow;
+    public AudioClip axe;
+    public AudioClip acorn;
+    public AudioClip apple;
+    public AudioClip anchor;
+    public AudioClip angelFish;
+    [Header("Announce B Letters")]
+    public AudioClip button;
+    public AudioClip bubble;
+    public AudioClip blanket;
+    public AudioClip butterFly;
+    public AudioClip bee;
+    public AudioClip bunny;
+    [Header("Announce C Letters")]
+    public AudioClip cowBell;
+    public AudioClip cobWeb;
+    public AudioClip crown;
+    public AudioClip clock;
+    public AudioClip cake;
+    public AudioClip cat;
 
     // Causing errors
     //[Header("")]
@@ -350,17 +373,7 @@ public class MSG_Tracing_Final : MonoBehaviour
         temp_tracers.Clear();
     }
 
-    public void AnnnounceLetters(int obstacle_number)
-    {
-        for (int i = 0; i < word_length.Count; i++)
-        {
-            int past_templates = 0;
+    public void AnnnounceLetters()     {         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))         {             if (trigger.obstacle_int == 0)             {                 audioMain.clip = arrow;                 audioMain.Play();             }              if (trigger.obstacle_int == 1)             {                 audioMain.clip = axe;                 audioMain.Play();             }              if (trigger.obstacle_int == 2)             {                 audioMain.clip = acorn;                 audioMain.Play();             }              if (trigger.obstacle_int == 3)             {                 audioMain.clip = apple;                 audioMain.Play();             }              if (trigger.obstacle_int == 4)             {                 audioMain.clip = anchor;                 audioMain.Play();             }         }
 
-            if (obstacle_number == i)
-            {
-
-            }
-        }
-
-    }
+    } 
 }
