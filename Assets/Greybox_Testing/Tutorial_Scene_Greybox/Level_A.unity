@@ -6377,18 +6377,18 @@ MonoBehaviour:
   apple: {fileID: 8300000, guid: cef941b527c344742bb235877f8b8fa2, type: 3}
   anchor: {fileID: 8300000, guid: 13642954556357a469d8bb5460fae18e, type: 3}
   angelFish: {fileID: 8300000, guid: fda6372d31af7e042b433590be93b0f6, type: 3}
-  button: {fileID: 0}
-  bubble: {fileID: 0}
-  blanket: {fileID: 0}
-  butterFly: {fileID: 0}
-  bee: {fileID: 0}
-  bunny: {fileID: 0}
-  cowBell: {fileID: 0}
-  cobWeb: {fileID: 0}
-  crown: {fileID: 0}
-  clock: {fileID: 0}
-  cake: {fileID: 0}
-  cat: {fileID: 0}
+  button: {fileID: 8300000, guid: 50f9e0d8fb686ed42aaf3ae5a8d8f4b3, type: 3}
+  bubble: {fileID: 8300000, guid: 7147f925333285b41b1716b4350a52d6, type: 3}
+  blanket: {fileID: 8300000, guid: bab56d250b18b0d4bacb2c7b7447ae57, type: 3}
+  butterFly: {fileID: 8300000, guid: c6371b398c30c06498815b47e81caaad, type: 3}
+  bee: {fileID: 8300000, guid: ecccf5915eff8e94980dbee1ccd87986, type: 3}
+  bunny: {fileID: 8300000, guid: 24c9adc05ab2b10439e91b338de07839, type: 3}
+  cowBell: {fileID: 8300000, guid: e4480c7ec1786f54f84395b09b4dcc8c, type: 3}
+  cobWeb: {fileID: 8300000, guid: f16a40af2665c5a449b5bfed47e9d13b, type: 3}
+  crown: {fileID: 8300000, guid: 73826862b83708148b3eddc01b25ccfd, type: 3}
+  clock: {fileID: 8300000, guid: a1b6fa5868c7a204f98a23cd14ed3e84, type: 3}
+  cake: {fileID: 8300000, guid: 6072e4c6b59e246499fe4a03bc034ac1, type: 3}
+  cat: {fileID: 8300000, guid: 14aebc27cfeec9647b6e5714eb5bacd0, type: 3}
 --- !u!114 &532422377
 MonoBehaviour:
   m_ObjectHideFlags: 0
