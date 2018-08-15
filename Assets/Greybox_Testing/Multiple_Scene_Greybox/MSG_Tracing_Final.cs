@@ -375,5 +375,70 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void AnnnounceLetters()     {         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))         {             if (trigger.obstacle_int == 0)             {                 audioMain.clip = arrow;                 audioMain.Play();             }              if (trigger.obstacle_int == 1)             {                 audioMain.clip = axe;                 audioMain.Play();             }              if (trigger.obstacle_int == 2)             {                 audioMain.clip = acorn;                 audioMain.Play();             }              if (trigger.obstacle_int == 3)             {                 audioMain.clip = apple;                 audioMain.Play();             }              if (trigger.obstacle_int == 4)             {                 audioMain.clip = anchor;                 audioMain.Play();             }         }
 
-    } 
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+        {
+            if (trigger.obstacle_int == 0)
+            {
+                audioMain.clip = button;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 1)
+            {
+                audioMain.clip = bubble;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 2)
+            {
+                audioMain.clip = blanket;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 3)
+            {
+                audioMain.clip = butterFly;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 4)
+            {
+                audioMain.clip = bee;
+                audioMain.Play();
+            }
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+        {
+            if (trigger.obstacle_int == 0)
+            {
+                audioMain.clip = cowBell;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 1)
+            {
+                audioMain.clip = cobWeb;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 2)
+            {
+                audioMain.clip = crown;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 3)
+            {
+                audioMain.clip = clock;
+                audioMain.Play();
+            }
+
+            if (trigger.obstacle_int == 4)
+            {
+                audioMain.clip = cake;
+                audioMain.Play();
+            }
+        }
+    }
 }
