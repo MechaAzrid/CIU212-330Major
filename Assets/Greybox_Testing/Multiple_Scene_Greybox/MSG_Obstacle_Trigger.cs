@@ -47,6 +47,7 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
         {
             if (MSG_Transitioner.data.level_c_obstacle_passed[obstacle_int] == true)
             {
+                Debug.Log("Cucked");
                 passed = true;
             }
         }
@@ -110,6 +111,8 @@ public class MSG_Obstacle_Trigger : MonoBehaviour
 
     public void Obstacle_Active()
     {
+        MSG_Transitioner.data.obstacle_lock_out = true;
+
         GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
         //MSG_Obstacle_Prototype cam_ob = cam.GetComponent<MSG_Obstacle_Prototype>();
 
