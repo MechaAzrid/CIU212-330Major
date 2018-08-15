@@ -12749,7 +12749,7 @@ MonoBehaviour:
   sticker_number: 5
   distance: 0
   player: {fileID: 197778194}
-  portal: {fileID: 0}
+  portal: {fileID: 1701878624}
   pickup_system: {fileID: 1658221992}
   locked: 0
 --- !u!65 &184211347
@@ -36251,7 +36251,7 @@ MonoBehaviour:
   sticker_number: 2
   distance: 0
   player: {fileID: 197778194}
-  portal: {fileID: 0}
+  portal: {fileID: 1701878624}
   pickup_system: {fileID: 1658221992}
   locked: 0
 --- !u!65 &554830359
@@ -39732,7 +39732,7 @@ MonoBehaviour:
   sticker_number: 3
   distance: 0
   player: {fileID: 197778194}
-  portal: {fileID: 0}
+  portal: {fileID: 1701878624}
   pickup_system: {fileID: 1658221992}
   locked: 0
 --- !u!65 &620354426
@@ -87020,7 +87020,7 @@ MonoBehaviour:
   sticker_number: 4
   distance: 0
   player: {fileID: 197778194}
-  portal: {fileID: 0}
+  portal: {fileID: 1701878624}
   pickup_system: {fileID: 1658221992}
   locked: 0
 --- !u!65 &1333157822
@@ -100026,7 +100026,7 @@ MonoBehaviour:
   sticker_number: 1
   distance: 0
   player: {fileID: 197778194}
-  portal: {fileID: 0}
+  portal: {fileID: 1701878624}
   pickup_system: {fileID: 1658221992}
   locked: 0
 --- !u!65 &1550064136
@@ -138453,7 +138453,7 @@ MonoBehaviour:
   sticker_number: 0
   distance: 0
   player: {fileID: 197778194}
-  portal: {fileID: 0}
+  portal: {fileID: 1701878624}
   pickup_system: {fileID: 1658221992}
   locked: 0
 --- !u!65 &2125376725
