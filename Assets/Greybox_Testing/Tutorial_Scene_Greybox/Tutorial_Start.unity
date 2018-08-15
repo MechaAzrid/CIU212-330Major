@@ -470,6 +470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e931f192a97eeeb4db022917153c976f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMain: {fileID: 0}
+  gameStart: {fileID: 8300000, guid: 02dcdd5177d3035498a04318b35084c9, type: 3}
   scene: Tutorial_Level_Final
   menus:
   - {fileID: 1738783562}
@@ -2064,8 +2066,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578802751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 658, y: 319, z: 0}
-  m_LocalScale: {x: 1.645, y: 1.645, z: 1.645}
+  m_LocalPosition: {x: 509, y: 258, z: 0}
+  m_LocalScale: {x: 1.2725, y: 1.2725, z: 1.2725}
   m_Children:
   - {fileID: 937959576}
   - {fileID: 1761573588}

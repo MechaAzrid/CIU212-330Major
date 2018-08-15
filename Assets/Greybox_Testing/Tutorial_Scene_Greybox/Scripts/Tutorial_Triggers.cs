@@ -57,6 +57,7 @@ public class Tutorial_Triggers : MonoBehaviour
 
     [Header("UI")]
     public Button stickerBookButton;
+    public Button pauseBackButton;
 
     void Start()
     {
@@ -188,6 +189,7 @@ public class Tutorial_Triggers : MonoBehaviour
     {
         msgLevelMovement.enabled = true;
         stickerBookButton.interactable = true;
+        pauseBackButton.interactable = true;
 		portal.SetActive (true);
     }
 

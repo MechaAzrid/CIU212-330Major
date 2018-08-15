@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Scroll_Snap : MonoBehaviour
 {
+    [Header("Audio SFX")]
+    public AudioSource audioMain;
+    public AudioClip levelSelect;
+
     public RectTransform panel; //Holds ScrollPanel
     public Button[] button; //Holds all the Buttons
     public RectTransform center; //Center To Compare The Distance For Each Button
@@ -17,6 +21,8 @@ public class Scroll_Snap : MonoBehaviour
 
     void Start ()
     {
+        audioMain = gameObject.GetComponent<AudioSource>();
+
         int buttonLength = button.Length;
         distance = new float[buttonLength];
         //Declare the length of the distance array - distance array will have the same length as the button array
@@ -69,6 +75,9 @@ public class Scroll_Snap : MonoBehaviour
 
     public void Start_Button(string scene)
     {
+        audioMain.clip = levelSelect;
+        audioMain.Play();
+
         GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().Movement_Active();
         SceneManager.LoadScene(scene);
     }

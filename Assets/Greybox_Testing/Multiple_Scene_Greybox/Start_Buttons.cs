@@ -6,14 +6,26 @@ using UnityEngine.UI;
 
 public class Start_Buttons : MonoBehaviour
 {
+    [Header("Audio SFX")]
+    public AudioSource audioMain;
+    public AudioClip gameStart;
+
     public string scene;
 
     public GameObject[] menus;
 
     public Image[] tutorial_stickers;
 
+    void Start()
+    {
+        audioMain = gameObject.GetComponent<AudioSource>();
+    }
+
     public void Start_Button ()
     {
+        audioMain.clip = gameStart;
+        audioMain.Play();
+
         MSG_Transitioner.data.Movement_Active();
         SceneManager.LoadScene(scene);
     }
