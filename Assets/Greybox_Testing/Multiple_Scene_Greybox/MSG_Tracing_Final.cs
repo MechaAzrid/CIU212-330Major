@@ -66,6 +66,8 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public Image tracing_checker;
 
+    [Header("")]
+
     // Use this for initialization
     void Start()
     {
@@ -344,5 +346,19 @@ public class MSG_Tracing_Final : MonoBehaviour
         node_list.Clear();
 
         temp_tracers.Clear();
+    }
+
+    public void AnnnounceLetters(int obstacle_number)
+    {
+        for (int i = 0; i < word_length.Count; i++)
+        {
+            int past_templates = 0;
+
+            if (obstacle_number == i)
+            {
+
+            }
+        }
+
     }
 }
