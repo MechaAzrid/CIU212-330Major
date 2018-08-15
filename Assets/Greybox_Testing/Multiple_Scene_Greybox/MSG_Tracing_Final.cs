@@ -66,7 +66,9 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public Image tracing_checker;
 
-    [Header("")]
+
+    // Causing errors
+    //[Header("")]
 
     // Use this for initialization
     void Start()
