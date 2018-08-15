@@ -145,7 +145,7 @@ public class Counter : MonoBehaviour
 
         tfs.total_node_count += node_count;
 
-        if (node_count > min_count)
+        if (node_count >= min_count)
         {
             iscorrect = true;
         }
