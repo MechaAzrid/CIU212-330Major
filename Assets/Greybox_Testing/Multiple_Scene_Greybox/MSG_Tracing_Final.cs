@@ -66,6 +66,11 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public Image tracing_checker;
 
+    public bool using_dif_images;
+    public Sprite neutral_image;
+    public Sprite incorrect_image;
+    public Sprite correct_image;
+
     [Header("Announcing Letters")]
     public AudioSource audioMain;
     [Header("Announce A Letters")]
@@ -272,13 +277,28 @@ public class MSG_Tracing_Final : MonoBehaviour
 
             if (correctnumber == temp_tracers.Count && total_nodes < total_max_count)
             {
-                tracing_checker.color = Color.green;
+                if (using_dif_images)
+                {
+                    tracing_checker.sprite = correct_image;
+                }
+                else
+                {
+                    tracing_checker.color = Color.green;
+                }
+
                 tracing_continue_button.SetActive(true);
                 tracing_reset_button.SetActive(false);
             }
             else
             {
-                tracing_checker.color = Color.red;
+                if (using_dif_images)
+                {
+                    tracing_checker.sprite = incorrect_image;
+                }
+                else
+                {
+                    tracing_checker.color = Color.red;
+                }
             }
         }
     }
@@ -297,7 +317,14 @@ public class MSG_Tracing_Final : MonoBehaviour
             counter.iscorrect = false;
         }
 
-        tracing_checker.color = Color.white;
+        if (using_dif_images)
+        {
+            tracing_checker.sprite = neutral_image;
+        }
+        else
+        {
+            tracing_checker.color = Color.white;
+        }
 
         for (int i = 0; i < node_list.Count; i++)
         {

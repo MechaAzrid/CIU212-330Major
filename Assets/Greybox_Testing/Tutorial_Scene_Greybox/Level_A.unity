@@ -6370,6 +6370,10 @@ MonoBehaviour:
   correctnumber: 0
   original_cam_position: {x: 0, y: 0, z: 0}
   tracing_checker: {fileID: 999838593}
+  using_dif_images: 1
+  neutral_image: {fileID: 21300000, guid: 21e735066b358964c8969cb0a94b8f76, type: 3}
+  incorrect_image: {fileID: 21300000, guid: 2a5f41e16845f7f49bb5754900dac31c, type: 3}
+  correct_image: {fileID: 21300000, guid: 6cee2073b1e6a1a45933b9f3c56b6bda, type: 3}
   audioMain: {fileID: 0}
   arrow: {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
   axe: {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
@@ -24095,6 +24099,16 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114907807923249692, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 532422376}
+    - target: {fileID: 114907807923249692, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Count
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c538fc790c24adc4986061a20200b8ff, type: 2}
