@@ -39,6 +39,7 @@ public class Pause : MonoBehaviour
         audioMain.clip = UISelect;
         audioMain.Play();
 
+        Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }
 
