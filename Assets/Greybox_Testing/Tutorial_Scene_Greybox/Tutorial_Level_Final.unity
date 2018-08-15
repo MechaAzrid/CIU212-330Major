@@ -37774,6 +37774,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114383292872953422, guid: 4131658b37405884295b171672450e3f,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114471908355032624, guid: 4131658b37405884295b171672450e3f,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4131658b37405884295b171672450e3f, type: 2}
   m_IsPrefabParent: 0
@@ -48451,6 +48461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 672569131}
   - component: {fileID: 672569132}
+  - component: {fileID: 672569133}
   m_Layer: 0
   m_Name: Sticker_UI
   m_TagString: Untagged
@@ -48541,6 +48552,90 @@ MonoBehaviour:
   - {fileID: 1514336509}
   - {fileID: 690718158}
   - {fileID: 759860068}
+  audioMain: {fileID: 672569133}
+  bookOpen: {fileID: 8300000, guid: aa2b8992ce050614386a74d685bc04ef, type: 3}
+  bookClose: {fileID: 8300000, guid: 418d4ead90350304facc835facfd011d, type: 3}
+  flipPage: {fileID: 8300000, guid: 0774624ac0cf7444e8cfc99a068f1607, type: 3}
+--- !u!82 &672569133
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672569130}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &673996470
 GameObject:
   m_ObjectHideFlags: 0
@@ -87429,11 +87524,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4162890496384640, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 4162890496384640, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.19
+      value: 18.83
       objectReference: {fileID: 0}
     - target: {fileID: 4162890496384640, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -114769,7 +114864,9 @@ MonoBehaviour:
   obstacleInstructionsVoice: {fileID: 8300000, guid: 1c2559fb5208949afbe8a516f9007dad,
     type: 3}
   firstStickerVoice: {fileID: 8300000, guid: fc447b984cbabd64988e175edb991a20, type: 3}
+  viewStickerBook: {fileID: 8300000, guid: 83b03e50dc5e0471993d6905075c3d20, type: 3}
   playerAnim: {fileID: 0}
+  stickerBookButton: {fileID: 1884148198}
 --- !u!1 &1612961367
 GameObject:
   m_ObjectHideFlags: 0
@@ -132987,6 +133084,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1882645279}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1884148198 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114471908355032624, guid: 4131658b37405884295b171672450e3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 479354963}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1889083101
 GameObject:
   m_ObjectHideFlags: 0

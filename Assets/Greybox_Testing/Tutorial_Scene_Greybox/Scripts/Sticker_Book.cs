@@ -32,12 +32,24 @@ public class Sticker_Book : MonoBehaviour
     [Header("Level C")]
     public Image[] level_c_sticker_images;
 
+    [Header("Audio SFX")]
+    public AudioSource audioMain;
+    public AudioClip bookOpen;
+    public AudioClip bookClose;
+    public AudioClip flipPage;
+
     private camera_states old_state;
 
     private bool book_open;
 
     public void Book_Opened ()
     {
+        audioMain.clip = bookOpen;
+        audioMain.Play();
+
+        audioMain.clip = bookOpen;
+        audioMain.Play();
+
         book_open = true;
 
         old_state = MSG_Transitioner.data.cam_states;
@@ -119,6 +131,9 @@ public class Sticker_Book : MonoBehaviour
 
     public void Book_Closed ()
     {
+        audioMain.clip = bookClose;
+        audioMain.Play();
+
         book_open = false;
 
         foreach (GameObject ui in UI)
@@ -137,6 +152,11 @@ public class Sticker_Book : MonoBehaviour
         }
 
         old_state = camera_states.None;
+    }
+
+    void Start()
+    {
+        audioMain = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -181,11 +201,15 @@ public class Sticker_Book : MonoBehaviour
 
     public void Arrow_Left ()
     {
+        audioMain.clip = flipPage;
+        audioMain.Play();
         page_number--;
     }
 
     public void Arrow_Right ()
     {
+        audioMain.clip = flipPage;
+        audioMain.Play();
         page_number++;
     }
 }

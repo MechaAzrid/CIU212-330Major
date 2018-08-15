@@ -50,9 +50,13 @@ public class Tutorial_Triggers : MonoBehaviour
     public AudioClip obstacleInstructionsVoice;
 
     public AudioClip firstStickerVoice;
+    public AudioClip viewStickerBook;
 
     [Header("Player Animations")]
     public Player_Animation playerAnim;
+
+    [Header("UI")]
+    public Button stickerBookButton;
 
     void Start()
     {
@@ -165,16 +169,25 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public void CongratulationsFirst()
     {
+        StartCoroutine(playFinished());
         msgLevelMovement.enabled = false;
+    }
+
+    IEnumerator playFinished()
+    {
         audioMain.clip = firstStickerVoice;
+        audioMain.Play();
+        yield return new WaitForSeconds(audioMain.clip.length);
+        yield return new WaitForSeconds(1f);
+        audioMain.clip = viewStickerBook;
         audioMain.Play();
 
         Invoke("CongratulationsFirstEnd", audioMain.clip.length);
     }
-
     void CongratulationsFirstEnd()
     {
         msgLevelMovement.enabled = true;
+        stickerBookButton.interactable = true;
 		portal.SetActive (true);
     }
 
