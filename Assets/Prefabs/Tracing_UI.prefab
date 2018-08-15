@@ -501,7 +501,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: AnnnounceLetters
+        m_MethodName: Count
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -916,8 +916,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285464944045042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.44296265, y: 26, z: 0}
+  m_LocalScale: {x: 0.9534972, y: 0.9534971, z: 0.9534971}
   m_Children:
   - {fileID: 224752365379737464}
   - {fileID: 224015782644751528}
@@ -930,7 +930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000090599, y: 28}
+  m_AnchoredPosition: {x: 0.44295, y: 26}
   m_SizeDelta: {x: -755, y: -473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224458153984455788
