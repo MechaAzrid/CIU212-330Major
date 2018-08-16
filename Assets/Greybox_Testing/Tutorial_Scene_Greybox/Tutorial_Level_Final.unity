@@ -32411,8 +32411,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405744764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 567.5, y: 319, z: 0}
-  m_LocalScale: {x: 1.2282525, y: 1.2282525, z: 1.2282525}
+  m_LocalPosition: {x: 573, y: 296, z: 0}
+  m_LocalScale: {x: 1.1888651, y: 1.1888651, z: 1.1888651}
   m_Children:
   - {fileID: 2009120763}
   - {fileID: 880449783}
@@ -82093,7 +82093,7 @@ MonoBehaviour:
   tracing_continue_button: {fileID: 311542316}
   tracing_reset_button: {fileID: 1431363527}
   input_node: {fileID: 1418522731699502, guid: 8f9d6872dda42614bb1e2de8b81ef50c, type: 2}
-  input_dot_active: 1
+  input_dot_active: 0
   word_length: 09000000
   tracers:
   - {fileID: 536237274}
@@ -86428,7 +86428,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167991120}
-  m_LocalRotation: {x: -0.01619667, y: -0.7069213, z: 0.70692134, w: 0.01619661}
+  m_LocalRotation: {x: -0.016196668, y: -0.7069212, z: 0.7069213, w: 0.016196609}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -131391,7 +131391,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1822144271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 153.03854, y: 78.71857, z: 0}
+  m_LocalPosition: {x: 172.97226, y: 67.97696, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
   - {fileID: 196195629}
