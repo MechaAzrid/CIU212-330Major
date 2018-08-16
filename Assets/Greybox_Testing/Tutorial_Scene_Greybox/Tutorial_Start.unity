@@ -2066,8 +2066,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578802751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 509, y: 258, z: 0}
-  m_LocalScale: {x: 1.2725, y: 1.2725, z: 1.2725}
+  m_LocalPosition: {x: 659, y: 296, z: 0}
+  m_LocalScale: {x: 1.6475, y: 1.6475, z: 1.6475}
   m_Children:
   - {fileID: 937959576}
   - {fileID: 1761573588}
@@ -2211,7 +2211,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761573587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0025024414, y: 0.0010681152, z: 0}
+  m_LocalPosition: {x: 0.0025024414, y: 0.001083374, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1578802755}
@@ -2552,6 +2552,7 @@ GameObject:
   - component: {fileID: 2008212134}
   - component: {fileID: 2008212136}
   - component: {fileID: 2008212135}
+  - component: {fileID: 2008212137}
   m_Layer: 5
   m_Name: Sticker_0
   m_TagString: Untagged
@@ -2610,6 +2611,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008212133}
+--- !u!95 &2008212137
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008212133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a397b5a5bb79b9a4aa3411890f531412, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2045528693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +2712,7 @@ GameObject:
   - component: {fileID: 2079615989}
   - component: {fileID: 2079615991}
   - component: {fileID: 2079615990}
+  - component: {fileID: 2079615992}
   m_Layer: 5
   m_Name: Sticker_2
   m_TagString: Untagged
@@ -2752,6 +2771,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2079615988}
+--- !u!95 &2079615992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2079615988}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5dae84a7c4e55e469e0690f40df04b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2106871168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,6 +2994,7 @@ GameObject:
   - component: {fileID: 2129448534}
   - component: {fileID: 2129448536}
   - component: {fileID: 2129448535}
+  - component: {fileID: 2129448537}
   m_Layer: 5
   m_Name: Sticker_1
   m_TagString: Untagged
@@ -3016,3 +3053,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2129448533}
+--- !u!95 &2129448537
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2129448533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2be2a0a3565582a4fb4197ee92f468bb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
