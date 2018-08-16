@@ -2312,7 +2312,12 @@ MonoBehaviour:
   audioMain: {fileID: 275797458}
   bookOpen: {fileID: 8300000, guid: aa2b8992ce050614386a74d685bc04ef, type: 3}
   bookClose: {fileID: 8300000, guid: 418d4ead90350304facc835facfd011d, type: 3}
-  flipPage: {fileID: 8300000, guid: 0774624ac0cf7444e8cfc99a068f1607, type: 3}
+  flipPage:
+  - {fileID: 8300000, guid: 0774624ac0cf7444e8cfc99a068f1607, type: 3}
+  - {fileID: 8300000, guid: d3b3f658911433c44aeafd081311b28a, type: 3}
+  - {fileID: 8300000, guid: a43f878386561634f83e81eda8682467, type: 3}
+  - {fileID: 8300000, guid: 749ce81f3e75a0848a4ffa073381c836, type: 3}
+  - {fileID: 8300000, guid: d2328278e5cc78a4db292ccbcb818d84, type: 3}
 --- !u!82 &275797458
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2324,7 +2329,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3067,7 +3072,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.038544, y: 43.718567, z: 0}
+  m_LocalPosition: {x: 61.97226, y: 32.97696, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -4186,8 +4191,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 567.5, y: 319, z: 0}
-  m_LocalScale: {x: 1.2282525, y: 1.2282525, z: 1.2282525}
+  m_LocalPosition: {x: 573, y: 296, z: 0}
+  m_LocalScale: {x: 1.1888651, y: 1.1888651, z: 1.1888651}
   m_Children:
   - {fileID: 1097655330}
   - {fileID: 346654225}
@@ -11392,24 +11397,78 @@ MonoBehaviour:
   uiSelect: {fileID: 8300000, guid: 0a58d37fa36f03a428670a8ad039d254, type: 3}
   uiClose: {fileID: 8300000, guid: 996a1ae5cbf928445b91d7b97b87eba0, type: 3}
   audioMain: {fileID: 1158280081}
-  arrow: {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
-  axe: {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
-  acorn: {fileID: 8300000, guid: 8baf46e308d2e484b8fe7ac5713b3c0b, type: 3}
-  apple: {fileID: 8300000, guid: cef941b527c344742bb235877f8b8fa2, type: 3}
-  anchor: {fileID: 8300000, guid: 13642954556357a469d8bb5460fae18e, type: 3}
-  angelFish: {fileID: 8300000, guid: fda6372d31af7e042b433590be93b0f6, type: 3}
-  button: {fileID: 8300000, guid: 50f9e0d8fb686ed42aaf3ae5a8d8f4b3, type: 3}
-  bubble: {fileID: 8300000, guid: 7147f925333285b41b1716b4350a52d6, type: 3}
-  blanket: {fileID: 8300000, guid: bab56d250b18b0d4bacb2c7b7447ae57, type: 3}
-  butterFly: {fileID: 8300000, guid: c6371b398c30c06498815b47e81caaad, type: 3}
-  bee: {fileID: 8300000, guid: ecccf5915eff8e94980dbee1ccd87986, type: 3}
-  bunny: {fileID: 8300000, guid: 24c9adc05ab2b10439e91b338de07839, type: 3}
-  cowBell: {fileID: 8300000, guid: e4480c7ec1786f54f84395b09b4dcc8c, type: 3}
-  cobWeb: {fileID: 8300000, guid: f16a40af2665c5a449b5bfed47e9d13b, type: 3}
-  crown: {fileID: 8300000, guid: 73826862b83708148b3eddc01b25ccfd, type: 3}
-  clock: {fileID: 8300000, guid: a1b6fa5868c7a204f98a23cd14ed3e84, type: 3}
-  cake: {fileID: 8300000, guid: 6072e4c6b59e246499fe4a03bc034ac1, type: 3}
-  cat: {fileID: 8300000, guid: 14aebc27cfeec9647b6e5714eb5bacd0, type: 3}
+  arrow:
+  - {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
+  - {fileID: 8300000, guid: 7e51beda23ef416468db2c46fb57d7ac, type: 3}
+  - {fileID: 8300000, guid: 6b82a69821f0b2440b54cee1a8f6da51, type: 3}
+  axe:
+  - {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
+  - {fileID: 8300000, guid: 8f84216fba353df4687fed518ac1948e, type: 3}
+  - {fileID: 8300000, guid: fbd584405bc76584baeccd1e2884783d, type: 3}
+  acorn:
+  - {fileID: 8300000, guid: 8baf46e308d2e484b8fe7ac5713b3c0b, type: 3}
+  - {fileID: 8300000, guid: 30e48889324876a48b0f9b056d457e15, type: 3}
+  - {fileID: 8300000, guid: 6e90f6c68d907dc419b7c467e7a5f8ee, type: 3}
+  apple:
+  - {fileID: 8300000, guid: cef941b527c344742bb235877f8b8fa2, type: 3}
+  - {fileID: 8300000, guid: c6c5d9a0b5a530349aaeb76073fdea38, type: 3}
+  - {fileID: 8300000, guid: baa9f8098d8128148b9af35844178c37, type: 3}
+  anchor:
+  - {fileID: 8300000, guid: 13642954556357a469d8bb5460fae18e, type: 3}
+  - {fileID: 8300000, guid: d1b99e77d00398a469db556c5bbeb17f, type: 3}
+  - {fileID: 8300000, guid: 8dd2d7a9bca526a478cc1d9cd827ba63, type: 3}
+  angelFish:
+  - {fileID: 8300000, guid: fda6372d31af7e042b433590be93b0f6, type: 3}
+  - {fileID: 8300000, guid: e153d0269d428e545b43e2ff83d7f5c8, type: 3}
+  - {fileID: 8300000, guid: 312207b0296effa4b83820b8d80111d0, type: 3}
+  button:
+  - {fileID: 8300000, guid: 50f9e0d8fb686ed42aaf3ae5a8d8f4b3, type: 3}
+  - {fileID: 8300000, guid: 5fd91f97ebe1d3148907f4538fd3a2b3, type: 3}
+  - {fileID: 8300000, guid: e6b4d3993da718b4cad049644bef5671, type: 3}
+  bubble:
+  - {fileID: 8300000, guid: 7147f925333285b41b1716b4350a52d6, type: 3}
+  - {fileID: 8300000, guid: 172fcf67c029a1d4996ee7f0e3c127f2, type: 3}
+  - {fileID: 8300000, guid: ea896f2c4d1594e47a2acf187aa8f7fb, type: 3}
+  blanket:
+  - {fileID: 8300000, guid: bab56d250b18b0d4bacb2c7b7447ae57, type: 3}
+  - {fileID: 8300000, guid: a5bbe011ce392f5428f1bb55d991af62, type: 3}
+  - {fileID: 8300000, guid: ce6240372a8e93d4d916629e8aa6ec4d, type: 3}
+  butterFly:
+  - {fileID: 8300000, guid: c6371b398c30c06498815b47e81caaad, type: 3}
+  - {fileID: 8300000, guid: 0193d0c8264d22347990145025176140, type: 3}
+  - {fileID: 8300000, guid: 893c6dc53e65e614984b3b3961359e8f, type: 3}
+  bee:
+  - {fileID: 8300000, guid: ecccf5915eff8e94980dbee1ccd87986, type: 3}
+  - {fileID: 8300000, guid: 4b82b76a64ee22e43b33a854ca658af7, type: 3}
+  - {fileID: 8300000, guid: 1261f13dcf2d5104b8e2d6747f64afdd, type: 3}
+  bunny:
+  - {fileID: 8300000, guid: 24c9adc05ab2b10439e91b338de07839, type: 3}
+  - {fileID: 8300000, guid: 5f4f1e204b6bcb24c88958afa23d6221, type: 3}
+  - {fileID: 8300000, guid: d204e45f8ace8774786810296e0773ed, type: 3}
+  cowBell:
+  - {fileID: 8300000, guid: e4480c7ec1786f54f84395b09b4dcc8c, type: 3}
+  - {fileID: 8300000, guid: f4aa459c8f5ac1f409f0abb31676730a, type: 3}
+  - {fileID: 8300000, guid: 95f8c848bd7837146a9363381ed1c1ad, type: 3}
+  cobWeb:
+  - {fileID: 8300000, guid: f16a40af2665c5a449b5bfed47e9d13b, type: 3}
+  - {fileID: 8300000, guid: 4481ec0a74aea3843b46b246ba857455, type: 3}
+  - {fileID: 8300000, guid: 080f02ea1dc224b44bbc5d7af52f154c, type: 3}
+  crown:
+  - {fileID: 8300000, guid: 73826862b83708148b3eddc01b25ccfd, type: 3}
+  - {fileID: 8300000, guid: 199ec40144d158943b1729252077dcb5, type: 3}
+  - {fileID: 8300000, guid: 1aa675db7c5a9c74ea802b6af17454fa, type: 3}
+  clock:
+  - {fileID: 8300000, guid: a1b6fa5868c7a204f98a23cd14ed3e84, type: 3}
+  - {fileID: 8300000, guid: 40d1ad22b3e9a244b9d0f86376a27087, type: 3}
+  - {fileID: 8300000, guid: c6d70bb9d8fd0da4fa48303800b3aa06, type: 3}
+  cake:
+  - {fileID: 8300000, guid: 6072e4c6b59e246499fe4a03bc034ac1, type: 3}
+  - {fileID: 8300000, guid: d25358b42c177844e8b3ced2cca3f50f, type: 3}
+  - {fileID: 8300000, guid: 0505b760aaa3b904e8623673f48f3a4f, type: 3}
+  cat:
+  - {fileID: 8300000, guid: 14aebc27cfeec9647b6e5714eb5bacd0, type: 3}
+  - {fileID: 8300000, guid: 5a87a6e161da301419ea6fd82e8bf5da, type: 3}
+  - {fileID: 8300000, guid: 21d41acaf7318214fa1ccdf42587687e, type: 3}
   universalUI: {fileID: 669328403}
 --- !u!81 &1158280075
 AudioListener:
@@ -16634,8 +16693,8 @@ MonoBehaviour:
   - {fileID: 1740539274}
   pickup_object: {fileID: 0}
   pickup: {fileID: 0}
-  audioMain: {fileID: 0}
-  stickerCollection: {fileID: 8300000, guid: 2c4050cb01fd11e4c801d6d97bd8dd20, type: 3}
+  audioMain: {fileID: 1158280081}
+  stickerCollection: {fileID: 8300000, guid: caedaeb72bdbbfb43bfbb928e8331ddd, type: 3}
 --- !u!1 &1661097262
 GameObject:
   m_ObjectHideFlags: 0

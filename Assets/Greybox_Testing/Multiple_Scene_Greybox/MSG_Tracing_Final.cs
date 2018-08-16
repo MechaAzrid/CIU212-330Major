@@ -79,26 +79,44 @@ public class MSG_Tracing_Final : MonoBehaviour
     [Header("Announcing Letters")]
     public AudioSource audioMain;
     [Header("Announce A Letters")]
-    public AudioClip arrow;
-    public AudioClip axe;
-    public AudioClip acorn;
-    public AudioClip apple;
-    public AudioClip anchor;
-    public AudioClip angelFish;
+    public AudioClip[] arrow;
+    private AudioClip arrowClip;
+    public AudioClip[] axe;
+    private AudioClip axeClip;
+    public AudioClip[] acorn;
+    private AudioClip acornClip;
+    public AudioClip[] apple;
+    private AudioClip appleClip;
+    public AudioClip[] anchor;
+    private AudioClip anchorClip;
+    public AudioClip[] angelFish;
+    private AudioClip angelFishClip;
     [Header("Announce B Letters")]
-    public AudioClip button;
-    public AudioClip bubble;
-    public AudioClip blanket;
-    public AudioClip butterFly;
-    public AudioClip bee;
-    public AudioClip bunny;
+    public AudioClip[] button;
+    private AudioClip buttonClip;
+    public AudioClip[] bubble;
+    private AudioClip bubbleClip;
+    public AudioClip[] blanket;
+    private AudioClip blanketClip;
+    public AudioClip[] butterFly;
+    private AudioClip butterFlyClip;
+    public AudioClip[] bee;
+    private AudioClip beeClip;
+    public AudioClip[] bunny;
+    private AudioClip bunnyClip;
     [Header("Announce C Letters")]
-    public AudioClip cowBell;
-    public AudioClip cobWeb;
-    public AudioClip crown;
-    public AudioClip clock;
-    public AudioClip cake;
-    public AudioClip cat;
+    public AudioClip[] cowBell;
+    private AudioClip cowBellClip;
+    public AudioClip[] cobWeb;
+    private AudioClip cobWebClip;
+    public AudioClip[] crown;
+    private AudioClip crownClip;
+    public AudioClip[] clock;
+    private AudioClip clockClip;
+    public AudioClip[] cake;
+    private AudioClip cakeClip;
+    public AudioClip[] cat;
+    private AudioClip catClip;
 
     public GameObject universalUI;
 
@@ -433,37 +451,52 @@ public class MSG_Tracing_Final : MonoBehaviour
     }
 
     public void AnnnounceLetters()     {         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))         {
-            if (trigger.obstacle_int == 0)             {                 audioMain.clip = arrow;                 audioMain.Play();             }              if (trigger.obstacle_int == 1)             {                 audioMain.clip = axe;                 audioMain.Play();             }              if (trigger.obstacle_int == 2)             {                 audioMain.clip = acorn;                 audioMain.Play();             }              if (trigger.obstacle_int == 3)             {                 audioMain.clip = apple;                 audioMain.Play();             }              if (trigger.obstacle_int == 4)             {                 audioMain.clip = anchor;                 audioMain.Play();             }         }
+            if (trigger.obstacle_int == 0)             {                  int index = Random.Range(0, arrow.Length);                 arrowClip = arrow[index];                 audioMain.clip = arrowClip;                 audioMain.Play();             }              if (trigger.obstacle_int == 1)             {                 int index = Random.Range(0, axe.Length);                 axeClip = axe[index];                 audioMain.clip = axeClip;                 audioMain.Play();             }              if (trigger.obstacle_int == 2)             {                 int index = Random.Range(0, acorn.Length);
+                acornClip = acorn[index];                 audioMain.clip = acornClip;                 audioMain.Play();             }              if (trigger.obstacle_int == 3)             {
+                int index = Random.Range(0, apple.Length);
+                appleClip = apple[index];                 audioMain.clip = appleClip;                 audioMain.Play();             }              if (trigger.obstacle_int == 4)             {
+                int index = Random.Range(0, anchor.Length);
+                anchorClip = anchor[index];                 audioMain.clip = anchorClip;                 audioMain.Play();             }         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
             if (trigger.obstacle_int == 0)
             {
-                audioMain.clip = button;
+                int index = Random.Range(0, button.Length);
+                buttonClip = button[index];
+                audioMain.clip = buttonClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 1)
             {
-                audioMain.clip = bubble;
+                int index = Random.Range(0, bubble.Length);
+                bubbleClip = bubble[index];
+                audioMain.clip = bubbleClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 2)
             {
-                audioMain.clip = blanket;
+                int index = Random.Range(0, blanket.Length);
+                blanketClip = blanket[index];
+                audioMain.clip = blanketClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 3)
             {
-                audioMain.clip = butterFly;
+                int index = Random.Range(0, butterFly.Length);
+                butterFlyClip = butterFly[index];
+                audioMain.clip = butterFlyClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 4)
             {
-                audioMain.clip = bee;
+                int index = Random.Range(0, bee.Length);
+                beeClip = bee[index];
+                audioMain.clip = beeClip;
                 audioMain.Play();
             }
         }
@@ -472,31 +505,41 @@ public class MSG_Tracing_Final : MonoBehaviour
         {
             if (trigger.obstacle_int == 0)
             {
-                audioMain.clip = cowBell;
+                int index = Random.Range(0, cowBell.Length);
+                cowBellClip = cowBell[index];
+                audioMain.clip = cowBellClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 1)
             {
-                audioMain.clip = cobWeb;
+                int index = Random.Range(0, cobWeb.Length);
+                cobWebClip = cobWeb[index];
+                audioMain.clip = cobWebClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 2)
             {
-                audioMain.clip = crown;
+                int index = Random.Range(0, crown.Length);
+                crownClip = crown[index];
+                audioMain.clip = crownClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 3)
             {
-                audioMain.clip = clock;
+                int index = Random.Range(0, clock.Length);
+                clockClip = clock[index];
+                audioMain.clip = clockClip;
                 audioMain.Play();
             }
 
             if (trigger.obstacle_int == 4)
             {
-                audioMain.clip = cake;
+                int index = Random.Range(0, cake.Length);
+                cakeClip = cake[index];
+                audioMain.clip = cakeClip;
                 audioMain.Play();
             }
         }

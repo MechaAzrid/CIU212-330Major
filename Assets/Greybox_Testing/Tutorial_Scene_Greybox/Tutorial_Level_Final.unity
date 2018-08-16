@@ -47738,7 +47738,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d737d6126a7667241bb7932b6a3f285d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -49446,7 +49446,12 @@ MonoBehaviour:
   audioMain: {fileID: 672569133}
   bookOpen: {fileID: 8300000, guid: aa2b8992ce050614386a74d685bc04ef, type: 3}
   bookClose: {fileID: 8300000, guid: 418d4ead90350304facc835facfd011d, type: 3}
-  flipPage: {fileID: 8300000, guid: 0774624ac0cf7444e8cfc99a068f1607, type: 3}
+  flipPage:
+  - {fileID: 8300000, guid: 0774624ac0cf7444e8cfc99a068f1607, type: 3}
+  - {fileID: 8300000, guid: d3b3f658911433c44aeafd081311b28a, type: 3}
+  - {fileID: 8300000, guid: a43f878386561634f83e81eda8682467, type: 3}
+  - {fileID: 8300000, guid: 749ce81f3e75a0848a4ffa073381c836, type: 3}
+  - {fileID: 8300000, guid: d2328278e5cc78a4db292ccbcb818d84, type: 3}
 --- !u!82 &672569133
 AudioSource:
   m_ObjectHideFlags: 0
@@ -49458,7 +49463,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -81957,7 +81962,7 @@ MonoBehaviour:
   pickup_object: {fileID: 0}
   pickup: {fileID: 0}
   audioMain: {fileID: 1153780142}
-  stickerCollection: {fileID: 8300000, guid: 2c4050cb01fd11e4c801d6d97bd8dd20, type: 3}
+  stickerCollection: {fileID: 8300000, guid: caedaeb72bdbbfb43bfbb928e8331ddd, type: 3}
 --- !u!114 &1153780133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82126,24 +82131,42 @@ MonoBehaviour:
   uiSelect: {fileID: 8300000, guid: 0a58d37fa36f03a428670a8ad039d254, type: 3}
   uiClose: {fileID: 8300000, guid: 996a1ae5cbf928445b91d7b97b87eba0, type: 3}
   audioMain: {fileID: 1153780142}
-  arrow: {fileID: 0}
-  axe: {fileID: 0}
-  acorn: {fileID: 0}
-  apple: {fileID: 0}
-  anchor: {fileID: 0}
-  angelFish: {fileID: 0}
-  button: {fileID: 0}
-  bubble: {fileID: 0}
-  blanket: {fileID: 0}
-  butterFly: {fileID: 0}
-  bee: {fileID: 0}
-  bunny: {fileID: 0}
-  cowBell: {fileID: 0}
-  cobWeb: {fileID: 0}
-  crown: {fileID: 0}
-  clock: {fileID: 0}
-  cake: {fileID: 0}
-  cat: {fileID: 0}
+  arrow:
+  - {fileID: 0}
+  axe:
+  - {fileID: 0}
+  acorn:
+  - {fileID: 0}
+  apple:
+  - {fileID: 0}
+  anchor:
+  - {fileID: 0}
+  angelFish:
+  - {fileID: 0}
+  button:
+  - {fileID: 0}
+  bubble:
+  - {fileID: 0}
+  blanket:
+  - {fileID: 0}
+  butterFly:
+  - {fileID: 0}
+  bee:
+  - {fileID: 0}
+  bunny:
+  - {fileID: 0}
+  cowBell:
+  - {fileID: 0}
+  cobWeb:
+  - {fileID: 0}
+  crown:
+  - {fileID: 0}
+  clock:
+  - {fileID: 0}
+  cake:
+  - {fileID: 0}
+  cat:
+  - {fileID: 0}
   universalUI: {fileID: 558679983}
 --- !u!114 &1153780141
 MonoBehaviour:

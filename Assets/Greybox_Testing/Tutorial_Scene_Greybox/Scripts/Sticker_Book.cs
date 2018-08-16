@@ -36,7 +36,8 @@ public class Sticker_Book : MonoBehaviour
     public AudioSource audioMain;
     public AudioClip bookOpen;
     public AudioClip bookClose;
-    public AudioClip flipPage;
+    public AudioClip[] flipPage;
+    private AudioClip flipPageClip;
 
     private camera_states old_state;
 
@@ -201,15 +202,21 @@ public class Sticker_Book : MonoBehaviour
 
     public void Arrow_Left ()
     {
-        audioMain.clip = flipPage;
+        int index = Random.Range(0, flipPage.Length);
+        flipPageClip = flipPage[index];
+        audioMain.clip = flipPageClip;
         audioMain.Play();
+
         page_number--;
     }
 
     public void Arrow_Right ()
     {
-        audioMain.clip = flipPage;
+        int index = Random.Range(0, flipPage.Length);
+        flipPageClip = flipPage[index];
+        audioMain.clip = flipPageClip;
         audioMain.Play();
+
         page_number++;
     }
 }
