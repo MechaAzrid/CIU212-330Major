@@ -19,6 +19,9 @@ public class Scroll_Snap : MonoBehaviour
     private int buttonDistance; //Holds The Distance Between The Buttons
     private int minButtonNumber; //Holds Which Distance Is The Smallest One
 
+    public Sprite locked_levels;
+    public Sprite complete_levels;
+
     void Start ()
     {
         audioMain = gameObject.GetComponent<AudioSource>();
@@ -53,7 +56,29 @@ public class Scroll_Snap : MonoBehaviour
         {
             LerpToButton(minButtonNumber * -buttonDistance);
         }
+
+
 	}
+
+    private bool Tutorial_Finished ()
+    {
+        return false;
+    }
+
+    private bool Level_A_Finished()
+    {
+        return false;
+    }
+
+    private bool Level_B_Finished()
+    {
+        return false;
+    }
+
+    private bool Level_C_Finished()
+    {
+        return false;
+    }
 
     void LerpToButton(int position)
     {

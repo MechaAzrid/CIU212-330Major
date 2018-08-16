@@ -196,8 +196,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201437189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 657.5, y: 319, z: 0}
-  m_LocalScale: {x: 1.3220644, y: 1.3220644, z: 1.3220644}
+  m_LocalPosition: {x: 567, y: 319, z: 0}
+  m_LocalScale: {x: 1.2277113, y: 1.2277113, z: 1.2277113}
   m_Children:
   - {fileID: 452555622}
   - {fileID: 1035944314}
@@ -1292,6 +1292,8 @@ MonoBehaviour:
   - {fileID: 798007269}
   - {fileID: 842753545}
   center: {fileID: 308350170}
+  locked_levels: {fileID: 0}
+  complete_levels: {fileID: 0}
 --- !u!82 &1865860626
 AudioSource:
   m_ObjectHideFlags: 0
