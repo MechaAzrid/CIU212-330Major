@@ -396,6 +396,8 @@ public class MSG_Tracing_Final : MonoBehaviour
         audioMain.clip = uiSelect;
         audioMain.Play();
 
+        universalUI.SetActive(true);
+
         StartCoroutine(MSG_Transitioner.data.Obstacle_Exit_Timer());
 
         tracing_continue_button.SetActive(false);

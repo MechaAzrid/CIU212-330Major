@@ -59,7 +59,6 @@ public class Tutorial_Triggers : MonoBehaviour
     void Start()
     {
         audioMain = gameObject.GetComponent<AudioSource>();
-
         //Find The GameObject's AudioSource
     }
 
@@ -163,6 +162,8 @@ public class Tutorial_Triggers : MonoBehaviour
 
         bridge.SetActive(true);
         completedFlag.SetActive(true);
+
+        msgTracingFinal.universalUI.SetActive(true);
         
     }
 

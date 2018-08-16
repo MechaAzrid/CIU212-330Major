@@ -29,6 +29,8 @@ public class Player_Animation : MonoBehaviour
     public AudioClip softFootSteps;
     public AudioClip squishyFootSteps;
 
+    public Tutorial_Triggers tutorialTrigg;
+
 	// Use this for initialization
 	void Start ()
     {
