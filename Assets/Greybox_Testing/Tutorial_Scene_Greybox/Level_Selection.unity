@@ -1292,8 +1292,15 @@ MonoBehaviour:
   - {fileID: 798007269}
   - {fileID: 842753545}
   center: {fileID: 308350170}
-  locked_levels: {fileID: 0}
-  complete_levels: {fileID: 0}
+  locked_level_sprites:
+  - {fileID: 21300000, guid: 22d6a55e1415dd348aa9bb636c6591bf, type: 3}
+  - {fileID: 21300000, guid: fc3934c6ff06133469a8b62845bb66e4, type: 3}
+  - {fileID: 21300000, guid: 742568a795a5e594a9f3fe0700e68ab7, type: 3}
+  complete_level_sprites:
+  - {fileID: 21300000, guid: a52f6931e3171dd42898b9ceb5491152, type: 3}
+  - {fileID: 21300000, guid: 41dee8d6c2d735f4b8cda1b127913c5d, type: 3}
+  - {fileID: 21300000, guid: 056f1422142fcd140b9353017c9586ec, type: 3}
+  - {fileID: 21300000, guid: 4a7c35a102ffb9d49af75b4bed0d0f40, type: 3}
 --- !u!82 &1865860626
 AudioSource:
   m_ObjectHideFlags: 0
