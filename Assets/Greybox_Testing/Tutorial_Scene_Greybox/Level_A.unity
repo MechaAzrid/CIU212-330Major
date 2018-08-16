@@ -1218,6 +1218,7 @@ GameObject:
   - component: {fileID: 82704191}
   - component: {fileID: 82704190}
   - component: {fileID: 82704189}
+  - component: {fileID: 82704193}
   m_Layer: 0
   m_Name: Obstacle_Gold
   m_TagString: Untagged
@@ -1315,6 +1316,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 82704187}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &82704193
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82704187}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &95294771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,6 +2088,7 @@ GameObject:
   - component: {fileID: 170027328}
   - component: {fileID: 170027327}
   - component: {fileID: 170027326}
+  - component: {fileID: 170027330}
   m_Layer: 0
   m_Name: Obstacle_3
   m_TagString: Untagged
@@ -2165,6 +2182,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170027324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &170027330
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170027324}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &170797197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,7 +2773,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 22ebffb3d7542443196485497b3e1a97, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5237,7 +5269,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 474160688}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6409,7 +6441,7 @@ MonoBehaviour:
   neutral_image: {fileID: 21300000, guid: 21e735066b358964c8969cb0a94b8f76, type: 3}
   incorrect_image: {fileID: 21300000, guid: 2a5f41e16845f7f49bb5754900dac31c, type: 3}
   correct_image: {fileID: 21300000, guid: 6cee2073b1e6a1a45933b9f3c56b6bda, type: 3}
-  audioMain: {fileID: 0}
+  audioMain: {fileID: 532422384}
   arrow: {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
   axe: {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
   acorn: {fileID: 8300000, guid: 8baf46e308d2e484b8fe7ac5713b3c0b, type: 3}
@@ -8481,6 +8513,7 @@ GameObject:
   - component: {fileID: 727185235}
   - component: {fileID: 727185234}
   - component: {fileID: 727185233}
+  - component: {fileID: 727185237}
   m_Layer: 0
   m_Name: Obstacle_1
   m_TagString: Untagged
@@ -8574,6 +8607,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727185231}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &727185237
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727185231}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &731992802
 Prefab:
   m_ObjectHideFlags: 0
@@ -17074,6 +17122,7 @@ GameObject:
   - component: {fileID: 1497852722}
   - component: {fileID: 1497852721}
   - component: {fileID: 1497852720}
+  - component: {fileID: 1497852724}
   m_Layer: 0
   m_Name: Obstacle_2
   m_TagString: Untagged
@@ -17167,6 +17216,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1497852718}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1497852724
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497852718}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1501867608
 GameObject:
   m_ObjectHideFlags: 0
@@ -19383,6 +19447,7 @@ GameObject:
   - component: {fileID: 1679016434}
   - component: {fileID: 1679016433}
   - component: {fileID: 1679016432}
+  - component: {fileID: 1679016436}
   m_Layer: 0
   m_Name: Obstacle_4
   m_TagString: Untagged
@@ -19476,6 +19541,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679016430}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1679016436
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679016430}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1679131187
 Prefab:
   m_ObjectHideFlags: 0
@@ -22005,7 +22085,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -24114,6 +24194,46 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AnnnounceLetters
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190922604233794, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 532422376}
+    - target: {fileID: 114190922604233794, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Continue_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 114031325552853388, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 532422376}
+    - target: {fileID: 114031325552853388, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Return_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 114001628568223018, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 532422376}
+    - target: {fileID: 114001628568223018, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reset_Letters
+      objectReference: {fileID: 0}
+    - target: {fileID: 114907807923249692, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 532422376}
+    - target: {fileID: 114907807923249692, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Count
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c538fc790c24adc4986061a20200b8ff, type: 2}
