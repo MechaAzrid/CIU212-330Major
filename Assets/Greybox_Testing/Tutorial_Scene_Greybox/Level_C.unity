@@ -208,7 +208,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.3533319, z: 1}
+  m_Size: {x: 1.82, y: 1.49, z: 1}
   m_Center: {x: 0.0000000010249301, y: -0.1766666, z: 0}
 --- !u!33 &2379935
 MeshFilter:
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 3091292}
   m_Layer: 0
   m_Name: House_02
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -384,7 +384,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Size: {x: 12.7, y: 10.53, z: 3}
   m_Center: {x: 0, y: 0.0000019073486, z: 0}
 --- !u!1 &3109589
 GameObject:
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 44234067}
   m_Layer: 0
   m_Name: Forest
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,7 +923,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5816703, y: 2.739712, z: 0.20000003}
+  m_Size: {x: 5.5816703, y: 2.739712, z: 3}
   m_Center: {x: -0.088330775, y: -2.4401398, z: 0}
 --- !u!1 &62723131
 GameObject:
@@ -2250,7 +2250,7 @@ GameObject:
   - component: {fileID: 171335383}
   m_Layer: 0
   m_Name: Bush (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2322,7 +2322,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &175942432
 GameObject:
@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 175942435}
   m_Layer: 0
   m_Name: Bush (16)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2408,7 +2408,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Size: {x: 7.35, y: 6.36, z: 3}
   m_Center: {x: 0, y: 0.0000038146973, z: 0}
 --- !u!1 &180047985
 GameObject:
@@ -2989,7 +2989,7 @@ GameObject:
   - component: {fileID: 216804445}
   m_Layer: 0
   m_Name: Bush (17)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3040,7 +3040,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3061,7 +3061,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Size: {x: 7.35, y: 6.36, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &222204911
 GameObject:
@@ -4355,7 +4355,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.87732, y: 11.163406, z: 0}
+  m_LocalPosition: {x: 42.059967, y: 30.540695, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -4458,7 +4458,7 @@ GameObject:
   - component: {fileID: 353300632}
   m_Layer: 0
   m_Name: Bush (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4530,7 +4530,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &356547499
 GameObject:
@@ -4910,7 +4910,7 @@ GameObject:
   - component: {fileID: 364008667}
   m_Layer: 0
   m_Name: House_03
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4982,7 +4982,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Size: {x: 12.7, y: 10.53, z: 3}
   m_Center: {x: -0.0000038146973, y: 0.00000047683716, z: 0}
 --- !u!1 &365410630
 GameObject:
@@ -4996,7 +4996,7 @@ GameObject:
   - component: {fileID: 365410633}
   m_Layer: 0
   m_Name: Tree (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5068,7 +5068,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9902892, y: 8.145142, z: 0.2}
+  m_Size: {x: 0.9902892, y: 8.145142, z: 3}
   m_Center: {x: 0.06530452, y: -2.6774292, z: 0}
 --- !u!1 &373498032
 GameObject:
@@ -5082,7 +5082,7 @@ GameObject:
   - component: {fileID: 373498035}
   m_Layer: 0
   m_Name: Bush (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5154,7 +5154,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: -0.0000019073486, y: 0, z: 0.00000047683716}
 --- !u!1 &373928547
 GameObject:
@@ -5749,7 +5749,7 @@ GameObject:
   - component: {fileID: 449250343}
   m_Layer: 0
   m_Name: Bush (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5821,7 +5821,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0.0000038146973, y: 0.00000017881393, z: 0.00000047683716}
 --- !u!1 &453906107
 GameObject:
@@ -5835,7 +5835,7 @@ GameObject:
   - component: {fileID: 453906110}
   m_Layer: 0
   m_Name: Bush (23)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5907,7 +5907,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &458922217
 GameObject:
@@ -6306,8 +6306,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 659, y: 296, z: 0}
-  m_LocalScale: {x: 1.2749641, y: 1.2749641, z: 1.2749641}
+  m_LocalPosition: {x: 605, y: 319, z: 0}
+  m_LocalScale: {x: 1.2681844, y: 1.2681844, z: 1.2681844}
   m_Children:
   - {fileID: 1942320141}
   - {fileID: 346654225}
@@ -7378,7 +7378,7 @@ GameObject:
   - component: {fileID: 570489756}
   m_Layer: 0
   m_Name: Bush (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7429,7 +7429,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7450,7 +7450,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &589329567
 GameObject:
@@ -8336,7 +8336,7 @@ GameObject:
   - component: {fileID: 625446035}
   m_Layer: 0
   m_Name: Bush (25)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8408,7 +8408,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0.00000023841858, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &637215344
 GameObject:
@@ -8755,7 +8755,7 @@ GameObject:
   - component: {fileID: 662862668}
   m_Layer: 0
   m_Name: Bush (22)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8827,7 +8827,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0.0000038146973, y: 0, z: 0.00000047683716}
 --- !u!1 &677374537
 GameObject:
@@ -8841,7 +8841,7 @@ GameObject:
   - component: {fileID: 677374540}
   m_Layer: 0
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8913,7 +8913,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.525641, y: 5.402461, z: 0.19999886}
+  m_Size: {x: 5.525641, y: 5.402461, z: 3}
   m_Center: {x: 0.21738671, y: -2.056866, z: 0}
 --- !u!1 &681118142
 GameObject:
@@ -9700,7 +9700,7 @@ GameObject:
   - component: {fileID: 771152644}
   m_Layer: 0
   m_Name: Bush (8)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9772,7 +9772,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &775933589
 GameObject:
@@ -9952,7 +9952,7 @@ GameObject:
   - component: {fileID: 782424007}
   m_Layer: 0
   m_Name: Tree (12)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10024,7 +10024,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2079644, y: 8.188675, z: 0.2}
+  m_Size: {x: 1.2079644, y: 8.188675, z: 3}
   m_Center: {x: 0.08707166, y: -2.6556625, z: 0}
 --- !u!1 &785051460
 GameObject:
@@ -10106,7 +10106,7 @@ GameObject:
   - component: {fileID: 794110074}
   m_Layer: 0
   m_Name: Bush (20)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10178,7 +10178,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &794967570
 GameObject:
@@ -10260,7 +10260,7 @@ GameObject:
   - component: {fileID: 801271384}
   m_Layer: 0
   m_Name: Bush (26)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10332,7 +10332,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0.000000029802322, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &817581865
 GameObject:
@@ -10346,7 +10346,7 @@ GameObject:
   - component: {fileID: 817581868}
   m_Layer: 0
   m_Name: Bush (13)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10418,7 +10418,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: -0.0000019073486, y: -0.0000038146973, z: 0.00000047683716}
 --- !u!1001 &817826107
 Prefab:
@@ -10579,7 +10579,7 @@ GameObject:
   - component: {fileID: 835936410}
   m_Layer: 0
   m_Name: Forest_Trees (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10651,7 +10651,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.6700006, y: 1.3754201, z: 0.20000003}
+  m_Size: {x: 5.6700006, y: 1.3754201, z: 3}
   m_Center: {x: 0, y: -3.1222868, z: 0}
 --- !u!1 &844488283
 GameObject:
@@ -10980,7 +10980,7 @@ GameObject:
   - component: {fileID: 860578764}
   m_Layer: 0
   m_Name: Tree (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11052,7 +11052,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2079659, y: 8.188675, z: 0.2}
+  m_Size: {x: 1.2079659, y: 8.188675, z: 3}
   m_Center: {x: 0.08707237, y: -2.6556625, z: 0}
 --- !u!1 &873097470
 GameObject:
@@ -11066,7 +11066,7 @@ GameObject:
   - component: {fileID: 873097473}
   m_Layer: 0
   m_Name: Tree (14)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11138,7 +11138,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0773544, y: 8.014534, z: 0.2}
+  m_Size: {x: 1.0773544, y: 8.014534, z: 3}
   m_Center: {x: 0.0653038, y: -2.742733, z: 0}
 --- !u!1 &876319441
 GameObject:
@@ -11436,7 +11436,7 @@ GameObject:
   - component: {fileID: 887375654}
   m_Layer: 0
   m_Name: Forest_Trees (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11508,7 +11508,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Size: {x: 5.6700006, y: 7.620001, z: 3}
   m_Center: {x: 0, y: 0.00000014901161, z: 0}
 --- !u!1 &887399174
 GameObject:
@@ -11522,7 +11522,7 @@ GameObject:
   - component: {fileID: 887399177}
   m_Layer: 0
   m_Name: Bush (24)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11594,7 +11594,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &892039486
 GameObject:
@@ -11929,7 +11929,7 @@ GameObject:
   - component: {fileID: 930285282}
   m_Layer: 0
   m_Name: Bush (27)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12001,7 +12001,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &935327165
 GameObject:
@@ -12096,7 +12096,7 @@ GameObject:
   - component: {fileID: 937232855}
   m_Layer: 0
   m_Name: EnvironmentAssets
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12215,7 +12215,7 @@ GameObject:
   - component: {fileID: 945941751}
   m_Layer: 0
   m_Name: Forest_Trees (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12287,7 +12287,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.6700006, y: 1.5152278, z: 0.20000003}
+  m_Size: {x: 5.6700006, y: 1.5152278, z: 3}
   m_Center: {x: 0, y: -3.0523834, z: 0}
 --- !u!1 &951121264
 GameObject:
@@ -12384,7 +12384,7 @@ GameObject:
   - component: {fileID: 955719722}
   m_Layer: 0
   m_Name: Forest_Trees (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12456,7 +12456,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Size: {x: 5.6700006, y: 7.620001, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &957810138
 GameObject:
@@ -12636,7 +12636,7 @@ GameObject:
   - component: {fileID: 959779184}
   m_Layer: 0
   m_Name: Bush (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12708,7 +12708,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &983875253
 GameObject:
@@ -13605,7 +13605,7 @@ GameObject:
   - component: {fileID: 1043877928}
   m_Layer: 0
   m_Name: Bush (21)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13677,7 +13677,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &1045128769
 GameObject:
@@ -13774,7 +13774,7 @@ GameObject:
   - component: {fileID: 1045749670}
   m_Layer: 0
   m_Name: Barn
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13846,7 +13846,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.261618, y: 3.8775086, z: 0.2}
+  m_Size: {x: 9.261618, y: 3.8775086, z: 3}
   m_Center: {x: -0.069107525, y: -0.96750164, z: 0.00000024044243}
 --- !u!1 &1049918782
 GameObject:
@@ -13860,7 +13860,7 @@ GameObject:
   - component: {fileID: 1049918785}
   m_Layer: 0
   m_Name: House_04
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13932,7 +13932,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Size: {x: 12.7, y: 10.53, z: 3}
   m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &1058343220
 Prefab:
@@ -14133,7 +14133,7 @@ GameObject:
   - component: {fileID: 1074348248}
   m_Layer: 0
   m_Name: Bush (29)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14205,7 +14205,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: -0.0000019073486, z: 0.00000047683716}
 --- !u!1 &1077161830
 GameObject:
@@ -14392,7 +14392,7 @@ GameObject:
   - component: {fileID: 1080573207}
   m_Layer: 0
   m_Name: Bush (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14464,7 +14464,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &1083003441
 GameObject:
@@ -15300,7 +15300,7 @@ GameObject:
   - component: {fileID: 1145405683}
   m_Layer: 0
   m_Name: Bush (19)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15372,7 +15372,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Size: {x: 7.35, y: 6.36, z: 3}
   m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1 &1158280072
 GameObject:
@@ -17541,7 +17541,7 @@ GameObject:
   - component: {fileID: 1242922733}
   m_Layer: 0
   m_Name: House
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17613,7 +17613,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Size: {x: 12.7, y: 10.53, z: 3}
   m_Center: {x: 0.0000038146973, y: 0.0000019073486, z: 0}
 --- !u!1 &1247521261
 GameObject:
@@ -17710,7 +17710,7 @@ GameObject:
   - component: {fileID: 1254725008}
   m_Layer: 0
   m_Name: Tree (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17782,7 +17782,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0773582, y: 8.275745, z: 0.2}
+  m_Size: {x: 1.0773582, y: 8.275745, z: 3}
   m_Center: {x: 0.06530571, y: -2.6121273, z: 0}
 --- !u!1001 &1265441084
 Prefab:
@@ -17887,7 +17887,7 @@ GameObject:
   - component: {fileID: 1277068357}
   m_Layer: 0
   m_Name: Tree (8)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17959,7 +17959,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0773582, y: 8.275749, z: 0.2}
+  m_Size: {x: 1.0773582, y: 8.275749, z: 3}
   m_Center: {x: 0.02176857, y: -2.6121254, z: 0}
 --- !u!1 &1284565517
 GameObject:
@@ -18058,7 +18058,7 @@ GameObject:
   - component: {fileID: 1292302309}
   m_Layer: 0
   m_Name: Houses
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18216,7 +18216,7 @@ GameObject:
   - component: {fileID: 1335952119}
   m_Layer: 0
   m_Name: Tree (13)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18288,7 +18288,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0338211, y: 8.319281, z: 0.2}
+  m_Size: {x: 1.0338211, y: 8.319281, z: 3}
   m_Center: {x: 0.087070465, y: -2.5903597, z: 0}
 --- !u!1 &1340539466
 GameObject:
@@ -19356,7 +19356,7 @@ GameObject:
   - component: {fileID: 1391127312}
   m_Layer: 0
   m_Name: Forest_Trees (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19428,7 +19428,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.6700006, y: 7.620001, z: 0.20000003}
+  m_Size: {x: 5.6700006, y: 7.620001, z: 3}
   m_Center: {x: -0.0000038146973, y: 0.00000011920929, z: 0}
 --- !u!1 &1393174835
 GameObject:
@@ -19558,7 +19558,7 @@ GameObject:
   - component: {fileID: 1415691302}
   m_Layer: 0
   m_Name: Tree (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19630,7 +19630,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1208954, y: 8.275742, z: 0.2}
+  m_Size: {x: 1.1208954, y: 8.275742, z: 3}
   m_Center: {x: 0.04353714, y: -2.6121292, z: 0}
 --- !u!1 &1419794673
 GameObject:
@@ -20003,7 +20003,7 @@ GameObject:
   - component: {fileID: 1450892693}
   m_Layer: 0
   m_Name: Bush
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20075,7 +20075,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &1460940439
 GameObject:
@@ -20338,7 +20338,7 @@ GameObject:
   - component: {fileID: 1467319482}
   m_Layer: 0
   m_Name: House_01
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20410,7 +20410,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.7, y: 10.53, z: 0.2}
+  m_Size: {x: 12.7, y: 10.53, z: 3}
   m_Center: {x: 0.0000038146973, y: 0.00000047683716, z: 0}
 --- !u!1 &1471064095
 GameObject:
@@ -20505,7 +20505,7 @@ GameObject:
   - component: {fileID: 1476123349}
   m_Layer: 0
   m_Name: Bushes
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20888,7 +20888,7 @@ GameObject:
   - component: {fileID: 1516813975}
   m_Layer: 0
   m_Name: Tree (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20960,7 +20960,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.207964, y: 8.145138, z: 0.2}
+  m_Size: {x: 1.207964, y: 8.145138, z: 3}
   m_Center: {x: 0.043536186, y: -2.677431, z: 0}
 --- !u!1 &1520248793
 GameObject:
@@ -21554,7 +21554,7 @@ GameObject:
   - component: {fileID: 1566058023}
   m_Layer: 0
   m_Name: Bush (14)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21626,7 +21626,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: -0.00000047683716, y: -0.0000038146973, z: 0.00000047683716}
 --- !u!1001 &1570753233
 Prefab:
@@ -22172,7 +22172,7 @@ GameObject:
   - component: {fileID: 1609684920}
   m_Layer: 0
   m_Name: Bush (12)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22244,7 +22244,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0.0000038146973, z: 0.00000047683716}
 --- !u!1 &1610222621
 GameObject:
@@ -22507,7 +22507,7 @@ GameObject:
   - component: {fileID: 1638988800}
   m_Layer: 0
   m_Name: Tree (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22579,7 +22579,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.207964, y: 8.275745, z: 0.2}
+  m_Size: {x: 1.207964, y: 8.275745, z: 3}
   m_Center: {x: 0.043536186, y: -2.6121273, z: 0}
 --- !u!1 &1639818015
 GameObject:
@@ -22759,7 +22759,7 @@ GameObject:
   - component: {fileID: 1649866914}
   m_Layer: 0
   m_Name: Bush (15)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22831,7 +22831,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Size: {x: 7.35, y: 6.36, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1651248399
 GameObject:
@@ -22845,7 +22845,7 @@ GameObject:
   - component: {fileID: 1651248402}
   m_Layer: 0
   m_Name: Tree (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22917,7 +22917,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.90322113, y: 8.058067, z: 0.2}
+  m_Size: {x: 0.90322113, y: 8.058067, z: 3}
   m_Center: {x: 0.02176857, y: -2.7209663, z: 0}
 --- !u!1 &1653823504
 GameObject:
@@ -23044,7 +23044,7 @@ GameObject:
   - component: {fileID: 1655502620}
   m_Layer: 0
   m_Name: Bush (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23116,7 +23116,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: -0.0000009536743, y: 0, z: 0.00000047683716}
 --- !u!114 &1658221992
 MonoBehaviour:
@@ -24388,7 +24388,7 @@ GameObject:
   - component: {fileID: 1748971962}
   m_Layer: 0
   m_Name: Bush (28)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24460,7 +24460,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0, z: 0.00000047683716}
 --- !u!1 &1765028243
 GameObject:
@@ -25992,7 +25992,7 @@ GameObject:
   - component: {fileID: 1881793285}
   m_Layer: 0
   m_Name: Bush (18)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26064,7 +26064,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.35, y: 6.36, z: 0.2}
+  m_Size: {x: 7.35, y: 6.36, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1902107828
 GameObject:
@@ -26593,7 +26593,7 @@ GameObject:
   - component: {fileID: 1929591899}
   m_Layer: 0
   m_Name: Bush (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26665,7 +26665,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: -0.0000019073486, y: 0.0000009536743, z: 0.00000047683716}
 --- !u!1001 &1942320140
 Prefab:
@@ -26887,7 +26887,7 @@ GameObject:
   - component: {fileID: 1949987321}
   m_Layer: 0
   m_Name: Tree (9)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26959,7 +26959,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0773592, y: 8.536957, z: 0.2}
+  m_Size: {x: 1.0773592, y: 8.536957, z: 3}
   m_Center: {x: 0.0653038, y: -2.4815216, z: 0}
 --- !u!1 &1952407363
 GameObject:
@@ -28303,7 +28303,7 @@ GameObject:
   - component: {fileID: 2052492316}
   m_Layer: 0
   m_Name: Trees
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28518,7 +28518,7 @@ GameObject:
   - component: {fileID: 2083855344}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28590,7 +28590,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1644316, y: 8.101604, z: 0.2}
+  m_Size: {x: 1.1644316, y: 8.101604, z: 3}
   m_Center: {x: 0.02176714, y: -2.6991978, z: 0}
 --- !u!1 &2085957217
 GameObject:
@@ -28988,7 +28988,7 @@ GameObject:
   - component: {fileID: 2095839065}
   m_Layer: 0
   m_Name: Bush (9)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29039,7 +29039,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12168931732fc4147b066bb82e4b4114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29060,7 +29060,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.350001, y: 6.360001, z: 0.20000003}
+  m_Size: {x: 7.350001, y: 6.360001, z: 3}
   m_Center: {x: 0, y: 0.0000019073486, z: 0.00000047683716}
 --- !u!1 &2099009557
 GameObject:
@@ -29157,7 +29157,7 @@ GameObject:
   - component: {fileID: 2113590559}
   m_Layer: 0
   m_Name: Tree (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29229,7 +29229,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9032173, y: 8.232212, z: 0.2}
+  m_Size: {x: 0.9032173, y: 8.232212, z: 3}
   m_Center: {x: 0.065301895, y: -2.633894, z: 0}
 --- !u!1001 &2114036579
 Prefab:
@@ -29706,7 +29706,7 @@ GameObject:
   - component: {fileID: 2125690180}
   m_Layer: 0
   m_Name: Tree (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29778,7 +29778,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99028873, y: 8.2757435, z: 0.2}
+  m_Size: {x: 0.99028873, y: 8.2757435, z: 3}
   m_Center: {x: 0.021768093, y: -2.6121283, z: 0}
 --- !u!1 &2126850030
 GameObject:
