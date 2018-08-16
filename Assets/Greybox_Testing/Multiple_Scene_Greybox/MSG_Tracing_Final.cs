@@ -368,6 +368,8 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Continue_Button ()
     {
+        StartCoroutine(MSG_Transitioner.data.Obstacle_Exit_Timer());
+
         tracing_continue_button.SetActive(false);
         tracing_reset_button.SetActive(true);
         tracing_checker.color = Color.white;
