@@ -2987,7 +2987,7 @@ GameObject:
   - component: {fileID: 39996997}
   m_Layer: 0
   m_Name: Art_A_Bush (8)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3025,7 +3025,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 738cdf5ecad6ed44abd9ffb8f8e274a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3059,8 +3059,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.1777143, y: 2.156632, z: 6.278463}
+  m_Center: {x: 0.09939062, y: -1.2066845, z: 0.5860986}
 --- !u!1 &40153186
 GameObject:
   m_ObjectHideFlags: 0
@@ -7671,7 +7671,7 @@ GameObject:
   - component: {fileID: 117065729}
   m_Layer: 0
   m_Name: Art_A_Bush (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7743,8 +7743,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.6220126, y: 2.0467298, z: 7.3697753}
+  m_Center: {x: -0.06891647, y: -1.2616367, z: 0.25732842}
 --- !u!1 &117787580
 GameObject:
   m_ObjectHideFlags: 0
@@ -12803,7 +12803,7 @@ GameObject:
   - component: {fileID: 154046397}
   m_Layer: 0
   m_Name: Art_A_Bush (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12875,8 +12875,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.8932185, y: 1.7771535, z: 15.422074}
+  m_Center: {x: -0.052704647, y: -1.1239667, z: 1.7531414}
 --- !u!1 &154083294
 GameObject:
   m_ObjectHideFlags: 0
@@ -27429,7 +27429,7 @@ GameObject:
   - component: {fileID: 353132882}
   m_Layer: 0
   m_Name: Art_A_Tree (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27501,8 +27501,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5502193, y: 7.010852, z: 0.2}
-  m_Center: {x: -0.2663046, y: -1.8995743, z: 0}
+  m_Size: {x: 2.5502193, y: 2.0547183, z: 6.7721214}
+  m_Center: {x: -0.2663046, y: -4.3776402, z: 0.57943517}
 --- !u!1 &353516340
 GameObject:
   m_ObjectHideFlags: 0
@@ -28559,7 +28559,7 @@ GameObject:
   - component: {fileID: 364748961}
   m_Layer: 0
   m_Name: Art_A_Tree (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28631,8 +28631,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.7778897, y: 6.09906, z: 0.2}
-  m_Center: {x: -0.7230874, y: -2.3554702, z: 0}
+  m_Size: {x: 2.7778897, y: 2.0734465, z: 11.486355}
+  m_Center: {x: -0.7230874, y: -4.3682766, z: 2.2400818}
 --- !u!1 &364965330
 GameObject:
   m_ObjectHideFlags: 0
@@ -54180,7 +54180,7 @@ GameObject:
   - component: {fileID: 733043042}
   m_Layer: 0
   m_Name: Art_A_Tree (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54252,8 +54252,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.703616, y: 6.8209014, z: 0.2}
-  m_Center: {x: -0.6082389, y: -1.9945493, z: 0}
+  m_Size: {x: 2.703616, y: 2.370422, z: 8.303466}
+  m_Center: {x: -0.6082389, y: -4.219788, z: 0.8918428}
 --- !u!1 &733403563
 GameObject:
   m_ObjectHideFlags: 0
@@ -62395,7 +62395,7 @@ GameObject:
   - component: {fileID: 870520066}
   m_Layer: 0
   m_Name: Art_A_Bush (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62433,7 +62433,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 738cdf5ecad6ed44abd9ffb8f8e274a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -62467,8 +62467,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.795341, y: 1.7630433, z: 5.8498197}
+  m_Center: {x: 0.038117632, y: -1.1101345, z: 0.20977595}
 --- !u!1 &870559810
 GameObject:
   m_ObjectHideFlags: 0
@@ -63208,7 +63208,7 @@ GameObject:
   - component: {fileID: 882942478}
   m_Layer: 0
   m_Name: Art_A_Bush (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63246,7 +63246,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 738cdf5ecad6ed44abd9ffb8f8e274a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -63280,8 +63280,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.8241386, y: 1.9425037, z: 11.129645}
+  m_Center: {x: 0.022178551, y: -1.31375, z: 1.3929318}
 --- !u!1 &883544683
 GameObject:
   m_ObjectHideFlags: 0
@@ -79242,7 +79242,7 @@ GameObject:
   - component: {fileID: 1113815683}
   m_Layer: 0
   m_Name: Art_A_Bush (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79314,8 +79314,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.310827, y: 2.112835, z: 7.592329}
+  m_Center: {x: 0.31380585, y: -1.2285852, z: 1.7695901}
 --- !u!1 &1114800649
 GameObject:
   m_ObjectHideFlags: 0
@@ -80065,7 +80065,7 @@ GameObject:
   - component: {fileID: 1121574771}
   m_Layer: 0
   m_Name: Art_A_Bush (9)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80103,7 +80103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 738cdf5ecad6ed44abd9ffb8f8e274a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -80137,8 +80137,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.38, y: 2.0485678, z: 14.321737}
+  m_Center: {x: 0, y: -1.2607166, z: 1.5308095}
 --- !u!1 &1125202016
 GameObject:
   m_ObjectHideFlags: 0
@@ -86428,7 +86428,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167991120}
-  m_LocalRotation: {x: -0.016196668, y: -0.7069212, z: 0.7069213, w: 0.016196609}
+  m_LocalRotation: {x: -0.01619667, y: -0.7069213, z: 0.70692134, w: 0.01619661}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -88742,7 +88742,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4162890496384640, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 4162890496384640, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -92363,7 +92363,7 @@ GameObject:
   - component: {fileID: 1246401304}
   m_Layer: 0
   m_Name: Art_A_Tree (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92435,8 +92435,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.2092962, y: 6.6689315, z: 0.2}
-  m_Center: {x: -0.5511683, y: -2.0705345, z: 0}
+  m_Size: {x: 2.2092962, y: 2.2083108, z: 8.53662}
+  m_Center: {x: -0.5511683, y: -4.101954, z: 1.0057625}
 --- !u!1 &1246691445
 GameObject:
   m_ObjectHideFlags: 0
@@ -94272,7 +94272,7 @@ GameObject:
   - component: {fileID: 1295318608}
   m_Layer: 0
   m_Name: Art_A_Bush
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94344,8 +94344,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.38, y: 2.087396, z: 11.714395}
+  m_Center: {x: 0, y: -1.241303, z: 0.94793814}
 --- !u!1 &1297295132
 GameObject:
   m_ObjectHideFlags: 0
@@ -95919,7 +95919,7 @@ GameObject:
   - component: {fileID: 1313672809}
   m_Layer: 0
   m_Name: Art_A_Bush (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95957,7 +95957,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 738cdf5ecad6ed44abd9ffb8f8e274a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95991,8 +95991,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.38, y: 2.2521033, z: 7.9869523}
+  m_Center: {x: 0, y: -1.1589488, z: 1.4499961}
 --- !u!1 &1315288709
 GameObject:
   m_ObjectHideFlags: 0
@@ -98574,7 +98574,7 @@ GameObject:
   - component: {fileID: 1347545349}
   m_Layer: 0
   m_Name: Art_A_Tree (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98646,8 +98646,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.2849793, y: 6.6689334, z: 0.2}
-  m_Center: {x: -0.58874863, y: -2.0705326, z: 0}
+  m_Size: {x: 2.2849793, y: 2.1316125, z: 17.268742}
+  m_Center: {x: -0.58874863, y: -4.339193, z: 3.7256157}
 --- !u!1 &1349272053
 GameObject:
   m_ObjectHideFlags: 0
@@ -100730,7 +100730,7 @@ GameObject:
   - component: {fileID: 1390623955}
   m_Layer: 0
   m_Name: Art_A_Bush (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100802,8 +100802,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.38, y: 1.9007723, z: 7.0418653}
+  m_Center: {x: 0, y: -0.7489514, z: 1.1005017}
 --- !u!1001 &1390992817
 Prefab:
   m_ObjectHideFlags: 0
@@ -115564,7 +115564,7 @@ GameObject:
   - component: {fileID: 1595179497}
   m_Layer: 0
   m_Name: Art_A_Bush (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115602,7 +115602,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 738cdf5ecad6ed44abd9ffb8f8e274a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -115636,8 +115636,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.38, y: 2.1794012, z: 4.967197}
+  m_Center: {x: 0, y: -1.1952995, z: 0.23981683}
 --- !u!1 &1600295656
 GameObject:
   m_ObjectHideFlags: 0
@@ -120085,7 +120085,7 @@ GameObject:
   - component: {fileID: 1666035074}
   m_Layer: 0
   m_Name: Art_A_Tree
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120157,8 +120157,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.400005, y: 6.5549607, z: 0.2}
-  m_Center: {x: -0.37925228, y: -2.1275198, z: 0}
+  m_Size: {x: 2.400005, y: 2.2004433, z: 8.675247}
+  m_Center: {x: -0.37925228, y: -4.3047786, z: 0.9403076}
 --- !u!1 &1666713084
 GameObject:
   m_ObjectHideFlags: 0
@@ -130675,7 +130675,7 @@ GameObject:
   - component: {fileID: 1804619941}
   m_Layer: 0
   m_Name: Art_A_Tree (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130747,8 +130747,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.246171, y: 6.440984, z: 0.2}
-  m_Center: {x: -0.49427298, y: -2.1845083, z: 0}
+  m_Size: {x: 2.246171, y: 2.8827116, z: 8.618761}
+  m_Center: {x: -0.49427298, y: -3.9636445, z: 1.3359325}
 --- !u!1 &1808147761
 GameObject:
   m_ObjectHideFlags: 0
@@ -146339,7 +146339,7 @@ GameObject:
   - component: {fileID: 2030866082}
   m_Layer: 0
   m_Name: Art_A_Bush (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146411,8 +146411,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.38, y: 4.57, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.38, y: 2.2826252, z: 5.11102}
+  m_Center: {x: 0, y: -1.1436895, z: 0.7801099}
 --- !u!1 &2035204511
 GameObject:
   m_ObjectHideFlags: 0
@@ -153233,7 +153233,7 @@ GameObject:
   - component: {fileID: 2141204067}
   m_Layer: 0
   m_Name: Art_A_Tree (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153271,7 +153271,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 989bbcc64a463404a82825d503040c1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -153305,8 +153305,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3231742, y: 6.6689353, z: 0.2}
-  m_Center: {x: -0.60890085, y: -2.0705326, z: 0}
+  m_Size: {x: 2.3231742, y: 2.0796697, z: 8.294937}
+  m_Center: {x: -0.60890085, y: -4.3651657, z: -0.26016155}
 --- !u!1 &2141593250
 GameObject:
   m_ObjectHideFlags: 0
