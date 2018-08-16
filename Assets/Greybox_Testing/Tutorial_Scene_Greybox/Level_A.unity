@@ -14458,6 +14458,11 @@ Prefab:
       propertyPath: squishyFootSteps
       value: 
       objectReference: {fileID: 8300000, guid: a200dc27a4e846743ae0438539a3caec, type: 3}
+    - target: {fileID: 114273387933337996, guid: 6162f24ab911b0a4aaec922fe8228c3f,
+        type: 2}
+      propertyPath: audioMain
+      value: 
+      objectReference: {fileID: 197778200}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
   m_IsPrefabParent: 0
