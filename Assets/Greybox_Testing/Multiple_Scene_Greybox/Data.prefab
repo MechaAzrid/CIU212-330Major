@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam_states: 2
+  obstacle_lock_out: 0
   tutorial_obstacle_passed: 00
   tutorial_stickers: 00
   tutorial_sticker_blank_sprites:
@@ -106,4 +107,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c62a8e1b2148a474aa00be5ef2663069, type: 3}
   - {fileID: 21300000, guid: 8af8fa3f731f4964891f476165990fad, type: 3}
   - {fileID: 21300000, guid: f391ad645d6aec549a55b42320c36e59, type: 3}
-  saving_active: 0
+  saving_active: 1
