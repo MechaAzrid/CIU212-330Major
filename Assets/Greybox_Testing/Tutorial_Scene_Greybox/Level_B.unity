@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 28204250}
   m_Layer: 0
   m_Name: Bush (23)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -351,8 +351,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &30126500
 Prefab:
   m_ObjectHideFlags: 0
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 77242815}
   m_Layer: 0
   m_Name: Button_Tree (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -743,7 +743,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72be139c15de32d4181881244b953553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -764,8 +764,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1414533, y: 4.6908016, z: 0.2}
-  m_Center: {x: -0.019665956, y: -2.379602, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &78224777
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 95171743}
   m_Layer: 0
   m_Name: Bush (18)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -969,7 +969,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -990,8 +990,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &115956428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 115956431}
   m_Layer: 0
   m_Name: Bush (15)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,7 +1055,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1076,8 +1076,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &127484816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 136180586}
   m_Layer: 0
   m_Name: Bush (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1292,7 +1292,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1313,8 +1313,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &157453248
 Prefab:
   m_ObjectHideFlags: 0
@@ -1956,7 +1956,7 @@ GameObject:
   - component: {fileID: 221608044}
   m_Layer: 0
   m_Name: Bush (8)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2007,7 +2007,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2028,8 +2028,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: -0.00000023841858, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &251690469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,7 +2125,7 @@ GameObject:
   - component: {fileID: 275422161}
   m_Layer: 0
   m_Name: Button_Tree (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2176,7 +2176,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72be139c15de32d4181881244b953553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2197,8 +2197,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9841208, y: 4.730136, z: 0.2}
-  m_Center: {x: -0.17699122, y: -2.3599324, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &275797455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2478,7 @@ GameObject:
   - component: {fileID: 289891350}
   m_Layer: 0
   m_Name: Bush (13)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2529,7 +2529,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2550,8 +2550,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &299858425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3300,7 @@ GameObject:
   - component: {fileID: 382552837}
   m_Layer: 0
   m_Name: Bush (20)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3351,7 +3351,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3372,8 +3372,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &386177559
 Prefab:
   m_ObjectHideFlags: 0
@@ -3775,7 +3775,7 @@ GameObject:
   - component: {fileID: 426810189}
   m_Layer: 0
   m_Name: Bush (32)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3826,7 +3826,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3847,8 +3847,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000019073486, y: -0.00000047683716, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!4 &432461589 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030047625479772, guid: 8e14f3bc65d02ef4e9534e9d3cc31d2f,
@@ -4075,7 +4075,7 @@ GameObject:
   - component: {fileID: 473289065}
   m_Layer: 0
   m_Name: Bush (33)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4126,7 +4126,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4147,8 +4147,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &476940723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,7 +4264,7 @@ GameObject:
   - component: {fileID: 477609751}
   m_Layer: 0
   m_Name: Bush (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4315,7 +4315,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4336,8 +4336,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &478946188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,7 +4350,7 @@ GameObject:
   - component: {fileID: 478946191}
   m_Layer: 0
   m_Name: Bush (26)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4401,7 +4401,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4422,8 +4422,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &488939164
 Prefab:
   m_ObjectHideFlags: 0
@@ -6863,7 +6863,7 @@ GameObject:
   - component: {fileID: 680224584}
   m_Layer: 0
   m_Name: Bush (17)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6914,7 +6914,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6935,8 +6935,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &689906189
 GameObject:
   m_ObjectHideFlags: 0
@@ -7358,7 +7358,7 @@ GameObject:
   - component: {fileID: 740030919}
   m_Layer: 0
   m_Name: Bush (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7409,7 +7409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7430,8 +7430,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &741700646
 GameObject:
   m_ObjectHideFlags: 0
@@ -7948,7 +7948,7 @@ GameObject:
   - component: {fileID: 814288670}
   m_Layer: 0
   m_Name: QuiltedHive
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8020,7 +8020,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 6.24, z: 0.2}
+  m_Size: {x: 5.5, y: 6.24, z: 1.57}
   m_Center: {x: 0, y: -0.0000009536743, z: 0}
 --- !u!1 &818887605
 GameObject:
@@ -8833,7 +8833,7 @@ GameObject:
   - component: {fileID: 870449784}
   m_Layer: 0
   m_Name: Tree_Basic (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8884,7 +8884,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8905,8 +8905,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9533892, y: 4.774835, z: 0.2}
-  m_Center: {x: -0.17906623, y: -2.3875868, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &879301280
 GameObject:
   m_ObjectHideFlags: 0
@@ -9047,7 +9047,7 @@ GameObject:
   - component: {fileID: 882495174}
   m_Layer: 0
   m_Name: Bush (27)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9098,7 +9098,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9119,8 +9119,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &884750101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9600,7 +9600,7 @@ GameObject:
   - component: {fileID: 906191144}
   m_Layer: 0
   m_Name: Bush (21)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9651,7 +9651,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9672,8 +9672,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &919541686
 GameObject:
   m_ObjectHideFlags: 0
@@ -10577,7 +10577,7 @@ GameObject:
   - component: {fileID: 1072370200}
   m_Layer: 0
   m_Name: Bush (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10628,7 +10628,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10649,8 +10649,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1073829196
 GameObject:
   m_ObjectHideFlags: 0
@@ -11702,7 +11702,7 @@ GameObject:
   - component: {fileID: 1200730990}
   m_Layer: 0
   m_Name: Bush (25)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11753,7 +11753,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11774,8 +11774,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000019073486, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1203794301
 GameObject:
   m_ObjectHideFlags: 0
@@ -12059,7 +12059,7 @@ GameObject:
   - component: {fileID: 1215068818}
   m_Layer: 0
   m_Name: Bush (30)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12110,7 +12110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12131,8 +12131,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1229558051
 GameObject:
   m_ObjectHideFlags: 0
@@ -12145,7 +12145,7 @@ GameObject:
   - component: {fileID: 1229558054}
   m_Layer: 0
   m_Name: QuiltedHive (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12217,7 +12217,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 6.24, z: 0.2}
+  m_Size: {x: 5.5, y: 6.24, z: 1.57}
   m_Center: {x: 0, y: 0.0000009536743, z: 0}
 --- !u!1 &1230375285
 GameObject:
@@ -12853,7 +12853,7 @@ GameObject:
   - component: {fileID: 1288509332}
   m_Layer: 0
   m_Name: Bush (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12904,7 +12904,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12925,8 +12925,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1289586348
 GameObject:
   m_ObjectHideFlags: 0
@@ -13254,7 +13254,7 @@ GameObject:
   - component: {fileID: 1342484709}
   m_Layer: 0
   m_Name: Bush (12)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13305,7 +13305,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13326,8 +13326,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000019073486, y: -0.0000009536743, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1351036980
 GameObject:
   m_ObjectHideFlags: 0
@@ -13536,7 +13536,7 @@ GameObject:
   - component: {fileID: 1360991343}
   m_Layer: 0
   m_Name: Bush (34)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13587,7 +13587,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13608,8 +13608,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.00000029802322, y: -0.0000009536743, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1363206453
 GameObject:
   m_ObjectHideFlags: 0
@@ -13946,7 +13946,7 @@ GameObject:
   - component: {fileID: 1385088400}
   m_Layer: 0
   m_Name: Bush (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13997,7 +13997,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14018,8 +14018,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: -0.0000019073486, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1393212093
 GameObject:
   m_ObjectHideFlags: 0
@@ -14410,7 +14410,7 @@ GameObject:
   - component: {fileID: 1424145424}
   m_Layer: 0
   m_Name: Bush (16)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14461,7 +14461,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14482,8 +14482,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: -0.0000038146973, y: -0.0000014305115, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1427252383
 GameObject:
   m_ObjectHideFlags: 0
@@ -14911,7 +14911,7 @@ GameObject:
   - component: {fileID: 1477068871}
   m_Layer: 0
   m_Name: Bush (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14962,7 +14962,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14983,8 +14983,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1484964925
 GameObject:
   m_ObjectHideFlags: 0
@@ -15222,7 +15222,7 @@ GameObject:
   - component: {fileID: 1521628949}
   m_Layer: 0
   m_Name: Tree_Basic (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15273,7 +15273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15294,8 +15294,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.67483, y: 4.655452, z: 0.2}
-  m_Center: {x: -0.00000014901163, y: -2.447276, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1524797025
 GameObject:
   m_ObjectHideFlags: 0
@@ -15452,7 +15452,7 @@ GameObject:
   - component: {fileID: 1539556383}
   m_Layer: 0
   m_Name: Button_Tree (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15503,7 +15503,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 72be139c15de32d4181881244b953553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15524,8 +15524,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8372169, y: 4.6385736, z: 0.2}
-  m_Center: {x: -0.13272882, y: -2.405716, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1550064132
 GameObject:
   m_ObjectHideFlags: 0
@@ -15661,7 +15661,7 @@ GameObject:
   - component: {fileID: 1551314509}
   m_Layer: 0
   m_Name: Bush (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15712,7 +15712,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15733,8 +15733,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1557161374
 GameObject:
   m_ObjectHideFlags: 0
@@ -16085,7 +16085,7 @@ GameObject:
   - component: {fileID: 1607024588}
   m_Layer: 0
   m_Name: Tree_Basic (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16136,7 +16136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16157,8 +16157,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1921422, y: 4.655454, z: 0.2}
-  m_Center: {x: -0.21886186, y: -2.447275, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1620342867
 GameObject:
   m_ObjectHideFlags: 0
@@ -16378,7 +16378,7 @@ GameObject:
   - component: {fileID: 1643753131}
   m_Layer: 0
   m_Name: Bush (31)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16429,7 +16429,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16450,8 +16450,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000014305115, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1644529241
 GameObject:
   m_ObjectHideFlags: 0
@@ -16464,7 +16464,7 @@ GameObject:
   - component: {fileID: 1644529244}
   m_Layer: 0
   m_Name: Bush (14)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16515,7 +16515,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16536,7 +16536,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
   m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &1654009987
 Prefab:
@@ -16752,7 +16752,7 @@ GameObject:
   - component: {fileID: 1678349981}
   m_Layer: 0
   m_Name: Button_Tree
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16803,7 +16803,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72be139c15de32d4181881244b953553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16824,8 +16824,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9841232, y: 4.730134, z: 0.2}
-  m_Center: {x: -0.17699242, y: -2.3599339, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1690789936
 GameObject:
   m_ObjectHideFlags: 0
@@ -16838,7 +16838,7 @@ GameObject:
   - component: {fileID: 1690789939}
   m_Layer: 0
   m_Name: Tree_Basic
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16889,7 +16889,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16910,8 +16910,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.993176, y: 4.6554575, z: 0.2}
-  m_Center: {x: -0.15917288, y: -2.4472766, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1691429695
 GameObject:
   m_ObjectHideFlags: 0
@@ -17423,7 +17423,7 @@ GameObject:
   - component: {fileID: 1710683627}
   m_Layer: 0
   m_Name: Bush (19)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17474,7 +17474,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17495,8 +17495,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000014305115, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1722731810
 GameObject:
   m_ObjectHideFlags: 0
@@ -17823,7 +17823,7 @@ GameObject:
   - component: {fileID: 1780341902}
   m_Layer: 0
   m_Name: Bush (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17874,7 +17874,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17895,8 +17895,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1789125982
 GameObject:
   m_ObjectHideFlags: 0
@@ -18113,7 +18113,7 @@ GameObject:
   - component: {fileID: 1791469226}
   m_Layer: 0
   m_Name: Tree_Basic (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18164,7 +18164,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18185,8 +18185,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9931784, y: 4.814627, z: 0.2}
-  m_Center: {x: -0.11938171, y: -2.367692, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &1805616714
 GameObject:
   m_ObjectHideFlags: 0
@@ -18775,7 +18775,7 @@ GameObject:
   - component: {fileID: 1845689773}
   m_Layer: 0
   m_Name: Tree_Basic (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18826,7 +18826,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18847,7 +18847,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.072772, y: 4.735039, z: 0.2}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
   m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1001 &1849064904
 Prefab:
@@ -19044,7 +19044,7 @@ GameObject:
   - component: {fileID: 1885843476}
   m_Layer: 0
   m_Name: QuiltedHive (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19116,7 +19116,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.4999995, y: 6.2399993, z: 0.19999999}
+  m_Size: {x: 5.4999995, y: 6.2399993, z: 1.57}
   m_Center: {x: 0, y: 0.0000009536743, z: 0}
 --- !u!1 &1885966315
 GameObject:
@@ -19130,7 +19130,7 @@ GameObject:
   - component: {fileID: 1885966318}
   m_Layer: 0
   m_Name: Bush (28)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19181,7 +19181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19202,8 +19202,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &1904954174
 GameObject:
   m_ObjectHideFlags: 0
@@ -20152,7 +20152,7 @@ GameObject:
   - component: {fileID: 2014417092}
   m_Layer: 0
   m_Name: Button_Tree (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20203,7 +20203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 72be139c15de32d4181881244b953553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20224,8 +20224,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.936759, y: 4.7049446, z: 0.2}
-  m_Center: {x: -0.082957745, y: -2.3725305, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &2015546314
 GameObject:
   m_ObjectHideFlags: 0
@@ -20238,7 +20238,7 @@ GameObject:
   - component: {fileID: 2015546317}
   m_Layer: 0
   m_Name: Bush
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20289,7 +20289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20310,8 +20310,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &2018302720
 GameObject:
   m_ObjectHideFlags: 0
@@ -20397,7 +20397,7 @@ GameObject:
   - component: {fileID: 2023989463}
   m_Layer: 0
   m_Name: Tree_Basic (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20448,7 +20448,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e4a1ef9a7bb100e4792667eb6d19c6e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20469,8 +20469,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9931748, y: 4.774835, z: 0.2}
-  m_Center: {x: -0.15917347, y: -2.3875856, z: 0}
+  m_Size: {x: 3.072772, y: 4.735039, z: 2.71}
+  m_Center: {x: -0.19896136, y: -2.4074836, z: 0}
 --- !u!1 &2026062899
 GameObject:
   m_ObjectHideFlags: 0
@@ -20483,7 +20483,7 @@ GameObject:
   - component: {fileID: 2026062902}
   m_Layer: 0
   m_Name: Bush (9)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20534,7 +20534,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20555,8 +20555,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &2035008746
 Prefab:
   m_ObjectHideFlags: 0
@@ -20626,7 +20626,7 @@ GameObject:
   - component: {fileID: 2053127176}
   m_Layer: 0
   m_Name: Bush (29)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20677,7 +20677,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20698,8 +20698,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1001 &2063636987
 Prefab:
   m_ObjectHideFlags: 0
@@ -20773,7 +20773,7 @@ GameObject:
   - component: {fileID: 2067491496}
   m_Layer: 0
   m_Name: Bush (24)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20824,7 +20824,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20845,8 +20845,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000019073486, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &2068665598
 GameObject:
   m_ObjectHideFlags: 0
@@ -21046,7 +21046,7 @@ GameObject:
   - component: {fileID: 2084802352}
   m_Layer: 0
   m_Name: Bush (22)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21097,7 +21097,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4a49b11744f7e9348bd1da1c863906d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21118,8 +21118,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.06, y: 4.17, z: 0.2}
-  m_Center: {x: 0.0000009536743, y: 0, z: 0}
+  m_Size: {x: 5.06, y: 4.17, z: 2.55}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &2088703954
 GameObject:
   m_ObjectHideFlags: 0
