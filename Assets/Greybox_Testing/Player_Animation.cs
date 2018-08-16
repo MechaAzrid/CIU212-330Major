@@ -104,6 +104,40 @@ public class Player_Animation : MonoBehaviour
     {
         if (direction_int == 0)
         {
+            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
+            {
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
+                {
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+                {
+                    Debug.Log("Test");
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+                {
+                    audioMain.clip = softFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+                {
+                    audioMain.clip = squishyFootSteps;
+                    audioMain.Play();
+                }
+
+            }
+
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                audioMain.Stop();
+            }
+
             for (int i = 0; i < up_left_animation.Length; i++)
             {
                 if(i != animation_frame)
@@ -122,6 +156,39 @@ public class Player_Animation : MonoBehaviour
 
         if (direction_int == 1)
         {
+            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
+            {
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
+                {
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+                {
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+                {
+                    audioMain.clip = softFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+                {
+                    audioMain.clip = squishyFootSteps;
+                    audioMain.Play();
+                }
+
+            }
+
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                audioMain.Stop();
+            }
+
             for (int i = 0; i < up_right_animation.Length; i++)
             {
                 if (i != animation_frame)
@@ -140,6 +207,40 @@ public class Player_Animation : MonoBehaviour
 
         if (direction_int == 2)
         {
+            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
+            {
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
+                {
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+                {
+                    Debug.Log("Test");
+
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+                {
+                    audioMain.clip = softFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+                {
+                    audioMain.clip = squishyFootSteps;
+                    audioMain.Play();
+                }
+            }
+
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                audioMain.Stop();
+            }
+
             for (int i = 0; i < down_right_animation.Length; i++)
             {
                 if (i != animation_frame)
@@ -158,6 +259,40 @@ public class Player_Animation : MonoBehaviour
 
         if (direction_int == 3)
         {
+            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
+            {
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
+                {
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
+                {
+                    Debug.Log("Test");
+
+                    audioMain.clip = grassFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
+                {
+                    audioMain.clip = softFootSteps;
+                    audioMain.Play();
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
+                {
+                    audioMain.clip = squishyFootSteps;
+                    audioMain.Play();
+                }
+            }
+
+            else if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                    audioMain.Stop();
+            }
+
             for (int i = 0; i < down_left_animation.Length; i++)
             {
                 if (i != animation_frame)
@@ -191,124 +326,18 @@ public class Player_Animation : MonoBehaviour
 
         if(direction_int == 0)
         {
-            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
-            {
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
-                {
-                    audioMain.clip = softFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
-                {
-                    audioMain.clip = squishyFootSteps;
-                    audioMain.Play();
-                }
-
-            }
             up_left_animation[0].SetActive(true);
         }
         if (direction_int == 1)
         {
-            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
-            {
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
-                {
-                    audioMain.clip = softFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
-                {
-                    audioMain.clip = squishyFootSteps;
-                    audioMain.Play();
-                }
-
-            }
             up_right_animation[0].SetActive(true);
         }
         if (direction_int == 2)
         {
-            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
-            {
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
-                {
-                    audioMain.clip = softFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
-                {
-                    audioMain.clip = squishyFootSteps;
-                    audioMain.Play();
-                }
-            }
             down_right_animation[0].SetActive(true);
         }
         if (direction_int == 3)
         {
-            if (MSG_Transitioner.data.cam_states == camera_states.Movement)
-            {
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
-                {
-                    audioMain.clip = grassFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
-                {
-                    audioMain.clip = softFootSteps;
-                    audioMain.Play();
-                }
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
-                {
-                    audioMain.clip = squishyFootSteps;
-                    audioMain.Play();
-                }
-            }
             down_left_animation[0].SetActive(true);
         }
     }
