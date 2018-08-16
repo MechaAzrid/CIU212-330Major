@@ -181,6 +181,11 @@ Prefab:
       propertyPath: squishyFootSteps
       value: 
       objectReference: {fileID: 8300000, guid: a200dc27a4e846743ae0438539a3caec, type: 3}
+    - target: {fileID: 114273387933337996, guid: 6162f24ab911b0a4aaec922fe8228c3f,
+        type: 2}
+      propertyPath: audioMain
+      value: 
+      objectReference: {fileID: 197778195}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
   m_IsPrefabParent: 0
@@ -11375,7 +11380,7 @@ MonoBehaviour:
   correctnumber: 0
   original_cam_position: {x: 0, y: 0, z: 0}
   tracing_checker: {fileID: 339481805}
-  using_dif_images: 0
+  using_dif_images: 1
   neutral_image: {fileID: 21300000, guid: 21e735066b358964c8969cb0a94b8f76, type: 3}
   incorrect_image: {fileID: 21300000, guid: 2a5f41e16845f7f49bb5754900dac31c, type: 3}
   correct_image: {fileID: 21300000, guid: 6cee2073b1e6a1a45933b9f3c56b6bda, type: 3}
