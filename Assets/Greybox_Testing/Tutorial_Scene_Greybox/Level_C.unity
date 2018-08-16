@@ -4355,7 +4355,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35, y: -10.612534, z: 0}
+  m_LocalPosition: {x: -35, y: -10.820358, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -6306,8 +6306,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 606.5, y: 319, z: 0}
-  m_LocalScale: {x: 1.51625, y: 1.51625, z: 1.51625}
+  m_LocalPosition: {x: 334, y: 175.5, z: 0}
+  m_LocalScale: {x: 0.835, y: 0.835, z: 0.835}
   m_Children:
   - {fileID: 1942320141}
   - {fileID: 346654225}
@@ -15478,25 +15478,25 @@ MonoBehaviour:
   neutral_image: {fileID: 21300000, guid: 21e735066b358964c8969cb0a94b8f76, type: 3}
   incorrect_image: {fileID: 21300000, guid: 2a5f41e16845f7f49bb5754900dac31c, type: 3}
   correct_image: {fileID: 21300000, guid: 6cee2073b1e6a1a45933b9f3c56b6bda, type: 3}
-  audioMain: {fileID: 0}
-  arrow: {fileID: 0}
-  axe: {fileID: 0}
-  acorn: {fileID: 0}
-  apple: {fileID: 0}
-  anchor: {fileID: 0}
-  angelFish: {fileID: 0}
-  button: {fileID: 0}
-  bubble: {fileID: 0}
-  blanket: {fileID: 0}
-  butterFly: {fileID: 0}
-  bee: {fileID: 0}
-  bunny: {fileID: 0}
-  cowBell: {fileID: 0}
-  cobWeb: {fileID: 0}
-  crown: {fileID: 0}
-  clock: {fileID: 0}
-  cake: {fileID: 0}
-  cat: {fileID: 0}
+  audioMain: {fileID: 1158280081}
+  arrow: {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
+  axe: {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
+  acorn: {fileID: 8300000, guid: 8baf46e308d2e484b8fe7ac5713b3c0b, type: 3}
+  apple: {fileID: 8300000, guid: cef941b527c344742bb235877f8b8fa2, type: 3}
+  anchor: {fileID: 8300000, guid: 13642954556357a469d8bb5460fae18e, type: 3}
+  angelFish: {fileID: 8300000, guid: fda6372d31af7e042b433590be93b0f6, type: 3}
+  button: {fileID: 8300000, guid: 50f9e0d8fb686ed42aaf3ae5a8d8f4b3, type: 3}
+  bubble: {fileID: 8300000, guid: 7147f925333285b41b1716b4350a52d6, type: 3}
+  blanket: {fileID: 8300000, guid: bab56d250b18b0d4bacb2c7b7447ae57, type: 3}
+  butterFly: {fileID: 8300000, guid: c6371b398c30c06498815b47e81caaad, type: 3}
+  bee: {fileID: 8300000, guid: ecccf5915eff8e94980dbee1ccd87986, type: 3}
+  bunny: {fileID: 8300000, guid: 24c9adc05ab2b10439e91b338de07839, type: 3}
+  cowBell: {fileID: 8300000, guid: e4480c7ec1786f54f84395b09b4dcc8c, type: 3}
+  cobWeb: {fileID: 8300000, guid: f16a40af2665c5a449b5bfed47e9d13b, type: 3}
+  crown: {fileID: 8300000, guid: 73826862b83708148b3eddc01b25ccfd, type: 3}
+  clock: {fileID: 8300000, guid: a1b6fa5868c7a204f98a23cd14ed3e84, type: 3}
+  cake: {fileID: 8300000, guid: 6072e4c6b59e246499fe4a03bc034ac1, type: 3}
+  cat: {fileID: 8300000, guid: 14aebc27cfeec9647b6e5714eb5bacd0, type: 3}
 --- !u!81 &1158280075
 AudioListener:
   m_ObjectHideFlags: 0
@@ -21755,6 +21755,11 @@ Prefab:
     - target: {fileID: 1285464944045042, guid: c538fc790c24adc4986061a20200b8ff, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202402239178622, guid: c538fc790c24adc4986061a20200b8ff,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AnnnounceLetters
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c538fc790c24adc4986061a20200b8ff, type: 2}
