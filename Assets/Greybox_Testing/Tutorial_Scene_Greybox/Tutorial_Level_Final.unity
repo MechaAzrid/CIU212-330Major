@@ -32411,8 +32411,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405744764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 573, y: 296, z: 0}
-  m_LocalScale: {x: 1.1888651, y: 1.1888651, z: 1.1888651}
+  m_LocalPosition: {x: 567.5, y: 319, z: 0}
+  m_LocalScale: {x: 1.2282525, y: 1.2282525, z: 1.2282525}
   m_Children:
   - {fileID: 2009120763}
   - {fileID: 880449783}
@@ -36424,7 +36424,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -36480,7 +36480,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -88810,6 +88810,11 @@ Prefab:
       propertyPath: audioMain
       value: 
       objectReference: {fileID: 447861991}
+    - target: {fileID: 114273387933337996, guid: 6162f24ab911b0a4aaec922fe8228c3f,
+        type: 2}
+      propertyPath: wait_timer
+      value: 0.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6162f24ab911b0a4aaec922fe8228c3f, type: 2}
   m_IsPrefabParent: 0
@@ -131386,7 +131391,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1822144271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 172.97226, y: 67.97696, z: 0}
+  m_LocalPosition: {x: 153.03854, y: 78.71857, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
   - {fileID: 196195629}
