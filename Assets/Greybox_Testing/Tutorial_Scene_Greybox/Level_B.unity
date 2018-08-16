@@ -1721,7 +1721,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3057,7 +3057,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120257406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: -5.6125336, z: 0}
+  m_LocalPosition: {x: -20, y: -13.249512, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284565518}
@@ -4176,8 +4176,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476940723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 606.5, y: 319, z: 0}
-  m_LocalScale: {x: 1.51625, y: 1.51625, z: 1.51625}
+  m_LocalPosition: {x: 509, y: 258, z: 0}
+  m_LocalScale: {x: 1.2725, y: 1.2725, z: 1.2725}
   m_Children:
   - {fileID: 1097655330}
   - {fileID: 346654225}
@@ -11379,6 +11379,8 @@ MonoBehaviour:
   neutral_image: {fileID: 21300000, guid: 21e735066b358964c8969cb0a94b8f76, type: 3}
   incorrect_image: {fileID: 21300000, guid: 2a5f41e16845f7f49bb5754900dac31c, type: 3}
   correct_image: {fileID: 21300000, guid: 6cee2073b1e6a1a45933b9f3c56b6bda, type: 3}
+  uiSelect: {fileID: 8300000, guid: 0a58d37fa36f03a428670a8ad039d254, type: 3}
+  uiClose: {fileID: 8300000, guid: 996a1ae5cbf928445b91d7b97b87eba0, type: 3}
   audioMain: {fileID: 1158280081}
   arrow: {fileID: 8300000, guid: 84ef01be6f3cbaa43b8564245479b52a, type: 3}
   axe: {fileID: 8300000, guid: 1df0bddf95aec3040be6f1ece26afd13, type: 3}
@@ -11398,6 +11400,7 @@ MonoBehaviour:
   clock: {fileID: 8300000, guid: a1b6fa5868c7a204f98a23cd14ed3e84, type: 3}
   cake: {fileID: 8300000, guid: 6072e4c6b59e246499fe4a03bc034ac1, type: 3}
   cat: {fileID: 8300000, guid: 14aebc27cfeec9647b6e5714eb5bacd0, type: 3}
+  universalUI: {fileID: 669328403}
 --- !u!81 &1158280075
 AudioListener:
   m_ObjectHideFlags: 0

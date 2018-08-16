@@ -71,6 +71,11 @@ public class MSG_Tracing_Final : MonoBehaviour
     public Sprite incorrect_image;
     public Sprite correct_image;
 
+    [Header("UI Select")]
+    public AudioClip uiSelect;
+    public AudioClip uiClose;
+    //public AudioClip uiOpen;
+
     [Header("Announcing Letters")]
     public AudioSource audioMain;
     [Header("Announce A Letters")]
@@ -95,6 +100,8 @@ public class MSG_Tracing_Final : MonoBehaviour
     public AudioClip cake;
     public AudioClip cat;
 
+    public GameObject universalUI;
+
     // Causing errors
     //[Header("")]
 
@@ -108,6 +115,8 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Obstacle_Start (int obstacle_number, MSG_Obstacle_Trigger trigg)
     {
+        universalUI.SetActive(false);
+
         trigger = trigg;
 
         int past_templates = 0;
@@ -266,6 +275,9 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Count()
     {
+        audioMain.clip = uiSelect;
+        audioMain.Play();
+
         if (!locked)
         {
             locked = true;
@@ -310,6 +322,9 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Reset_Letters ()
     {
+        audioMain.clip = uiSelect;
+        audioMain.Play();
+
         total_nodes = 0;
         total_node_count = 0;
         correctnumber = 0;
@@ -340,6 +355,11 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Return_Button ()
     {
+        audioMain.clip = uiClose;
+        audioMain.Play();
+
+        universalUI.SetActive(true);
+
         StartCoroutine(MSG_Transitioner.data.Obstacle_Exit_Timer());
 
         tracing_continue_button.SetActive(false);
@@ -373,6 +393,9 @@ public class MSG_Tracing_Final : MonoBehaviour
 
     public void Continue_Button ()
     {
+        audioMain.clip = uiSelect;
+        audioMain.Play();
+
         StartCoroutine(MSG_Transitioner.data.Obstacle_Exit_Timer());
 
         tracing_continue_button.SetActive(false);
@@ -407,7 +430,8 @@ public class MSG_Tracing_Final : MonoBehaviour
         temp_tracers.Clear();
     }
 
-    public void AnnnounceLetters()     {         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))         {             if (trigger.obstacle_int == 0)             {                 audioMain.clip = arrow;                 audioMain.Play();             }              if (trigger.obstacle_int == 1)             {                 audioMain.clip = axe;                 audioMain.Play();             }              if (trigger.obstacle_int == 2)             {                 audioMain.clip = acorn;                 audioMain.Play();             }              if (trigger.obstacle_int == 3)             {                 audioMain.clip = apple;                 audioMain.Play();             }              if (trigger.obstacle_int == 4)             {                 audioMain.clip = anchor;                 audioMain.Play();             }         }
+    public void AnnnounceLetters()     {         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))         {
+            if (trigger.obstacle_int == 0)             {                 audioMain.clip = arrow;                 audioMain.Play();             }              if (trigger.obstacle_int == 1)             {                 audioMain.clip = axe;                 audioMain.Play();             }              if (trigger.obstacle_int == 2)             {                 audioMain.clip = acorn;                 audioMain.Play();             }              if (trigger.obstacle_int == 3)             {                 audioMain.clip = apple;                 audioMain.Play();             }              if (trigger.obstacle_int == 4)             {                 audioMain.clip = anchor;                 audioMain.Play();             }         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
