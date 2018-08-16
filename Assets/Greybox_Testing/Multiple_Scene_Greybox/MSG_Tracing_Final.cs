@@ -112,6 +112,11 @@ public class MSG_Tracing_Final : MonoBehaviour
 
         int past_templates = 0;
 
+        if (using_dif_images)
+        {
+            tracing_checker.sprite = neutral_image;
+        }
+
         for (int i = 0; i < word_length.Count; i++)
         {
             if (obstacle_number == i)
