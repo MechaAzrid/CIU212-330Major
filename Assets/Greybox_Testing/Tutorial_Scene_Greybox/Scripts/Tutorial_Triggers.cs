@@ -155,18 +155,18 @@ IEnumerator playObstacle()
 
     void ObstacleDialogueEnd()
     {
+        universalUI.SetActive(true);
         retractedBridge.SetActive(false);
         notCompletedFlag.SetActive(false);
 
-        msgTracingFinal.enabled = true;
         obstacleTrigger.SetActive(false);
+        msgTracingFinal.enabled = true;
         msgLevelMovement.enabled = true;
 
         bridge.SetActive(true);
         completedFlag.SetActive(true);
 
         msgTracingFinal.universalUI.SetActive(true);
-        
     }
 
     public void CongratulationsFirst()
