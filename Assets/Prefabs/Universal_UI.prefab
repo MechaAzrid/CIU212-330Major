@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 222444566901772170}
   - component: {fileID: 114486980553463406}
   - component: {fileID: 82228455347304242}
+  - component: {fileID: 82660161627328014}
   m_Layer: 5
   m_Name: Universal_UI
   m_TagString: Untagged
@@ -176,6 +177,86 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!82 &82228455347304242
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996476841230960}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &82660161627328014
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -466,7 +547,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 47b63651e0c8af348a259c18a393e280, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -624,7 +705,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 114383292872953422}
   m_OnClick:
     m_PersistentCalls:
@@ -655,7 +736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseCanvas: {fileID: 224757675094630848}
   pauseButton: {fileID: 1727913650187404}
-  audioMain: {fileID: 82228455347304242}
+  audioMain: {fileID: 82660161627328014}
   UIOpen: {fileID: 8300000, guid: 5b2de567fcbbd824da6cac39368a4bd5, type: 3}
   UIClose: {fileID: 8300000, guid: 996a1ae5cbf928445b91d7b97b87eba0, type: 3}
   UISelect: {fileID: 8300000, guid: 0c62b438166b3414c80d1da6f2c6ae40, type: 3}
@@ -746,7 +827,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 114396933479199868}
   m_OnClick:
     m_PersistentCalls:
@@ -1028,7 +1109,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825649483570614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 321, y: -127, z: 0}
+  m_LocalPosition: {x: 343, y: -148.14001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224757675094630848}
@@ -1036,6 +1117,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 371, y: -177}
-  m_SizeDelta: {x: 836.3, y: 451.7}
+  m_AnchoredPosition: {x: 393, y: -198.14}
+  m_SizeDelta: {x: 322.9, y: 164.3}
   m_Pivot: {x: 0.5, y: 0.5}
