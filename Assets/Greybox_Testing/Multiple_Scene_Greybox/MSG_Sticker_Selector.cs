@@ -53,7 +53,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.tutorial)
         {
-            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[selected_sticker])
+            if (finder_active && MSG_Transitioner.data.tutorial_stickers[selected_sticker])
             {
                 finder_active = false;
                 selected_sticker = -1;
@@ -62,7 +62,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.level_a)
         {
-            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[selected_sticker])
+            if (finder_active && MSG_Transitioner.data.level_a_stickers[selected_sticker])
             {
                 finder_active = false;
                 selected_sticker = -1;
@@ -71,7 +71,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.level_b)
         {
-            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[selected_sticker])
+            if (finder_active && MSG_Transitioner.data.level_b_stickers[selected_sticker])
             {
                 finder_active = false;
                 selected_sticker = -1;
@@ -80,7 +80,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.level_c)
         {
-            if (finder_active && GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[selected_sticker])
+            if (finder_active && MSG_Transitioner.data.level_c_stickers[selected_sticker])
             {
                 finder_active = false;
                 selected_sticker = -1;
@@ -92,7 +92,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
     {
         if (level == Levels.tutorial)
         {
-            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[number])
+            if (!MSG_Transitioner.data.tutorial_stickers[number])
             {
                 if (number != selected_sticker)
                 {
@@ -109,7 +109,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.level_a)
         {
-            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[number])
+            if (!MSG_Transitioner.data.level_a_stickers[number])
             {
                 if (number != selected_sticker)
                 {
@@ -126,7 +126,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.level_b)
         {
-            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[number])
+            if (!MSG_Transitioner.data.level_b_stickers[number])
             {
                 if (number != selected_sticker)
                 {
@@ -143,7 +143,7 @@ public class MSG_Sticker_Selector : MonoBehaviour
 
         if (level == Levels.level_c)
         {
-            if (!GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[number])
+            if (!MSG_Transitioner.data.level_c_stickers[number])
             {
                 if (number != selected_sticker)
                 {

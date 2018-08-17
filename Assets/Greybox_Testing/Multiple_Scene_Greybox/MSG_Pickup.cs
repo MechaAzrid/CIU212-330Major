@@ -29,56 +29,52 @@ public class MSG_Pickup : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().tutorial_stickers[sticker_number] == false)
+            if (MSG_Transitioner.data.tutorial_stickers[sticker_number] == false)
             {
-                gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
-                gameObject.GetComponent<Collider>().enabled = false;
+                locked = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_a_stickers[sticker_number] == false)
+            if (MSG_Transitioner.data.level_a_stickers[sticker_number] == false)
             {
-                gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
-                gameObject.GetComponent<Collider>().enabled = false;
+                locked = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_b_stickers[sticker_number] == false)
+            if (MSG_Transitioner.data.level_b_stickers[sticker_number] == false)
             {
-                gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
-                gameObject.GetComponent<Collider>().enabled = false;
+                locked = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
         {
-            if (GameObject.FindGameObjectWithTag("Data").GetComponent<MSG_Transitioner>().level_c_stickers[sticker_number] == false)
+            if (MSG_Transitioner.data.level_c_stickers[sticker_number] == false)
             {
-                gameObject.GetComponent<Collider>().enabled = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
-                gameObject.GetComponent<Collider>().enabled = false;
+                locked = true;
                 if (object_sprite != null) gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
@@ -110,12 +106,6 @@ public class MSG_Pickup : MonoBehaviour
             {
                 portal.SetActive(true);
             }
-
-            //if (gold)
-            //{
-            //    portal.SetActive(true);
-            //    Debug.Log("Portal Activated");
-            //}
         }
 
     }
