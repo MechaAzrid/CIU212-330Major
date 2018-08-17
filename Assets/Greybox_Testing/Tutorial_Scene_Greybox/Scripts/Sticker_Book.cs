@@ -64,68 +64,72 @@ public class Sticker_Book : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial_Level_Final"))
         {
             page_number = 0;
-
-            for (int i = 0; i < tutorial_sticker_images.Length; i++)
-            {
-                if (MSG_Transitioner.data.tutorial_stickers[i])
-                {
-                    tutorial_sticker_images[i].sprite = MSG_Transitioner.data.tutorial_sticker_sprites[i];
-                }
-                else
-                {
-                    tutorial_sticker_images[i].sprite = MSG_Transitioner.data.tutorial_sticker_blank_sprites[i];
-                }
-            }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_A"))
         {
             page_number = 1;
-
-            for (int i = 0; i < level_a_sticker_images.Length; i++)
-            {
-                if (MSG_Transitioner.data.level_a_stickers[i])
-                {
-                    level_a_sticker_images[i].sprite = MSG_Transitioner.data.level_a_sticker_sprites[i];
-                }
-                else
-                {
-                    level_a_sticker_images[i].sprite = MSG_Transitioner.data.level_a_sticker_blank_sprites[i];
-                }
-            }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_B"))
         {
             page_number = 2;
-
-            for (int i = 0; i < level_b_sticker_images.Length; i++)
-            {
-                if (MSG_Transitioner.data.level_b_stickers[i])
-                {
-                    level_b_sticker_images[i].sprite = MSG_Transitioner.data.level_b_sticker_sprites[i];
-                }
-                else
-                {
-                    level_b_sticker_images[i].sprite = MSG_Transitioner.data.level_b_sticker_blank_sprites[i];
-                }
-            }
         }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level_C"))
         {
             page_number = 3;
+        }
 
-            for (int i = 0; i < level_c_sticker_images.Length; i++)
+        // Tutorial
+        for (int i = 0; i < tutorial_sticker_images.Length; i++)
+        {
+            if (MSG_Transitioner.data.tutorial_stickers[i])
             {
-                if (MSG_Transitioner.data.level_c_stickers[i])
-                {
-                    level_c_sticker_images[i].sprite = MSG_Transitioner.data.level_c_sticker_sprites[i];
-                }
-                else
-                {
-                    level_c_sticker_images[i].sprite = MSG_Transitioner.data.level_c_sticker_blank_sprites[i];
-                }
+                tutorial_sticker_images[i].sprite = MSG_Transitioner.data.tutorial_sticker_sprites[i];
+            }
+            else
+            {
+                tutorial_sticker_images[i].sprite = MSG_Transitioner.data.tutorial_sticker_blank_sprites[i];
+            }
+        }
+
+        // Level A
+        for (int i = 0; i < level_a_sticker_images.Length; i++)
+        {
+            if (MSG_Transitioner.data.level_a_stickers[i])
+            {
+                level_a_sticker_images[i].sprite = MSG_Transitioner.data.level_a_sticker_sprites[i];
+            }
+            else
+            {
+                level_a_sticker_images[i].sprite = MSG_Transitioner.data.level_a_sticker_blank_sprites[i];
+            }
+        }
+
+        // Level B
+        for (int i = 0; i < level_b_sticker_images.Length; i++)
+        {
+            if (MSG_Transitioner.data.level_b_stickers[i])
+            {
+                level_b_sticker_images[i].sprite = MSG_Transitioner.data.level_b_sticker_sprites[i];
+            }
+            else
+            {
+                level_b_sticker_images[i].sprite = MSG_Transitioner.data.level_b_sticker_blank_sprites[i];
+            }
+        }
+
+        // Level C
+        for (int i = 0; i < level_c_sticker_images.Length; i++)
+        {
+            if (MSG_Transitioner.data.level_c_stickers[i])
+            {
+                level_c_sticker_images[i].sprite = MSG_Transitioner.data.level_c_sticker_sprites[i];
+            }
+            else
+            {
+                level_c_sticker_images[i].sprite = MSG_Transitioner.data.level_c_sticker_blank_sprites[i];
             }
         }
     }

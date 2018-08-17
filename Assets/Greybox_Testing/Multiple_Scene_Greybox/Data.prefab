@@ -56,7 +56,7 @@ MonoBehaviour:
   tutorial_obstacle_passed: 00
   tutorial_stickers: 00
   tutorial_sticker_blank_sprites:
-  - {fileID: 21300000, guid: 18f7197bb17121b47bceee84603bb86e, type: 3}
+  - {fileID: 21300000, guid: d0ccd449293cc274b9901ffbd057bece, type: 3}
   tutorial_sticker_sprites:
   - {fileID: 21300000, guid: cac5e2505dc911b49ac35d8eb84a743d, type: 3}
   level_a_obstacle_passed: 0000000000
