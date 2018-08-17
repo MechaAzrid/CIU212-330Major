@@ -55,6 +55,7 @@ public class Tutorial_Triggers : MonoBehaviour
     [Header("UI")]
     public Button stickerBookButton;
     public Button pauseBackButton;
+    public GameObject universalUI;
 
     void Start()
     {
@@ -131,11 +132,12 @@ public class Tutorial_Triggers : MonoBehaviour
 
     public void ObstacleDialogue()
     {
+        universalUI.SetActive(false);
         StartCoroutine(playObstacle());
         msgLevelMovement.enabled = false;
-    }
+}
 
-    IEnumerator playObstacle()
+IEnumerator playObstacle()
     {
         audioMain.clip = obstacleVoice;
         audioMain.Play();
