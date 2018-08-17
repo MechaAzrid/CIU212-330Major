@@ -20,7 +20,11 @@ public class Camera_Screen_Resolution : MonoBehaviour
     {
 		if (adjust_screen)
         {
-            Camera.main.orthographicSize = defualt_width / Camera.main.aspect;
+            if (MSG_Transitioner.data.cam_states == camera_states.Tracing)
+            {
+                Camera.main.orthographicSize = defualt_width / Camera.main.aspect + 1;
+
+            }
         }
 	}
 }
