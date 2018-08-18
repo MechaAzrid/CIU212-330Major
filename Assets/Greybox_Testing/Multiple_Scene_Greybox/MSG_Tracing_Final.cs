@@ -127,8 +127,6 @@ public class MSG_Tracing_Final : MonoBehaviour
     void Start()
     {
         c = Camera.main;
-
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
     public void Obstacle_Start (int obstacle_number, MSG_Obstacle_Trigger trigg)

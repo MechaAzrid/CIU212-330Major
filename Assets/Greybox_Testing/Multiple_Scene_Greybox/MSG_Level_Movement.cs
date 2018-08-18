@@ -26,8 +26,6 @@ public class MSG_Level_Movement : MonoBehaviour
     void Start ()
     {
         c = Camera.main;
-
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
     void OnGUI()
