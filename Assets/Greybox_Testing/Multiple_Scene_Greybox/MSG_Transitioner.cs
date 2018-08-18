@@ -166,7 +166,7 @@ public class MSG_Transitioner : MonoBehaviour
     //    Reset_Data();
     //}
 
-    void Reset_Data()
+    public void Reset_Data()
     {
         if(File.Exists(Application.persistentDataPath + "/AlphabetExplorerGameData.dat"))
         {

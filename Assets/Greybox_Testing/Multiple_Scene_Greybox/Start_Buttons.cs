@@ -30,11 +30,11 @@ public class Start_Buttons : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
-    public void stickers_Button ()
+    public void Settings_Button ()
     {
         for (int i = 0; i < menus.Length; i++)
         {
-            if (i == 1)
+            if(i == 1)
             {
                 menus[i].SetActive(true);
             }
@@ -43,21 +43,9 @@ public class Start_Buttons : MonoBehaviour
                 menus[i].SetActive(false);
             }
         }
-
-        for (int i = 0; i < tutorial_stickers.Length; i++)
-        {
-            if(MSG_Transitioner.data.tutorial_stickers[i])
-            {
-                tutorial_stickers[i].sprite = MSG_Transitioner.data.tutorial_sticker_sprites[i];
-            }
-            else
-            {
-                tutorial_stickers[i].sprite = MSG_Transitioner.data.tutorial_sticker_blank_sprites[i];
-            }
-        }
     }
 
-    public void Sticker_Return_Button ()
+    public void Settings_Return_Button ()
     {
         for (int i = 0; i < menus.Length; i++)
         {
@@ -72,58 +60,8 @@ public class Start_Buttons : MonoBehaviour
         }
     }
 
-    public void Reset_Button ()
+    public void Reset_Data_Button ()
     {
-        for (int i = 0; i < menus.Length; i++)
-        {
-            if( i == 2)
-            {
-                menus[i].SetActive(true);
-            }
-            else
-            {
-                menus[i].SetActive(false);
-            }
-        }
-    }
-
-    public void Reset_Choice (bool choice)
-    {
-        if(choice)
-        {
-            //MSG_Transitioner.data.End();
-
-            for (int i = 0; i < menus.Length; i++)
-            {
-                if (i == 0)
-                {
-                    menus[i].SetActive(true);
-                }
-                else
-                {
-                    menus[i].SetActive(false);
-                }
-            }
-        }
-        else if (!choice)
-        {
-            for (int i = 0; i < menus.Length; i++)
-            {
-                if (i == 0)
-                {
-                    menus[i].SetActive(true);
-                }
-                else
-                {
-                    menus[i].SetActive(false);
-                }
-            }
-        }
-    }
-
-    public void Quit_Button()
-    {
-        MSG_Transitioner.data.Save_Data();
-        Application.Quit();
+        MSG_Transitioner.data.Reset_Data();
     }
 }
